@@ -2,7 +2,8 @@
 
 **Project**: PTA stochastic-GWB spectral-template comparison with NANOGrav 15yr data  
 **Last updated**: 2026-04-22  
-**Public repository**: `https://github.com/duan0004/paperdata`
+**Public repository**: `https://github.com/duan0004/paperdata`  
+**Submission package commit**: `4d3972e11a24ffee026a8e2214eb12dd19fbc2ea`  
 **Runtime used for saved results**: Python 3.9.6 on macOS 26.0 arm64
 
 This manifest records the local environment, input data fingerprints, and
@@ -126,5 +127,6 @@ python3 code/prl_package_static_gate.py
 ```
 
 As of 2026-04-22, Tectonic is available locally and the REVTeX main text and
-supplement compile to `theory/pdf/revtex/`.  The public code-release URL is
-`https://github.com/duan0004/paperdata`.
+supplement compile to `theory/pdf/revtex/`.  The public code/data release is
+available at `https://github.com/duan0004/paperdata`, commit
+`4d3972e11a24ffee026a8e2214eb12dd19fbc2ea`.

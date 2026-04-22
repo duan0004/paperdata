@@ -167,7 +167,14 @@ def make_figure(data):
     colors = ["#8d99ae", "#4f6d7a", "#2a9d8f", "#1f7a5c"]
     ax.bar(x, vals, yerr=errs, color=colors, edgecolor="black", linewidth=0.4, capsize=2.5)
     ax.axhline(0, color="black", linewidth=0.7)
-    ax.axhline(4.04305126783455, color="#7f1d1d", linestyle="--", linewidth=0.9)
+    ax.hlines(
+        4.04305126783455,
+        0.5,
+        3.5,
+        color="#7f1d1d",
+        linestyle="--",
+        linewidth=0.9,
+    )
     ax.text(
         0.03,
         4.12,

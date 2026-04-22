@@ -1,7 +1,7 @@
 # PRL Submission Package Manifest
 
 **Date**: 2026-04-22  
-**Status**: reviewer-risk cleanup applied; submission blocked by public code URL.  
+**Status**: public GitHub code/data URL inserted; Zenodo DOI still optional/human-gated.  
 **Current title**: Curved SMBHB Spectra Compete with New-Physics
 Explanations in PTA Source Identification
 
@@ -19,8 +19,8 @@ Explanations in PTA Source Identification
 | Reproducibility manifest | `REPRODUCIBILITY.md` | ready except public repo URL |
 | Environment manifest | `environment.yml` | ready |
 | Formal compile report | `theory/T3.12_PRL_formal_compile_report.md` | done |
-| Human submission gate | `theory/PRL_submission_human_gate.md` | done; code URL still required |
-| Cover letter draft | `theory/PRL_cover_letter_draft.md` | ready except code URL |
+| Human submission gate | `theory/PRL_submission_human_gate.md` | done; GitHub URL inserted |
+| Cover letter draft | `theory/PRL_cover_letter_draft.md` | GitHub URL inserted |
 | PRL assessment | `theory/T3.11_PRL_submission_assessment.md` | historical assessment; superseded by current cleanup |
 | Static TeX check | `theory/T3.11_PRL_tex_static_check.md` | PASS; superseded by Tectonic compile report |
 | Package static gate | `results/T2_NG15yr/prl_package_static_gate.md` | structural PASS; submission not ready |
@@ -84,8 +84,8 @@ Latest output:
 Latest verdict:
 
 - structural pass: `True`;
-- submission ready: `False`;
-- blockers: public code-release URL unresolved;
+- submission ready: pending rerun after URL insertion;
+- blockers: Zenodo DOI only if required by final submission policy;
 - word counts: REVTeX source `1612`, compressed Markdown `1512`, supplement
   Markdown `986`, supplement TeX `1604`;
 - background process scan: `0` matching compute tasks.
@@ -94,14 +94,15 @@ Latest verdict:
 
 These must not be invented:
 
-1. public code-release URL;
+1. Zenodo DOI, if the author wants the final availability statement to include
+   an archival DOI rather than only a public GitHub commit;
 2. acknowledgments, grant, or computing-resource text if the author wants them.
    The current PRL source omits acknowledgments rather than using a placeholder.
 
 Technical blockers:
 
 1. final PRL/arXiv package needs a PDF visual check after inserting the public
-   code URL;
+   GitHub URL and optional Zenodo DOI;
 2. final arbiter should be run on the actual compiled package, not only the
    Markdown draft.
 
@@ -109,7 +110,7 @@ Technical blockers:
 
 Before submission:
 
-1. replace `https://github.com/duan0004/paperdata`;
+1. add Zenodo DOI if desired;
 2. recompile `theory/paper_prl_submission.tex` and `theory/prl_supplement.tex`;
 3. inspect the PDF table for two-column overflow;
 4. confirm Figure 1 renders and is readable at PRL column width;

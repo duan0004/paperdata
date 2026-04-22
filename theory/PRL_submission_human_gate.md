@@ -22,6 +22,9 @@
   - Fig. 1 Panel A states the row-specific baseline convention;
   - supplement includes prior ranges, selection rule, and QMC/TI residual
     convention notes.
+- Public GitHub code/data release inserted:
+  - `https://github.com/duan0004/paperdata`
+  - commit `4d3972e11a24ffee026a8e2214eb12dd19fbc2ea`
 - Evidence cross-check added:
   - `results/T2_NG15yr/bayes_factors/prl_evidence_ti_qmc_crosscheck.json`
   - `results/T2_NG15yr/bayes_factors/prl_evidence_ti_qmc_crosscheck.md`
@@ -31,9 +34,10 @@
 
 ## Still Required From Author
 
-1. **Public code-release URL**  
-   Current source still contains `https://github.com/duan0004/paperdata`.  This must be
-   replaced by a real public repository, archive, or DOI before submission.
+1. **Zenodo DOI decision**  
+   The GitHub release is public and fixed by commit hash.  If the final
+   submission requires a Zenodo DOI, archive the repository on Zenodo and add
+   the DOI to the Data and Code Availability sentence.  Do not invent this DOI.
 
 2. **Acknowledgments decision**  
    Either keep acknowledgments omitted, or provide exact text for people,
@@ -46,5 +50,5 @@
 ## Submission Gate
 
 The scientific package is PRL-plausible and the local compile gate now passes.
-The package is still not submission-ready until the public code-release URL is
-real.
+The public GitHub code/data URL is real.  Remaining human-level decision:
+whether to add a Zenodo DOI and acknowledgments before final APS upload.

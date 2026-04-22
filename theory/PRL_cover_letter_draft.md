@@ -23,8 +23,8 @@ sub-nat precision across seed/live-point repetitions.  Second, one
 environmental SMBHB model and two phenomenological low-frequency curvature
 surrogates, evaluated on the same official evidence scale and against the same
 PTArcade BHB-prior baseline, give ln B = 3.453--3.839, overlapping the
-cosmological range 3.558--4.520.  The top new-physics row exceeds the top
-curved-SMBHB row by only 0.681 nat, and SIGW-delta by only 0.091 nat.
+cosmological range 3.558--4.520.  The top new-physics model exceeds the top
+curved-SMBHB model by only 0.681 nat, and SIGW-delta by only 0.091 nat.
 
 This changes the interpretation of current PTA new-physics evidence.  The
 present data do not yet identify the physical origin of the background, and
@@ -34,8 +34,9 @@ result is timely for PTA source identification and broadly relevant to
 nanohertz gravitational-wave cosmology.
 
 The manuscript uses public NANOGrav data products and official PTArcade model
-and density products.  The analysis code will be available at:
-https://github.com/duan0004/paperdata.
+and density products.  The analysis code and compact data release are available
+at https://github.com/duan0004/paperdata, commit
+4d3972e11a24ffee026a8e2214eb12dd19fbc2ea.
 
 Sincerely,
 

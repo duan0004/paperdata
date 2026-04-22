@@ -82,7 +82,7 @@
       "path": "theory/T3.11_PRL_tex_static_check.md"
     }
   },
-  "generated": "2026-04-22T09:53:41",
+  "generated": "2026-04-22T10:13:17",
   "json_status": {
     "H10_systematic_envelope": {
       "complete": true,
@@ -172,9 +172,9 @@
   },
   "title": "Curved SMBHB Spectra Compete with New-Physics Explanations in PTA Source Identification",
   "word_counts": {
-    "compressed_markdown": 1512,
-    "revtex_source": 1612,
-    "supplement_markdown": 986,
-    "supplement_tex_source": 1604
+    "compressed_markdown": 1506,
+    "revtex_source": 1649,
+    "supplement_markdown": 1013,
+    "supplement_tex_source": 1606
   }
 }

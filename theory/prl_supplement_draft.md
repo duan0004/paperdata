@@ -86,6 +86,10 @@ suppression controls, not population-synthesis source claims.
 At least two distinct curvature parameterizations overlap the leading
 cosmological evidence tier within one nat.
 
+The final column reports the thermodynamic-integration residual from the
+family cross-check relative to the corresponding five-configuration dynesty
+mean; blank entries were not included in that family cross-check.
+
 ## S6. Official Stochastic-Model Ranking
 
 Only official PTArcade files defining `spectrum(f, ...)` were evaluated.  PBH

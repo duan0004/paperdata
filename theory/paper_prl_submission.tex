@@ -27,8 +27,8 @@ cosmic-superstring log-Bayes factors at sub-nat agreement.  On that
 calibrated scale, one environmental SMBHB model and two phenomenological
 low-frequency curvature surrogates yield
 $\ln\mathcal{B}=3.45$--$3.84$, all within one nat of the leading
-cosmological rows.  The $0.681$-nat gap between the leading
-SIGW-Gaussian row and the best curved-SMBHB control is comparable to the
+cosmological templates.  The $0.681$-nat gap between the leading
+SIGW-Gaussian model and the best curved-SMBHB control is comparable to the
 identified calibration and prior-boundary systematics.  Current data
 therefore do not yet support robust source discrimination between
 leading cosmological stochastic spectra and curved SMBHB explanations.
@@ -47,11 +47,10 @@ background \cite{Phinney_2001} and with several cosmological sources.
 The NANOGrav
 new-physics search \cite{NANOGrav_15yr_NewPhysics}, using PTArcade
 \cite{PTArcade_2023}, reports strong-but-not-decisive Bayes factors
-relative to the SMBHB baseline: $\mathcal{B}=57\pm3$ for
-scalar-induced gravitational waves with a Gaussian primordial spectrum
-(SIGW-Gaussian), $\mathcal{B}=46\pm4$ for cosmic superstrings, and
-$\mathcal{B}=18\pm1$ for a bubble-nucleation phase transition, placing
-the leading alternatives in the strong-but-not-decisive evidence range
+relative to the SMBHB baseline for several leading stochastic
+alternatives, including SIGW-Gaussian ($\mathcal{B}=57$), SIGW-delta
+($\mathcal{B}=44$), and cosmic superstrings ($\mathcal{B}=46$),
+placing these models in the strong-but-not-decisive evidence range
 under the Kass--Raftery convention \cite{Kass_Raftery_1995}.
 We show below that one environmental SMBHB model and two phenomenological
 curved-SMBHB surrogates are competitive with these alternatives on the
@@ -121,8 +120,10 @@ Evidence calibration and matched-scale source ranking.  Panel A shows
 that neither a local template/local-density refit nor an official
 template with a local KDE reproduces the SIGW-Gaussian absolute Bayes
 factor.  The first Panel-A bar uses a fixed-$\gamma$ SMBHB baseline; the
-remaining Panel-A bars and all Panel-B rows use the PTArcade BHB-prior
-baseline.  Panel B compares leading cosmological templates (blue) with
+remaining Panel-A bars and all Panel-B models use the PTArcade BHB-prior
+baseline.  The horizontal reference line marks the published
+PTArcade-baseline SIGW-Gaussian value and applies only to the last three
+bars.  Panel B compares leading cosmological templates (blue) with
 curved-SMBHB controls (orange) on the matched evidence scale.}
 \end{figure}
 
@@ -165,7 +166,8 @@ omega2cross} to relative precision below $5\times10^{-16}$.
 Official-density Bayes factors relative to the PTArcade BHB-prior
 baseline.  The first three rows are five-configuration means used to
 calibrate the published NANOGrav values; the last three rows are
-five-configuration means for the tested curved-SMBHB representatives.}
+five-configuration means for the best-performing tested representative
+of each curved-SMBHB class.}
 \begin{ruledtabular}
 \begin{tabular}{@{}lcc@{}}
 Model & $\ln\mathcal{B}$ & Note \\
@@ -173,9 +175,9 @@ Model & $\ln\mathcal{B}$ & Note \\
 SIGW-Gaussian & $4.520\pm0.185$ & $\Delta_\mathrm{pub}=+0.477$ \\
 SIGW-delta & $3.930\pm0.199$ & $\Delta_\mathrm{pub}=+0.146$ \\
 Superstrings & $3.558\pm0.145$ & $\Delta_\mathrm{pub}=-0.271$ \\
-Ecc.-curved SMBHB & $3.839\pm0.043$ & tested repr. \\
-Broken-PL SMBHB & $3.656\pm0.154$ & tested repr. \\
-Env. SMBHB & $3.453\pm0.062$ & tested repr. \\
+Ecc.-curved SMBHB & $3.839\pm0.043$ & best tested repr. \\
+Broken-PL SMBHB & $3.656\pm0.154$ & best tested repr. \\
+Env. SMBHB & $3.453\pm0.062$ & best tested repr. \\
 \end{tabular}
 \end{ruledtabular}
 \end{table}
@@ -194,14 +196,14 @@ Curved-SMBHB controls are not a single-model accident:
 eccentricity-inspired, smooth broken-power-law, and environmental
 turnover parameterizations give five-configuration means
 $3.839\pm0.043$, $3.656\pm0.154$, and $3.453\pm0.062$,
-respectively.  The best curved-SMBHB row lies only $0.681$ nat below
+respectively.  The best curved-SMBHB model lies only $0.681$ nat below
 SIGW-Gaussian and $0.091$ nat below SIGW-delta, and exceeds the
 superstring mean.  The $0.681$-nat gap between the leading
-SIGW-Gaussian row and the best curved-SMBHB control is comparable to the
+SIGW-Gaussian model and the best curved-SMBHB control is comparable to the
 identified calibration and prior-boundary systematics, so it should not
 be interpreted as robust source discrimination.  Independent prior-space
 Sobol thermodynamic integration agrees with the dynesty robust means to
-within $0.12$ nat for the leading cosmological rows and within
+within $0.12$ nat for the leading cosmological templates and within
 $0.063$ nat for the tested curved-SMBHB representatives.
 
 The Supplemental Material gives the full official-density stochastic-model
@@ -211,9 +213,11 @@ leading six stochastic templates are SIGW-Gaussian, SIGW-delta, SIGW-box,
 cosmic superstrings, metastable strings, and domain walls.  Extending the
 SIGW-delta upper prior from $\log_{10}f_\mathrm{peak}\le -5$ to $-3$
 increases its evidence by $0.426$ nat, a modest but non-negligible
-boundary systematic.  Cumulative-bin evidence shows that all rows except
-SIGW-Gaussian are already within $0.5$ nat of their 14-bin values by the
-lowest eight Fourier bins; SIGW-Gaussian requires ten bins.
+boundary systematic.  Cumulative-bin evidence shows that SIGW-delta,
+cosmic superstrings, eccentricity-inspired curvature, and environmental
+turnover are already within $0.5$ nat of their 14-bin values by the
+lowest eight Fourier bins, whereas SIGW-Gaussian and broken-power-law
+curvature require ten bins.
 
 \emph{Interpretation and conclusions.}
 The NANOGrav 15-year data do not yet identify the physical origin of the
@@ -256,9 +260,12 @@ NANOGrav/PTArcade model files from Zenodo DOI
 \href{https://doi.org/10.5281/zenodo.8084351}{10.5281/zenodo.8084351},
 and the official PTArcade \texttt{ceffyl} density product from Zenodo
 DOI \href{https://doi.org/10.5281/zenodo.10495907}
-{10.5281/zenodo.10495907}.  The code-release URL is
-\texttt{https://github.com/duan0004/paperdata}.  Local checksums and reproduction
-commands are recorded in \texttt{REPRODUCIBILITY.md}.
+{10.5281/zenodo.10495907}.  The code and compact data release corresponding
+to this submission is mirrored at
+\href{https://github.com/duan0004/paperdata}
+{\texttt{github.com/duan0004/paperdata}} at commit
+\texttt{4d3972e11a24ffee026a8e2214eb12dd19fbc2ea}.  Local checksums and
+reproduction commands are recorded in \texttt{REPRODUCIBILITY.md}.
 
 \begin{thebibliography}{13}
 

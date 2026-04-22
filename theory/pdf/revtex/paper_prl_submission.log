@@ -365,28 +365,28 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 29.
  (umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 1137) in paragraph at lines 60--70
+Underfull \hbox (badness 1137) in paragraph at lines 59--69
 \TU/lmr/m/n/10 identification. Order-unity shifts in $[] \OMS/cmsy/m/n/10 B$ \T
 U/lmr/m/n/10 can arise
  []
 
 
-Underfull \hbox (badness 1215) in paragraph at lines 60--70
+Underfull \hbox (badness 1215) in paragraph at lines 59--69
 \TU/lmr/m/n/10 quency, or the density estimate used for the free-
  []
 
 
-Underfull \hbox (badness 1789) in paragraph at lines 71--74
+Underfull \hbox (badness 1789) in paragraph at lines 70--73
 \TU/lmr/m/n/10 stochastic background through the one-sided strain
  []
 
 
-Underfull \hbox (badness 7326) in paragraph at lines 96--103
+Underfull \hbox (badness 7326) in paragraph at lines 95--102
 []\TU/lmr/m/it/10 Pipeline validation. \TU/lmr/m/n/10 Direct ingestion of the
  []
 
 
-Underfull \hbox (badness 1072) in paragraph at lines 96--103
+Underfull \hbox (badness 1072) in paragraph at lines 95--102
 \TU/lmr/m/n/10 pre-sampled NANOGrav Hellings–Downs chain gives
  []
 
@@ -395,51 +395,64 @@ le (type pdf)
 <use ../results/T2_NG15yr/figures//prl_decisive_evidence_figure.pdf>
 [1]
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 138.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 139.
 
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 138.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 139.
 
 
 Class revtex4-2 Warning: Deferred float stuck during \clearpage processing.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 153--156
+Underfull \hbox (badness 10000) in paragraph at lines 154--157
 []\TU/lmr/m/n/10 The decisive test uses the official
  []
 
 
-Underfull \hbox (badness 3323) in paragraph at lines 153--156
+Underfull \hbox (badness 3323) in paragraph at lines 154--157
 \TU/lmr/m/n/10 NANOGrav/PTArcade model files and the official
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 159--162
+Underfull \hbox (badness 10000) in paragraph at lines 160--163
 \TU/lmr/m/n/10 This conversion was checked against
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 159--162
+Underfull \hbox (badness 10000) in paragraph at lines 160--163
 \TU/lmtt/m/n/10 ptarcade.models_utils. omega2cross \TU/lmr/m/n/10 to relative
  []
 
 
-Underfull \hbox (badness 1028) in paragraph at lines 207--217
+Underfull \hbox (badness 1028) in paragraph at lines 209--221
 []\TU/lmr/m/n/10 The Supplemental Material gives the full official-
  []
 
+
+Underfull \hbox (badness 1048) in paragraph at lines 209--221
+\TU/lmr/m/n/10 SIGW-delta upper prior from $[][] \OML/cmm/m/it/10 f[] \OMS/cmsy
+/m/n/10 ^^T ^^@\OT1/cmr/m/n/10 5$ \TU/lmr/m/n/10 to
+ []
+
+
+Underfull \hbox (badness 1454) in paragraph at lines 209--221
+\OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 3$ \TU/lmr/m/n/10 increases its evidence by
+ $\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 426$ \TU/lmr/m/n/10 nat, a
+ modest
+ []
+
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 266--267
+Underfull \hbox (badness 10000) in paragraph at lines 273--274
  []\TU/lmr/m/n/9 G. Agazie et al. (NANOGrav Collaboration),
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 269--270
+Underfull \hbox (badness 10000) in paragraph at lines 276--277
  []\TU/lmr/m/n/9 G. Agazie et al. (NANOGrav Collaboration),
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 272--273
+Underfull \hbox (badness 10000) in paragraph at lines 279--280
  []\TU/lmr/m/n/9 A. Afzal et al. (NANOGrav Collaboration),
  []
 
@@ -447,4 +460,4 @@ Underfull \hbox (badness 10000) in paragraph at lines 272--273
 Package rerunfilecheck Info: File `paper_prl_submission.out' has not changed.
 (rerunfilecheck)             Checksum: 03BE00E259C149952C0F847CD2C03B76;900.
  )
-Output written on paper_prl_submission.xdv (3 pages, 123100 bytes).
+Output written on paper_prl_submission.xdv (3 pages, 126576 bytes).
