@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.DS_Store
+.ipynb_checkpoints/
+logs/
+release/
+results/T2_NG15yr/chains*/
+*.partial.json

@@ -1,0 +1,130 @@
+{
+  "task": "T1b.1-followup",
+  "generated": "2026-04-21 08:56:57",
+  "scan": [
+    {
+      "n_bins_used": 4,
+      "eigvals_top5": [
+        1.149730325467072,
+        1.0736664016899027,
+        1.0040765508468674,
+        0.7725267219961578
+      ],
+      "eigval_max": 1.149730325467072,
+      "eigval_min": 0.7725267219961578,
+      "anisotropy_max_over_min": 1.4882725642114298,
+      "MP_noise_upper": 1.0421654574360355,
+      "n_signal_modes_above_1p2_MP": 0,
+      "r_eff_rel_to_n": 0.9804866922234462,
+      "n_strong_offdiag_pairs_abs_corr_ge_0p1": 2,
+      "max_abs_offdiag_corr": 0.14403675115102102,
+      "mean_abs_offdiag_corr": 0.06414927942119901,
+      "n_bins_gaussian": 0
+    },
+    {
+      "n_bins_used": 6,
+      "eigvals_top5": [
+        1.4440377297408145,
+        1.0991016243800584,
+        1.012811366584081,
+        0.9230198038736411,
+        0.8059273883412745
+      ],
+      "eigval_max": 1.4440377297408145,
+      "eigval_min": 0.7151020870801312,
+      "anisotropy_max_over_min": 2.0193448681390884,
+      "MP_noise_upper": 1.051761760190729,
+      "n_signal_modes_above_1p2_MP": 1,
+      "r_eff_rel_to_n": 0.9475811203256358,
+      "n_strong_offdiag_pairs_abs_corr_ge_0p1": 6,
+      "max_abs_offdiag_corr": 0.22710641703790116,
+      "mean_abs_offdiag_corr": 0.07774934321032625,
+      "n_bins_gaussian": 1
+    },
+    {
+      "n_bins_used": 8,
+      "eigvals_top5": [
+        1.4799550318366999,
+        1.1748045025510643,
+        1.0532590292733275,
+        0.9688641692075988,
+        0.9530289600370823
+      ],
+      "eigval_max": 1.4799550318366999,
+      "eigval_min": 0.7128519698365071,
+      "anisotropy_max_over_min": 2.0761042887713814,
+      "MP_noise_upper": 1.0598859841631016,
+      "n_signal_modes_above_1p2_MP": 1,
+      "r_eff_rel_to_n": 0.9513416479939184,
+      "n_strong_offdiag_pairs_abs_corr_ge_0p1": 7,
+      "max_abs_offdiag_corr": 0.22710641703790116,
+      "mean_abs_offdiag_corr": 0.06267440308173629,
+      "n_bins_gaussian": 2
+    },
+    {
+      "n_bins_used": 10,
+      "eigvals_top5": [
+        1.4799640577640636,
+        1.1921675423172822,
+        1.0687168885549931,
+        1.0199957153802375,
+        0.9746028135102026
+      ],
+      "eigval_max": 1.4799640577640636,
+      "eigval_min": 0.7113211933795739,
+      "anisotropy_max_over_min": 2.080584792831173,
+      "MP_noise_upper": 1.067069468670729,
+      "n_signal_modes_above_1p2_MP": 1,
+      "r_eff_rel_to_n": 0.9594301075038011,
+      "n_strong_offdiag_pairs_abs_corr_ge_0p1": 7,
+      "max_abs_offdiag_corr": 0.22710641703790116,
+      "mean_abs_offdiag_corr": 0.045558467634088155,
+      "n_bins_gaussian": 4
+    },
+    {
+      "n_bins_used": 12,
+      "eigvals_top5": [
+        1.4819171710912225,
+        1.2106737637116165,
+        1.0817555285472122,
+        1.0739577754338265,
+        1.0074837231326779
+      ],
+      "eigval_max": 1.4819171710912225,
+      "eigval_min": 0.7079967432185559,
+      "anisotropy_max_over_min": 2.093112977263739,
+      "MP_noise_upper": 1.073584716864124,
+      "n_signal_modes_above_1p2_MP": 1,
+      "r_eff_rel_to_n": 0.9636306011090222,
+      "n_strong_offdiag_pairs_abs_corr_ge_0p1": 7,
+      "max_abs_offdiag_corr": 0.22710641703790116,
+      "mean_abs_offdiag_corr": 0.037762031279215326,
+      "n_bins_gaussian": 6
+    },
+    {
+      "n_bins_used": 14,
+      "eigvals_top5": [
+        1.4826268320166065,
+        1.2132949107906583,
+        1.0843479371167177,
+        1.0795745511334618,
+        1.0171510946811397
+      ],
+      "eigval_max": 1.4826268320166065,
+      "eigval_min": 0.7079251561862135,
+      "anisotropy_max_over_min": 2.0943270896091937,
+      "MP_noise_upper": 1.07959360811418,
+      "n_signal_modes_above_1p2_MP": 1,
+      "r_eff_rel_to_n": 0.9682611657737844,
+      "n_strong_offdiag_pairs_abs_corr_ge_0p1": 7,
+      "max_abs_offdiag_corr": 0.22710641703790116,
+      "mean_abs_offdiag_corr": 0.02991596897891888,
+      "n_bins_gaussian": 8
+    }
+  ],
+  "verdict": {
+    "plan_d_viable_by_lowk_hard": false,
+    "plan_d_viable_by_full_14": false,
+    "plan_d_viable_soft_lambda_max_ge_1p3": true
+  }
+}

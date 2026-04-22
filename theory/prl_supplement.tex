@@ -1,0 +1,336 @@
+\documentclass[aps,prl,superscriptaddress,nofootinbib]{revtex4-2}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{hyperref}
+
+\begin{document}
+
+\title{Supplemental Material for ``Curved SMBHB Spectra Compete with New-Physics Explanations in PTA Source Identification''}
+
+\author{Ran DUAN}
+\email{rduan@chenli.science}
+\affiliation{chenli science}
+\date{\today}
+
+\maketitle
+
+\section*{S1. Data Products and Density Convention}
+
+The analysis uses public NANOGrav 15-year data products
+(arXiv:2306.16213), the NANOGrav 15-year noise analysis
+(arXiv:2306.16214), and the NANOGrav new-physics model-comparison paper
+(arXiv:2306.16219).  Official NANOGrav/PTArcade model files were taken
+from Zenodo DOI 10.5281/zenodo.8084351, and the official PTArcade
+\texttt{ceffyl} density product from Zenodo DOI 10.5281/zenodo.10495907.
+
+PTArcade model files return $h^2\Omega_\mathrm{GW}$.  The residual-density
+conversion used for official templates is
+\begin{equation}
+\rho^2 =
+\frac{(H_0/h)^2 h^2\Omega_\mathrm{GW}}
+{8\pi^4 f^5 T_\mathrm{span}} .
+\end{equation}
+This conversion was checked against \texttt{ptarcade.models\_utils.omega2cross}
+to relative precision below $5\times10^{-16}$.
+
+\section*{S2. Evidence-Ablation Check}
+
+Table~\ref{tab:ablation} isolates the ingredients that close the absolute
+Bayes-factor gap for SIGW-Gaussian.
+
+\begin{table}[h]
+\caption{\label{tab:ablation}SIGW-Gaussian evidence-ablation check.}
+\begin{ruledtabular}
+\begin{tabular}{lccc}
+Template/density & Baseline & $\ln\mathcal{B}$ & Residual \\
+\hline
+local template + local KDE & fixed-$\gamma$ SMBHB & $-1.590\pm0.154$ & $-5.633$ \\
+official template + local KDE & PTArcade BHB prior & $+0.687\pm0.147$ & $-3.356$ \\
+official template + official density & PTArcade BHB prior, seed 42 & $+4.225\pm0.173$ & $+0.182$ \\
+official template + official density & PTArcade BHB prior, 5-config mean & $+4.520\pm0.185$ & $+0.477$ \\
+\end{tabular}
+\end{ruledtabular}
+\end{table}
+
+The ablation shows that replacing the spectrum alone is insufficient.  Matched
+official template, official density, and matched BHB-prior baseline are needed
+for sub-nat absolute-evidence reproduction.
+
+\section*{S3. Official-Density Robustness}
+
+Five dynesty configurations were used: \texttt{nlive=500}, \texttt{dlogz=0.1}
+with seeds 42, 7, and 123; and \texttt{nlive=1000}, \texttt{dlogz=0.05} with
+seeds 42 and 7.
+
+\begin{table}[h]
+\caption{\label{tab:robust}Official-density leading-model robustness.}
+\begin{ruledtabular}
+\begin{tabular}{lcccc}
+Model & mean $\ln\mathcal{B}$ & published & mean residual & max residual \\
+\hline
+SIGW-Gaussian & $+4.520$ & $\ln(57)=+4.043$ & $+0.477$ & $0.694$ \\
+SIGW-delta & $+3.930$ & $\ln(44)=+3.784$ & $+0.146$ & $0.387$ \\
+Cosmic superstrings & $+3.558$ & $\ln(46)=+3.829$ & $-0.271$ & $0.491$ \\
+\end{tabular}
+\end{ruledtabular}
+\end{table}
+
+The main text should describe this as sub-nat reproduction rather than as
+``every run within 0.5 nat,'' because the largest SIGW-Gaussian residual in
+the sweep is $0.694$ nat.
+
+\section*{S4. Priors and Model-Selection Rule}
+
+Table~\ref{tab:priors} lists the priors used for the main official-density
+comparisons.  Frequencies are in Hz.  The official cosmological-template priors
+are those supplied in the public PTArcade/NANOGrav model files.  The curved
+SMBHB controls were specified before running the official-density family sweep,
+and all tested curved-SMBHB variants are reported in Table~\ref{tab:env}.  The
+main Letter reports the best-performing tested representative of each
+curvature class, not a search over unreported curves.
+
+\begin{table}[h]
+\caption{\label{tab:priors}Priors and selection rule for the main evidence rows.}
+\begin{ruledtabular}
+\begin{tabular}{p{0.17\textwidth}p{0.41\textwidth}p{0.28\textwidth}p{0.10\textwidth}}
+Model/class & Parameters and priors & Rationale & Status \\
+\hline
+PTArcade BHB baseline & Gaussian prior on $(\log_{10}A,\gamma)$ with
+$\mu=(-15.615,4.707)$, $C_{11}=0.2787$, $C_{22}=0.1242$,
+$C_{12}=-0.00264$ & matched NG15 PTArcade SMBHB baseline & fixed \\
+SIGW-Gaussian & $\log_{10}f_\mathrm{peak}\sim U[-11,-5]$,
+width $\sim U[0.1,3]$, $\log_{10}A\sim U[-3,1]$ & official PTArcade
+stochastic template & fixed \\
+SIGW-delta & $\log_{10}f_\mathrm{peak}\sim U[-11,-5]$,
+$\log_{10}A\sim U[-3,1]$ & official PTArcade stochastic template;
+upper-bound variants are reported separately & fixed \\
+Cosmic superstrings & $\log_{10}G\mu\sim U[-14,-6]$,
+$\log_{10}P\sim U[-3,0]$ & official PTArcade superstring template & fixed \\
+Environmental turnover & $\log_{10}A\sim U[-18,-11]$,
+$\log_{10}f_\mathrm{bend}\sim U[-9.8,-7.0]$,
+$\kappa\sim U[0.5,8]$, $\gamma=13/3$; variants change $\gamma$ or bend
+range as listed in Table~\ref{tab:env} & SMBHB environmental-hardening
+control motivated by arXiv:1211.5375 and arXiv:1505.07179 & fixed \\
+Broken power law & $\log_{10}A\sim U[-18,-11]$,
+$\log_{10}f_\mathrm{bend}\sim U[-10.0,-6.8]$,
+$\delta\sim U[0,6]$, $\kappa\sim U[0.5,8]$, $\gamma=13/3$ &
+phenomenological low-frequency suppression surrogate & fixed \\
+Eccentricity-inspired & $\log_{10}A\sim U[-18,-11]$,
+$\log_{10}f_e\sim U[-10.0,-6.8]$, $\beta\sim U[0,3]$,
+$\gamma=13/3$ & phenomenological eccentricity-inspired suppression
+surrogate & fixed \\
+\end{tabular}
+\end{ruledtabular}
+\end{table}
+
+\section*{S5. Curved SMBHB Control Family}
+
+The curved-SMBHB controls were evaluated on the same official PTArcade
+\texttt{ceffyl} density and against the same PTArcade BHB-prior baseline.  The
+environmental-turnover row is the astrophysical control; the broken-power-law
+and eccentricity-inspired rows are phenomenological low-frequency suppression
+controls, not population-synthesis source claims.
+
+\begin{table}[h]
+\caption{\label{tab:env}Curved-SMBHB control evidence on the official-density scale.
+The last column is the residual of the family-specific QMC/TI mean relative to
+the five-configuration dynesty mean; entries with ``--'' were not included in
+the family QMC/TI subset.}
+\begin{ruledtabular}
+\begin{tabular}{lcccc}
+Model & class & mean $\ln\mathcal{B}$ & sample std & family TI residual \\
+\hline
+eccentricity-inspired & ecc. & $+3.839$ & $0.043$ & $+0.056$ \\
+broken power law & BPL & $+3.656$ & $0.154$ & $+0.063$ \\
+env. fixed $\gamma=13/3$ & env. & $+3.453$ & $0.062$ & $+0.017$ \\
+env. free $\gamma$ & env. & $+3.360$ & $0.202$ & -- \\
+env. broad bend & env. & $+2.992$ & $0.142$ & -- \\
+env. low bend & env. & $+2.666$ & $0.103$ & -- \\
+\end{tabular}
+\end{ruledtabular}
+\end{table}
+
+We asked whether at least two distinct curvature parameterizations overlap the
+leading cosmological evidence tier within one nat.  Three distinct classes
+pass: environmental turnover, smooth broken-power-law curvature, and
+eccentricity-inspired suppression.
+
+\section*{S6. Official Stochastic-Model Ranking}
+
+Only official PTArcade files defining \texttt{spectrum(f, ...)} were evaluated.
+PBH and ULDM files exposing \texttt{signal(toas, ...)} were skipped by design.
+
+\begin{table}[h]
+\caption{\label{tab:rank}Single-configuration official-density stochastic-model ranking.}
+\begin{ruledtabular}
+\begin{tabular}{lcc}
+Model & dim & $\ln\mathcal{B}$ vs BHB prior \\
+\hline
+\texttt{sigw\_gauss} & 3 & $+4.616\pm0.174$ \\
+\texttt{sigw\_delta} & 2 & $+4.098\pm0.171$ \\
+\texttt{sigw\_box} & 3 & $+3.830\pm0.182$ \\
+\texttt{super} & 2 & $+3.739\pm0.170$ \\
+\texttt{meta\_ls} & 2 & $+3.677\pm0.181$ \\
+\texttt{dw\_sm} & 4 & $+3.625\pm0.183$ \\
+\texttt{meta\_l} & 2 & $+3.014\pm0.186$ \\
+\texttt{pt\_bubble} & 6 & $+2.906\pm0.188$ \\
+\texttt{igw} & 3 & $+2.881\pm0.188$ \\
+\texttt{pt\_sound} & 6 & $+2.238\pm0.192$ \\
+\texttt{dw\_ds} & 4 & $+0.474\pm0.192$ \\
+\texttt{stable\_m} & 1 & $-1.394\pm0.159$ \\
+\texttt{stable\_k} & 1 & $-1.477\pm0.158$ \\
+\texttt{stable\_n} & 1 & $-1.572\pm0.158$ \\
+\texttt{stable\_c} & 1 & $-1.608\pm0.157$ \\
+\end{tabular}
+\end{ruledtabular}
+\end{table}
+
+\section*{S7. SIGW-Delta Prior-Boundary Sensitivity}
+
+\begin{table}[h]
+\caption{\label{tab:prior}SIGW-delta peak-frequency prior-boundary scan.}
+\begin{ruledtabular}
+\begin{tabular}{lccc}
+Prior & $\ln\mathcal{B}$ & $\Delta\ln\mathcal{B}$ & best-fit $\log_{10} f_\mathrm{peak}$ \\
+\hline
+$\log_{10}f_\mathrm{peak}\le -5$ & $+4.098\pm0.171$ & $+0.000$ & $-5.110$ \\
+$\log_{10}f_\mathrm{peak}\le -4$ & $+4.300\pm0.171$ & $+0.203$ & $-4.148$ \\
+$\log_{10}f_\mathrm{peak}\le -3$ & $+4.524\pm0.169$ & $+0.426$ & $-4.107$ \\
+\end{tabular}
+\end{ruledtabular}
+\end{table}
+
+The prior-boundary sensitivity is modest but should be disclosed because the
+original SIGW-delta posterior is known to sit near the upper peak-frequency
+prior boundary.
+
+\section*{S8. CAR Covariance Null Calibration}
+
+\begin{table}[h]
+\caption{\label{tab:car}Covariance null-calibration statistics.}
+\begin{ruledtabular}
+\begin{tabular}{lcc}
+Statistic & observed & null $p$-value \\
+\hline
+max abs off-diagonal correlation & $0.227106$ & $0.00019996$ \\
+mean abs off-diagonal correlation & $0.029916$ & $0.00019996$ \\
+largest eigenvalue & $1.482627$ & $0.00019996$ \\
+entropy effective rank & $13.781766$ & $0.00019996$ \\
+participation effective rank & $13.555656$ & $0.00019996$ \\
+signal modes above 1.2 MP edge & $1$ & $0.00019996$ \\
+\end{tabular}
+\end{ruledtabular}
+\end{table}
+
+The leading covariance mode is real against the independent-Gaussian null, but
+the overall rank remains close to the full 14-bin rank.  This supports treating
+bin covariance as a subdominant correction for the leading comparisons.
+
+\section*{S9. Chain Convergence and Failed-Chain Handling}
+
+\begin{table}[h]
+\caption{\label{tab:rhat}Hellings--Downs chain diagnostics.}
+\begin{ruledtabular}
+\begin{tabular}{lc}
+Diagnostic & value \\
+\hline
+warm-chain $\log_{10}A$ & $-14.199\pm0.122$ \\
+warm-chain $\gamma$ & $3.272\pm0.321$ \\
+cold-chain $\log_{10}A$ & $-14.251\pm0.168$ \\
+cold-chain $\gamma$ & $3.401\pm0.418$ \\
+two-chain $\hat R(\log_{10}A)$ & $1.047$ \\
+two-chain $\hat R(\gamma)$ & $1.047$ \\
+\end{tabular}
+\end{ruledtabular}
+\end{table}
+
+The hot-chain attempt is excluded from convergence diagnostics because it had
+zero accepted jumps and remained at non-finite posterior metadata.
+
+\section*{S10. Evidence Cross-Check}
+
+The four main non-baseline evidence rows were cross-checked independently of
+dynesty by evaluating the official-density likelihood on Sobol points in the
+prior hypercube.  For each model we computed both the direct estimator
+$\log Z=\log E_\mathrm{prior}[L]$ and the power-posterior thermodynamic
+integration estimator
+\begin{equation}
+\log Z=\int_0^1 \langle \log L\rangle_\beta\,d\beta .
+\end{equation}
+The run used 16384 Sobol points per scramble, five independent scrambles, and
+81 $\beta$ values.
+
+\begin{table}[h]
+\caption{\label{tab:tiqmc}Sobol-QMC thermodynamic-integration cross-check.
+Rows marked ``main'' use the five-scramble main cross-check.  Rows marked
+``family'' use the three-scramble curved-SMBHB family cross-check from
+Table~\ref{tab:env}.}
+\begin{ruledtabular}
+\begin{tabular}{lcccc}
+Model & subset & QMC direct $\ln\mathcal{B}$ & QMC TI $\ln\mathcal{B}$ & TI residual \\
+\hline
+SIGW-Gaussian & main & $+4.638\pm0.078$ & $+4.637\pm0.078$ & $+0.117$ \\
+SIGW-delta & main & $+3.993\pm0.065$ & $+3.992\pm0.065$ & $+0.063$ \\
+Cosmic superstrings & main & $+3.599\pm0.053$ & $+3.598\pm0.053$ & $+0.040$ \\
+Env. SMBHB, fixed $\gamma$ & main & $+3.519\pm0.082$ & $+3.517\pm0.082$ & $+0.064$ \\
+Ecc.-curved SMBHB & family & $+3.896\pm0.080$ & $+3.894\pm0.080$ & $+0.056$ \\
+Broken-PL SMBHB & family & $+3.721\pm0.103$ & $+3.719\pm0.103$ & $+0.063$ \\
+Env. SMBHB, fixed $\gamma$ & family & $+3.472\pm0.067$ & $+3.470\pm0.067$ & $+0.017$ \\
+\end{tabular}
+\end{ruledtabular}
+\end{table}
+
+The residuals are relative to the corresponding five-configuration dynesty
+means used in the main Letter.  The two environmental rows are intentionally
+separate: the main row belongs to the five-scramble cross-check, while the
+family row belongs to the three-scramble family cross-check used for the
+curved-SMBHB comparison.
+
+\section*{S11. Cumulative Low-Frequency-Bin Driver}
+
+The cumulative-bin scan uses the official PTArcade \texttt{ceffyl} density
+with $N_\mathrm{bins}=4,6,8,10,12,14$ and the same PTArcade BHB-prior
+baseline.  It quantifies how many low-frequency Fourier bins are needed to
+approach the 14-bin source ranking.
+
+\begin{table}[h]
+\caption{\label{tab:bins}Cumulative-bin evidence saturation.  The cumulative-bin
+scan uses the representative single configuration also used in
+Table~\ref{tab:rank}; therefore the 14-bin values need not equal the
+five-configuration means in the main Letter.}
+\begin{ruledtabular}
+\begin{tabular}{lccc}
+Model & $\ln\mathcal{B}_{14}$ & first $N$ within 0.5 nat & $\Delta\ln\mathcal{B}_{6\to14}$ \\
+\hline
+SIGW-Gaussian & $+4.616$ & $10$ & $+2.052$ \\
+SIGW-delta & $+4.098$ & $8$ & $+1.751$ \\
+eccentricity-inspired curvature & $+3.981$ & $8$ & $+1.735$ \\
+environmental turnover & $+3.814$ & $8$ & $+1.775$ \\
+cosmic superstrings & $+3.739$ & $8$ & $+1.274$ \\
+broken-power-law curvature & $+3.670$ & $10$ & $+1.469$ \\
+\end{tabular}
+\end{ruledtabular}
+\end{table}
+
+The lowest eight to ten Fourier bins therefore carry the source-ranking
+information for these stochastic spectral templates.  This is a diagnostic of
+the released free-spectrum likelihood, not a completeness statement for
+time-domain PBH or ULDM signal classes.
+
+\section*{S12. Minimal Local Verification Commands}
+
+Run from the project root:
+\begin{verbatim}
+python3 code/gwb_templates.py
+python3 -m py_compile code/prl_*.py
+python3 code/prl_decisive_evidence_figure.py
+python3 code/prl_evidence_ti_qmc_crosscheck.py
+python3 code/prl_package_static_gate.py
+\end{verbatim}
+
+The package static gate writes
+\nolinkurl{results/T2_NG15yr/prl_package_static_gate.json} and
+\nolinkurl{results/T2_NG15yr/prl_package_static_gate.md}.
+
+\end{document}

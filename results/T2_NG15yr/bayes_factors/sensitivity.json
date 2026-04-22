@@ -1,0 +1,273 @@
+{
+  "sweep_timestamp": "2026-04-19 07:52 \u2192 08:55",
+  "source_log": "./logs/sensitivity_20260419_075253.log",
+  "note": "Salvaged from log; original script crashed at summary-save.",
+  "N_BINS": 14,
+  "N_configurations": 10,
+  "results": {
+    "bw=scott": {
+      "smbhb": {
+        "lnZ": -20.162,
+        "lnZerr": 0.099,
+        "runtime_s": 195.0
+      },
+      "cs_stable": {
+        "lnZ": -48.433,
+        "lnZerr": 0.11,
+        "runtime_s": 128.3
+      },
+      "sigw_gauss": {
+        "lnZ": -21.752,
+        "lnZerr": 0.118,
+        "runtime_s": 130.9
+      }
+    },
+    "bw=silverman": {
+      "smbhb": {
+        "lnZ": -20.265,
+        "lnZerr": 0.099,
+        "runtime_s": 93.0
+      },
+      "cs_stable": {
+        "lnZ": -48.389,
+        "lnZerr": 0.108,
+        "runtime_s": 84.1
+      },
+      "sigw_gauss": {
+        "lnZ": -21.936,
+        "lnZerr": 0.118,
+        "runtime_s": 138.4
+      }
+    },
+    "bw=0.5*scott": {
+      "smbhb": {
+        "lnZ": -20.035,
+        "lnZerr": 0.1,
+        "runtime_s": 75.7
+      },
+      "cs_stable": {
+        "lnZ": -48.13,
+        "lnZerr": 0.119,
+        "runtime_s": 122.7
+      },
+      "sigw_gauss": {
+        "lnZ": -20.253,
+        "lnZerr": 0.126,
+        "runtime_s": 130.7
+      }
+    },
+    "bw=2.0*scott": {
+      "smbhb": {
+        "lnZ": -22.398,
+        "lnZerr": 0.095,
+        "runtime_s": 83.2
+      },
+      "cs_stable": {
+        "lnZ": -47.907,
+        "lnZerr": 0.1,
+        "runtime_s": 79.3
+      },
+      "sigw_gauss": {
+        "lnZ": -23.746,
+        "lnZerr": 0.106,
+        "runtime_s": 125.9
+      }
+    },
+    "nlive=500,seed=42": {
+      "smbhb": {
+        "lnZ": -20.162,
+        "lnZerr": 0.099,
+        "runtime_s": 87.2
+      },
+      "cs_stable": {
+        "lnZ": -48.433,
+        "lnZerr": 0.11,
+        "runtime_s": 96.6
+      },
+      "sigw_gauss": {
+        "lnZ": -21.752,
+        "lnZerr": 0.118,
+        "runtime_s": 136.7
+      }
+    },
+    "nlive=500,seed=7": {
+      "smbhb": {
+        "lnZ": -20.275,
+        "lnZerr": 0.1,
+        "runtime_s": 85.9
+      },
+      "cs_stable": {
+        "lnZ": -48.323,
+        "lnZerr": 0.109,
+        "runtime_s": 93.3
+      },
+      "sigw_gauss": {
+        "lnZ": -21.744,
+        "lnZerr": 0.117,
+        "runtime_s": 140.4
+      }
+    },
+    "nlive=500,seed=123": {
+      "smbhb": {
+        "lnZ": -20.251,
+        "lnZerr": 0.1,
+        "runtime_s": 102.6
+      },
+      "cs_stable": {
+        "lnZ": -48.267,
+        "lnZerr": 0.108,
+        "runtime_s": 93.1
+      },
+      "sigw_gauss": {
+        "lnZ": -21.726,
+        "lnZerr": 0.117,
+        "runtime_s": 141.4
+      }
+    },
+    "nlive=1000,seed=42": {
+      "smbhb": {
+        "lnZ": -20.197,
+        "lnZerr": 0.072,
+        "runtime_s": 190.0
+      },
+      "cs_stable": {
+        "lnZ": -48.374,
+        "lnZerr": 0.079,
+        "runtime_s": 203.0
+      },
+      "sigw_gauss": {
+        "lnZ": -21.676,
+        "lnZerr": 0.086,
+        "runtime_s": 281.1
+      }
+    },
+    "nlive=1000,seed=7": {
+      "smbhb": {
+        "lnZ": -20.261,
+        "lnZerr": 0.073,
+        "runtime_s": 164.7
+      },
+      "cs_stable": {
+        "lnZ": -48.318,
+        "lnZerr": 0.079,
+        "runtime_s": 182.6
+      },
+      "sigw_gauss": {
+        "lnZ": -21.644,
+        "lnZerr": 0.085,
+        "runtime_s": 266.9
+      }
+    },
+    "nlive=1000,seed=123": {
+      "smbhb": {
+        "lnZ": -20.155,
+        "lnZerr": 0.072,
+        "runtime_s": 169.1
+      },
+      "cs_stable": {
+        "lnZ": -48.257,
+        "lnZerr": 0.078,
+        "runtime_s": 189.3
+      },
+      "sigw_gauss": {
+        "lnZ": -21.63,
+        "lnZerr": 0.085,
+        "runtime_s": 271.4
+      }
+    }
+  },
+  "spread_lnZ_absolute": {
+    "smbhb": {
+      "lnZ_min": -22.398,
+      "lnZ_max": -20.035,
+      "lnZ_range": 2.3629999999999995,
+      "lnZ_median": -20.224
+    },
+    "cs_stable": {
+      "lnZ_min": -48.433,
+      "lnZ_max": -47.907,
+      "lnZ_range": 0.5260000000000034,
+      "lnZ_median": -48.320499999999996
+    },
+    "sigw_gauss": {
+      "lnZ_min": -23.746,
+      "lnZ_max": -20.253,
+      "lnZ_range": 3.4929999999999986,
+      "lnZ_median": -21.735
+    }
+  },
+  "spread_dlnZ_vs_smbhb": {
+    "cs_stable": {
+      "dlnZ_min": -28.271,
+      "dlnZ_max": -25.508999999999997,
+      "dlnZ_range": 2.762000000000004,
+      "dlnZ_median": -28.0985
+    },
+    "sigw_gauss": {
+      "dlnZ_min": -1.6709999999999994,
+      "dlnZ_max": -0.21799999999999997,
+      "dlnZ_range": 1.4529999999999994,
+      "dlnZ_median": -1.4749999999999979
+    }
+  },
+  "sub_sweep_breakdown": {
+    "bandwidth_only": {
+      "smbhb": {
+        "min": -22.398,
+        "max": -20.035,
+        "range": 2.3629999999999995
+      },
+      "cs_stable": {
+        "min": -28.271,
+        "max": -25.508999999999997,
+        "range": 2.762000000000004
+      },
+      "sigw_gauss": {
+        "min": -1.6709999999999994,
+        "max": -0.21799999999999997,
+        "range": 1.4529999999999994
+      }
+    },
+    "nlive_seed_only": {
+      "smbhb": {
+        "min": -20.275,
+        "max": -20.155,
+        "range": 0.11999999999999744
+      },
+      "cs_stable": {
+        "min": -28.271,
+        "max": -28.016000000000002,
+        "range": 0.254999999999999
+      },
+      "sigw_gauss": {
+        "min": -1.5899999999999999,
+        "max": -1.3829999999999991,
+        "range": 0.20700000000000074
+      }
+    },
+    "bandwidth_only_dlnZ": {
+      "cs_stable": {
+        "min": -28.271,
+        "max": -25.508999999999997,
+        "range": 2.762000000000004
+      },
+      "sigw_gauss": {
+        "min": -1.6709999999999994,
+        "max": -0.21799999999999997,
+        "range": 1.4529999999999994
+      }
+    },
+    "nlive_seed_only_dlnZ": {
+      "cs_stable": {
+        "min": -28.271,
+        "max": -28.016000000000002,
+        "range": 0.254999999999999
+      },
+      "sigw_gauss": {
+        "min": -1.5899999999999999,
+        "max": -1.3829999999999991,
+        "range": 0.20700000000000074
+      }
+    }
+  }
+}

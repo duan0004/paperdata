@@ -1,0 +1,1488 @@
+{
+  "generated": "2026-04-21 18:02:42",
+  "complete": true,
+  "task": "PRL H9 cumulative low-frequency-bin evidence driver",
+  "source": {
+    "ptarcade_package_version": "1.1.5",
+    "ceffyl_datadir": "./data/NG15yr/PTArcade_ceffyl_0.2.0/ng15_30f_fs{hd}_ceffyl",
+    "model_root": "./data/NG15yr/PTArcade_models_1.0.0/models_1.0.0"
+  },
+  "method": {
+    "n_bins_list": [
+      4,
+      6,
+      8,
+      10,
+      12,
+      14
+    ],
+    "nlive": 500,
+    "dlogz": 0.1,
+    "seed": 20260421,
+    "baseline": "baseline_smbhb_ptarcade_bhb_prior",
+    "scope": "cumulative first-N Fourier-bin scan on official PTArcade ceffyl density"
+  },
+  "dimension_checks": {
+    "official_templates": "handled by ptarcade.models_utils.omega2cross with ceffyl=True",
+    "astrophysical_curvature": "multipliers depend only on frequency ratios and are dimensionless",
+    "low_frequency_limit": "curvature controls suppress or preserve residual power for non-negative shape parameters"
+  },
+  "results_by_n": {
+    "4": {
+      "baseline_smbhb_ptarcade_bhb_prior": {
+        "model": "baseline_smbhb_ptarcade_bhb_prior",
+        "N_bins": 4,
+        "dim": 2,
+        "parameter_names": [
+          "gw_bhb_0",
+          "gw_bhb_1"
+        ],
+        "ceffyl_param_names": [
+          "gw_bhb_0",
+          "gw_bhb_1"
+        ],
+        "model_path": null,
+        "lnZ": -29.000029866622935,
+        "lnZerr": 0.10414539431615308,
+        "niter": 4123,
+        "runtime_s": 2.866227865219116,
+        "bestfit": [
+          -14.388581632935871,
+          3.665570137080386
+        ],
+        "bestfit_loglike": -23.065615984713517
+      },
+      "sigw_gauss": {
+        "model": "sigw_gauss",
+        "N_bins": 4,
+        "dim": 3,
+        "parameter_names": [
+          "log10_fpeak",
+          "width",
+          "log10_A"
+        ],
+        "ceffyl_param_names": [
+          "log10_fpeak",
+          "width",
+          "log10_A"
+        ],
+        "model_path": "./data/NG15yr/PTArcade_models_1.0.0/models_1.0.0/sigw_gauss.py",
+        "lnZ": -27.184119592158122,
+        "lnZerr": 0.10841065284496466,
+        "niter": 3534,
+        "runtime_s": 15.882789134979248,
+        "bestfit": [
+          -7.582454734311978,
+          0.13871837546741136,
+          -1.726416467476561
+        ],
+        "bestfit_loglike": -22.429710764940562
+      },
+      "sigw_delta": {
+        "model": "sigw_delta",
+        "N_bins": 4,
+        "dim": 2,
+        "parameter_names": [
+          "log10_f_peak",
+          "log10_A"
+        ],
+        "ceffyl_param_names": [
+          "log10_f_peak",
+          "log10_A"
+        ],
+        "model_path": "./data/NG15yr/PTArcade_models_1.0.0/models_1.0.0/sigw_delta.py",
+        "lnZ": -27.158443132801175,
+        "lnZerr": 0.1039968160103836,
+        "niter": 3124,
+        "runtime_s": 12.11209487915039,
+        "bestfit": [
+          -5.086512738359771,
+          -0.07554730365524298
+        ],
+        "bestfit_loglike": -22.881346197516958
+      },
+      "super": {
+        "model": "super",
+        "N_bins": 4,
+        "dim": 2,
+        "parameter_names": [
+          "log10_Gmu",
+          "log10_P"
+        ],
+        "ceffyl_param_names": [
+          "log10_Gmu",
+          "log10_P"
+        ],
+        "model_path": "./data/NG15yr/PTArcade_models_1.0.0/models_1.0.0/super.py",
+        "lnZ": -27.092994728879923,
+        "lnZerr": 0.10196443085837878,
+        "niter": 3154,
+        "runtime_s": 9.069089889526367,
+        "bestfit": [
+          -12.092327264477333,
+          -2.9028408432942334
+        ],
+        "bestfit_loglike": -22.953971940125935
+      },
+      "ecc_supp_fixed_gamma": {
+        "model": "ecc_supp_fixed_gamma",
+        "N_bins": 4,
+        "dim": 3,
+        "parameter_names": [
+          "log10_A",
+          "log10_fe",
+          "beta"
+        ],
+        "ceffyl_param_names": [
+          "log10_A",
+          "log10_fe",
+          "beta"
+        ],
+        "model_path": null,
+        "lnZ": -27.48437830656445,
+        "lnZerr": 0.11009860243959212,
+        "niter": 3743,
+        "runtime_s": 13.829916000366211,
+        "bestfit": [
+          -14.559959976562567,
+          -8.667125776570341,
+          2.431001923520269
+        ],
+        "bestfit_loglike": -22.29313454517175
+      },
+      "broken_pl_fixed_gamma": {
+        "model": "broken_pl_fixed_gamma",
+        "N_bins": 4,
+        "dim": 4,
+        "parameter_names": [
+          "log10_A",
+          "log10_fbend",
+          "delta",
+          "kappa"
+        ],
+        "ceffyl_param_names": [
+          "log10_A",
+          "log10_fbend",
+          "delta",
+          "kappa"
+        ],
+        "model_path": null,
+        "lnZ": -27.49212216886015,
+        "lnZerr": 0.11099108137885362,
+        "niter": 3857,
+        "runtime_s": 18.43229913711548,
+        "bestfit": [
+          -14.592611206506716,
+          -8.532618429053855,
+          4.54851916580744,
+          7.291508530080702
+        ],
+        "bestfit_loglike": -22.041579107952725
+      },
+      "env_fixed_gamma": {
+        "model": "env_fixed_gamma",
+        "N_bins": 4,
+        "dim": 3,
+        "parameter_names": [
+          "log10_A",
+          "log10_fbend",
+          "kappa"
+        ],
+        "ceffyl_param_names": [
+          "log10_A",
+          "log10_fbend",
+          "kappa"
+        ],
+        "model_path": null,
+        "lnZ": -27.559541538728833,
+        "lnZerr": 0.11151943672642413,
+        "niter": 3917,
+        "runtime_s": 14.656598806381226,
+        "bestfit": [
+          -14.589394556969582,
+          -8.586320207904093,
+          5.655239941371756
+        ],
+        "bestfit_loglike": -22.01417235905953
+      }
+    },
+    "6": {
+      "baseline_smbhb_ptarcade_bhb_prior": {
+        "model": "baseline_smbhb_ptarcade_bhb_prior",
+        "N_bins": 6,
+        "dim": 2,
+        "parameter_names": [
+          "gw_bhb_0",
+          "gw_bhb_1"
+        ],
+        "ceffyl_param_names": [
+          "gw_bhb_0",
+          "gw_bhb_1"
+        ],
+        "model_path": null,
+        "lnZ": -44.88585105177087,
+        "lnZerr": 0.1098588348102279,
+        "niter": 4564,
+        "runtime_s": 3.6775920391082764,
+        "bestfit": [
+          -14.3181702617463,
+          3.4899254435718046
+        ],
+        "bestfit_loglike": -38.06599160369223
+      },
+      "sigw_gauss": {
+        "model": "sigw_gauss",
+        "N_bins": 6,
+        "dim": 3,
+        "parameter_names": [
+          "log10_fpeak",
+          "width",
+          "log10_A"
+        ],
+        "ceffyl_param_names": [
+          "log10_fpeak",
+          "width",
+          "log10_A"
+        ],
+        "model_path": "./data/NG15yr/PTArcade_models_1.0.0/models_1.0.0/sigw_gauss.py",
+        "lnZ": -42.321280373231424,
+        "lnZerr": 0.11139928269419906,
+        "niter": 3639,
+        "runtime_s": 16.3440842628479,
+        "bestfit": [
+          -7.23357554141785,
+          0.5049798718684261,
+          -1.1253244360862453
+        ],
+        "bestfit_loglike": -37.36871647144497
+      },
+      "sigw_delta": {
+        "model": "sigw_delta",
+        "N_bins": 6,
+        "dim": 2,
+        "parameter_names": [
+          "log10_f_peak",
+          "log10_A"
+        ],
+        "ceffyl_param_names": [
+          "log10_f_peak",
+          "log10_A"
+        ],
+        "model_path": "./data/NG15yr/PTArcade_models_1.0.0/models_1.0.0/sigw_delta.py",
+        "lnZ": -42.53908811440583,
+        "lnZerr": 0.10675005301175897,
+        "niter": 3246,
+        "runtime_s": 9.596260070800781,
+        "bestfit": [
+          -5.008675775711943,
+          0.03368541284997617
+        ],
+        "bestfit_loglike": -38.040487368209895
+      },
+      "super": {
+        "model": "super",
+        "N_bins": 6,
+        "dim": 2,
+        "parameter_names": [
+          "log10_Gmu",
+          "log10_P"
+        ],
+        "ceffyl_param_names": [
+          "log10_Gmu",
+          "log10_P"
+        ],
+        "model_path": "./data/NG15yr/PTArcade_models_1.0.0/models_1.0.0/super.py",
+        "lnZ": -42.421060901290765,
+        "lnZerr": 0.10343702578913017,
+        "niter": 3295,
+        "runtime_s": 13.785016775131226,
+        "bestfit": [
+          -12.097376982069482,
+          -2.9836947271936376
+        ],
+        "bestfit_loglike": -38.12682682291703
+      },
+      "ecc_supp_fixed_gamma": {
+        "model": "ecc_supp_fixed_gamma",
+        "N_bins": 6,
+        "dim": 3,
+        "parameter_names": [
+          "log10_A",
+          "log10_fe",
+          "beta"
+        ],
+        "ceffyl_param_names": [
+          "log10_A",
+          "log10_fe",
+          "beta"
+        ],
+        "model_path": null,
+        "lnZ": -42.639414800679994,
+        "lnZerr": 0.1116383379824751,
+        "niter": 3788,
+        "runtime_s": 13.511465072631836,
+        "bestfit": [
+          -14.472829589423062,
+          -8.664495015300897,
+          2.8395571878683685
+        ],
+        "bestfit_loglike": -37.36517069765824
+      },
+      "broken_pl_fixed_gamma": {
+        "model": "broken_pl_fixed_gamma",
+        "N_bins": 6,
+        "dim": 4,
+        "parameter_names": [
+          "log10_A",
+          "log10_fbend",
+          "delta",
+          "kappa"
+        ],
+        "ceffyl_param_names": [
+          "log10_A",
+          "log10_fbend",
+          "delta",
+          "kappa"
+        ],
+        "model_path": null,
+        "lnZ": -42.685040849797545,
+        "lnZerr": 0.11237513740684073,
+        "niter": 3810,
+        "runtime_s": 14.551027774810791,
+        "bestfit": [
+          -14.293616710086992,
+          -8.653834216851987,
+          3.9015358354542027,
+          0.9476586126867415
+        ],
+        "bestfit_loglike": -37.34583240634309
+      },
+      "env_fixed_gamma": {
+        "model": "env_fixed_gamma",
+        "N_bins": 6,
+        "dim": 3,
+        "parameter_names": [
+          "log10_A",
+          "log10_fbend",
+          "kappa"
+        ],
+        "ceffyl_param_names": [
+          "log10_A",
+          "log10_fbend",
+          "kappa"
+        ],
+        "model_path": null,
+        "lnZ": -42.84729714554689,
+        "lnZerr": 0.1141813039327514,
+        "niter": 3887,
+        "runtime_s": 11.219867944717407,
+        "bestfit": [
+          -14.511741972181323,
+          -8.47623325166422,
+          3.7641822561497817
+        ],
+        "bestfit_loglike": -37.381340696804166
+      }
+    },
+    "8": {
+      "baseline_smbhb_ptarcade_bhb_prior": {
+        "model": "baseline_smbhb_ptarcade_bhb_prior",
+        "N_bins": 8,
+        "dim": 2,
+        "parameter_names": [
+          "gw_bhb_0",
+          "gw_bhb_1"
+        ],
+        "ceffyl_param_names": [
+          "gw_bhb_0",
+          "gw_bhb_1"
+        ],
+        "model_path": null,
+        "lnZ": -62.62318596800543,
+        "lnZerr": 0.12224985174384342,
+        "niter": 5995,
+        "runtime_s": 3.598551034927368,
+        "bestfit": [
+          -14.143542078636417,
+          3.1582787640044176
+        ],
+        "bestfit_loglike": -52.922672776765076
+      },
+      "sigw_gauss": {
+        "model": "sigw_gauss",
+        "N_bins": 8,
+        "dim": 3,
+        "parameter_names": [
+          "log10_fpeak",
+          "width",
+          "log10_A"
+        ],
+        "ceffyl_param_names": [
+          "log10_fpeak",
+          "width",
+          "log10_A"
+        ],
+        "model_path": "./data/NG15yr/PTArcade_models_1.0.0/models_1.0.0/sigw_gauss.py",
+        "lnZ": -57.32224347940699,
+        "lnZerr": 0.11780392034560962,
+        "niter": 3933,
+        "runtime_s": 13.566890001296997,
+        "bestfit": [
+          -5.7504879427093805,
+          0.6313785442833705,
+          0.7029767881886575
+        ],
+        "bestfit_loglike": -51.78576955410814
+      },
+      "sigw_delta": {
+        "model": "sigw_delta",
+        "N_bins": 8,
+        "dim": 2,
+        "parameter_names": [
+          "log10_f_peak",
+          "log10_A"
+        ],
+        "ceffyl_param_names": [
+          "log10_f_peak",
+          "log10_A"
+        ],
+        "model_path": "./data/NG15yr/PTArcade_models_1.0.0/models_1.0.0/sigw_delta.py",
+        "lnZ": -58.75561009023383,
+        "lnZerr": 0.10973854221568788,
+        "niter": 3430,
+        "runtime_s": 8.83450198173523,
+        "bestfit": [
+          -5.036179104354643,
+          0.03192703716390932
+        ],
+        "bestfit_loglike": -53.900276222258526
+      },
+      "super": {
+        "model": "super",
+        "N_bins": 8,
+        "dim": 2,
+        "parameter_names": [
+          "log10_Gmu",
+          "log10_P"
+        ],
+        "ceffyl_param_names": [
+          "log10_Gmu",
+          "log10_P"
+        ],
+        "model_path": "./data/NG15yr/PTArcade_models_1.0.0/models_1.0.0/super.py",
+        "lnZ": -59.06479024792546,
+        "lnZerr": 0.10832322356391713,
+        "niter": 3542,
+        "runtime_s": 9.060574293136597,
+        "bestfit": [
+          -12.100598722918795,
+          -2.9988822925696685
+        ],
+        "bestfit_loglike": -54.295071180974084
+      },
+      "ecc_supp_fixed_gamma": {
+        "model": "ecc_supp_fixed_gamma",
+        "N_bins": 8,
+        "dim": 3,
+        "parameter_names": [
+          "log10_A",
+          "log10_fe",
+          "beta"
+        ],
+        "ceffyl_param_names": [
+          "log10_A",
+          "log10_fe",
+          "beta"
+        ],
+        "model_path": null,
+        "lnZ": -58.233119961557236,
+        "lnZerr": 0.12114930116470644,
+        "niter": 4335,
+        "runtime_s": 11.714435815811157,
+        "bestfit": [
+          -13.604115977870713,
+          -7.141792135886703,
+          0.8688333369034351
+        ],
+        "bestfit_loglike": -51.86283973021959
+      },
+      "broken_pl_fixed_gamma": {
+        "model": "broken_pl_fixed_gamma",
+        "N_bins": 8,
+        "dim": 4,
+        "parameter_names": [
+          "log10_A",
+          "log10_fbend",
+          "delta",
+          "kappa"
+        ],
+        "ceffyl_param_names": [
+          "log10_A",
+          "log10_fbend",
+          "delta",
+          "kappa"
+        ],
+        "model_path": null,
+        "lnZ": -58.26624682280179,
+        "lnZerr": 0.12320537563291371,
+        "niter": 4336,
+        "runtime_s": 15.77705192565918,
+        "bestfit": [
+          -13.916531384631666,
+          -7.494008533264569,
+          1.7242687798886016,
+          6.004263958043675
+        ],
+        "bestfit_loglike": -51.87731105721667
+      },
+      "env_fixed_gamma": {
+        "model": "env_fixed_gamma",
+        "N_bins": 8,
+        "dim": 3,
+        "parameter_names": [
+          "log10_A",
+          "log10_fbend",
+          "kappa"
+        ],
+        "ceffyl_param_names": [
+          "log10_A",
+          "log10_fbend",
+          "kappa"
+        ],
+        "model_path": null,
+        "lnZ": -58.53530106546597,
+        "lnZerr": 0.1248389642072717,
+        "niter": 4426,
+        "runtime_s": 14.226383924484253,
+        "bestfit": [
+          -13.79803977864196,
+          -7.4156220489219145,
+          1.8243715209046165
+        ],
+        "bestfit_loglike": -51.9905578306724
+      }
+    },
+    "10": {
+      "baseline_smbhb_ptarcade_bhb_prior": {
+        "model": "baseline_smbhb_ptarcade_bhb_prior",
+        "N_bins": 10,
+        "dim": 2,
+        "parameter_names": [
+          "gw_bhb_0",
+          "gw_bhb_1"
+        ],
+        "ceffyl_param_names": [
+          "gw_bhb_0",
+          "gw_bhb_1"
+        ],
+        "model_path": null,
+        "lnZ": -79.63784034960337,
+        "lnZerr": 0.12060388390933564,
+        "niter": 5844,
+        "runtime_s": 4.177091836929321,
+        "bestfit": [
+          -14.202223550823689,
+          3.2551934580714814
+        ],
+        "bestfit_loglike": -70.24131766486497
+      },
+      "sigw_gauss": {
+        "model": "sigw_gauss",
+        "N_bins": 10,
+        "dim": 3,
+        "parameter_names": [
+          "log10_fpeak",
+          "width",
+          "log10_A"
+        ],
+        "ceffyl_param_names": [
+          "log10_fpeak",
+          "width",
+          "log10_A"
+        ],
+        "model_path": "./data/NG15yr/PTArcade_models_1.0.0/models_1.0.0/sigw_gauss.py",
+        "lnZ": -74.77837142415844,
+        "lnZerr": 0.11594521108016592,
+        "niter": 3816,
+        "runtime_s": 14.5126211643219,
+        "bestfit": [
+          -5.8677122205115655,
+          0.524726505043105,
+          0.5556763030533762
+        ],
+        "bestfit_loglike": -69.48453877993033
+      },
+      "sigw_delta": {
+        "model": "sigw_delta",
+        "N_bins": 10,
+        "dim": 2,
+        "parameter_names": [
+          "log10_f_peak",
+          "log10_A"
+        ],
+        "ceffyl_param_names": [
+          "log10_f_peak",
+          "log10_A"
+        ],
+        "model_path": "./data/NG15yr/PTArcade_models_1.0.0/models_1.0.0/sigw_delta.py",
+        "lnZ": -75.79141203034985,
+        "lnZerr": 0.10900978320114148,
+        "niter": 3386,
+        "runtime_s": 8.846250057220459,
+        "bestfit": [
+          -5.07809522849406,
+          -0.00405830549140429
+        ],
+        "bestfit_loglike": -71.03085861362325
+      },
+      "super": {
+        "model": "super",
+        "N_bins": 10,
+        "dim": 2,
+        "parameter_names": [
+          "log10_Gmu",
+          "log10_P"
+        ],
+        "ceffyl_param_names": [
+          "log10_Gmu",
+          "log10_P"
+        ],
+        "model_path": "./data/NG15yr/PTArcade_models_1.0.0/models_1.0.0/super.py",
+        "lnZ": -76.04305716661771,
+        "lnZerr": 0.10805645245537088,
+        "niter": 3520,
+        "runtime_s": 8.553499937057495,
+        "bestfit": [
+          -12.091949093411433,
+          -2.978236391065695
+        ],
+        "bestfit_loglike": -71.33763433386396
+      },
+      "ecc_supp_fixed_gamma": {
+        "model": "ecc_supp_fixed_gamma",
+        "N_bins": 10,
+        "dim": 3,
+        "parameter_names": [
+          "log10_A",
+          "log10_fe",
+          "beta"
+        ],
+        "ceffyl_param_names": [
+          "log10_A",
+          "log10_fe",
+          "beta"
+        ],
+        "model_path": null,
+        "lnZ": -75.70286003125786,
+        "lnZerr": 0.12234038082443395,
+        "niter": 4230,
+        "runtime_s": 11.1424720287323,
+        "bestfit": [
+          -13.651775524892123,
+          -6.917125929647334,
+          0.7030008584772978
+        ],
+        "bestfit_loglike": -69.55619242509492
+      },
+      "broken_pl_fixed_gamma": {
+        "model": "broken_pl_fixed_gamma",
+        "N_bins": 10,
+        "dim": 4,
+        "parameter_names": [
+          "log10_A",
+          "log10_fbend",
+          "delta",
+          "kappa"
+        ],
+        "ceffyl_param_names": [
+          "log10_A",
+          "log10_fbend",
+          "delta",
+          "kappa"
+        ],
+        "model_path": null,
+        "lnZ": -75.73982753482726,
+        "lnZerr": 0.1224645151471931,
+        "niter": 4265,
+        "runtime_s": 13.297199249267578,
+        "bestfit": [
+          -13.798055037637667,
+          -8.313658535127193,
+          3.21356883159437,
+          0.5877245581688779
+        ],
+        "bestfit_loglike": -69.50307220658571
+      },
+      "env_fixed_gamma": {
+        "model": "env_fixed_gamma",
+        "N_bins": 10,
+        "dim": 3,
+        "parameter_names": [
+          "log10_A",
+          "log10_fbend",
+          "kappa"
+        ],
+        "ceffyl_param_names": [
+          "log10_A",
+          "log10_fbend",
+          "kappa"
+        ],
+        "model_path": null,
+        "lnZ": -75.93808771944357,
+        "lnZerr": 0.12397871181510975,
+        "niter": 4344,
+        "runtime_s": 10.852185010910034,
+        "bestfit": [
+          -13.726257723626574,
+          -7.044106563739013,
+          1.4244828462204429
+        ],
+        "bestfit_loglike": -69.56678014851887
+      }
+    },
+    "12": {
+      "baseline_smbhb_ptarcade_bhb_prior": {
+        "model": "baseline_smbhb_ptarcade_bhb_prior",
+        "N_bins": 12,
+        "dim": 2,
+        "parameter_names": [
+          "gw_bhb_0",
+          "gw_bhb_1"
+        ],
+        "ceffyl_param_names": [
+          "gw_bhb_0",
+          "gw_bhb_1"
+        ],
+        "model_path": null,
+        "lnZ": -96.36355606160768,
+        "lnZerr": 0.13297541080291786,
+        "niter": 6299,
+        "runtime_s": 3.6804111003875732,
+        "bestfit": [
+          -14.165924065050465,
+          3.2782506728008087
+        ],
+        "bestfit_loglike": -86.06122956864262
+      },
+      "sigw_gauss": {
+        "model": "sigw_gauss",
+        "N_bins": 12,
+        "dim": 3,
+        "parameter_names": [
+          "log10_fpeak",
+          "width",
+          "log10_A"
+        ],
+        "ceffyl_param_names": [
+          "log10_fpeak",
+          "width",
+          "log10_A"
+        ],
+        "model_path": "./data/NG15yr/PTArcade_models_1.0.0/models_1.0.0/sigw_gauss.py",
+        "lnZ": -90.36809314933468,
+        "lnZerr": 0.1180200871300472,
+        "niter": 3871,
+        "runtime_s": 11.915786981582642,
+        "bestfit": [
+          -5.917088570258945,
+          0.3997119116011735,
+          0.47408685618916735
+        ],
+        "bestfit_loglike": -84.96134108018282
+      },
+      "sigw_delta": {
+        "model": "sigw_delta",
+        "N_bins": 12,
+        "dim": 2,
+        "parameter_names": [
+          "log10_f_peak",
+          "log10_A"
+        ],
+        "ceffyl_param_names": [
+          "log10_f_peak",
+          "log10_A"
+        ],
+        "model_path": "./data/NG15yr/PTArcade_models_1.0.0/models_1.0.0/sigw_delta.py",
+        "lnZ": -91.81877206011931,
+        "lnZerr": 0.11154370837241351,
+        "niter": 3517,
+        "runtime_s": 7.517900705337524,
+        "bestfit": [
+          -5.071488787633546,
+          0.0032659885419246137
+        ],
+        "bestfit_loglike": -86.80115561068372
+      },
+      "super": {
+        "model": "super",
+        "N_bins": 12,
+        "dim": 2,
+        "parameter_names": [
+          "log10_Gmu",
+          "log10_P"
+        ],
+        "ceffyl_param_names": [
+          "log10_Gmu",
+          "log10_P"
+        ],
+        "model_path": "./data/NG15yr/PTArcade_models_1.0.0/models_1.0.0/super.py",
+        "lnZ": -92.37882347134024,
+        "lnZerr": 0.11078123492135529,
+        "niter": 3639,
+        "runtime_s": 7.73331093788147,
+        "bestfit": [
+          -12.04126541032287,
+          -2.9931863510135206
+        ],
+        "bestfit_loglike": -87.4371635654753
+      },
+      "ecc_supp_fixed_gamma": {
+        "model": "ecc_supp_fixed_gamma",
+        "N_bins": 12,
+        "dim": 3,
+        "parameter_names": [
+          "log10_A",
+          "log10_fe",
+          "beta"
+        ],
+        "ceffyl_param_names": [
+          "log10_A",
+          "log10_fe",
+          "beta"
+        ],
+        "model_path": null,
+        "lnZ": -91.37812240250057,
+        "lnZerr": 0.12404904749860612,
+        "niter": 4331,
+        "runtime_s": 11.161673069000244,
+        "bestfit": [
+          -13.381390776899604,
+          -6.858287669596227,
+          0.854875243751944
+        ],
+        "bestfit_loglike": -85.02738647169858
+      },
+      "broken_pl_fixed_gamma": {
+        "model": "broken_pl_fixed_gamma",
+        "N_bins": 12,
+        "dim": 4,
+        "parameter_names": [
+          "log10_A",
+          "log10_fbend",
+          "delta",
+          "kappa"
+        ],
+        "ceffyl_param_names": [
+          "log10_A",
+          "log10_fbend",
+          "delta",
+          "kappa"
+        ],
+        "model_path": null,
+        "lnZ": -91.62894634616657,
+        "lnZerr": 0.12829336374669034,
+        "niter": 4439,
+        "runtime_s": 13.896146297454834,
+        "bestfit": [
+          -13.85280638552453,
+          -7.410360075424478,
+          1.7031169710476528,
+          4.337478047851004
+        ],
+        "bestfit_loglike": -85.04876267568996
+      },
+      "env_fixed_gamma": {
+        "model": "env_fixed_gamma",
+        "N_bins": 12,
+        "dim": 3,
+        "parameter_names": [
+          "log10_A",
+          "log10_fbend",
+          "kappa"
+        ],
+        "ceffyl_param_names": [
+          "log10_A",
+          "log10_fbend",
+          "kappa"
+        ],
+        "model_path": null,
+        "lnZ": -91.72777156447218,
+        "lnZerr": 0.1269901607336946,
+        "niter": 4502,
+        "runtime_s": 11.376734972000122,
+        "bestfit": [
+          -14.098748228961425,
+          -7.763026498033784,
+          1.827399243371392
+        ],
+        "bestfit_loglike": -85.0372840349252
+      }
+    },
+    "14": {
+      "baseline_smbhb_ptarcade_bhb_prior": {
+        "model": "baseline_smbhb_ptarcade_bhb_prior",
+        "N_bins": 14,
+        "dim": 2,
+        "parameter_names": [
+          "gw_bhb_0",
+          "gw_bhb_1"
+        ],
+        "ceffyl_param_names": [
+          "gw_bhb_0",
+          "gw_bhb_1"
+        ],
+        "model_path": null,
+        "lnZ": -113.6820303284704,
+        "lnZerr": 0.1303451781905476,
+        "niter": 5756,
+        "runtime_s": 3.2923500537872314,
+        "bestfit": [
+          -14.120410702546065,
+          3.1894272852447325
+        ],
+        "bestfit_loglike": -104.4733027906281
+      },
+      "sigw_gauss": {
+        "model": "sigw_gauss",
+        "N_bins": 14,
+        "dim": 3,
+        "parameter_names": [
+          "log10_fpeak",
+          "width",
+          "log10_A"
+        ],
+        "ceffyl_param_names": [
+          "log10_fpeak",
+          "width",
+          "log10_A"
+        ],
+        "model_path": "./data/NG15yr/PTArcade_models_1.0.0/models_1.0.0/sigw_gauss.py",
+        "lnZ": -109.06580416750802,
+        "lnZerr": 0.11515789450923926,
+        "niter": 3965,
+        "runtime_s": 13.061105728149414,
+        "bestfit": [
+          -7.220625459065192,
+          0.2941223454970969,
+          -1.1261613481645298
+        ],
+        "bestfit_loglike": -103.46397669573761
+      },
+      "sigw_delta": {
+        "model": "sigw_delta",
+        "N_bins": 14,
+        "dim": 2,
+        "parameter_names": [
+          "log10_f_peak",
+          "log10_A"
+        ],
+        "ceffyl_param_names": [
+          "log10_f_peak",
+          "log10_A"
+        ],
+        "model_path": "./data/NG15yr/PTArcade_models_1.0.0/models_1.0.0/sigw_delta.py",
+        "lnZ": -109.58441650540533,
+        "lnZerr": 0.10995457513388092,
+        "niter": 3414,
+        "runtime_s": 7.8774189949035645,
+        "bestfit": [
+          -5.109932388995126,
+          -0.030234585539879788
+        ],
+        "bestfit_loglike": -104.77533086955953
+      },
+      "super": {
+        "model": "super",
+        "N_bins": 14,
+        "dim": 2,
+        "parameter_names": [
+          "log10_Gmu",
+          "log10_P"
+        ],
+        "ceffyl_param_names": [
+          "log10_Gmu",
+          "log10_P"
+        ],
+        "model_path": "./data/NG15yr/PTArcade_models_1.0.0/models_1.0.0/super.py",
+        "lnZ": -109.94295819759732,
+        "lnZerr": 0.10945829417983344,
+        "niter": 3581,
+        "runtime_s": 8.027952909469604,
+        "bestfit": [
+          -12.095052774550743,
+          -2.9888953814552504
+        ],
+        "bestfit_loglike": -105.11615408787095
+      },
+      "ecc_supp_fixed_gamma": {
+        "model": "ecc_supp_fixed_gamma",
+        "N_bins": 14,
+        "dim": 3,
+        "parameter_names": [
+          "log10_A",
+          "log10_fe",
+          "beta"
+        ],
+        "ceffyl_param_names": [
+          "log10_A",
+          "log10_fe",
+          "beta"
+        ],
+        "model_path": null,
+        "lnZ": -109.70092388582725,
+        "lnZerr": 0.12203059063810925,
+        "niter": 4222,
+        "runtime_s": 11.86837100982666,
+        "bestfit": [
+          -14.20419407409683,
+          -7.895350124138608,
+          0.9344744776277452
+        ],
+        "bestfit_loglike": -103.57093061052201
+      },
+      "broken_pl_fixed_gamma": {
+        "model": "broken_pl_fixed_gamma",
+        "N_bins": 14,
+        "dim": 4,
+        "parameter_names": [
+          "log10_A",
+          "log10_fbend",
+          "delta",
+          "kappa"
+        ],
+        "ceffyl_param_names": [
+          "log10_A",
+          "log10_fbend",
+          "delta",
+          "kappa"
+        ],
+        "model_path": null,
+        "lnZ": -110.01244241846928,
+        "lnZerr": 0.12313567051469022,
+        "niter": 4454,
+        "runtime_s": 16.000757932662964,
+        "bestfit": [
+          -14.264972848141156,
+          -7.877407999349131,
+          1.6718637341244547,
+          6.965346022211787
+        ],
+        "bestfit_loglike": -103.39251044320841
+      },
+      "env_fixed_gamma": {
+        "model": "env_fixed_gamma",
+        "N_bins": 14,
+        "dim": 3,
+        "parameter_names": [
+          "log10_A",
+          "log10_fbend",
+          "kappa"
+        ],
+        "ceffyl_param_names": [
+          "log10_A",
+          "log10_fbend",
+          "kappa"
+        ],
+        "model_path": null,
+        "lnZ": -109.86814782067475,
+        "lnZerr": 0.12320621708792542,
+        "niter": 4321,
+        "runtime_s": 12.36142373085022,
+        "bestfit": [
+          -14.138147212059216,
+          -7.813957443833466,
+          1.848396628934965
+        ],
+        "bestfit_loglike": -103.54141587728938
+      }
+    }
+  },
+  "rows": [
+    {
+      "N_bins": 4,
+      "model": "sigw_gauss",
+      "group": "cosmology",
+      "lnB": 1.8159102744648123,
+      "lnB_err": 0.15033007951683672,
+      "lnZ": -27.184119592158122,
+      "lnZerr": 0.10841065284496466
+    },
+    {
+      "N_bins": 4,
+      "model": "sigw_delta",
+      "group": "cosmology",
+      "lnB": 1.8415867338217602,
+      "lnB_err": 0.14717880587083382,
+      "lnZ": -27.158443132801175,
+      "lnZerr": 0.1039968160103836
+    },
+    {
+      "N_bins": 4,
+      "model": "super",
+      "group": "cosmology",
+      "lnB": 1.9070351377430121,
+      "lnB_err": 0.1457498141252335,
+      "lnZ": -27.092994728879923,
+      "lnZerr": 0.10196443085837878
+    },
+    {
+      "N_bins": 4,
+      "model": "ecc_supp_fixed_gamma",
+      "group": "astrophysical curvature",
+      "lnB": 1.5156515600584832,
+      "lnB_err": 0.15155185718564576,
+      "lnZ": -27.48437830656445,
+      "lnZerr": 0.11009860243959212
+    },
+    {
+      "N_bins": 4,
+      "model": "broken_pl_fixed_gamma",
+      "group": "astrophysical curvature",
+      "lnB": 1.5079076977627857,
+      "lnB_err": 0.15220145631009685,
+      "lnZ": -27.49212216886015,
+      "lnZerr": 0.11099108137885362
+    },
+    {
+      "N_bins": 4,
+      "model": "env_fixed_gamma",
+      "group": "astrophysical curvature",
+      "lnB": 1.4404883278941014,
+      "lnB_err": 0.1525871813916422,
+      "lnZ": -27.559541538728833,
+      "lnZerr": 0.11151943672642413
+    },
+    {
+      "N_bins": 6,
+      "model": "sigw_gauss",
+      "group": "cosmology",
+      "lnB": 2.5645706785394466,
+      "lnB_err": 0.1564569070723406,
+      "lnZ": -42.321280373231424,
+      "lnZerr": 0.11139928269419906
+    },
+    {
+      "N_bins": 6,
+      "model": "sigw_delta",
+      "group": "cosmology",
+      "lnB": 2.3467629373650425,
+      "lnB_err": 0.15318138726318642,
+      "lnZ": -42.53908811440583,
+      "lnZerr": 0.10675005301175897
+    },
+    {
+      "N_bins": 6,
+      "model": "super",
+      "group": "cosmology",
+      "lnB": 2.4647901504801055,
+      "lnB_err": 0.15089129163063758,
+      "lnZ": -42.421060901290765,
+      "lnZerr": 0.10343702578913017
+    },
+    {
+      "N_bins": 6,
+      "model": "ecc_supp_fixed_gamma",
+      "group": "astrophysical curvature",
+      "lnB": 2.246436251090877,
+      "lnB_err": 0.15662720738540378,
+      "lnZ": -42.639414800679994,
+      "lnZerr": 0.1116383379824751
+    },
+    {
+      "N_bins": 6,
+      "model": "broken_pl_fixed_gamma",
+      "group": "astrophysical curvature",
+      "lnB": 2.2008102019733258,
+      "lnB_err": 0.15715322170756563,
+      "lnZ": -42.685040849797545,
+      "lnZerr": 0.11237513740684073
+    },
+    {
+      "N_bins": 6,
+      "model": "env_fixed_gamma",
+      "group": "astrophysical curvature",
+      "lnB": 2.0385539062239815,
+      "lnB_err": 0.15844978306594268,
+      "lnZ": -42.84729714554689,
+      "lnZerr": 0.1141813039327514
+    },
+    {
+      "N_bins": 8,
+      "model": "sigw_gauss",
+      "group": "cosmology",
+      "lnB": 5.300942488598437,
+      "lnB_err": 0.16977275959407162,
+      "lnZ": -57.32224347940699,
+      "lnZerr": 0.11780392034560962
+    },
+    {
+      "N_bins": 8,
+      "model": "sigw_delta",
+      "group": "cosmology",
+      "lnB": 3.8675758777716,
+      "lnB_err": 0.1642789514789281,
+      "lnZ": -58.75561009023383,
+      "lnZerr": 0.10973854221568788
+    },
+    {
+      "N_bins": 8,
+      "model": "super",
+      "group": "cosmology",
+      "lnB": 3.5583957200799716,
+      "lnB_err": 0.16333691259072478,
+      "lnZ": -59.06479024792546,
+      "lnZerr": 0.10832322356391713
+    },
+    {
+      "N_bins": 8,
+      "model": "ecc_supp_fixed_gamma",
+      "group": "astrophysical curvature",
+      "lnB": 4.390066006448194,
+      "lnB_err": 0.17211095091274245,
+      "lnZ": -58.233119961557236,
+      "lnZerr": 0.12114930116470644
+    },
+    {
+      "N_bins": 8,
+      "model": "broken_pl_fixed_gamma",
+      "group": "astrophysical curvature",
+      "lnB": 4.35693914520364,
+      "lnB_err": 0.17356437087213222,
+      "lnZ": -58.26624682280179,
+      "lnZerr": 0.12320537563291371
+    },
+    {
+      "N_bins": 8,
+      "model": "env_fixed_gamma",
+      "group": "astrophysical curvature",
+      "lnB": 4.087884902539457,
+      "lnB_err": 0.17472776893137554,
+      "lnZ": -58.53530106546597,
+      "lnZerr": 0.1248389642072717
+    },
+    {
+      "N_bins": 10,
+      "model": "sigw_gauss",
+      "group": "cosmology",
+      "lnB": 4.859468925444929,
+      "lnB_err": 0.16729790430976935,
+      "lnZ": -74.77837142415844,
+      "lnZerr": 0.11594521108016592
+    },
+    {
+      "N_bins": 10,
+      "model": "sigw_delta",
+      "group": "cosmology",
+      "lnB": 3.846428319253519,
+      "lnB_err": 0.16256823074505172,
+      "lnZ": -75.79141203034985,
+      "lnZerr": 0.10900978320114148
+    },
+    {
+      "N_bins": 10,
+      "model": "super",
+      "group": "cosmology",
+      "lnB": 3.594783182985651,
+      "lnB_err": 0.16193052130854252,
+      "lnZ": -76.04305716661771,
+      "lnZerr": 0.10805645245537088
+    },
+    {
+      "N_bins": 10,
+      "model": "ecc_supp_fixed_gamma",
+      "group": "astrophysical curvature",
+      "lnB": 3.9349803183455094,
+      "lnB_err": 0.17179192528836748,
+      "lnZ": -75.70286003125786,
+      "lnZerr": 0.12234038082443395
+    },
+    {
+      "N_bins": 10,
+      "model": "broken_pl_fixed_gamma",
+      "group": "astrophysical curvature",
+      "lnB": 3.8980128147761093,
+      "lnB_err": 0.1718803487436932,
+      "lnZ": -75.73982753482726,
+      "lnZerr": 0.1224645151471931
+    },
+    {
+      "N_bins": 10,
+      "model": "env_fixed_gamma",
+      "group": "astrophysical curvature",
+      "lnB": 3.699752630159793,
+      "lnB_err": 0.1729624751133914,
+      "lnZ": -75.93808771944357,
+      "lnZerr": 0.12397871181510975
+    },
+    {
+      "N_bins": 12,
+      "model": "sigw_gauss",
+      "group": "cosmology",
+      "lnB": 5.995462912272998,
+      "lnB_err": 0.17779539039128292,
+      "lnZ": -90.36809314933468,
+      "lnZerr": 0.1180200871300472
+    },
+    {
+      "N_bins": 12,
+      "model": "sigw_delta",
+      "group": "cosmology",
+      "lnB": 4.544784001488367,
+      "lnB_err": 0.1735639903772519,
+      "lnZ": -91.81877206011931,
+      "lnZerr": 0.11154370837241351
+    },
+    {
+      "N_bins": 12,
+      "model": "super",
+      "group": "cosmology",
+      "lnB": 3.9847325902674413,
+      "lnB_err": 0.1730749603175031,
+      "lnZ": -92.37882347134024,
+      "lnZerr": 0.11078123492135529
+    },
+    {
+      "N_bins": 12,
+      "model": "ecc_supp_fixed_gamma",
+      "group": "astrophysical curvature",
+      "lnB": 4.985433659107116,
+      "lnB_err": 0.18185330919044668,
+      "lnZ": -91.37812240250057,
+      "lnZerr": 0.12404904749860612
+    },
+    {
+      "N_bins": 12,
+      "model": "broken_pl_fixed_gamma",
+      "group": "astrophysical curvature",
+      "lnB": 4.73460971544111,
+      "lnB_err": 0.18477458445263883,
+      "lnZ": -91.62894634616657,
+      "lnZerr": 0.12829336374669034
+    },
+    {
+      "N_bins": 12,
+      "model": "env_fixed_gamma",
+      "group": "astrophysical curvature",
+      "lnB": 4.635784497135504,
+      "lnB_err": 0.18387213166049485,
+      "lnZ": -91.72777156447218,
+      "lnZerr": 0.1269901607336946
+    },
+    {
+      "N_bins": 14,
+      "model": "sigw_gauss",
+      "group": "cosmology",
+      "lnB": 4.616226160962384,
+      "lnB_err": 0.1739287386987173,
+      "lnZ": -109.06580416750802,
+      "lnZerr": 0.11515789450923926
+    },
+    {
+      "N_bins": 14,
+      "model": "sigw_delta",
+      "group": "cosmology",
+      "lnB": 4.097613823065075,
+      "lnB_err": 0.17052822074483118,
+      "lnZ": -109.58441650540533,
+      "lnZerr": 0.10995457513388092
+    },
+    {
+      "N_bins": 14,
+      "model": "super",
+      "group": "cosmology",
+      "lnB": 3.739072130873083,
+      "lnB_err": 0.1702086473781064,
+      "lnZ": -109.94295819759732,
+      "lnZerr": 0.10945829417983344
+    },
+    {
+      "N_bins": 14,
+      "model": "ecc_supp_fixed_gamma",
+      "group": "astrophysical curvature",
+      "lnB": 3.981106442643153,
+      "lnB_err": 0.1785534388607831,
+      "lnZ": -109.70092388582725,
+      "lnZerr": 0.12203059063810925
+    },
+    {
+      "N_bins": 14,
+      "model": "broken_pl_fixed_gamma",
+      "group": "astrophysical curvature",
+      "lnB": 3.669587910001127,
+      "lnB_err": 0.17931050953758387,
+      "lnZ": -110.01244241846928,
+      "lnZerr": 0.12313567051469022
+    },
+    {
+      "N_bins": 14,
+      "model": "env_fixed_gamma",
+      "group": "astrophysical curvature",
+      "lnB": 3.813882507795654,
+      "lnB_err": 0.1793589624374612,
+      "lnZ": -109.86814782067475,
+      "lnZerr": 0.12320621708792542
+    }
+  ],
+  "summary_by_model": {
+    "sigw_gauss": {
+      "group": "cosmology",
+      "lnB_final_N14": 4.616226160962384,
+      "first_N_within_1nat_of_N14": 8,
+      "first_N_within_0p5nat_of_N14": 10,
+      "delta_lnB_N4_to_N14": 2.8003158864975717,
+      "delta_lnB_N6_to_N14": 2.0516554824229374,
+      "delta_lnB_N8_to_N14": -0.6847163276360533,
+      "max_abs_step": 2.7363718100589907
+    },
+    "sigw_delta": {
+      "group": "cosmology",
+      "lnB_final_N14": 4.097613823065075,
+      "first_N_within_1nat_of_N14": 8,
+      "first_N_within_0p5nat_of_N14": 8,
+      "delta_lnB_N4_to_N14": 2.2560270892433145,
+      "delta_lnB_N6_to_N14": 1.7508508857000322,
+      "delta_lnB_N8_to_N14": 0.23003794529347488,
+      "max_abs_step": 1.5208129404065573
+    },
+    "super": {
+      "group": "cosmology",
+      "lnB_final_N14": 3.739072130873083,
+      "first_N_within_1nat_of_N14": 8,
+      "first_N_within_0p5nat_of_N14": 8,
+      "delta_lnB_N4_to_N14": 1.832036993130071,
+      "delta_lnB_N6_to_N14": 1.2742819803929777,
+      "delta_lnB_N8_to_N14": 0.18067641079311159,
+      "max_abs_step": 1.093605569599866
+    },
+    "ecc_supp_fixed_gamma": {
+      "group": "astrophysical curvature",
+      "lnB_final_N14": 3.981106442643153,
+      "first_N_within_1nat_of_N14": 8,
+      "first_N_within_0p5nat_of_N14": 8,
+      "delta_lnB_N4_to_N14": 2.4654548825846696,
+      "delta_lnB_N6_to_N14": 1.7346701915522758,
+      "delta_lnB_N8_to_N14": -0.40895956380504117,
+      "max_abs_step": 2.143629755357317
+    },
+    "broken_pl_fixed_gamma": {
+      "group": "astrophysical curvature",
+      "lnB_final_N14": 3.669587910001127,
+      "first_N_within_1nat_of_N14": 8,
+      "first_N_within_0p5nat_of_N14": 10,
+      "delta_lnB_N4_to_N14": 2.161680212238341,
+      "delta_lnB_N6_to_N14": 1.468777708027801,
+      "delta_lnB_N8_to_N14": -0.6873512352025131,
+      "max_abs_step": 2.156128943230314
+    },
+    "env_fixed_gamma": {
+      "group": "astrophysical curvature",
+      "lnB_final_N14": 3.813882507795654,
+      "first_N_within_1nat_of_N14": 8,
+      "first_N_within_0p5nat_of_N14": 8,
+      "delta_lnB_N4_to_N14": 2.3733941799015525,
+      "delta_lnB_N6_to_N14": 1.7753286015716725,
+      "delta_lnB_N8_to_N14": -0.2740023947438033,
+      "max_abs_step": 2.0493309963154758
+    }
+  }
+}

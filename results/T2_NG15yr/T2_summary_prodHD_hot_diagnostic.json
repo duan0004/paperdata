@@ -1,0 +1,36 @@
+{
+  "timestamp": "2026-04-21 09:15:29",
+  "chain": "results/T2_NG15yr/chains_production_HD_hot/chain_1.txt",
+  "rows": 42001,
+  "cols": 140,
+  "param_count": 136,
+  "mtime_age_s": 19,
+  "verdict": "FAIL_STUCK_ZERO_ACCEPTANCE",
+  "reason": "Hot-init third chain is stuck at initial GWB coordinates with sampler metadata showing -inf posterior/likelihood and zero acceptance; do not use for convergence diagnostics.",
+  "log10_A_gw": {
+    "idx": 135,
+    "first": -13.434457251379317,
+    "last": -13.434457251379317,
+    "unique_recent_1000_rounded_1e10": 1,
+    "post_median": -13.434457251379317,
+    "post_std": 0.0,
+    "p16": -13.434457251379317,
+    "p84": -13.434457251379317
+  },
+  "gamma_gw": {
+    "idx": 134,
+    "first": 1.8359844423959393,
+    "last": 1.8359844423959393,
+    "unique_recent_1000_rounded_1e10": 1,
+    "post_median": 1.8359844423959393,
+    "post_std": 4.440892098500626e-16,
+    "p16": 1.8359844423959393,
+    "p84": 1.8359844423959393
+  },
+  "metadata_last_row": [
+    -Infinity,
+    -Infinity,
+    0.0,
+    1.0
+  ]
+}

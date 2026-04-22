@@ -1,0 +1,300 @@
+{
+  "hd_14f_pl_vg": {
+    "file": "hd_14f_pl_vg.core",
+    "chain_shape": [
+      7814,
+      141
+    ],
+    "n_params": 141,
+    "burn": 1953,
+    "n_samples_post_burn": 5861,
+    "metadata_keys": [
+      "burn"
+    ],
+    "first_10_params": [
+      "B1855+09_red_noise_gamma",
+      "B1855+09_red_noise_log10_A",
+      "B1937+21_red_noise_gamma",
+      "B1937+21_red_noise_log10_A",
+      "B1953+29_red_noise_gamma",
+      "B1953+29_red_noise_log10_A",
+      "J0023+0923_red_noise_gamma",
+      "J0023+0923_red_noise_log10_A",
+      "J0030+0451_red_noise_gamma",
+      "J0030+0451_red_noise_log10_A"
+    ],
+    "gwb_params_found": [
+      "gw__log10_A",
+      "gw__gamma"
+    ],
+    "log10_A": {
+      "median": -14.198686384772618,
+      "p16": -14.333459933781329,
+      "p84": -14.068703738634746,
+      "mean": -14.201651522817496,
+      "std": 0.1334277267695753
+    },
+    "log10_A_median": -14.198686384772618,
+    "log10_A_p16": -14.333459933781329,
+    "log10_A_p84": -14.068703738634746,
+    "gamma": {
+      "median": 3.2492489270361093,
+      "p16": 2.900692334473659,
+      "p84": 3.608739696473147,
+      "mean": 3.2515082165835265,
+      "std": 0.3500533058537509
+    },
+    "gamma_median": 3.2492489270361093,
+    "gamma_p16": 2.900692334473659,
+    "gamma_p84": 3.608739696473147
+  },
+  "curn_14f_pl_vg": {
+    "file": "curn_14f_pl_vg.core",
+    "chain_shape": [
+      42417,
+      141
+    ],
+    "n_params": 141,
+    "burn": 10604,
+    "n_samples_post_burn": 31813,
+    "metadata_keys": [
+      "burn",
+      "chainpath",
+      "label"
+    ],
+    "first_10_params": [
+      "B1855+09_red_noise_gamma",
+      "B1855+09_red_noise_log10_A",
+      "B1937+21_red_noise_gamma",
+      "B1937+21_red_noise_log10_A",
+      "B1953+29_red_noise_gamma",
+      "B1953+29_red_noise_log10_A",
+      "J0023+0923_red_noise_gamma",
+      "J0023+0923_red_noise_log10_A",
+      "J0030+0451_red_noise_gamma",
+      "J0030+0451_red_noise_log10_A"
+    ],
+    "gwb_params_found": [
+      "gw_log10_A",
+      "gw_gamma"
+    ],
+    "log10_A": {
+      "median": -14.17450245682483,
+      "p16": -14.30284969905993,
+      "p84": -14.054743170649754,
+      "mean": -14.17788013799431,
+      "std": 0.12552895885538284
+    },
+    "log10_A_median": -14.17450245682483,
+    "log10_A_p16": -14.30284969905993,
+    "log10_A_p84": -14.054743170649754,
+    "gamma": {
+      "median": 3.353361143831962,
+      "p16": 3.023706990557943,
+      "p84": 3.675938799596146,
+      "mean": 3.3495418698697605,
+      "std": 0.33206753670749795
+    },
+    "gamma_median": 3.353361143831962,
+    "gamma_p16": 3.023706990557943,
+    "gamma_p84": 3.675938799596146
+  },
+  "hd_30f_fs": {
+    "file": "hd_30f_fs.core",
+    "chain_shape": [
+      12250,
+      168
+    ],
+    "n_params": 168,
+    "burn": 3062,
+    "n_samples_post_burn": 9188,
+    "metadata_keys": [
+      "burn"
+    ],
+    "first_10_params": [
+      "B1855+09_red_noise_gamma",
+      "B1855+09_red_noise_log10_A",
+      "B1937+21_red_noise_gamma",
+      "B1937+21_red_noise_log10_A",
+      "B1953+29_red_noise_gamma",
+      "B1953+29_red_noise_log10_A",
+      "J0023+0923_red_noise_gamma",
+      "J0023+0923_red_noise_log10_A",
+      "J0030+0451_red_noise_gamma",
+      "J0030+0451_red_noise_log10_A"
+    ],
+    "gwb_params_found": []
+  },
+  "hd_ti": {
+    "file": "hd_ti.core",
+    "chain_shape": [
+      24230,
+      31
+    ],
+    "n_params": 31,
+    "burn": 60575,
+    "n_samples_post_burn": 0,
+    "metadata_keys": [
+      "burn",
+      "chainpath",
+      "label"
+    ],
+    "first_10_params": [
+      "1.0",
+      "1.7113283041617808",
+      "1079.77516232771",
+      "1165914.4011798324",
+      "125.89254117941675",
+      "135935.63908785264",
+      "14.677992676220697",
+      "15848.93192461114",
+      "1847.8497974222914",
+      "1995262.3149688807"
+    ],
+    "gwb_params_found": [],
+    "thermodynamic_integration": "no beta column in pre-sampled core; TI logZ not directly recoverable from product file"
+  },
+  "curn_ti": {
+    "file": "curn_ti.core",
+    "chain_shape": [
+      49990,
+      31
+    ],
+    "n_params": 31,
+    "burn": 124975,
+    "n_samples_post_burn": 0,
+    "metadata_keys": [
+      "burn",
+      "chainpath",
+      "label"
+    ],
+    "first_10_params": [
+      "1.0",
+      "1.7113283041617808",
+      "1079.77516232771",
+      "1165914.4011798324",
+      "125.89254117941675",
+      "135935.63908785264",
+      "14.677992676220697",
+      "15848.93192461114",
+      "1847.8497974222914",
+      "1995262.3149688807"
+    ],
+    "gwb_params_found": [],
+    "thermodynamic_integration": "no beta column in pre-sampled core; TI logZ not directly recoverable from product file"
+  },
+  "irn_ti": {
+    "file": "irn_ti.core",
+    "chain_shape": [
+      49990,
+      31
+    ],
+    "n_params": 31,
+    "burn": 12497,
+    "n_samples_post_burn": 37493,
+    "metadata_keys": [
+      "burn"
+    ],
+    "first_10_params": [
+      "1.0",
+      "1.7113283041617808",
+      "1079.77516232771",
+      "1165914.4011798324",
+      "125.89254117941675",
+      "135935.63908785264",
+      "14.677992676220697",
+      "15848.93192461114",
+      "1847.8497974222914",
+      "1995262.3149688807"
+    ],
+    "gwb_params_found": [],
+    "thermodynamic_integration": "no beta column in pre-sampled core; TI logZ not directly recoverable from product file"
+  },
+  "curn_hd": {
+    "file": "curn_hd.core",
+    "chain_shape": [
+      19990,
+      141
+    ],
+    "n_params": 141,
+    "burn": 4997,
+    "n_samples_post_burn": 14993,
+    "metadata_keys": [
+      "burn"
+    ],
+    "first_10_params": [
+      "B1855+09_red_noise_gamma",
+      "B1855+09_red_noise_log10_A",
+      "B1937+21_red_noise_gamma",
+      "B1937+21_red_noise_log10_A",
+      "B1953+29_red_noise_gamma",
+      "B1953+29_red_noise_log10_A",
+      "J0023+0923_red_noise_gamma",
+      "J0023+0923_red_noise_log10_A",
+      "J0030+0451_red_noise_gamma",
+      "J0030+0451_red_noise_log10_A"
+    ],
+    "gwb_params_found": [
+      "gw_crn_log10_A"
+    ],
+    "log10_A": {
+      "median": -14.562428437628705,
+      "p16": -15.251508647427247,
+      "p84": -13.793237285303045,
+      "mean": -14.540454512903958,
+      "std": 1.2922803748591203
+    },
+    "log10_A_median": -14.562428437628705,
+    "log10_A_p16": -15.251508647427247,
+    "log10_A_p84": -13.793237285303045
+  },
+  "spline_orf_vg": {
+    "file": "spline_orf_vg.core",
+    "chain_shape": [
+      37380,
+      148
+    ],
+    "n_params": 148,
+    "burn": 9345,
+    "n_samples_post_burn": 28035,
+    "metadata_keys": [
+      "burn"
+    ],
+    "first_10_params": [
+      "B1855+09_red_noise_gamma",
+      "B1855+09_red_noise_log10_A",
+      "B1937+21_red_noise_gamma",
+      "B1937+21_red_noise_log10_A",
+      "B1953+29_red_noise_gamma",
+      "B1953+29_red_noise_log10_A",
+      "J0023+0923_red_noise_gamma",
+      "J0023+0923_red_noise_log10_A",
+      "J0030+0451_red_noise_gamma",
+      "J0030+0451_red_noise_log10_A"
+    ],
+    "gwb_params_found": [
+      "gw_crn_log10_A",
+      "gw_crn_gamma"
+    ],
+    "log10_A": {
+      "median": -14.17545708320739,
+      "p16": -14.32701828896683,
+      "p84": -14.045973137619947,
+      "mean": -14.186276272777102,
+      "std": 0.14533632773292518
+    },
+    "log10_A_median": -14.17545708320739,
+    "log10_A_p16": -14.32701828896683,
+    "log10_A_p84": -14.045973137619947,
+    "gamma": {
+      "median": 3.214186700401335,
+      "p16": 2.8554496210011364,
+      "p84": 3.5799600603675215,
+      "mean": 3.222981652738773,
+      "std": 0.36878294327009503
+    },
+    "gamma_median": 3.214186700401335,
+    "gamma_p16": 2.8554496210011364,
+    "gamma_p84": 3.5799600603675215
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "generated": "2026-04-21 10:26:16",
+  "task": "PTArcade ground-truth pilot",
+  "source": {
+    "ptarcade_package_version": "1.1.5",
+    "ptarcade_repo": "https://github.com/andrea-mitridate/PTArcade",
+    "ng15_model_files_zenodo": "https://doi.org/10.5281/zenodo.8084351",
+    "sigw_gauss_model_path": "./data/NG15yr/PTArcade_models_1.0.0/models_1.0.0/sigw_gauss.py"
+  },
+  "method": {
+    "mode": "dynesty evidence on NG15 hd_30f_fs.core per-bin KDE likelihood",
+    "note": "Template-fidelity pilot, not full product-space PTArcade MCMC",
+    "n_bins": 14,
+    "kde_grid_size": 4096,
+    "nlive": 500,
+    "dlogz": 0.1,
+    "seed": 42,
+    "h2omega_conversion": "rho^2=(H0/h)^2 h2Omega/(8*pi^4*f^5*Tspan)"
+  },
+  "Tspan_yr": 16.029777268872298,
+  "freqs_Hz": [
+    1.9768264575680047e-09,
+    3.953652915136009e-09,
+    5.930479372704014e-09,
+    7.907305830272019e-09,
+    9.884132287840023e-09,
+    1.1860958745408028e-08,
+    1.3837785202976033e-08,
+    1.5814611660544037e-08,
+    1.7791438118112042e-08,
+    1.9768264575680047e-08,
+    2.174509103324805e-08,
+    2.3721917490816056e-08,
+    2.569874394838406e-08,
+    2.7675570405952065e-08
+  ],
+  "results": {
+    "smbhb_fixed_gamma": {
+      "model": "smbhb_fixed_gamma",
+      "dim": 1,
+      "parameter_names": [
+        "log10_A"
+      ],
+      "lnZ": -20.164521148257684,
+      "lnZerr": 0.09878079676160077,
+      "niter": 2991,
+      "runtime_s": 1.7385411262512207,
+      "bestfit": [
+        -14.584865741942469
+      ],
+      "bestfit_loglike": -16.53475589116017,
+      "posterior_mean": [
+        -14.585201629026363
+      ],
+      "posterior_std": [
+        0.07354490630101179
+      ],
+      "posterior_median": [
+        -14.585236890021221
+      ],
+      "posterior_p16": [
+        -14.658015064738837
+      ],
+      "posterior_p84": [
+        -14.51033266207978
+      ],
+      "lnB_vs_smbhb_fixed_gamma": 0.0,
+      "lnB_err_vs_smbhb_fixed_gamma": 0.13969714248227613,
+      "B_vs_smbhb_fixed_gamma": 1.0,
+      "lnB_vs_smbhb_ptarcade_bhb_prior": 0.5588824631118001,
+      "lnB_err_vs_smbhb_ptarcade_bhb_prior": 0.14210056318746775,
+      "B_vs_smbhb_ptarcade_bhb_prior": 1.7487171519882958
+    },
+    "smbhb_ptarcade_bhb_prior": {
+      "model": "smbhb_ptarcade_bhb_prior",
+      "dim": 2,
+      "parameter_names": [
+        "log10_A",
+        "gamma"
+      ],
+      "lnZ": -20.723403611369484,
+      "lnZerr": 0.10215147698070175,
+      "niter": 3665,
+      "runtime_s": 2.3385660648345947,
+      "bestfit": [
+        -14.31714060418873,
+        3.622999526210342
+      ],
+      "bestfit_loglike": -15.721496369101382,
+      "posterior_mean": [
+        -14.691153887669367,
+        4.547910202183697
+      ],
+      "posterior_std": [
+        0.1435623860796936,
+        0.3087991663294622
+      ],
+      "posterior_median": [
+        -14.686908078689056,
+        4.542325023574356
+      ],
+      "posterior_p16": [
+        -14.83170946482945,
+        4.240772201127851
+      ],
+      "posterior_p84": [
+        -14.548792250312163,
+        4.848852395331999
+      ],
+      "lnB_vs_smbhb_fixed_gamma": -0.5588824631118001,
+      "lnB_err_vs_smbhb_fixed_gamma": 0.14210056318746775,
+      "B_vs_smbhb_fixed_gamma": 0.5718477678697196,
+      "lnB_vs_smbhb_ptarcade_bhb_prior": 0.0,
+      "lnB_err_vs_smbhb_ptarcade_bhb_prior": 0.14446400416255142,
+      "B_vs_smbhb_ptarcade_bhb_prior": 1.0
+    },
+    "sigw_gauss_ptarcade": {
+      "model": "sigw_gauss_ptarcade",
+      "dim": 3,
+      "parameter_names": [
+        "log10_A",
+        "width",
+        "log10_fpeak"
+      ],
+      "lnZ": -20.03627770931479,
+      "lnZerr": 0.10553432091262654,
+      "niter": 3576,
+      "runtime_s": 4.174485921859741,
+      "bestfit": [
+        -1.4626373942216462,
+        0.13884903870036436,
+        -7.396714270110464
+      ],
+      "bestfit_loglike": -15.208546023247262,
+      "posterior_mean": [
+        -0.5748039754119735,
+        1.5441739568337558,
+        -6.5205769491549805
+      ],
+      "posterior_std": [
+        0.5960444170630073,
+        0.7680343082552247,
+        0.7743082303247014
+      ],
+      "posterior_median": [
+        -0.6517383466047919,
+        1.547522553144686,
+        -6.557807414200152
+      ],
+      "posterior_p16": [
+        -1.1878496758150712,
+        0.6673370553031246,
+        -7.3496138308557954
+      ],
+      "posterior_p84": [
+        0.07631394359154431,
+        2.421891900588847,
+        -5.654882995409794
+      ],
+      "lnB_vs_smbhb_fixed_gamma": 0.1282434389428957,
+      "lnB_err_vs_smbhb_fixed_gamma": 0.1445515088103404,
+      "B_vs_smbhb_fixed_gamma": 1.1368297176388118,
+      "lnB_vs_smbhb_ptarcade_bhb_prior": 0.6871259020546958,
+      "lnB_err_vs_smbhb_ptarcade_bhb_prior": 0.14687551579425376,
+      "B_vs_smbhb_ptarcade_bhb_prior": 1.987993626125001
+    }
+  },
+  "sanity_checks": {
+    "sigw_gauss_ng15_map_theta_order_log10_A_width_log10_fpeak": [
+      -0.34,
+      1.6,
+      -7.03
+    ],
+    "h2omega_at_ng15_map": [
+      6.586007124774359e-09,
+      1.7385433478862704e-08,
+      2.728352936630694e-08,
+      3.7426745719919325e-08,
+      4.739982838105348e-08,
+      5.692958167210491e-08,
+      6.601268565847868e-08,
+      7.482070037207979e-08,
+      8.267206474951943e-08,
+      9.043626197353632e-08,
+      9.720827158111652e-08,
+      1.0377736975330647e-07,
+      1.0995410385571522e-07,
+      1.1528964027492766e-07
+    ],
+    "log10_rho_at_ng15_map": [
+      -5.61782127594606,
+      -6.159614601397679,
+      -6.501985236115056,
+      -6.74569131908193,
+      -6.936669000264279,
+      -7.09484150372605,
+      -7.230063773112196,
+      -7.347846456940091,
+      -7.454059255470809,
+      -7.548961072428531,
+      -7.636762476343777,
+      -7.717034159531123,
+      -7.7913850331496075,
+      -7.861557321187288
+    ],
+    "low_bin_log_slope_first4": 1.2562306095969227,
+    "h2omega_positive_finite": true
+  },
+  "published_reference": {
+    "ng15_newphysics_sigw_gauss_B_vs_smbhb": 57.0,
+    "ng15_newphysics_sigw_gauss_B_err": 3.0,
+    "ng15_newphysics_sigw_gauss_lnB": 4.04305126783455,
+    "ng15_newphysics_sigw_gauss_lnB_err_approx": 0.05263157894736842,
+    "source": "NANOGrav 15yr New Physics Search arXiv:2306.16219; see project notes and Table/Fig. values"
+  },
+  "gap_vs_published_lnB": {
+    "using_fixed_gamma_baseline": -3.9148078288916546,
+    "using_ptarcade_bhb_prior_baseline": -3.3559253657798545
+  }
+}

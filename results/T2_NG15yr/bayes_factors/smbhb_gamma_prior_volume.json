@@ -1,0 +1,49 @@
+{
+  "timestamp": "2026-04-20 08:50:18",
+  "smbhb_gamma_fixed": {
+    "model": "smbhb_fixed",
+    "dim": 1,
+    "lnZ": -20.19725637091322,
+    "lnZerr": 0.07212516497604556,
+    "niter": 5946,
+    "runtime_s": 212.73555207252502,
+    "bestfit": [
+      -14.584360570313656
+    ],
+    "posterior_mean": [
+      -14.586012928515943
+    ],
+    "posterior_std": [
+      0.07166338605300168
+    ]
+  },
+  "smbhb_gamma_free": {
+    "model": "smbhb_2d",
+    "dim": 2,
+    "lnZ": -20.957645138418194,
+    "lnZerr": 0.08462214787118506,
+    "niter": 7510,
+    "runtime_s": 315.55698823928833,
+    "bestfit": [
+      -14.30328109324583,
+      3.6183543843519277
+    ],
+    "posterior_mean": [
+      -14.317454296505414,
+      3.6051002969691357
+    ],
+    "posterior_std": [
+      0.23101428606724117,
+      0.5904660221078418
+    ]
+  },
+  "dlnZ_free_minus_fixed": -0.7603887675049741,
+  "dlnZ_err": 0.11118879140072753,
+  "gamma_posterior_mean": 3.6051002969691357,
+  "gamma_posterior_std": 0.5904660221078418,
+  "gamma_prior_range": [
+    0.0,
+    7.0
+  ],
+  "occam_analytic_prediction": -1.5538148017351654
+}

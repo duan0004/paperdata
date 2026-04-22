@@ -1,0 +1,84 @@
+{
+  "generated": "2026-04-21 13:51:20",
+  "task": "PRL CAR covariance null calibration",
+  "source": {
+    "corr_bin": "./results/T2_NG15yr/covariance/corr_bin.npy",
+    "pilot_report": "./results/T2_NG15yr/covariance/pilot_report.json"
+  },
+  "method": {
+    "null": "independent Gaussian samples with same N_samples and N_bins",
+    "n_sim": 5000,
+    "seed": 20260421,
+    "n_samples": 9188,
+    "n_bins": 14
+  },
+  "observed": {
+    "max_abs_offdiag": 0.22710641703790116,
+    "mean_abs_offdiag": 0.02991596897891888,
+    "lambda_max": 1.4826268320166065,
+    "lambda_min": 0.7079251561862135,
+    "entropy_effective_rank": 13.781766196339207,
+    "participation_effective_rank": 13.555656320832982,
+    "mp_noise_upper": 1.07959360811418,
+    "n_signal_modes_above_1p2_MP": 1
+  },
+  "null_summary": {
+    "max_abs_offdiag": {
+      "p50": 0.027899062012584804,
+      "p84": 0.03237171910317907,
+      "p95": 0.035972356714256346,
+      "p99": 0.04056869991826013,
+      "p999": 0.046070278406022326,
+      "max": 0.049159037527672915
+    },
+    "mean_abs_offdiag": {
+      "p50": 0.00832641122589646,
+      "p84": 0.009003220384776788,
+      "p95": 0.009420729976157704,
+      "p99": 0.009901843219576318,
+      "p999": 0.01044688923558287,
+      "max": 0.01099924703587173
+    },
+    "lambda_max": {
+      "p50": 1.0644900370857875,
+      "p84": 1.0723947607302182,
+      "p95": 1.0784523070758596,
+      "p99": 1.0845913373749776,
+      "p999": 1.0924973431912295,
+      "max": 1.104194103431685
+    },
+    "entropy_effective_rank": {
+      "p50": 13.990141386369402,
+      "p84": 13.991518728732592,
+      "p95": 13.992340531745114,
+      "p99": 13.99314719703986,
+      "p999": 13.993962362519385,
+      "max": 13.994565694909461
+    },
+    "participation_effective_rank": {
+      "p50": 13.980312861026883,
+      "p84": 13.98305252859299,
+      "p95": 13.984715162159352,
+      "p99": 13.986305070780924,
+      "p999": 13.987968952528847,
+      "max": 13.989136491482263
+    },
+    "n_signal_modes_above_1p2_MP": {
+      "p50": 0.0,
+      "p84": 0.0,
+      "p95": 0.0,
+      "p99": 0.0,
+      "p999": 0.0,
+      "max": 0.0
+    }
+  },
+  "p_values": {
+    "max_abs_offdiag_p_ge_observed": 0.0001999600079984003,
+    "mean_abs_offdiag_p_ge_observed": 0.0001999600079984003,
+    "lambda_max_p_ge_observed": 0.0001999600079984003,
+    "entropy_effective_rank_p_le_observed": 0.0001999600079984003,
+    "participation_effective_rank_p_le_observed": 0.0001999600079984003,
+    "n_signal_modes_p_ge_observed": 0.0001999600079984003
+  },
+  "runtime_s": 4.823863744735718
+}

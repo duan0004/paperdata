@@ -1,0 +1,872 @@
+{
+  "generated": "2026-04-21 13:56:48",
+  "complete": true,
+  "task": "PRL official-density robustness sweep",
+  "source": {
+    "ptarcade_package_version": "1.1.5",
+    "ptarcade_ceffyl_data_zenodo": "https://doi.org/10.5281/zenodo.10495907",
+    "ng15_model_files_zenodo": "https://doi.org/10.5281/zenodo.8084351",
+    "ceffyl_datadir": "./data/NG15yr/PTArcade_ceffyl_0.2.0/ng15_30f_fs{hd}_ceffyl",
+    "model_root": "./data/NG15yr/PTArcade_models_1.0.0/models_1.0.0"
+  },
+  "method": {
+    "mode": "dynesty evidence on PTArcade official ceffyl density grid",
+    "n_bins": 14,
+    "configs": [
+      {
+        "label": "nlive500_seed42",
+        "nlive": 500,
+        "dlogz": 0.1,
+        "seed": 42
+      },
+      {
+        "label": "nlive500_seed7",
+        "nlive": 500,
+        "dlogz": 0.1,
+        "seed": 7
+      },
+      {
+        "label": "nlive500_seed123",
+        "nlive": 500,
+        "dlogz": 0.1,
+        "seed": 123
+      },
+      {
+        "label": "nlive1000_seed42",
+        "nlive": 1000,
+        "dlogz": 0.05,
+        "seed": 42
+      },
+      {
+        "label": "nlive1000_seed7",
+        "nlive": 1000,
+        "dlogz": 0.05,
+        "seed": 7
+      }
+    ],
+    "baseline": "smbhb_ptarcade_bhb_prior",
+    "models": {
+      "sigw_gauss_ptarcade": "sigw_gauss.py",
+      "sigw_delta_ptarcade": "sigw_delta.py",
+      "super_ptarcade": "super.py"
+    }
+  },
+  "config_results": {
+    "nlive500_seed42": {
+      "smbhb_ptarcade_bhb_prior": {
+        "model": "smbhb_ptarcade_bhb_prior",
+        "dim": 2,
+        "parameter_names": [
+          "gw_bhb_0",
+          "gw_bhb_1"
+        ],
+        "ceffyl_param_names": [
+          "gw_bhb_0",
+          "gw_bhb_1"
+        ],
+        "model_path": null,
+        "lnZ": -113.37638961191138,
+        "lnZerr": 0.12698245502978914,
+        "niter": 5624,
+        "runtime_s": 3.476193904876709,
+        "bestfit": [
+          -14.189510639984421,
+          3.257727655595537
+        ],
+        "bestfit_loglike": -104.43126750612969,
+        "posterior_mean": [
+          -14.541792540955592,
+          4.132045353262907
+        ],
+        "posterior_std": [
+          0.13340193240247894,
+          0.28392298408704064
+        ]
+      },
+      "sigw_gauss_ptarcade": {
+        "model": "sigw_gauss_ptarcade",
+        "dim": 3,
+        "parameter_names": [
+          "log10_fpeak",
+          "width",
+          "log10_A"
+        ],
+        "ceffyl_param_names": [
+          "log10_fpeak",
+          "width",
+          "log10_A"
+        ],
+        "model_path": "./data/NG15yr/PTArcade_models_1.0.0/models_1.0.0/sigw_gauss.py",
+        "lnZ": -109.15119963903186,
+        "lnZerr": 0.11724004091425066,
+        "niter": 3995,
+        "runtime_s": 13.892577886581421,
+        "bestfit": [
+          -7.224461827478582,
+          0.21101968922418823,
+          -1.177937257396439
+        ],
+        "bestfit_loglike": -103.49157285652333,
+        "posterior_mean": [
+          -6.303040368641916,
+          1.1389627562291267,
+          -0.2544913769103241
+        ],
+        "posterior_std": [
+          0.6471048013411862,
+          0.6330629820487138,
+          0.5900117376026163
+        ]
+      },
+      "sigw_delta_ptarcade": {
+        "model": "sigw_delta_ptarcade",
+        "dim": 2,
+        "parameter_names": [
+          "log10_f_peak",
+          "log10_A"
+        ],
+        "ceffyl_param_names": [
+          "log10_f_peak",
+          "log10_A"
+        ],
+        "model_path": "./data/NG15yr/PTArcade_models_1.0.0/models_1.0.0/sigw_delta.py",
+        "lnZ": -109.7294604220782,
+        "lnZerr": 0.11179189881541994,
+        "niter": 3438,
+        "runtime_s": 9.139679908752441,
+        "bestfit": [
+          -5.062046967571501,
+          0.009504699081733126
+        ],
+        "bestfit_loglike": -104.77212210719276,
+        "posterior_mean": [
+          -5.834086803194637,
+          -0.6332505527249193
+        ],
+        "posterior_std": [
+          0.5740790197192939,
+          0.45769203588521806
+        ]
+      },
+      "super_ptarcade": {
+        "model": "super_ptarcade",
+        "dim": 2,
+        "parameter_names": [
+          "log10_Gmu",
+          "log10_P"
+        ],
+        "ceffyl_param_names": [
+          "log10_Gmu",
+          "log10_P"
+        ],
+        "model_path": "./data/NG15yr/PTArcade_models_1.0.0/models_1.0.0/super.py",
+        "lnZ": -110.0386755489354,
+        "lnZerr": 0.11030473194090144,
+        "niter": 3643,
+        "runtime_s": 9.583508968353271,
+        "bestfit": [
+          -12.101363641816965,
+          -2.9983298467218016
+        ],
+        "bestfit_loglike": -105.09057965473579,
+        "posterior_mean": [
+          -11.700354621091712,
+          -2.2788403926881546
+        ],
+        "posterior_std": [
+          0.3030603990541088,
+          0.5258211375531036
+        ]
+      }
+    },
+    "nlive500_seed7": {
+      "smbhb_ptarcade_bhb_prior": {
+        "model": "smbhb_ptarcade_bhb_prior",
+        "dim": 2,
+        "parameter_names": [
+          "gw_bhb_0",
+          "gw_bhb_1"
+        ],
+        "ceffyl_param_names": [
+          "gw_bhb_0",
+          "gw_bhb_1"
+        ],
+        "model_path": null,
+        "lnZ": -113.56953144841307,
+        "lnZerr": 0.1298606279290575,
+        "niter": 5743,
+        "runtime_s": 3.750109910964966,
+        "bestfit": [
+          -14.231187167810173,
+          3.3158146841993887
+        ],
+        "bestfit_loglike": -104.38747627607098,
+        "posterior_mean": [
+          -14.542288884875905,
+          4.13240461816863
+        ],
+        "posterior_std": [
+          0.1359658481367291,
+          0.29074954475867987
+        ]
+      },
+      "sigw_gauss_ptarcade": {
+        "model": "sigw_gauss_ptarcade",
+        "dim": 3,
+        "parameter_names": [
+          "log10_fpeak",
+          "width",
+          "log10_A"
+        ],
+        "ceffyl_param_names": [
+          "log10_fpeak",
+          "width",
+          "log10_A"
+        ],
+        "model_path": "./data/NG15yr/PTArcade_models_1.0.0/models_1.0.0/sigw_gauss.py",
+        "lnZ": -109.00266971312334,
+        "lnZerr": 0.11565311714037171,
+        "niter": 3907,
+        "runtime_s": 13.764962911605835,
+        "bestfit": [
+          -7.146518992399954,
+          0.2687262222775232,
+          -1.1229809127240733
+        ],
+        "bestfit_loglike": -103.5221142130947,
+        "posterior_mean": [
+          -6.296248266469809,
+          1.1659793060113344,
+          -0.2621836059781925
+        ],
+        "posterior_std": [
+          0.6606969447003913,
+          0.6341599811788213,
+          0.5977372636107158
+        ]
+      },
+      "sigw_delta_ptarcade": {
+        "model": "sigw_delta_ptarcade",
+        "dim": 2,
+        "parameter_names": [
+          "log10_f_peak",
+          "log10_A"
+        ],
+        "ceffyl_param_names": [
+          "log10_f_peak",
+          "log10_A"
+        ],
+        "model_path": "./data/NG15yr/PTArcade_models_1.0.0/models_1.0.0/sigw_delta.py",
+        "lnZ": -109.53514701155825,
+        "lnZerr": 0.10901913764869067,
+        "niter": 3382,
+        "runtime_s": 8.179812908172607,
+        "bestfit": [
+          -5.001221765695408,
+          0.04901916130376449
+        ],
+        "bestfit_loglike": -104.77286380010493,
+        "posterior_mean": [
+          -5.846674632981621,
+          -0.6415265207919305
+        ],
+        "posterior_std": [
+          0.5783866991687456,
+          0.4649526688017239
+        ]
+      },
+      "super_ptarcade": {
+        "model": "super_ptarcade",
+        "dim": 2,
+        "parameter_names": [
+          "log10_Gmu",
+          "log10_P"
+        ],
+        "ceffyl_param_names": [
+          "log10_Gmu",
+          "log10_P"
+        ],
+        "model_path": "./data/NG15yr/PTArcade_models_1.0.0/models_1.0.0/super.py",
+        "lnZ": -109.92140362045758,
+        "lnZerr": 0.1092801958246341,
+        "niter": 3573,
+        "runtime_s": 8.878864049911499,
+        "bestfit": [
+          -12.09638209495987,
+          -2.988555253717776
+        ],
+        "bestfit_loglike": -105.11304437228051,
+        "posterior_mean": [
+          -11.7017535689223,
+          -2.2733616133713648
+        ],
+        "posterior_std": [
+          0.30381180751088277,
+          0.5253008419196462
+        ]
+      }
+    },
+    "nlive500_seed123": {
+      "smbhb_ptarcade_bhb_prior": {
+        "model": "smbhb_ptarcade_bhb_prior",
+        "dim": 2,
+        "parameter_names": [
+          "gw_bhb_0",
+          "gw_bhb_1"
+        ],
+        "ceffyl_param_names": [
+          "gw_bhb_0",
+          "gw_bhb_1"
+        ],
+        "model_path": null,
+        "lnZ": -113.73829984568705,
+        "lnZerr": 0.12908090166015057,
+        "niter": 5869,
+        "runtime_s": 3.678053140640259,
+        "bestfit": [
+          -14.157023751444111,
+          3.212994499563929
+        ],
+        "bestfit_loglike": -104.30047528876437,
+        "posterior_mean": [
+          -14.547087184679697,
+          4.135476118738927
+        ],
+        "posterior_std": [
+          0.13442487960202962,
+          0.2886213889483634
+        ]
+      },
+      "sigw_gauss_ptarcade": {
+        "model": "sigw_gauss_ptarcade",
+        "dim": 3,
+        "parameter_names": [
+          "log10_fpeak",
+          "width",
+          "log10_A"
+        ],
+        "ceffyl_param_names": [
+          "log10_fpeak",
+          "width",
+          "log10_A"
+        ],
+        "model_path": "./data/NG15yr/PTArcade_models_1.0.0/models_1.0.0/sigw_gauss.py",
+        "lnZ": -109.00090815423593,
+        "lnZerr": 0.11534445242720202,
+        "niter": 3912,
+        "runtime_s": 13.647592067718506,
+        "bestfit": [
+          -7.26620050532615,
+          0.2432941740097569,
+          -1.2130658647201544
+        ],
+        "bestfit_loglike": -103.50391601444956,
+        "posterior_mean": [
+          -6.3145422709493,
+          1.1711408793073659,
+          -0.2940704377801781
+        ],
+        "posterior_std": [
+          0.6757391096870912,
+          0.66188328450283,
+          0.5950889955245031
+        ]
+      },
+      "sigw_delta_ptarcade": {
+        "model": "sigw_delta_ptarcade",
+        "dim": 2,
+        "parameter_names": [
+          "log10_f_peak",
+          "log10_A"
+        ],
+        "ceffyl_param_names": [
+          "log10_f_peak",
+          "log10_A"
+        ],
+        "model_path": "./data/NG15yr/PTArcade_models_1.0.0/models_1.0.0/sigw_delta.py",
+        "lnZ": -109.7821190969322,
+        "lnZerr": 0.11243770916284272,
+        "niter": 3492,
+        "runtime_s": 8.563161849975586,
+        "bestfit": [
+          -5.1136983873496975,
+          -0.033479732382887484
+        ],
+        "bestfit_loglike": -104.77765161747857,
+        "posterior_mean": [
+          -5.821817276561223,
+          -0.6220554322665136
+        ],
+        "posterior_std": [
+          0.579131808074504,
+          0.4628782796733344
+        ]
+      },
+      "super_ptarcade": {
+        "model": "super_ptarcade",
+        "dim": 2,
+        "parameter_names": [
+          "log10_Gmu",
+          "log10_P"
+        ],
+        "ceffyl_param_names": [
+          "log10_Gmu",
+          "log10_P"
+        ],
+        "model_path": "./data/NG15yr/PTArcade_models_1.0.0/models_1.0.0/super.py",
+        "lnZ": -110.0239876438767,
+        "lnZerr": 0.11013146907442925,
+        "niter": 3627,
+        "runtime_s": 9.225234031677246,
+        "bestfit": [
+          -12.099389098031175,
+          -2.9949043487590634
+        ],
+        "bestfit_loglike": -105.1071788489622,
+        "posterior_mean": [
+          -11.695674067864566,
+          -2.271820843303621
+        ],
+        "posterior_std": [
+          0.31122328459908477,
+          0.5321034087220747
+        ]
+      }
+    },
+    "nlive1000_seed42": {
+      "smbhb_ptarcade_bhb_prior": {
+        "model": "smbhb_ptarcade_bhb_prior",
+        "dim": 2,
+        "parameter_names": [
+          "gw_bhb_0",
+          "gw_bhb_1"
+        ],
+        "ceffyl_param_names": [
+          "gw_bhb_0",
+          "gw_bhb_1"
+        ],
+        "model_path": null,
+        "lnZ": -113.59488990766542,
+        "lnZerr": 0.08088081800028041,
+        "niter": 12791,
+        "runtime_s": 8.59092903137207,
+        "bestfit": [
+          -14.156020061047814,
+          3.136678777514175
+        ],
+        "bestfit_loglike": -103.79567061117186,
+        "posterior_mean": [
+          -14.548309478902894,
+          4.146209304238643
+        ],
+        "posterior_std": [
+          0.1320720236359958,
+          0.28261622579791457
+        ]
+      },
+      "sigw_gauss_ptarcade": {
+        "model": "sigw_gauss_ptarcade",
+        "dim": 3,
+        "parameter_names": [
+          "log10_fpeak",
+          "width",
+          "log10_A"
+        ],
+        "ceffyl_param_names": [
+          "log10_fpeak",
+          "width",
+          "log10_A"
+        ],
+        "model_path": "./data/NG15yr/PTArcade_models_1.0.0/models_1.0.0/sigw_gauss.py",
+        "lnZ": -109.06458791738281,
+        "lnZerr": 0.07559244818359148,
+        "niter": 8583,
+        "runtime_s": 30.39758586883545,
+        "bestfit": [
+          -7.174910167347104,
+          0.227551603800685,
+          -1.1818860747629922
+        ],
+        "bestfit_loglike": -103.48824221748721,
+        "posterior_mean": [
+          -6.220149419821777,
+          1.2267066237211577,
+          -0.20770802287610285
+        ],
+        "posterior_std": [
+          0.6612145898969091,
+          0.6598736284098049,
+          0.5856520107930564
+        ]
+      },
+      "sigw_delta_ptarcade": {
+        "model": "sigw_delta_ptarcade",
+        "dim": 2,
+        "parameter_names": [
+          "log10_f_peak",
+          "log10_A"
+        ],
+        "ceffyl_param_names": [
+          "log10_f_peak",
+          "log10_A"
+        ],
+        "model_path": "./data/NG15yr/PTArcade_models_1.0.0/models_1.0.0/sigw_delta.py",
+        "lnZ": -109.75444790509961,
+        "lnZerr": 0.07275770043079395,
+        "niter": 7604,
+        "runtime_s": 18.714863061904907,
+        "bestfit": [
+          -5.00275259899441,
+          0.04774690752560273
+        ],
+        "bestfit_loglike": -104.7703766476691,
+        "posterior_mean": [
+          -5.833388292654052,
+          -0.6299955023018049
+        ],
+        "posterior_std": [
+          0.5792608565688698,
+          0.46195483258006415
+        ]
+      },
+      "super_ptarcade": {
+        "model": "super_ptarcade",
+        "dim": 2,
+        "parameter_names": [
+          "log10_Gmu",
+          "log10_P"
+        ],
+        "ceffyl_param_names": [
+          "log10_Gmu",
+          "log10_P"
+        ],
+        "model_path": "./data/NG15yr/PTArcade_models_1.0.0/models_1.0.0/super.py",
+        "lnZ": -110.08639646001191,
+        "lnZerr": 0.07207684115469959,
+        "niter": 8008,
+        "runtime_s": 20.066312074661255,
+        "bestfit": [
+          -12.102153733017502,
+          -2.9996463820749955
+        ],
+        "bestfit_loglike": -105.09057965473579,
+        "posterior_mean": [
+          -11.69185755864148,
+          -2.2604431145076043
+        ],
+        "posterior_std": [
+          0.30805905443314363,
+          0.5285277629632454
+        ]
+      }
+    },
+    "nlive1000_seed7": {
+      "smbhb_ptarcade_bhb_prior": {
+        "model": "smbhb_ptarcade_bhb_prior",
+        "dim": 2,
+        "parameter_names": [
+          "gw_bhb_0",
+          "gw_bhb_1"
+        ],
+        "ceffyl_param_names": [
+          "gw_bhb_0",
+          "gw_bhb_1"
+        ],
+        "model_path": null,
+        "lnZ": -113.62578441309937,
+        "lnZerr": 0.08261796613190557,
+        "niter": 12681,
+        "runtime_s": 9.025584936141968,
+        "bestfit": [
+          -14.167766136205447,
+          3.1738395967446094
+        ],
+        "bestfit_loglike": -103.93894063639081,
+        "posterior_mean": [
+          -14.537798222539088,
+          4.121178952052984
+        ],
+        "posterior_std": [
+          0.1345064587367649,
+          0.28900432060143283
+        ]
+      },
+      "sigw_gauss_ptarcade": {
+        "model": "sigw_gauss_ptarcade",
+        "dim": 3,
+        "parameter_names": [
+          "log10_fpeak",
+          "width",
+          "log10_A"
+        ],
+        "ceffyl_param_names": [
+          "log10_fpeak",
+          "width",
+          "log10_A"
+        ],
+        "model_path": "./data/NG15yr/PTArcade_models_1.0.0/models_1.0.0/sigw_gauss.py",
+        "lnZ": -109.08589929657707,
+        "lnZerr": 0.07552858171831137,
+        "niter": 8647,
+        "runtime_s": 32.20856499671936,
+        "bestfit": [
+          -7.2212606190911215,
+          0.23744574601202986,
+          -1.167118625365526
+        ],
+        "bestfit_loglike": -103.44538813122469,
+        "posterior_mean": [
+          -6.243521423728467,
+          1.19873892893084,
+          -0.21766297555147163
+        ],
+        "posterior_std": [
+          0.6583006033697633,
+          0.6376876733764851,
+          0.5928576614528216
+        ]
+      },
+      "sigw_delta_ptarcade": {
+        "model": "sigw_delta_ptarcade",
+        "dim": 2,
+        "parameter_names": [
+          "log10_f_peak",
+          "log10_A"
+        ],
+        "ceffyl_param_names": [
+          "log10_f_peak",
+          "log10_A"
+        ],
+        "model_path": "./data/NG15yr/PTArcade_models_1.0.0/models_1.0.0/sigw_delta.py",
+        "lnZ": -109.45504815581498,
+        "lnZerr": 0.0703793884934375,
+        "niter": 7343,
+        "runtime_s": 18.35021424293518,
+        "bestfit": [
+          -5.048582455339299,
+          0.021074591292105538
+        ],
+        "bestfit_loglike": -104.77276194666786,
+        "posterior_mean": [
+          -5.806863674987589,
+          -0.6105026192407643
+        ],
+        "posterior_std": [
+          0.567667815928712,
+          0.45472619995063174
+        ]
+      },
+      "super_ptarcade": {
+        "model": "super_ptarcade",
+        "dim": 2,
+        "parameter_names": [
+          "log10_Gmu",
+          "log10_P"
+        ],
+        "ceffyl_param_names": [
+          "log10_Gmu",
+          "log10_P"
+        ],
+        "model_path": "./data/NG15yr/PTArcade_models_1.0.0/models_1.0.0/super.py",
+        "lnZ": -110.04654402573507,
+        "lnZerr": 0.07192993800128421,
+        "niter": 7947,
+        "runtime_s": 18.894131183624268,
+        "bestfit": [
+          -12.09798794695961,
+          -2.9958398125809045
+        ],
+        "bestfit_loglike": -105.11217307474433,
+        "posterior_mean": [
+          -11.690542381752557,
+          -2.2594187142745485
+        ],
+        "posterior_std": [
+          0.30902907401527674,
+          0.5318646410080187
+        ]
+      }
+    }
+  },
+  "rows": [
+    {
+      "config": "nlive500_seed42",
+      "model": "sigw_gauss_ptarcade",
+      "lnB_vs_smbhb_ptarcade_bhb_prior": 4.2251899728795195,
+      "lnB_err": 0.17282873337199342,
+      "published_B": 57.0,
+      "published_lnB": 4.04305126783455,
+      "residual_vs_published_lnB": 0.1821387050449692
+    },
+    {
+      "config": "nlive500_seed42",
+      "model": "sigw_delta_ptarcade",
+      "lnB_vs_smbhb_ptarcade_bhb_prior": 3.6469291898331733,
+      "lnB_err": 0.16918029591577594,
+      "published_B": 44.0,
+      "published_lnB": 3.784189633918261,
+      "residual_vs_published_lnB": -0.13726044408508775
+    },
+    {
+      "config": "nlive500_seed42",
+      "model": "super_ptarcade",
+      "lnB_vs_smbhb_ptarcade_bhb_prior": 3.3377140629759765,
+      "lnB_err": 0.16820130134439074,
+      "published_B": 46.0,
+      "published_lnB": 3.828641396489095,
+      "residual_vs_published_lnB": -0.49092733351311857
+    },
+    {
+      "config": "nlive500_seed7",
+      "model": "sigw_gauss_ptarcade",
+      "lnB_vs_smbhb_ptarcade_bhb_prior": 4.566861735289734,
+      "lnB_err": 0.17389487108714174,
+      "published_B": 57.0,
+      "published_lnB": 4.04305126783455,
+      "residual_vs_published_lnB": 0.523810467455184
+    },
+    {
+      "config": "nlive500_seed7",
+      "model": "sigw_delta_ptarcade",
+      "lnB_vs_smbhb_ptarcade_bhb_prior": 4.034384436854822,
+      "lnB_err": 0.16955516818956973,
+      "published_B": 44.0,
+      "published_lnB": 3.784189633918261,
+      "residual_vs_published_lnB": 0.2501948029365608
+    },
+    {
+      "config": "nlive500_seed7",
+      "model": "super_ptarcade",
+      "lnB_vs_smbhb_ptarcade_bhb_prior": 3.6481278279554914,
+      "lnB_err": 0.16972313892218552,
+      "published_B": 46.0,
+      "published_lnB": 3.828641396489095,
+      "residual_vs_published_lnB": -0.18051356853360367
+    },
+    {
+      "config": "nlive500_seed123",
+      "model": "sigw_gauss_ptarcade",
+      "lnB_vs_smbhb_ptarcade_bhb_prior": 4.737391691451123,
+      "lnB_err": 0.17310754425826894,
+      "published_B": 57.0,
+      "published_lnB": 4.04305126783455,
+      "residual_vs_published_lnB": 0.6943404236165724
+    },
+    {
+      "config": "nlive500_seed123",
+      "model": "sigw_delta_ptarcade",
+      "lnB_vs_smbhb_ptarcade_bhb_prior": 3.9561807487548464,
+      "lnB_err": 0.171184454946077,
+      "published_B": 44.0,
+      "published_lnB": 3.784189633918261,
+      "residual_vs_published_lnB": 0.17199111483658536
+    },
+    {
+      "config": "nlive500_seed123",
+      "model": "super_ptarcade",
+      "lnB_vs_smbhb_ptarcade_bhb_prior": 3.7143122018103583,
+      "lnB_err": 0.16967857747485224,
+      "published_B": 46.0,
+      "published_lnB": 3.828641396489095,
+      "residual_vs_published_lnB": -0.11432919467873681
+    },
+    {
+      "config": "nlive1000_seed42",
+      "model": "sigw_gauss_ptarcade",
+      "lnB_vs_smbhb_ptarcade_bhb_prior": 4.530301990282609,
+      "lnB_err": 0.11070648103333176,
+      "published_B": 57.0,
+      "published_lnB": 4.04305126783455,
+      "residual_vs_published_lnB": 0.4872507224480591
+    },
+    {
+      "config": "nlive1000_seed42",
+      "model": "sigw_delta_ptarcade",
+      "lnB_vs_smbhb_ptarcade_bhb_prior": 3.8404420025658084,
+      "lnB_err": 0.10879057722234788,
+      "published_B": 44.0,
+      "published_lnB": 3.784189633918261,
+      "residual_vs_published_lnB": 0.056252368647547346
+    },
+    {
+      "config": "nlive1000_seed42",
+      "model": "super_ptarcade",
+      "lnB_vs_smbhb_ptarcade_bhb_prior": 3.508493447653507,
+      "lnB_err": 0.10833641009021058,
+      "published_B": 46.0,
+      "published_lnB": 3.828641396489095,
+      "residual_vs_published_lnB": -0.3201479488355883
+    },
+    {
+      "config": "nlive1000_seed7",
+      "model": "sigw_gauss_ptarcade",
+      "lnB_vs_smbhb_ptarcade_bhb_prior": 4.539885116522299,
+      "lnB_err": 0.11193880017291741,
+      "published_B": 57.0,
+      "published_lnB": 4.04305126783455,
+      "residual_vs_published_lnB": 0.49683384868774905
+    },
+    {
+      "config": "nlive1000_seed7",
+      "model": "sigw_delta_ptarcade",
+      "lnB_vs_smbhb_ptarcade_bhb_prior": 4.170736257284389,
+      "lnB_err": 0.10853104004146878,
+      "published_B": 44.0,
+      "published_lnB": 3.784189633918261,
+      "residual_vs_published_lnB": 0.3865466233661281
+    },
+    {
+      "config": "nlive1000_seed7",
+      "model": "super_ptarcade",
+      "lnB_vs_smbhb_ptarcade_bhb_prior": 3.579240387364294,
+      "lnB_err": 0.10954288798749687,
+      "published_B": 46.0,
+      "published_lnB": 3.828641396489095,
+      "residual_vs_published_lnB": -0.24940100912480112
+    }
+  ],
+  "aggregate": {
+    "sigw_gauss_ptarcade": {
+      "n_configs": 5,
+      "lnB_mean": 4.519926101285057,
+      "lnB_sample_std": 0.1849794876431653,
+      "lnB_min": 4.2251899728795195,
+      "lnB_max": 4.737391691451123,
+      "mean_nested_lnB_err": 0.14849528598473066,
+      "published_lnB": 4.04305126783455,
+      "residual_mean": 0.47687483345050674,
+      "residual_sample_std": 0.1849794876431653,
+      "residual_min": 0.1821387050449692,
+      "residual_max": 0.6943404236165724,
+      "max_abs_residual": 0.6943404236165724
+    },
+    "sigw_delta_ptarcade": {
+      "n_configs": 5,
+      "lnB_mean": 3.9297345270586077,
+      "lnB_sample_std": 0.19854776121104434,
+      "lnB_min": 3.6469291898331733,
+      "lnB_max": 4.170736257284389,
+      "mean_nested_lnB_err": 0.14544830726304786,
+      "published_lnB": 3.784189633918261,
+      "residual_mean": 0.14554489314034677,
+      "residual_sample_std": 0.19854776121104437,
+      "residual_min": -0.13726044408508775,
+      "residual_max": 0.3865466233661281,
+      "max_abs_residual": 0.3865466233661281
+    },
+    "super_ptarcade": {
+      "n_configs": 5,
+      "lnB_mean": 3.5575775855519254,
+      "lnB_sample_std": 0.1448996070285566,
+      "lnB_min": 3.3377140629759765,
+      "lnB_max": 3.7143122018103583,
+      "mean_nested_lnB_err": 0.14509646316382718,
+      "published_lnB": 3.828641396489095,
+      "residual_mean": -0.2710638109371697,
+      "residual_sample_std": 0.1448996070285566,
+      "residual_min": -0.49092733351311857,
+      "residual_max": -0.11432919467873681,
+      "max_abs_residual": 0.49092733351311857
+    }
+  }
+}

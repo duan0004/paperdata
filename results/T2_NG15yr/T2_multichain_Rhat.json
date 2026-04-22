@@ -1,0 +1,43 @@
+{
+  "timestamp_computed": "2026-04-21 08:29:44",
+  "chains": {
+    "warm": "results/T2_NG15yr/chains_production_HD/chain_1.txt",
+    "cold": "results/T2_NG15yr/chains_production_HD_cold/chain_1.txt"
+  },
+  "warm_init": {
+    "log10_A": -14.2,
+    "gamma": 3.25,
+    "jitter": 0.5
+  },
+  "cold_init": {
+    "log10_A": -15.5,
+    "gamma": 5.0,
+    "jitter": 1.0
+  },
+  "init_separation_sigma": {
+    "log10_A": 10.83333333333334,
+    "gamma": 5.46875
+  },
+  "n_per_chain_after_25pct_burn_equal_length": 37501,
+  "multichain_rhat": {
+    "gamma_GWB": 1.0471806447455376,
+    "log10_A_GWB": 1.0472768997290427
+  },
+  "multichain_ess": {
+    "gamma_GWB": 138.8709778824562,
+    "log10_A_GWB": 149.11736025424895
+  },
+  "warm_posterior": {
+    "gamma_mean": 3.291728736795194,
+    "gamma_std": 0.32086642453437986,
+    "log10_A_mean": -14.215078354867966,
+    "log10_A_std": 0.12216939150877071
+  },
+  "cold_posterior": {
+    "gamma_mean": 3.4465550659171797,
+    "gamma_std": 0.4180128026892824,
+    "log10_A_mean": -14.276056583596429,
+    "log10_A_std": 0.16843969111599164
+  },
+  "verdict": "PASS"
+}

@@ -1,0 +1,1187 @@
+{
+  "generated": "2026-04-21 16:56:11",
+  "complete": true,
+  "task": "PRL main-table independent evidence cross-check",
+  "method": {
+    "likelihood": "official PTArcade ceffyl density",
+    "evidence_estimators": [
+      "direct Sobol-QMC prior-space integral",
+      "power-posterior thermodynamic integration from same Sobol log-likelihood evaluations"
+    ],
+    "m_power": 14,
+    "n_qmc_per_scramble": 16384,
+    "scramble_seeds": [
+      20260421,
+      20260422,
+      20260423,
+      20260424,
+      20260425
+    ],
+    "beta_grid": [
+      0.0,
+      0.0001,
+      0.00011236548001387504,
+      0.00012626001098748563,
+      0.00014187266741165963,
+      0.00015941590374559997,
+      0.0001791284454622004,
+      0.00020127853758499385,
+      0.00022616759492228645,
+      0.0002541343036702637,
+      0.00028555923019901063,
+      0.00032086999973704504,
+      0.00036054711542505023,
+      0.0004051304969235382,
+      0.000455226827550731,
+      0.0005115178099293145,
+      0.0005747694424835352,
+      0.0006458424430196978,
+      0.0007257039612324216,
+      0.0008154407395185162,
+      0.0009162739011886732,
+      0.0010295755673125127,
+      0.001156887528316282,
+      0.0012999422244132448,
+      0.0014606863203649888,
+      0.00164130719537513,
+      0.0018442627085855348,
+      0.0020723146452190297,
+      0.0023285662984981964,
+      0.002616504698748821,
+      0.0029400480643347075,
+      0.0033035991201283395,
+      0.0037121050090663608,
+      0.004171124612056517,
+      0.004686904192314193,
+      0.00526646239348428,
+      0.005917685748188819,
+      0.006649435996665045,
+      0.0074716706758680826,
+      0.008395578619995112,
+      0.009433732216299773,
+      0.010600258488068824,
+      0.011911031332830068,
+      0.013383887531737564,
+      0.015038869469554102,
+      0.01689849786812457,
+      0.018988078244652633,
+      0.02133604526501411,
+      0.02397434967801076,
+      0.026938893095901726,
+      0.030270016537634618,
+      0.03401304938279253,
+      0.03821892620633119,
+      0.04294487988789272,
+      0.04825522042741279,
+      0.05422221006501587,
+      0.060927046613686746,
+      0.06846096838574658,
+      0.07692649574879139,
+      0.0864388262059827,
+      0.09712740198471168,
+      0.10913767146512728,
+      0.12263306841775631,
+      0.13779723598335566,
+      0.1548365256585499,
+      0.1739828052930364,
+      0.19549661430912596,
+      0.2196707090793235,
+      0.24683404670686485,
+      0.2773562614198415,
+      0.311652694492943,
+      0.35019004614317095,
+      0.39349272630958493,
+      0.44214999073744865,
+      0.49682395947343877,
+      0.5582586268862695,
+      0.6272899858196244,
+      0.7048574036451903,
+      0.7920164050192549,
+      0.8899530352885224,
+      1.0
+    ],
+    "models": [
+      "baseline_smbhb_ptarcade_bhb_prior",
+      "sigw_gauss",
+      "sigw_delta",
+      "super",
+      "smbhb_env_fixed_gamma"
+    ]
+  },
+  "nested_references": {
+    "sigw_gauss": 4.519926101285057,
+    "sigw_delta": 3.9297345270586077,
+    "super": 3.5575775855519254,
+    "smbhb_env_fixed_gamma": 3.453307779027014
+  },
+  "rows": [
+    {
+      "scramble_seed": 20260421,
+      "model": "baseline_smbhb_ptarcade_bhb_prior",
+      "label": "PTArcade BHB-prior baseline",
+      "lnZ_direct_qmc": -113.6673620766747,
+      "lnZ_ti_qmc": -113.67437471451223,
+      "lnZ_ti_minus_direct": -0.007012637837519264
+    },
+    {
+      "scramble_seed": 20260421,
+      "model": "sigw_gauss",
+      "label": "SIGW-Gaussian",
+      "lnZ_direct_qmc": -109.0539117919301,
+      "lnZ_ti_qmc": -109.06238333440106,
+      "lnZ_ti_minus_direct": -0.00847154247095716,
+      "lnB_direct_qmc_vs_baseline": 4.6134502847446015,
+      "lnB_ti_qmc_vs_baseline": 4.611991380111164,
+      "nested_robust_mean_lnB": 4.519926101285057,
+      "direct_residual_vs_nested_mean": 0.09352418345954483,
+      "ti_residual_vs_nested_mean": 0.09206527882610693
+    },
+    {
+      "scramble_seed": 20260421,
+      "model": "sigw_delta",
+      "label": "SIGW-delta",
+      "lnZ_direct_qmc": -109.6864338652051,
+      "lnZ_ti_qmc": -109.69436567699026,
+      "lnZ_ti_minus_direct": -0.007931811785155674,
+      "lnB_direct_qmc_vs_baseline": 3.980928211469603,
+      "lnB_ti_qmc_vs_baseline": 3.9800090375219668,
+      "nested_robust_mean_lnB": 3.9297345270586077,
+      "direct_residual_vs_nested_mean": 0.05119368441099548,
+      "ti_residual_vs_nested_mean": 0.05027451046335907
+    },
+    {
+      "scramble_seed": 20260421,
+      "model": "super",
+      "label": "Cosmic superstrings",
+      "lnZ_direct_qmc": -110.06399831478835,
+      "lnZ_ti_qmc": -110.07163350860982,
+      "lnZ_ti_minus_direct": -0.0076351938214713755,
+      "lnB_direct_qmc_vs_baseline": 3.6033637618863565,
+      "lnB_ti_qmc_vs_baseline": 3.6027412059024044,
+      "nested_robust_mean_lnB": 3.5575775855519254,
+      "direct_residual_vs_nested_mean": 0.04578617633443116,
+      "ti_residual_vs_nested_mean": 0.04516362035047905
+    },
+    {
+      "scramble_seed": 20260421,
+      "model": "smbhb_env_fixed_gamma",
+      "label": "Environmental SMBHB, fixed gamma",
+      "lnZ_direct_qmc": -110.19678341243772,
+      "lnZ_ti_qmc": -110.20582589589375,
+      "lnZ_ti_minus_direct": -0.009042483456028094,
+      "lnB_direct_qmc_vs_baseline": 3.4705786642369816,
+      "lnB_ti_qmc_vs_baseline": 3.4685488186184728,
+      "nested_robust_mean_lnB": 3.453307779027014,
+      "direct_residual_vs_nested_mean": 0.017270885209967446,
+      "ti_residual_vs_nested_mean": 0.015241039591458616
+    },
+    {
+      "scramble_seed": 20260422,
+      "model": "baseline_smbhb_ptarcade_bhb_prior",
+      "label": "PTArcade BHB-prior baseline",
+      "lnZ_direct_qmc": -113.63155504063124,
+      "lnZ_ti_qmc": -113.63865690686293,
+      "lnZ_ti_minus_direct": -0.007101866231693066
+    },
+    {
+      "scramble_seed": 20260422,
+      "model": "sigw_gauss",
+      "label": "SIGW-Gaussian",
+      "lnZ_direct_qmc": -109.0680062900294,
+      "lnZ_ti_qmc": -109.07641361880596,
+      "lnZ_ti_minus_direct": -0.008407328776556255,
+      "lnB_direct_qmc_vs_baseline": 4.563548750601839,
+      "lnB_ti_qmc_vs_baseline": 4.562243288056976,
+      "nested_robust_mean_lnB": 4.519926101285057,
+      "direct_residual_vs_nested_mean": 0.043622649316782613,
+      "ti_residual_vs_nested_mean": 0.042317186771919424
+    },
+    {
+      "scramble_seed": 20260422,
+      "model": "sigw_delta",
+      "label": "SIGW-delta",
+      "lnZ_direct_qmc": -109.68474135526802,
+      "lnZ_ti_qmc": -109.69264996183176,
+      "lnZ_ti_minus_direct": -0.00790860656374548,
+      "lnB_direct_qmc_vs_baseline": 3.9468136853632245,
+      "lnB_ti_qmc_vs_baseline": 3.946006945031172,
+      "nested_robust_mean_lnB": 3.9297345270586077,
+      "direct_residual_vs_nested_mean": 0.017079158304616815,
+      "ti_residual_vs_nested_mean": 0.0162724179725644
+    },
+    {
+      "scramble_seed": 20260422,
+      "model": "super",
+      "label": "Cosmic superstrings",
+      "lnZ_direct_qmc": -110.05203178115183,
+      "lnZ_ti_qmc": -110.05966543702043,
+      "lnZ_ti_minus_direct": -0.007633655868602318,
+      "lnB_direct_qmc_vs_baseline": 3.5795232594794157,
+      "lnB_ti_qmc_vs_baseline": 3.5789914698425065,
+      "nested_robust_mean_lnB": 3.5575775855519254,
+      "direct_residual_vs_nested_mean": 0.02194567392749036,
+      "ti_residual_vs_nested_mean": 0.02141388429058111
+    },
+    {
+      "scramble_seed": 20260422,
+      "model": "smbhb_env_fixed_gamma",
+      "label": "Environmental SMBHB, fixed gamma",
+      "lnZ_direct_qmc": -110.22551984535636,
+      "lnZ_ti_qmc": -110.23453723075615,
+      "lnZ_ti_minus_direct": -0.009017385399786804,
+      "lnB_direct_qmc_vs_baseline": 3.4060351952748817,
+      "lnB_ti_qmc_vs_baseline": 3.404119676106788,
+      "nested_robust_mean_lnB": 3.453307779027014,
+      "direct_residual_vs_nested_mean": -0.04727258375213239,
+      "ti_residual_vs_nested_mean": -0.04918810292022613
+    },
+    {
+      "scramble_seed": 20260423,
+      "model": "baseline_smbhb_ptarcade_bhb_prior",
+      "label": "PTArcade BHB-prior baseline",
+      "lnZ_direct_qmc": -113.65550227968083,
+      "lnZ_ti_qmc": -113.66252559881087,
+      "lnZ_ti_minus_direct": -0.0070233191300417275
+    },
+    {
+      "scramble_seed": 20260423,
+      "model": "sigw_gauss",
+      "label": "SIGW-Gaussian",
+      "lnZ_direct_qmc": -108.96510717265757,
+      "lnZ_ti_qmc": -108.97362626485837,
+      "lnZ_ti_minus_direct": -0.008519092200799605,
+      "lnB_direct_qmc_vs_baseline": 4.690395107023264,
+      "lnB_ti_qmc_vs_baseline": 4.688899333952506,
+      "nested_robust_mean_lnB": 4.519926101285057,
+      "direct_residual_vs_nested_mean": 0.170469005738207,
+      "ti_residual_vs_nested_mean": 0.16897323266744912
+    },
+    {
+      "scramble_seed": 20260423,
+      "model": "sigw_delta",
+      "label": "SIGW-delta",
+      "lnZ_direct_qmc": -109.66866517110873,
+      "lnZ_ti_qmc": -109.67659736007744,
+      "lnZ_ti_minus_direct": -0.007932188968709397,
+      "lnB_direct_qmc_vs_baseline": 3.9868371085721037,
+      "lnB_ti_qmc_vs_baseline": 3.985928238733436,
+      "nested_robust_mean_lnB": 3.9297345270586077,
+      "direct_residual_vs_nested_mean": 0.05710258151349601,
+      "ti_residual_vs_nested_mean": 0.05619371167482834
+    },
+    {
+      "scramble_seed": 20260423,
+      "model": "super",
+      "label": "Cosmic superstrings",
+      "lnZ_direct_qmc": -110.0794022996663,
+      "lnZ_ti_qmc": -110.08702289758705,
+      "lnZ_ti_minus_direct": -0.007620597920748651,
+      "lnB_direct_qmc_vs_baseline": 3.5760999800145328,
+      "lnB_ti_qmc_vs_baseline": 3.575502701223826,
+      "nested_robust_mean_lnB": 3.5575775855519254,
+      "direct_residual_vs_nested_mean": 0.018522394462607394,
+      "ti_residual_vs_nested_mean": 0.01792511567190047
+    },
+    {
+      "scramble_seed": 20260423,
+      "model": "smbhb_env_fixed_gamma",
+      "label": "Environmental SMBHB, fixed gamma",
+      "lnZ_direct_qmc": -110.11502128196891,
+      "lnZ_ti_qmc": -110.12414714699072,
+      "lnZ_ti_minus_direct": -0.009125865021815116,
+      "lnB_direct_qmc_vs_baseline": 3.5404809977119243,
+      "lnB_ti_qmc_vs_baseline": 3.538378451820151,
+      "nested_robust_mean_lnB": 3.453307779027014,
+      "direct_residual_vs_nested_mean": 0.08717321868491013,
+      "ti_residual_vs_nested_mean": 0.08507067279313674
+    },
+    {
+      "scramble_seed": 20260424,
+      "model": "baseline_smbhb_ptarcade_bhb_prior",
+      "label": "PTArcade BHB-prior baseline",
+      "lnZ_direct_qmc": -113.62176126331443,
+      "lnZ_ti_qmc": -113.62904979170912,
+      "lnZ_ti_minus_direct": -0.007288528394695959
+    },
+    {
+      "scramble_seed": 20260424,
+      "model": "sigw_gauss",
+      "label": "SIGW-Gaussian",
+      "lnZ_direct_qmc": -109.04470514573802,
+      "lnZ_ti_qmc": -109.05318917936744,
+      "lnZ_ti_minus_direct": -0.008484033629414967,
+      "lnB_direct_qmc_vs_baseline": 4.577056117576404,
+      "lnB_ti_qmc_vs_baseline": 4.575860612341685,
+      "nested_robust_mean_lnB": 4.519926101285057,
+      "direct_residual_vs_nested_mean": 0.05713001629134773,
+      "ti_residual_vs_nested_mean": 0.05593451105662872
+    },
+    {
+      "scramble_seed": 20260424,
+      "model": "sigw_delta",
+      "label": "SIGW-delta",
+      "lnZ_direct_qmc": -109.67541823155102,
+      "lnZ_ti_qmc": -109.68333122539065,
+      "lnZ_ti_minus_direct": -0.00791299383962496,
+      "lnB_direct_qmc_vs_baseline": 3.946343031763405,
+      "lnB_ti_qmc_vs_baseline": 3.945718566318476,
+      "nested_robust_mean_lnB": 3.9297345270586077,
+      "direct_residual_vs_nested_mean": 0.016608504704797245,
+      "ti_residual_vs_nested_mean": 0.015984039259868243
+    },
+    {
+      "scramble_seed": 20260424,
+      "model": "super",
+      "label": "Cosmic superstrings",
+      "lnZ_direct_qmc": -110.07388728504557,
+      "lnZ_ti_qmc": -110.08152291091756,
+      "lnZ_ti_minus_direct": -0.007635625871984075,
+      "lnB_direct_qmc_vs_baseline": 3.5478739782688535,
+      "lnB_ti_qmc_vs_baseline": 3.5475268807915654,
+      "nested_robust_mean_lnB": 3.5575775855519254,
+      "direct_residual_vs_nested_mean": -0.009703607283071847,
+      "ti_residual_vs_nested_mean": -0.010050704760359963
+    },
+    {
+      "scramble_seed": 20260424,
+      "model": "smbhb_env_fixed_gamma",
+      "label": "Environmental SMBHB, fixed gamma",
+      "lnZ_direct_qmc": -110.0597684090565,
+      "lnZ_ti_qmc": -110.06905932618508,
+      "lnZ_ti_minus_direct": -0.0092909171285811,
+      "lnB_direct_qmc_vs_baseline": 3.561992854257923,
+      "lnB_ti_qmc_vs_baseline": 3.559990465524038,
+      "nested_robust_mean_lnB": 3.453307779027014,
+      "direct_residual_vs_nested_mean": 0.10868507523090898,
+      "ti_residual_vs_nested_mean": 0.10668268649702384
+    },
+    {
+      "scramble_seed": 20260425,
+      "model": "baseline_smbhb_ptarcade_bhb_prior",
+      "label": "PTArcade BHB-prior baseline",
+      "lnZ_direct_qmc": -113.76277476824819,
+      "lnZ_ti_qmc": -113.769946330444,
+      "lnZ_ti_minus_direct": -0.007171562195807724
+    },
+    {
+      "scramble_seed": 20260425,
+      "model": "sigw_gauss",
+      "label": "SIGW-Gaussian",
+      "lnZ_direct_qmc": -109.01510817569668,
+      "lnZ_ti_qmc": -109.0234756757605,
+      "lnZ_ti_minus_direct": -0.008367500063812372,
+      "lnB_direct_qmc_vs_baseline": 4.747666592551511,
+      "lnB_ti_qmc_vs_baseline": 4.746470654683506,
+      "nested_robust_mean_lnB": 4.519926101285057,
+      "direct_residual_vs_nested_mean": 0.22774049126645401,
+      "ti_residual_vs_nested_mean": 0.22654455339844937
+    },
+    {
+      "scramble_seed": 20260425,
+      "model": "sigw_delta",
+      "label": "SIGW-delta",
+      "lnZ_direct_qmc": -109.65755396538756,
+      "lnZ_ti_qmc": -109.66548047399442,
+      "lnZ_ti_minus_direct": -0.007926508606857396,
+      "lnB_direct_qmc_vs_baseline": 4.105220802860629,
+      "lnB_ti_qmc_vs_baseline": 4.104465856449579,
+      "nested_robust_mean_lnB": 3.9297345270586077,
+      "direct_residual_vs_nested_mean": 0.17548627580202103,
+      "ti_residual_vs_nested_mean": 0.17473132939097136
+    },
+    {
+      "scramble_seed": 20260425,
+      "model": "super",
+      "label": "Cosmic superstrings",
+      "lnZ_direct_qmc": -110.0767329725971,
+      "lnZ_ti_qmc": -110.08435848893537,
+      "lnZ_ti_minus_direct": -0.00762551633826547,
+      "lnB_direct_qmc_vs_baseline": 3.686041795651093,
+      "lnB_ti_qmc_vs_baseline": 3.685587841508635,
+      "nested_robust_mean_lnB": 3.5575775855519254,
+      "direct_residual_vs_nested_mean": 0.12846421009916753,
+      "ti_residual_vs_nested_mean": 0.12801025595670978
+    },
+    {
+      "scramble_seed": 20260425,
+      "model": "smbhb_env_fixed_gamma",
+      "label": "Environmental SMBHB, fixed gamma",
+      "lnZ_direct_qmc": -110.14496673865617,
+      "lnZ_ti_qmc": -110.15410859489458,
+      "lnZ_ti_minus_direct": -0.009141856238414903,
+      "lnB_direct_qmc_vs_baseline": 3.6178080295920267,
+      "lnB_ti_qmc_vs_baseline": 3.6158377355494196,
+      "nested_robust_mean_lnB": 3.453307779027014,
+      "direct_residual_vs_nested_mean": 0.1645002505650126,
+      "ti_residual_vs_nested_mean": 0.16252995652240543
+    }
+  ],
+  "aggregate": {
+    "baseline_smbhb_ptarcade_bhb_prior": {
+      "label": "PTArcade BHB-prior baseline",
+      "n_scrambles": 5,
+      "lnZ_direct_mean": -113.66779108570988,
+      "lnZ_direct_sample_std": 0.05613576013471489,
+      "lnZ_ti_mean": -113.67491066846783,
+      "lnZ_ti_sample_std": 0.05613156307257338,
+      "mean_ti_minus_direct": -0.007119582757951548,
+      "max_abs_ti_minus_direct": 0.007288528394695959
+    },
+    "sigw_gauss": {
+      "label": "SIGW-Gaussian",
+      "n_scrambles": 5,
+      "lnZ_direct_mean": -109.02936771521036,
+      "lnZ_direct_sample_std": 0.040814641176860775,
+      "lnZ_ti_mean": -109.03781761463866,
+      "lnZ_ti_sample_std": 0.040791027581867846,
+      "mean_ti_minus_direct": -0.008449899428308072,
+      "max_abs_ti_minus_direct": 0.008519092200799605,
+      "lnB_direct_mean": 4.638423370499524,
+      "lnB_direct_sample_std": 0.0784712469791775,
+      "lnB_ti_mean": 4.637093053829167,
+      "lnB_ti_sample_std": 0.07846869372396828,
+      "nested_robust_mean_lnB": 4.519926101285057,
+      "direct_residual_vs_nested_mean": 0.11849726921446724,
+      "ti_residual_vs_nested_mean": 0.11716695254411036
+    },
+    "sigw_delta": {
+      "label": "SIGW-delta",
+      "n_scrambles": 5,
+      "lnZ_direct_mean": -109.67456251770409,
+      "lnZ_direct_sample_std": 0.011930417224475895,
+      "lnZ_ti_mean": -109.68248493965689,
+      "lnZ_ti_sample_std": 0.011926978250103581,
+      "mean_ti_minus_direct": -0.007922421952818582,
+      "max_abs_ti_minus_direct": 0.007932188968709397,
+      "lnB_direct_mean": 3.993228568005793,
+      "lnB_direct_sample_std": 0.06535863568008869,
+      "lnB_ti_mean": 3.992425728810926,
+      "lnB_ti_sample_std": 0.06535603322732672,
+      "nested_robust_mean_lnB": 3.9297345270586077,
+      "direct_residual_vs_nested_mean": 0.06349404094718514,
+      "ti_residual_vs_nested_mean": 0.06269120175231846
+    },
+    "super": {
+      "label": "Cosmic superstrings",
+      "n_scrambles": 5,
+      "lnZ_direct_mean": -110.06921053064984,
+      "lnZ_direct_sample_std": 0.011231740166989341,
+      "lnZ_ti_mean": -110.07684064861402,
+      "lnZ_ti_sample_std": 0.011227442917168083,
+      "mean_ti_minus_direct": -0.007630117964214378,
+      "max_abs_ti_minus_direct": 0.007635625871984075,
+      "lnB_direct_mean": 3.5985805550600505,
+      "lnB_direct_sample_std": 0.05270688136375983,
+      "lnB_ti_mean": 3.5980700198537874,
+      "lnB_ti_sample_std": 0.05269979348454034,
+      "nested_robust_mean_lnB": 3.5575775855519254,
+      "direct_residual_vs_nested_mean": 0.0410029695081251,
+      "ti_residual_vs_nested_mean": 0.040492434301862
+    },
+    "smbhb_env_fixed_gamma": {
+      "label": "Environmental SMBHB, fixed gamma",
+      "n_scrambles": 5,
+      "lnZ_direct_mean": -110.14841193749514,
+      "lnZ_direct_sample_std": 0.06570751374161586,
+      "lnZ_ti_mean": -110.15753563894404,
+      "lnZ_ti_sample_std": 0.06560447393875257,
+      "mean_ti_minus_direct": -0.009123701448925204,
+      "max_abs_ti_minus_direct": 0.0092909171285811,
+      "lnB_direct_mean": 3.5193791482147474,
+      "lnB_direct_sample_std": 0.08242845320127158,
+      "lnB_ti_mean": 3.517375029523774,
+      "lnB_ti_sample_std": 0.08240585167407803,
+      "nested_robust_mean_lnB": 3.453307779027014,
+      "direct_residual_vs_nested_mean": 0.06607136918773326,
+      "ti_residual_vs_nested_mean": 0.06406725049675988
+    }
+  },
+  "diagnostic_pass": true,
+  "diagnostic_pass_criteria": {
+    "max_abs_ti_minus_direct_lnZ": 0.05,
+    "max_abs_ti_lnb_residual_vs_dynesty_mean": 0.25,
+    "note": "This is a low-dimensional official-density TI/QMC cross-check, not a full parallel-tempering PTA-chain TI run."
+  },
+  "seed_results": {
+    "20260421": {
+      "baseline_smbhb_ptarcade_bhb_prior": {
+        "model": "baseline_smbhb_ptarcade_bhb_prior",
+        "label": "PTArcade BHB-prior baseline",
+        "dim": 2,
+        "parameter_names": [
+          "gw_bhb_0",
+          "gw_bhb_1"
+        ],
+        "ceffyl_param_names": [
+          "gw_bhb_0",
+          "gw_bhb_1"
+        ],
+        "model_path": null,
+        "scramble_seed": 20260421,
+        "n_qmc_requested": 16384,
+        "n_finite": 16384,
+        "finite_fraction": 1.0,
+        "runtime_s": 0.33956289291381836,
+        "loglike_min": -407.9705873504616,
+        "loglike_max": -106.12805716781655,
+        "lnZ_direct_qmc": -113.6673620766747,
+        "lnZ_ti_qmc": -113.67437471451223,
+        "lnZ_ti_minus_direct": -0.007012637837519264,
+        "beta_grid_size": 81,
+        "beta_min_nonzero": 0.0001
+      },
+      "sigw_gauss": {
+        "model": "sigw_gauss",
+        "label": "SIGW-Gaussian",
+        "dim": 3,
+        "parameter_names": [
+          "log10_fpeak",
+          "width",
+          "log10_A"
+        ],
+        "ceffyl_param_names": [
+          "log10_fpeak",
+          "width",
+          "log10_A"
+        ],
+        "model_path": "./data/NG15yr/PTArcade_models_1.0.0/models_1.0.0/sigw_gauss.py",
+        "scramble_seed": 20260421,
+        "n_qmc_requested": 16384,
+        "n_finite": 16384,
+        "finite_fraction": 1.0,
+        "runtime_s": 2.9949288368225098,
+        "loglike_min": -586.7050645529677,
+        "loglike_max": -103.76159641547964,
+        "lnZ_direct_qmc": -109.0539117919301,
+        "lnZ_ti_qmc": -109.06238333440106,
+        "lnZ_ti_minus_direct": -0.00847154247095716,
+        "beta_grid_size": 81,
+        "beta_min_nonzero": 0.0001
+      },
+      "sigw_delta": {
+        "model": "sigw_delta",
+        "label": "SIGW-delta",
+        "dim": 2,
+        "parameter_names": [
+          "log10_f_peak",
+          "log10_A"
+        ],
+        "ceffyl_param_names": [
+          "log10_f_peak",
+          "log10_A"
+        ],
+        "model_path": "./data/NG15yr/PTArcade_models_1.0.0/models_1.0.0/sigw_delta.py",
+        "scramble_seed": 20260421,
+        "n_qmc_requested": 16384,
+        "n_finite": 16384,
+        "finite_fraction": 1.0,
+        "runtime_s": 2.0613858699798584,
+        "loglike_min": -586.7050645529677,
+        "loglike_max": -104.8179729565495,
+        "lnZ_direct_qmc": -109.6864338652051,
+        "lnZ_ti_qmc": -109.69436567699026,
+        "lnZ_ti_minus_direct": -0.007931811785155674,
+        "beta_grid_size": 81,
+        "beta_min_nonzero": 0.0001
+      },
+      "super": {
+        "model": "super",
+        "label": "Cosmic superstrings",
+        "dim": 2,
+        "parameter_names": [
+          "log10_Gmu",
+          "log10_P"
+        ],
+        "ceffyl_param_names": [
+          "log10_Gmu",
+          "log10_P"
+        ],
+        "model_path": "./data/NG15yr/PTArcade_models_1.0.0/models_1.0.0/super.py",
+        "scramble_seed": 20260421,
+        "n_qmc_requested": 16384,
+        "n_finite": 16384,
+        "finite_fraction": 1.0,
+        "runtime_s": 2.191638946533203,
+        "loglike_min": -586.7050645529677,
+        "loglike_max": -105.27005286831701,
+        "lnZ_direct_qmc": -110.06399831478835,
+        "lnZ_ti_qmc": -110.07163350860982,
+        "lnZ_ti_minus_direct": -0.0076351938214713755,
+        "beta_grid_size": 81,
+        "beta_min_nonzero": 0.0001
+      },
+      "smbhb_env_fixed_gamma": {
+        "model": "smbhb_env_fixed_gamma",
+        "label": "Environmental SMBHB, fixed gamma",
+        "dim": 3,
+        "parameter_names": [
+          "log10_A",
+          "log10_fbend",
+          "kappa"
+        ],
+        "ceffyl_param_names": [
+          "log10_A",
+          "log10_fbend",
+          "kappa"
+        ],
+        "model_path": null,
+        "scramble_seed": 20260421,
+        "n_qmc_requested": 16384,
+        "n_finite": 16384,
+        "finite_fraction": 1.0,
+        "runtime_s": 2.302825927734375,
+        "loglike_min": -586.7050645529677,
+        "loglike_max": -103.73682281786937,
+        "lnZ_direct_qmc": -110.19678341243772,
+        "lnZ_ti_qmc": -110.20582589589375,
+        "lnZ_ti_minus_direct": -0.009042483456028094,
+        "beta_grid_size": 81,
+        "beta_min_nonzero": 0.0001
+      }
+    },
+    "20260422": {
+      "baseline_smbhb_ptarcade_bhb_prior": {
+        "model": "baseline_smbhb_ptarcade_bhb_prior",
+        "label": "PTArcade BHB-prior baseline",
+        "dim": 2,
+        "parameter_names": [
+          "gw_bhb_0",
+          "gw_bhb_1"
+        ],
+        "ceffyl_param_names": [
+          "gw_bhb_0",
+          "gw_bhb_1"
+        ],
+        "model_path": null,
+        "scramble_seed": 20260422,
+        "n_qmc_requested": 16384,
+        "n_finite": 16384,
+        "finite_fraction": 1.0,
+        "runtime_s": 0.35652709007263184,
+        "loglike_min": -534.9371227977513,
+        "loglike_max": -106.14448038210509,
+        "lnZ_direct_qmc": -113.63155504063124,
+        "lnZ_ti_qmc": -113.63865690686293,
+        "lnZ_ti_minus_direct": -0.007101866231693066,
+        "beta_grid_size": 81,
+        "beta_min_nonzero": 0.0001
+      },
+      "sigw_gauss": {
+        "model": "sigw_gauss",
+        "label": "SIGW-Gaussian",
+        "dim": 3,
+        "parameter_names": [
+          "log10_fpeak",
+          "width",
+          "log10_A"
+        ],
+        "ceffyl_param_names": [
+          "log10_fpeak",
+          "width",
+          "log10_A"
+        ],
+        "model_path": "./data/NG15yr/PTArcade_models_1.0.0/models_1.0.0/sigw_gauss.py",
+        "scramble_seed": 20260422,
+        "n_qmc_requested": 16384,
+        "n_finite": 16384,
+        "finite_fraction": 1.0,
+        "runtime_s": 3.1005163192749023,
+        "loglike_min": -586.7050645529677,
+        "loglike_max": -103.78529991629068,
+        "lnZ_direct_qmc": -109.0680062900294,
+        "lnZ_ti_qmc": -109.07641361880596,
+        "lnZ_ti_minus_direct": -0.008407328776556255,
+        "beta_grid_size": 81,
+        "beta_min_nonzero": 0.0001
+      },
+      "sigw_delta": {
+        "model": "sigw_delta",
+        "label": "SIGW-delta",
+        "dim": 2,
+        "parameter_names": [
+          "log10_f_peak",
+          "log10_A"
+        ],
+        "ceffyl_param_names": [
+          "log10_f_peak",
+          "log10_A"
+        ],
+        "model_path": "./data/NG15yr/PTArcade_models_1.0.0/models_1.0.0/sigw_delta.py",
+        "scramble_seed": 20260422,
+        "n_qmc_requested": 16384,
+        "n_finite": 16384,
+        "finite_fraction": 1.0,
+        "runtime_s": 2.0978989601135254,
+        "loglike_min": -586.7050645529677,
+        "loglike_max": -104.87970932583005,
+        "lnZ_direct_qmc": -109.68474135526802,
+        "lnZ_ti_qmc": -109.69264996183176,
+        "lnZ_ti_minus_direct": -0.00790860656374548,
+        "beta_grid_size": 81,
+        "beta_min_nonzero": 0.0001
+      },
+      "super": {
+        "model": "super",
+        "label": "Cosmic superstrings",
+        "dim": 2,
+        "parameter_names": [
+          "log10_Gmu",
+          "log10_P"
+        ],
+        "ceffyl_param_names": [
+          "log10_Gmu",
+          "log10_P"
+        ],
+        "model_path": "./data/NG15yr/PTArcade_models_1.0.0/models_1.0.0/super.py",
+        "scramble_seed": 20260422,
+        "n_qmc_requested": 16384,
+        "n_finite": 16384,
+        "finite_fraction": 1.0,
+        "runtime_s": 2.1802000999450684,
+        "loglike_min": -586.7050645529677,
+        "loglike_max": -105.13473128374257,
+        "lnZ_direct_qmc": -110.05203178115183,
+        "lnZ_ti_qmc": -110.05966543702043,
+        "lnZ_ti_minus_direct": -0.007633655868602318,
+        "beta_grid_size": 81,
+        "beta_min_nonzero": 0.0001
+      },
+      "smbhb_env_fixed_gamma": {
+        "model": "smbhb_env_fixed_gamma",
+        "label": "Environmental SMBHB, fixed gamma",
+        "dim": 3,
+        "parameter_names": [
+          "log10_A",
+          "log10_fbend",
+          "kappa"
+        ],
+        "ceffyl_param_names": [
+          "log10_A",
+          "log10_fbend",
+          "kappa"
+        ],
+        "model_path": null,
+        "scramble_seed": 20260422,
+        "n_qmc_requested": 16384,
+        "n_finite": 16384,
+        "finite_fraction": 1.0,
+        "runtime_s": 2.280677080154419,
+        "loglike_min": -586.7050645529677,
+        "loglike_max": -103.67489247344793,
+        "lnZ_direct_qmc": -110.22551984535636,
+        "lnZ_ti_qmc": -110.23453723075615,
+        "lnZ_ti_minus_direct": -0.009017385399786804,
+        "beta_grid_size": 81,
+        "beta_min_nonzero": 0.0001
+      }
+    },
+    "20260423": {
+      "baseline_smbhb_ptarcade_bhb_prior": {
+        "model": "baseline_smbhb_ptarcade_bhb_prior",
+        "label": "PTArcade BHB-prior baseline",
+        "dim": 2,
+        "parameter_names": [
+          "gw_bhb_0",
+          "gw_bhb_1"
+        ],
+        "ceffyl_param_names": [
+          "gw_bhb_0",
+          "gw_bhb_1"
+        ],
+        "model_path": null,
+        "scramble_seed": 20260423,
+        "n_qmc_requested": 16384,
+        "n_finite": 16384,
+        "finite_fraction": 1.0,
+        "runtime_s": 0.35510826110839844,
+        "loglike_min": -383.07015924580065,
+        "loglike_max": -105.98859852665973,
+        "lnZ_direct_qmc": -113.65550227968083,
+        "lnZ_ti_qmc": -113.66252559881087,
+        "lnZ_ti_minus_direct": -0.0070233191300417275,
+        "beta_grid_size": 81,
+        "beta_min_nonzero": 0.0001
+      },
+      "sigw_gauss": {
+        "model": "sigw_gauss",
+        "label": "SIGW-Gaussian",
+        "dim": 3,
+        "parameter_names": [
+          "log10_fpeak",
+          "width",
+          "log10_A"
+        ],
+        "ceffyl_param_names": [
+          "log10_fpeak",
+          "width",
+          "log10_A"
+        ],
+        "model_path": "./data/NG15yr/PTArcade_models_1.0.0/models_1.0.0/sigw_gauss.py",
+        "scramble_seed": 20260423,
+        "n_qmc_requested": 16384,
+        "n_finite": 16384,
+        "finite_fraction": 1.0,
+        "runtime_s": 3.04364013671875,
+        "loglike_min": -586.7050645529677,
+        "loglike_max": -103.80487470040123,
+        "lnZ_direct_qmc": -108.96510717265757,
+        "lnZ_ti_qmc": -108.97362626485837,
+        "lnZ_ti_minus_direct": -0.008519092200799605,
+        "beta_grid_size": 81,
+        "beta_min_nonzero": 0.0001
+      },
+      "sigw_delta": {
+        "model": "sigw_delta",
+        "label": "SIGW-delta",
+        "dim": 2,
+        "parameter_names": [
+          "log10_f_peak",
+          "log10_A"
+        ],
+        "ceffyl_param_names": [
+          "log10_f_peak",
+          "log10_A"
+        ],
+        "model_path": "./data/NG15yr/PTArcade_models_1.0.0/models_1.0.0/sigw_delta.py",
+        "scramble_seed": 20260423,
+        "n_qmc_requested": 16384,
+        "n_finite": 16384,
+        "finite_fraction": 1.0,
+        "runtime_s": 2.1859560012817383,
+        "loglike_min": -586.7050645529677,
+        "loglike_max": -104.7773810010287,
+        "lnZ_direct_qmc": -109.66866517110873,
+        "lnZ_ti_qmc": -109.67659736007744,
+        "lnZ_ti_minus_direct": -0.007932188968709397,
+        "beta_grid_size": 81,
+        "beta_min_nonzero": 0.0001
+      },
+      "super": {
+        "model": "super",
+        "label": "Cosmic superstrings",
+        "dim": 2,
+        "parameter_names": [
+          "log10_Gmu",
+          "log10_P"
+        ],
+        "ceffyl_param_names": [
+          "log10_Gmu",
+          "log10_P"
+        ],
+        "model_path": "./data/NG15yr/PTArcade_models_1.0.0/models_1.0.0/super.py",
+        "scramble_seed": 20260423,
+        "n_qmc_requested": 16384,
+        "n_finite": 16384,
+        "finite_fraction": 1.0,
+        "runtime_s": 2.3175230026245117,
+        "loglike_min": -586.7050645529677,
+        "loglike_max": -105.29129494214989,
+        "lnZ_direct_qmc": -110.0794022996663,
+        "lnZ_ti_qmc": -110.08702289758705,
+        "lnZ_ti_minus_direct": -0.007620597920748651,
+        "beta_grid_size": 81,
+        "beta_min_nonzero": 0.0001
+      },
+      "smbhb_env_fixed_gamma": {
+        "model": "smbhb_env_fixed_gamma",
+        "label": "Environmental SMBHB, fixed gamma",
+        "dim": 3,
+        "parameter_names": [
+          "log10_A",
+          "log10_fbend",
+          "kappa"
+        ],
+        "ceffyl_param_names": [
+          "log10_A",
+          "log10_fbend",
+          "kappa"
+        ],
+        "model_path": null,
+        "scramble_seed": 20260423,
+        "n_qmc_requested": 16384,
+        "n_finite": 16384,
+        "finite_fraction": 1.0,
+        "runtime_s": 2.3604233264923096,
+        "loglike_min": -586.7050645529677,
+        "loglike_max": -103.67520594147486,
+        "lnZ_direct_qmc": -110.11502128196891,
+        "lnZ_ti_qmc": -110.12414714699072,
+        "lnZ_ti_minus_direct": -0.009125865021815116,
+        "beta_grid_size": 81,
+        "beta_min_nonzero": 0.0001
+      }
+    },
+    "20260424": {
+      "baseline_smbhb_ptarcade_bhb_prior": {
+        "model": "baseline_smbhb_ptarcade_bhb_prior",
+        "label": "PTArcade BHB-prior baseline",
+        "dim": 2,
+        "parameter_names": [
+          "gw_bhb_0",
+          "gw_bhb_1"
+        ],
+        "ceffyl_param_names": [
+          "gw_bhb_0",
+          "gw_bhb_1"
+        ],
+        "model_path": null,
+        "scramble_seed": 20260424,
+        "n_qmc_requested": 16384,
+        "n_finite": 16384,
+        "finite_fraction": 1.0,
+        "runtime_s": 0.3579089641571045,
+        "loglike_min": -436.839429403883,
+        "loglike_max": -106.11136039545714,
+        "lnZ_direct_qmc": -113.62176126331443,
+        "lnZ_ti_qmc": -113.62904979170912,
+        "lnZ_ti_minus_direct": -0.007288528394695959,
+        "beta_grid_size": 81,
+        "beta_min_nonzero": 0.0001
+      },
+      "sigw_gauss": {
+        "model": "sigw_gauss",
+        "label": "SIGW-Gaussian",
+        "dim": 3,
+        "parameter_names": [
+          "log10_fpeak",
+          "width",
+          "log10_A"
+        ],
+        "ceffyl_param_names": [
+          "log10_fpeak",
+          "width",
+          "log10_A"
+        ],
+        "model_path": "./data/NG15yr/PTArcade_models_1.0.0/models_1.0.0/sigw_gauss.py",
+        "scramble_seed": 20260424,
+        "n_qmc_requested": 16384,
+        "n_finite": 16384,
+        "finite_fraction": 1.0,
+        "runtime_s": 2.8563239574432373,
+        "loglike_min": -586.7050645529677,
+        "loglike_max": -103.54803373705884,
+        "lnZ_direct_qmc": -109.04470514573802,
+        "lnZ_ti_qmc": -109.05318917936744,
+        "lnZ_ti_minus_direct": -0.008484033629414967,
+        "beta_grid_size": 81,
+        "beta_min_nonzero": 0.0001
+      },
+      "sigw_delta": {
+        "model": "sigw_delta",
+        "label": "SIGW-delta",
+        "dim": 2,
+        "parameter_names": [
+          "log10_f_peak",
+          "log10_A"
+        ],
+        "ceffyl_param_names": [
+          "log10_f_peak",
+          "log10_A"
+        ],
+        "model_path": "./data/NG15yr/PTArcade_models_1.0.0/models_1.0.0/sigw_delta.py",
+        "scramble_seed": 20260424,
+        "n_qmc_requested": 16384,
+        "n_finite": 16384,
+        "finite_fraction": 1.0,
+        "runtime_s": 2.1490769386291504,
+        "loglike_min": -586.7050645529677,
+        "loglike_max": -104.79209413253267,
+        "lnZ_direct_qmc": -109.67541823155102,
+        "lnZ_ti_qmc": -109.68333122539065,
+        "lnZ_ti_minus_direct": -0.00791299383962496,
+        "beta_grid_size": 81,
+        "beta_min_nonzero": 0.0001
+      },
+      "super": {
+        "model": "super",
+        "label": "Cosmic superstrings",
+        "dim": 2,
+        "parameter_names": [
+          "log10_Gmu",
+          "log10_P"
+        ],
+        "ceffyl_param_names": [
+          "log10_Gmu",
+          "log10_P"
+        ],
+        "model_path": "./data/NG15yr/PTArcade_models_1.0.0/models_1.0.0/super.py",
+        "scramble_seed": 20260424,
+        "n_qmc_requested": 16384,
+        "n_finite": 16384,
+        "finite_fraction": 1.0,
+        "runtime_s": 2.2535228729248047,
+        "loglike_min": -586.7050645529677,
+        "loglike_max": -105.23151524358059,
+        "lnZ_direct_qmc": -110.07388728504557,
+        "lnZ_ti_qmc": -110.08152291091756,
+        "lnZ_ti_minus_direct": -0.007635625871984075,
+        "beta_grid_size": 81,
+        "beta_min_nonzero": 0.0001
+      },
+      "smbhb_env_fixed_gamma": {
+        "model": "smbhb_env_fixed_gamma",
+        "label": "Environmental SMBHB, fixed gamma",
+        "dim": 3,
+        "parameter_names": [
+          "log10_A",
+          "log10_fbend",
+          "kappa"
+        ],
+        "ceffyl_param_names": [
+          "log10_A",
+          "log10_fbend",
+          "kappa"
+        ],
+        "model_path": null,
+        "scramble_seed": 20260424,
+        "n_qmc_requested": 16384,
+        "n_finite": 16384,
+        "finite_fraction": 1.0,
+        "runtime_s": 2.2947661876678467,
+        "loglike_min": -586.7050645529677,
+        "loglike_max": -103.73953755057974,
+        "lnZ_direct_qmc": -110.0597684090565,
+        "lnZ_ti_qmc": -110.06905932618508,
+        "lnZ_ti_minus_direct": -0.0092909171285811,
+        "beta_grid_size": 81,
+        "beta_min_nonzero": 0.0001
+      }
+    },
+    "20260425": {
+      "baseline_smbhb_ptarcade_bhb_prior": {
+        "model": "baseline_smbhb_ptarcade_bhb_prior",
+        "label": "PTArcade BHB-prior baseline",
+        "dim": 2,
+        "parameter_names": [
+          "gw_bhb_0",
+          "gw_bhb_1"
+        ],
+        "ceffyl_param_names": [
+          "gw_bhb_0",
+          "gw_bhb_1"
+        ],
+        "model_path": null,
+        "scramble_seed": 20260425,
+        "n_qmc_requested": 16384,
+        "n_finite": 16384,
+        "finite_fraction": 1.0,
+        "runtime_s": 0.35470104217529297,
+        "loglike_min": -407.24853036493255,
+        "loglike_max": -106.6635356813328,
+        "lnZ_direct_qmc": -113.76277476824819,
+        "lnZ_ti_qmc": -113.769946330444,
+        "lnZ_ti_minus_direct": -0.007171562195807724,
+        "beta_grid_size": 81,
+        "beta_min_nonzero": 0.0001
+      },
+      "sigw_gauss": {
+        "model": "sigw_gauss",
+        "label": "SIGW-Gaussian",
+        "dim": 3,
+        "parameter_names": [
+          "log10_fpeak",
+          "width",
+          "log10_A"
+        ],
+        "ceffyl_param_names": [
+          "log10_fpeak",
+          "width",
+          "log10_A"
+        ],
+        "model_path": "./data/NG15yr/PTArcade_models_1.0.0/models_1.0.0/sigw_gauss.py",
+        "scramble_seed": 20260425,
+        "n_qmc_requested": 16384,
+        "n_finite": 16384,
+        "finite_fraction": 1.0,
+        "runtime_s": 3.1372110843658447,
+        "loglike_min": -586.7050645529677,
+        "loglike_max": -103.5118233292495,
+        "lnZ_direct_qmc": -109.01510817569668,
+        "lnZ_ti_qmc": -109.0234756757605,
+        "lnZ_ti_minus_direct": -0.008367500063812372,
+        "beta_grid_size": 81,
+        "beta_min_nonzero": 0.0001
+      },
+      "sigw_delta": {
+        "model": "sigw_delta",
+        "label": "SIGW-delta",
+        "dim": 2,
+        "parameter_names": [
+          "log10_f_peak",
+          "log10_A"
+        ],
+        "ceffyl_param_names": [
+          "log10_f_peak",
+          "log10_A"
+        ],
+        "model_path": "./data/NG15yr/PTArcade_models_1.0.0/models_1.0.0/sigw_delta.py",
+        "scramble_seed": 20260425,
+        "n_qmc_requested": 16384,
+        "n_finite": 16384,
+        "finite_fraction": 1.0,
+        "runtime_s": 2.2309319972991943,
+        "loglike_min": -586.7050645529677,
+        "loglike_max": -104.81337741836263,
+        "lnZ_direct_qmc": -109.65755396538756,
+        "lnZ_ti_qmc": -109.66548047399442,
+        "lnZ_ti_minus_direct": -0.007926508606857396,
+        "beta_grid_size": 81,
+        "beta_min_nonzero": 0.0001
+      },
+      "super": {
+        "model": "super",
+        "label": "Cosmic superstrings",
+        "dim": 2,
+        "parameter_names": [
+          "log10_Gmu",
+          "log10_P"
+        ],
+        "ceffyl_param_names": [
+          "log10_Gmu",
+          "log10_P"
+        ],
+        "model_path": "./data/NG15yr/PTArcade_models_1.0.0/models_1.0.0/super.py",
+        "scramble_seed": 20260425,
+        "n_qmc_requested": 16384,
+        "n_finite": 16384,
+        "finite_fraction": 1.0,
+        "runtime_s": 2.4035840034484863,
+        "loglike_min": -586.7050645529677,
+        "loglike_max": -105.31347183505281,
+        "lnZ_direct_qmc": -110.0767329725971,
+        "lnZ_ti_qmc": -110.08435848893537,
+        "lnZ_ti_minus_direct": -0.00762551633826547,
+        "beta_grid_size": 81,
+        "beta_min_nonzero": 0.0001
+      },
+      "smbhb_env_fixed_gamma": {
+        "model": "smbhb_env_fixed_gamma",
+        "label": "Environmental SMBHB, fixed gamma",
+        "dim": 3,
+        "parameter_names": [
+          "log10_A",
+          "log10_fbend",
+          "kappa"
+        ],
+        "ceffyl_param_names": [
+          "log10_A",
+          "log10_fbend",
+          "kappa"
+        ],
+        "model_path": null,
+        "scramble_seed": 20260425,
+        "n_qmc_requested": 16384,
+        "n_finite": 16384,
+        "finite_fraction": 1.0,
+        "runtime_s": 2.6006619930267334,
+        "loglike_min": -586.7050645529677,
+        "loglike_max": -103.55495019180334,
+        "lnZ_direct_qmc": -110.14496673865617,
+        "lnZ_ti_qmc": -110.15410859489458,
+        "lnZ_ti_minus_direct": -0.009141856238414903,
+        "beta_grid_size": 81,
+        "beta_min_nonzero": 0.0001
+      }
+    }
+  }
+}

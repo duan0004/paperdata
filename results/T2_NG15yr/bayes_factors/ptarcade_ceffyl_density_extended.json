@@ -1,0 +1,233 @@
+{
+  "generated": "2026-04-21 10:41:18",
+  "task": "PTArcade official-ceffyl-density evidence extension",
+  "source": {
+    "ptarcade_package_version": "1.1.5",
+    "ptarcade_ceffyl_data_zenodo": "https://doi.org/10.5281/zenodo.10495907",
+    "ng15_model_files_zenodo": "https://doi.org/10.5281/zenodo.8084351",
+    "ceffyl_datadir": "./data/NG15yr/PTArcade_ceffyl_0.2.0/ng15_30f_fs{hd}_ceffyl",
+    "model_root": "./data/NG15yr/PTArcade_models_1.0.0/models_1.0.0"
+  },
+  "method": {
+    "mode": "dynesty evidence on PTArcade official ceffyl density grid",
+    "note": "Extension check, still not full product-space PTArcade MCMC",
+    "n_bins": 14,
+    "nlive": 500,
+    "dlogz": 0.1,
+    "seed": 42
+  },
+  "results": {
+    "smbhb_fixed_gamma": {
+      "model": "smbhb_fixed_gamma",
+      "dim": 1,
+      "parameter_names": [
+        "log10_A"
+      ],
+      "ceffyl_param_names": [
+        "log10_A"
+      ],
+      "model_path": null,
+      "lnZ": -113.01014102895687,
+      "lnZerr": 0.10270745016414906,
+      "niter": 3194,
+      "runtime_s": 3.2553861141204834,
+      "bestfit": [
+        -14.569264637007679
+      ],
+      "bestfit_loglike": -108.9052006827872,
+      "posterior_mean": [
+        -14.603900924439117
+      ],
+      "posterior_std": [
+        0.06343600166982459
+      ],
+      "posterior_median": [
+        -14.596578058647289
+      ],
+      "posterior_p16": [
+        -14.667304098384896
+      ],
+      "posterior_p84": [
+        -14.545639384080982
+      ],
+      "lnB_vs_smbhb_fixed_gamma": 0.0,
+      "lnB_err_vs_smbhb_fixed_gamma": 0.14525026897889837,
+      "B_vs_smbhb_fixed_gamma": 1.0,
+      "lnB_vs_smbhb_ptarcade_bhb_prior": 0.3662485829545119,
+      "lnB_err_vs_smbhb_ptarcade_bhb_prior": 0.16331982183621677,
+      "B_vs_smbhb_ptarcade_bhb_prior": 1.4423137327044209
+    },
+    "smbhb_ptarcade_bhb_prior": {
+      "model": "smbhb_ptarcade_bhb_prior",
+      "dim": 2,
+      "parameter_names": [
+        "gw_bhb_0",
+        "gw_bhb_1"
+      ],
+      "ceffyl_param_names": [
+        "gw_bhb_0",
+        "gw_bhb_1"
+      ],
+      "model_path": null,
+      "lnZ": -113.37638961191138,
+      "lnZerr": 0.12698245502978914,
+      "niter": 5624,
+      "runtime_s": 2.8752918243408203,
+      "bestfit": [
+        -14.189510639984421,
+        3.257727655595537
+      ],
+      "bestfit_loglike": -104.43126750612969,
+      "posterior_mean": [
+        -14.541861179114969,
+        4.132092222320064
+      ],
+      "posterior_std": [
+        0.133472601496788,
+        0.2839988685816131
+      ],
+      "posterior_median": [
+        -14.529875367078864,
+        4.114916685382864
+      ],
+      "posterior_p16": [
+        -14.675283040778778,
+        3.8596422793331575
+      ],
+      "posterior_p84": [
+        -14.4225559099612,
+        4.419419537244721
+      ],
+      "lnB_vs_smbhb_fixed_gamma": -0.3662485829545119,
+      "lnB_err_vs_smbhb_fixed_gamma": 0.16331982183621677,
+      "B_vs_smbhb_fixed_gamma": 0.693330429659671,
+      "lnB_vs_smbhb_ptarcade_bhb_prior": 0.0,
+      "lnB_err_vs_smbhb_ptarcade_bhb_prior": 0.17958031008655945,
+      "B_vs_smbhb_ptarcade_bhb_prior": 1.0
+    },
+    "sigw_delta_ptarcade": {
+      "model": "sigw_delta_ptarcade",
+      "dim": 2,
+      "parameter_names": [
+        "log10_f_peak",
+        "log10_A"
+      ],
+      "ceffyl_param_names": [
+        "log10_f_peak",
+        "log10_A"
+      ],
+      "model_path": "./data/NG15yr/PTArcade_models_1.0.0/models_1.0.0/sigw_delta.py",
+      "lnZ": -109.7294604220782,
+      "lnZerr": 0.11179189881541994,
+      "niter": 3438,
+      "runtime_s": 6.94926118850708,
+      "bestfit": [
+        -5.062046967571501,
+        0.009504699081733126
+      ],
+      "bestfit_loglike": -104.77212210719276,
+      "posterior_mean": [
+        -5.837836292249148,
+        -0.6363352612147738
+      ],
+      "posterior_std": [
+        0.5714266300883618,
+        0.4561805239985514
+      ],
+      "posterior_median": [
+        -5.7615295179251405,
+        -0.5875141784834348
+      ],
+      "posterior_p16": [
+        -6.477768112546011,
+        -1.1446725592391869
+      ],
+      "posterior_p84": [
+        -5.231094533479707,
+        -0.1390327894464708
+      ],
+      "lnB_vs_smbhb_fixed_gamma": 3.2806806068786614,
+      "lnB_err_vs_smbhb_fixed_gamma": 0.1518099106118512,
+      "B_vs_smbhb_fixed_gamma": 26.593866510266682,
+      "lnB_vs_smbhb_ptarcade_bhb_prior": 3.6469291898331733,
+      "lnB_err_vs_smbhb_ptarcade_bhb_prior": 0.16918029591577594,
+      "B_vs_smbhb_ptarcade_bhb_prior": 38.35669887346583
+    },
+    "super_ptarcade": {
+      "model": "super_ptarcade",
+      "dim": 2,
+      "parameter_names": [
+        "log10_Gmu",
+        "log10_P"
+      ],
+      "ceffyl_param_names": [
+        "log10_Gmu",
+        "log10_P"
+      ],
+      "model_path": "./data/NG15yr/PTArcade_models_1.0.0/models_1.0.0/super.py",
+      "lnZ": -110.0386755489354,
+      "lnZerr": 0.11030473194090144,
+      "niter": 3643,
+      "runtime_s": 7.0836851596832275,
+      "bestfit": [
+        -12.101363641816965,
+        -2.9983298467218016
+      ],
+      "bestfit_loglike": -105.09057965473579,
+      "posterior_mean": [
+        -11.702019542724564,
+        -2.283012884665756
+      ],
+      "posterior_std": [
+        0.30577286599275355,
+        0.5271193443488128
+      ],
+      "posterior_median": [
+        -11.760709863423312,
+        -2.379380839633748
+      ],
+      "posterior_p16": [
+        -11.999161153606419,
+        -2.817878446194265
+      ],
+      "posterior_p84": [
+        -11.387486463835353,
+        -1.7104957340215718
+      ],
+      "lnB_vs_smbhb_fixed_gamma": 2.9714654800214646,
+      "lnB_err_vs_smbhb_fixed_gamma": 0.1507181283315822,
+      "B_vs_smbhb_fixed_gamma": 19.52050555573951,
+      "lnB_vs_smbhb_ptarcade_bhb_prior": 3.3377140629759765,
+      "lnB_err_vs_smbhb_ptarcade_bhb_prior": 0.16820130134439074,
+      "B_vs_smbhb_ptarcade_bhb_prior": 28.15469323237604
+    }
+  },
+  "published_reference": {
+    "sigw_delta_ptarcade": {
+      "label": "SIGW-delta",
+      "B_vs_smbhb": 44.0,
+      "B_err": 2.0,
+      "lnB": 3.784189633918261,
+      "lnB_err_approx": 0.045454545454545456,
+      "source": "NANOGrav 15yr New Physics Search arXiv:2306.16219; values recorded in project theory notes"
+    },
+    "super_ptarcade": {
+      "label": "cosmic superstrings",
+      "B_vs_smbhb": 46.0,
+      "B_err": 4.0,
+      "lnB": 3.828641396489095,
+      "lnB_err_approx": 0.08695652173913043,
+      "source": "NANOGrav 15yr New Physics Search arXiv:2306.16219; values recorded in project theory notes"
+    }
+  },
+  "gap_vs_published_lnB": {
+    "sigw_delta_ptarcade": {
+      "using_fixed_gamma_baseline": -0.5035090270395997,
+      "using_ptarcade_bhb_prior_baseline": -0.13726044408508775
+    },
+    "super_ptarcade": {
+      "using_fixed_gamma_baseline": -0.8571759164676305,
+      "using_ptarcade_bhb_prior_baseline": -0.49092733351311857
+    }
+  }
+}

@@ -1,0 +1,180 @@
+{
+  "blockers": [],
+  "checks": {
+    "all_json_complete": true,
+    "all_json_readable": true,
+    "all_required_files_exist": true,
+    "latex_env_balanced": true,
+    "no_hard_placeholders": true,
+    "no_matching_background_processes": true,
+    "no_missing_bibitems": true,
+    "no_soft_placeholders": true,
+    "no_unused_bibitems": true,
+    "supplement_latex_env_balanced": true,
+    "supplement_no_missing_bibitems": true,
+    "supplement_no_unused_bibitems": true,
+    "tex_engine_available": true,
+    "title_present_compressed": true,
+    "title_present_supplement_tex": true,
+    "title_present_tex": true
+  },
+  "citations": {
+    "bibitem_count": 13,
+    "cite_count": 13,
+    "missing_bibitems": [],
+    "unused_bibitems": []
+  },
+  "file_status": {
+    "compressed_md": {
+      "exists": true,
+      "path": "theory/paper_prl_compressed_draft.md"
+    },
+    "cover_letter": {
+      "exists": true,
+      "path": "theory/PRL_cover_letter_draft.md"
+    },
+    "environment": {
+      "exists": true,
+      "path": "environment.yml"
+    },
+    "figure": {
+      "exists": true,
+      "path": "results/T2_NG15yr/figures/prl_decisive_evidence_figure.pdf"
+    },
+    "formal_compile_report": {
+      "exists": true,
+      "path": "theory/T3.12_PRL_formal_compile_report.md"
+    },
+    "human_gate": {
+      "exists": true,
+      "path": "theory/PRL_submission_human_gate.md"
+    },
+    "package_manifest": {
+      "exists": true,
+      "path": "theory/PRL_submission_package_manifest.md"
+    },
+    "reproducibility": {
+      "exists": true,
+      "path": "REPRODUCIBILITY.md"
+    },
+    "revtex": {
+      "exists": true,
+      "path": "theory/paper_prl_submission.tex"
+    },
+    "revtex_pdf": {
+      "exists": true,
+      "path": "theory/pdf/revtex/paper_prl_submission.pdf"
+    },
+    "supplement_md": {
+      "exists": true,
+      "path": "theory/prl_supplement_draft.md"
+    },
+    "supplement_pdf": {
+      "exists": true,
+      "path": "theory/pdf/revtex/prl_supplement.pdf"
+    },
+    "supplement_tex": {
+      "exists": true,
+      "path": "theory/prl_supplement.tex"
+    },
+    "tex_static_check": {
+      "exists": true,
+      "path": "theory/T3.11_PRL_tex_static_check.md"
+    }
+  },
+  "generated": "2026-04-22T09:53:41",
+  "json_status": {
+    "H10_systematic_envelope": {
+      "complete": true,
+      "exists": true,
+      "path": "results/T2_NG15yr/bayes_factors/prl_H10_systematic_envelope.json",
+      "readable": true
+    },
+    "H4_H5_H6": {
+      "complete": true,
+      "exists": true,
+      "path": "results/T2_NG15yr/bayes_factors/prl_H4_H5_H6_experiments.json",
+      "readable": true
+    },
+    "H4_env_robustness": {
+      "complete": true,
+      "exists": true,
+      "path": "results/T2_NG15yr/bayes_factors/prl_H4_env_robustness.json",
+      "readable": true
+    },
+    "H7_astro_family": {
+      "complete": true,
+      "exists": true,
+      "path": "results/T2_NG15yr/bayes_factors/prl_H7_astrophysical_family.json",
+      "readable": true
+    },
+    "H9_bin_driver": {
+      "complete": true,
+      "exists": true,
+      "path": "results/T2_NG15yr/bayes_factors/prl_H9_bin_driver_analysis.json",
+      "readable": true
+    },
+    "car_null_calibration": {
+      "complete": true,
+      "exists": true,
+      "path": "results/T2_NG15yr/covariance/car_null_calibration.json",
+      "readable": true
+    },
+    "official_density_robustness": {
+      "complete": true,
+      "exists": true,
+      "path": "results/T2_NG15yr/bayes_factors/prl_official_density_robustness.json",
+      "readable": true
+    },
+    "rhat": {
+      "complete": true,
+      "exists": true,
+      "path": "results/T2_NG15yr/T2_multichain_Rhat.json",
+      "readable": true
+    },
+    "ti_qmc_crosscheck": {
+      "complete": true,
+      "exists": true,
+      "path": "results/T2_NG15yr/bayes_factors/prl_evidence_ti_qmc_crosscheck.json",
+      "readable": true
+    }
+  },
+  "latex_environments": {
+    "balanced": true,
+    "remaining_stack": []
+  },
+  "placeholders": {
+    "hard": [],
+    "soft": []
+  },
+  "process_scan": {
+    "count": 0,
+    "matching_processes": []
+  },
+  "structural_pass": true,
+  "submission_ready": true,
+  "supplement_citations": {
+    "bibitem_count": 0,
+    "cite_count": 0,
+    "missing_bibitems": [],
+    "unused_bibitems": []
+  },
+  "supplement_latex_environments": {
+    "balanced": true,
+    "remaining_stack": []
+  },
+  "tex_engines": {
+    "latexmk": null,
+    "lualatex": null,
+    "pdflatex": null,
+    "tectonic": "/opt/homebrew/bin/tectonic",
+    "xelatex": null
+  },
+  "title": "Curved SMBHB Spectra Compete with New-Physics Explanations in PTA Source Identification",
+  "word_counts": {
+    "compressed_markdown": 1512,
+    "revtex_source": 1612,
+    "supplement_markdown": 986,
+    "supplement_tex_source": 1604
+  }
+}

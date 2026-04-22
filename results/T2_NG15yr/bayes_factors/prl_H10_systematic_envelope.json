@@ -1,0 +1,315 @@
+{
+  "generated": "2026-04-22 09:53:41",
+  "task": "PRL H10 systematic evidence envelope",
+  "source_files": {
+    "official_density_robustness": "results/T2_NG15yr/bayes_factors/prl_official_density_robustness.json",
+    "h4_h5_h6": "results/T2_NG15yr/bayes_factors/prl_H4_H5_H6_experiments.json",
+    "qmc_ti": "results/T2_NG15yr/bayes_factors/prl_evidence_ti_qmc_crosscheck.json",
+    "h7_astro_family": "results/T2_NG15yr/bayes_factors/prl_H7_astrophysical_family.json",
+    "h9_bin_driver": "results/T2_NG15yr/bayes_factors/prl_H9_bin_driver_analysis.json"
+  },
+  "cosmology_rows": [
+    {
+      "label": "SIGW-Gaussian",
+      "lnB_mean": 4.519926101285057,
+      "sample_std": 0.1849794876431653,
+      "mean_nested_lnB_err": 0.14849528598473066,
+      "published_lnB": 4.04305126783455,
+      "mean_residual_vs_published": 0.47687483345050674,
+      "max_abs_residual_vs_published": 0.6943404236165724
+    },
+    {
+      "label": "SIGW-delta",
+      "lnB_mean": 3.9297345270586077,
+      "sample_std": 0.19854776121104434,
+      "mean_nested_lnB_err": 0.14544830726304786,
+      "published_lnB": 3.784189633918261,
+      "mean_residual_vs_published": 0.14554489314034677,
+      "max_abs_residual_vs_published": 0.3865466233661281
+    },
+    {
+      "label": "Cosmic superstrings",
+      "lnB_mean": 3.5575775855519254,
+      "sample_std": 0.1448996070285566,
+      "mean_nested_lnB_err": 0.14509646316382718,
+      "published_lnB": 3.828641396489095,
+      "mean_residual_vs_published": -0.2710638109371697,
+      "max_abs_residual_vs_published": 0.49092733351311857
+    }
+  ],
+  "sigw_delta_prior_rows": [
+    {
+      "label": "sigw_delta_prior_fmax_-3",
+      "lnB": 4.5239328566229915,
+      "lnB_err": 0.16913530365728893,
+      "delta_lnB_vs_original": 0.4263190335579168,
+      "bestfit": {
+        "log10_f_peak": -4.106950208272414,
+        "log10_A": 0.8228830175184667
+      }
+    },
+    {
+      "label": "sigw_delta_prior_fmax_-4",
+      "lnB": 4.3004598986259595,
+      "lnB_err": 0.17100277343417633,
+      "delta_lnB_vs_original": 0.20284607556088474,
+      "bestfit": {
+        "log10_f_peak": -4.148210088842735,
+        "log10_A": 0.7880985220284034
+      }
+    },
+    {
+      "label": "sigw_delta_prior_fmax_-5",
+      "lnB": 4.097613823065075,
+      "lnB_err": 0.17052822074483118,
+      "delta_lnB_vs_original": 0.0,
+      "bestfit": {
+        "log10_f_peak": -5.109932388995126,
+        "log10_A": -0.030234585539879788
+      }
+    }
+  ],
+  "qmc_ti_rows": [
+    {
+      "label": "SIGW-Gaussian",
+      "lnB_ti_mean": 4.637093053829167,
+      "lnB_ti_sample_std": 0.07846869372396828,
+      "nested_robust_mean_lnB": 4.519926101285057,
+      "ti_residual_vs_nested_mean": 0.11716695254411036
+    },
+    {
+      "label": "SIGW-delta",
+      "lnB_ti_mean": 3.992425728810926,
+      "lnB_ti_sample_std": 0.06535603322732672,
+      "nested_robust_mean_lnB": 3.9297345270586077,
+      "ti_residual_vs_nested_mean": 0.06269120175231846
+    },
+    {
+      "label": "Cosmic superstrings",
+      "lnB_ti_mean": 3.5980700198537874,
+      "lnB_ti_sample_std": 0.05269979348454034,
+      "nested_robust_mean_lnB": 3.5575775855519254,
+      "ti_residual_vs_nested_mean": 0.040492434301862
+    },
+    {
+      "label": "Environmental SMBHB, fixed gamma",
+      "lnB_ti_mean": 3.517375029523774,
+      "lnB_ti_sample_std": 0.08240585167407803,
+      "nested_robust_mean_lnB": 3.453307779027014,
+      "ti_residual_vs_nested_mean": 0.06406725049675988
+    }
+  ],
+  "astrophysical_family_rows": [
+    {
+      "model": "ecc_supp_fixed_gamma",
+      "class": "eccentricity_inspired_suppression",
+      "lnB_mean": 3.83852172169606,
+      "sample_std": 0.043054908395170774,
+      "mean_nested_lnB_err": 0.15206671945963798,
+      "qmc_ti_lnB": 3.8942708157524115,
+      "qmc_ti_residual_vs_nested": 0.055749094056351645
+    },
+    {
+      "model": "broken_pl_fixed_gamma",
+      "class": "broken_powerlaw_curvature",
+      "lnB_mean": 3.655641660062821,
+      "sample_std": 0.15353123983165265,
+      "mean_nested_lnB_err": 0.15264913982070044,
+      "qmc_ti_lnB": 3.71892390461016,
+      "qmc_ti_residual_vs_nested": 0.06328224454733888
+    },
+    {
+      "model": "env_fixed_gamma",
+      "class": "environmental_turnover",
+      "lnB_mean": 3.453307779027014,
+      "sample_std": 0.06162999237631575,
+      "mean_nested_lnB_err": 0.15340617489602654,
+      "qmc_ti_lnB": 3.470348982181804,
+      "qmc_ti_residual_vs_nested": 0.01704120315478974
+    },
+    {
+      "model": "env_free_gamma",
+      "class": "environmental_turnover",
+      "lnB_mean": 3.3601874054574266,
+      "sample_std": 0.20238493431854238,
+      "mean_nested_lnB_err": 0.1545118856296664,
+      "qmc_ti_lnB": null,
+      "qmc_ti_residual_vs_nested": null
+    },
+    {
+      "model": "env_broadbend_fixed_gamma",
+      "class": "environmental_turnover",
+      "lnB_mean": 2.992484369701515,
+      "sample_std": 0.14164242920002643,
+      "mean_nested_lnB_err": 0.1563545088140173,
+      "qmc_ti_lnB": null,
+      "qmc_ti_residual_vs_nested": null
+    },
+    {
+      "model": "env_lowbend_fixed_gamma",
+      "class": "environmental_turnover",
+      "lnB_mean": 2.6657452816588716,
+      "sample_std": 0.1028154520590204,
+      "mean_nested_lnB_err": 0.15293598176417442,
+      "qmc_ti_lnB": null,
+      "qmc_ti_residual_vs_nested": null
+    }
+  ],
+  "astrophysical_class_best": {
+    "eccentricity_inspired_suppression": {
+      "model": "ecc_supp_fixed_gamma",
+      "class": "eccentricity_inspired_suppression",
+      "lnB_mean": 3.83852172169606,
+      "sample_std": 0.043054908395170774,
+      "mean_nested_lnB_err": 0.15206671945963798,
+      "qmc_ti_lnB": 3.8942708157524115,
+      "qmc_ti_residual_vs_nested": 0.055749094056351645
+    },
+    "broken_powerlaw_curvature": {
+      "model": "broken_pl_fixed_gamma",
+      "class": "broken_powerlaw_curvature",
+      "lnB_mean": 3.655641660062821,
+      "sample_std": 0.15353123983165265,
+      "mean_nested_lnB_err": 0.15264913982070044,
+      "qmc_ti_lnB": 3.71892390461016,
+      "qmc_ti_residual_vs_nested": 0.06328224454733888
+    },
+    "environmental_turnover": {
+      "model": "env_fixed_gamma",
+      "class": "environmental_turnover",
+      "lnB_mean": 3.453307779027014,
+      "sample_std": 0.06162999237631575,
+      "mean_nested_lnB_err": 0.15340617489602654,
+      "qmc_ti_lnB": 3.470348982181804,
+      "qmc_ti_residual_vs_nested": 0.01704120315478974
+    }
+  },
+  "bin_driver_rows": [
+    {
+      "model": "sigw_gauss",
+      "group": "cosmology",
+      "lnB_N14": 4.616226160962384,
+      "first_N_within_0p5nat_of_N14": 10,
+      "delta_lnB_N6_to_N14": 2.0516554824229374,
+      "delta_lnB_N8_to_N14": -0.6847163276360533
+    },
+    {
+      "model": "sigw_delta",
+      "group": "cosmology",
+      "lnB_N14": 4.097613823065075,
+      "first_N_within_0p5nat_of_N14": 8,
+      "delta_lnB_N6_to_N14": 1.7508508857000322,
+      "delta_lnB_N8_to_N14": 0.23003794529347488
+    },
+    {
+      "model": "ecc_supp_fixed_gamma",
+      "group": "astrophysical curvature",
+      "lnB_N14": 3.981106442643153,
+      "first_N_within_0p5nat_of_N14": 8,
+      "delta_lnB_N6_to_N14": 1.7346701915522758,
+      "delta_lnB_N8_to_N14": -0.40895956380504117
+    },
+    {
+      "model": "env_fixed_gamma",
+      "group": "astrophysical curvature",
+      "lnB_N14": 3.813882507795654,
+      "first_N_within_0p5nat_of_N14": 8,
+      "delta_lnB_N6_to_N14": 1.7753286015716725,
+      "delta_lnB_N8_to_N14": -0.2740023947438033
+    },
+    {
+      "model": "super",
+      "group": "cosmology",
+      "lnB_N14": 3.739072130873083,
+      "first_N_within_0p5nat_of_N14": 8,
+      "delta_lnB_N6_to_N14": 1.2742819803929777,
+      "delta_lnB_N8_to_N14": 0.18067641079311159
+    },
+    {
+      "model": "broken_pl_fixed_gamma",
+      "group": "astrophysical curvature",
+      "lnB_N14": 3.669587910001127,
+      "first_N_within_0p5nat_of_N14": 10,
+      "delta_lnB_N6_to_N14": 1.468777708027801,
+      "delta_lnB_N8_to_N14": -0.6873512352025131
+    }
+  ],
+  "systematic_budget": {
+    "official_density_reproduction": {
+      "max_abs_mean_residual_vs_published": 0.47687483345050674,
+      "max_abs_single_config_residual_vs_published": 0.6943404236165724,
+      "max_seed_livepoint_sample_std": 0.19854776121104434
+    },
+    "qmc_ti_crosscheck": {
+      "diagnostic_pass": true,
+      "max_abs_ti_residual_vs_dynesty_nested_mean": 0.11716695254411036,
+      "max_abs_h7_ti_residual_vs_dynesty_nested_mean": 0.06328224454733888
+    },
+    "prior_boundary": {
+      "sigw_delta_prior_lnb_min": 4.097613823065075,
+      "sigw_delta_prior_lnb_max": 4.5239328566229915,
+      "sigw_delta_max_delta_lnb_vs_original": 0.4263190335579168
+    },
+    "astrophysical_family": {
+      "family_pass": true,
+      "family_pass_classes": [
+        "broken_powerlaw_curvature",
+        "eccentricity_inspired_suppression",
+        "environmental_turnover"
+      ],
+      "all_astro_lnB_min": 2.6657452816588716,
+      "all_astro_lnB_max": 3.83852172169606,
+      "class_best_lnB_min": 3.453307779027014,
+      "class_best_lnB_max": 3.83852172169606,
+      "environmental_prior_variant_span": 0.7875624973681425
+    },
+    "frequency_bins": {
+      "models_within_0p5nat_by_N8": [
+        "sigw_delta",
+        "ecc_supp_fixed_gamma",
+        "env_fixed_gamma",
+        "super"
+      ],
+      "models_requiring_N10_for_0p5nat": [
+        "sigw_gauss",
+        "broken_pl_fixed_gamma"
+      ],
+      "max_abs_delta_lnB_N8_to_N14": 0.6873512352025131
+    },
+    "source_identification": {
+      "cosmology_robust_mean_range": [
+        3.5575775855519254,
+        4.519926101285057
+      ],
+      "astrophysical_class_best_range": [
+        3.453307779027014,
+        3.83852172169606
+      ],
+      "astro_cosmo_overlap_exists": true,
+      "astro_cosmo_overlap_range": [
+        3.5575775855519254,
+        3.83852172169606
+      ],
+      "top_cosmology": {
+        "label": "SIGW-Gaussian",
+        "lnB_mean": 4.519926101285057,
+        "sample_std": 0.1849794876431653,
+        "mean_nested_lnB_err": 0.14849528598473066,
+        "published_lnB": 4.04305126783455,
+        "mean_residual_vs_published": 0.47687483345050674,
+        "max_abs_residual_vs_published": 0.6943404236165724
+      },
+      "top_astrophysical_curvature": {
+        "model": "ecc_supp_fixed_gamma",
+        "class": "eccentricity_inspired_suppression",
+        "lnB_mean": 3.83852172169606,
+        "sample_std": 0.043054908395170774,
+        "mean_nested_lnB_err": 0.15206671945963798,
+        "qmc_ti_lnB": 3.8942708157524115,
+        "qmc_ti_residual_vs_nested": 0.055749094056351645
+      },
+      "top_cosmo_minus_top_astro": 0.6814043795889968,
+      "sigw_delta_minus_top_astro": 0.09121280536254783
+    }
+  }
+}

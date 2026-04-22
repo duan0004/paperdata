@@ -1,0 +1,125 @@
+{
+  "source_files": {
+    "ablation": "results/T2_NG15yr/bayes_factors/prl_ablation_table.md",
+    "official_density_robustness": "results/T2_NG15yr/bayes_factors/prl_official_density_robustness.json",
+    "astrophysical_family": "results/T2_NG15yr/bayes_factors/prl_H7_astrophysical_family.json"
+  },
+  "ablation": [
+    {
+      "label": "local template\nlocal KDE",
+      "short": "local-template/local-KDE",
+      "baseline": "fixed-gamma SMBHB",
+      "lnB": -1.59,
+      "err": 0.154,
+      "residual_vs_published": -5.633
+    },
+    {
+      "label": "official template\nlocal KDE",
+      "short": "official-template/local-KDE",
+      "baseline": "PTArcade BHB prior",
+      "lnB": 0.687,
+      "err": 0.147,
+      "residual_vs_published": -3.356
+    },
+    {
+      "label": "official template\nofficial density\nseed 42",
+      "short": "official-template/official-density seed42",
+      "baseline": "PTArcade BHB prior",
+      "lnB": 4.225,
+      "err": 0.173,
+      "residual_vs_published": 0.182
+    },
+    {
+      "label": "official template\nofficial density\n5-config mean",
+      "short": "official-template/official-density robust",
+      "baseline": "PTArcade BHB prior",
+      "lnB": 4.52,
+      "err": 0.185,
+      "residual_vs_published": 0.477
+    }
+  ],
+  "model_rows": [
+    {
+      "group": "cosmology",
+      "model": "sigw_gauss_ptarcade",
+      "label": "SIGW Gaussian",
+      "lnB": 4.519926101285057,
+      "sample_std": 0.1849794876431653,
+      "nested_err": 0.14849528598473066,
+      "err": 0.23720931855307642
+    },
+    {
+      "group": "cosmology",
+      "model": "sigw_delta_ptarcade",
+      "label": "SIGW delta",
+      "lnB": 3.9297345270586077,
+      "sample_std": 0.19854776121104434,
+      "nested_err": 0.14544830726304786,
+      "err": 0.2461227814884349
+    },
+    {
+      "group": "curved SMBHB control",
+      "class": "eccentricity_inspired_suppression",
+      "model": "ecc_supp_fixed_gamma",
+      "label": "Eccentricity-inspired\ncurvature",
+      "lnB": 3.83852172169606,
+      "sample_std": 0.043054908395170774,
+      "nested_err": 0.15206671945963798,
+      "err": 0.15804433651394406,
+      "qmc_ti_lnB": 3.8942708157524115
+    },
+    {
+      "group": "curved SMBHB control",
+      "class": "broken_powerlaw_curvature",
+      "model": "broken_pl_fixed_gamma",
+      "label": "Broken power law\ncurvature",
+      "lnB": 3.655641660062821,
+      "sample_std": 0.15353123983165265,
+      "nested_err": 0.15264913982070044,
+      "err": 0.2165031212067027,
+      "qmc_ti_lnB": 3.71892390461016
+    },
+    {
+      "group": "cosmology",
+      "model": "super_ptarcade",
+      "label": "Cosmic superstrings",
+      "lnB": 3.5575775855519254,
+      "sample_std": 0.1448996070285566,
+      "nested_err": 0.14509646316382718,
+      "err": 0.2050582349960176
+    },
+    {
+      "group": "curved SMBHB control",
+      "class": "environmental_turnover",
+      "model": "env_fixed_gamma",
+      "label": "Environmental\nturnover",
+      "lnB": 3.453307779027014,
+      "sample_std": 0.06162999237631575,
+      "nested_err": 0.15340617489602654,
+      "err": 0.16532304877582865,
+      "qmc_ti_lnB": 3.470348982181804
+    },
+    {
+      "group": "curved SMBHB control",
+      "class": "environmental_turnover",
+      "model": "env_free_gamma",
+      "label": "Environmental\nfree gamma",
+      "lnB": 3.3601874054574266,
+      "sample_std": 0.20238493431854238,
+      "nested_err": 0.1545118856296664,
+      "err": 0.2546243987522716,
+      "qmc_ti_lnB": null
+    }
+  ],
+  "notes": {
+    "baseline": "All Panel B Bayes factors are relative to the matched PTArcade BHB-prior SMBHB baseline.",
+    "panel_a_baselines": "Panel A compares Bayes factors relative to the baseline indicated for each row: first bar fixed-gamma SMBHB, all remaining bars PTArcade BHB-prior SMBHB.",
+    "uncertainty": "Panel B error bars use quadrature of five-configuration sample scatter and mean nested-sampling lnB error.",
+    "h7_family_pass": true,
+    "h7_family_pass_classes": [
+      "broken_powerlaw_curvature",
+      "eccentricity_inspired_suppression",
+      "environmental_turnover"
+    ]
+  }
+}
