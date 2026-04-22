@@ -9,8 +9,8 @@
 
 - Author metadata inserted:
   - Ran DUAN
-  - chenli science
-  - rduan@chenli.science
+  - National Astronomical Observatories, Chinese Academy of Sciences
+  - duanran@nao.cas.cn
 - Main text and supplement compile with Tectonic:
   - `theory/pdf/revtex/paper_prl_submission.pdf`
   - `theory/pdf/revtex/prl_supplement.pdf`
@@ -23,8 +23,13 @@
   - supplement includes prior ranges, selection rule, and QMC/TI residual
     convention notes.
 - Public GitHub code/data release inserted:
+  - Zenodo DOI `10.5281/zenodo.19688472`
+  - Zenodo URL `https://doi.org/10.5281/zenodo.19688472`
   - `https://github.com/duan0004/paperdata`
-  - commit `4d3972e11a24ffee026a8e2214eb12dd19fbc2ea`
+  - commit `7a602df4d0369dea09b3a18d526a1468bbc436d0`
+  - release tag `v1.0.0`
+  - release URL:
+    `https://github.com/duan0004/paperdata/releases/tag/v1.0.0`
 - Evidence cross-check added:
   - `results/T2_NG15yr/bayes_factors/prl_evidence_ti_qmc_crosscheck.json`
   - `results/T2_NG15yr/bayes_factors/prl_evidence_ti_qmc_crosscheck.md`
@@ -34,21 +39,17 @@
 
 ## Still Required From Author
 
-1. **Zenodo DOI decision**  
-   The GitHub release is public and fixed by commit hash.  If the final
-   submission requires a Zenodo DOI, archive the repository on Zenodo and add
-   the DOI to the Data and Code Availability sentence.  Do not invent this DOI.
-
-2. **Acknowledgments decision**  
+1. **Acknowledgments decision**  
    Either keep acknowledgments omitted, or provide exact text for people,
    funding, grants, and computing resources.  Do not invent this text.
 
-3. **Final upload choice**  
+2. **Final upload choice**  
    Decide whether the APS package should use inline `thebibliography` as now,
    or whether to convert references to a `.bib` file.
 
 ## Submission Gate
 
 The scientific package is PRL-plausible and the local compile gate now passes.
-The public GitHub code/data URL is real.  Remaining human-level decision:
-whether to add a Zenodo DOI and acknowledgments before final APS upload.
+The Zenodo DOI, public GitHub code/data URL, and release URL are real.
+Remaining human-level decision: whether acknowledgments are needed before
+final APS upload.

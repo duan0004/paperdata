@@ -34,12 +34,13 @@ result is timely for PTA source identification and broadly relevant to
 nanohertz gravitational-wave cosmology.
 
 The manuscript uses public NANOGrav data products and official PTArcade model
-and density products.  The analysis code and compact data release are available
-at https://github.com/duan0004/paperdata, commit
-4d3972e11a24ffee026a8e2214eb12dd19fbc2ea.
+and density products.  The analysis code and compact data release are archived
+at https://doi.org/10.5281/zenodo.19688472 and mirrored at
+https://github.com/duan0004/paperdata, release v1.0.0, commit
+7a602df4d0369dea09b3a18d526a1468bbc436d0.
 
 Sincerely,
 
 Ran DUAN  
-chenli science  
-rduan@chenli.science
+National Astronomical Observatories, Chinese Academy of Sciences  
+duanran@nao.cas.cn

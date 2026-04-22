@@ -3,7 +3,7 @@
 This release accompanies the PRL submission:
 
 **Curved SMBHB Spectra Compete with New-Physics Explanations in PTA Source Identification**  
-Ran DUAN, chenli science, rduan@chenli.science
+Ran DUAN, National Astronomical Observatories, Chinese Academy of Sciences, duanran@nao.cas.cn
 
 It contains:
 

@@ -5,9 +5,9 @@ type: software
 authors:
   - family-names: "DUAN"
     given-names: "Ran"
-    affiliation: "chenli science"
+    affiliation: "National Astronomical Observatories, Chinese Academy of Sciences"
 repository-code: "https://github.com/duan0004/paperdata"
-version: "prl-submission-2026-04-22"
+version: "v1.0.1"
 date-released: "2026-04-22"
 keywords:
   - "pulsar timing arrays"

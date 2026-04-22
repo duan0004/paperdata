@@ -1,7 +1,7 @@
 # PRL Submission Package Manifest
 
 **Date**: 2026-04-22  
-**Status**: public GitHub code/data URL inserted; Zenodo DOI still optional/human-gated.  
+**Status**: public GitHub code/data URL and Zenodo DOI inserted.  
 **Current title**: Curved SMBHB Spectra Compete with New-Physics
 Explanations in PTA Source Identification
 
@@ -16,14 +16,14 @@ Explanations in PTA Source Identification
 | Main figure | `results/T2_NG15yr/figures/prl_decisive_evidence_figure.pdf` | exists; static path check passes |
 | Compiled PRL PDF | `theory/pdf/revtex/paper_prl_submission.pdf` | Tectonic compile pass |
 | Compiled supplement PDF | `theory/pdf/revtex/prl_supplement.pdf` | Tectonic compile pass |
-| Reproducibility manifest | `REPRODUCIBILITY.md` | ready except public repo URL |
+| Reproducibility manifest | `REPRODUCIBILITY.md` | Zenodo DOI and GitHub release inserted |
 | Environment manifest | `environment.yml` | ready |
 | Formal compile report | `theory/T3.12_PRL_formal_compile_report.md` | done |
-| Human submission gate | `theory/PRL_submission_human_gate.md` | done; GitHub URL inserted |
-| Cover letter draft | `theory/PRL_cover_letter_draft.md` | GitHub URL inserted |
+| Human submission gate | `theory/PRL_submission_human_gate.md` | done; Zenodo DOI and GitHub URL inserted |
+| Cover letter draft | `theory/PRL_cover_letter_draft.md` | Zenodo DOI and GitHub URL inserted |
 | PRL assessment | `theory/T3.11_PRL_submission_assessment.md` | historical assessment; superseded by current cleanup |
 | Static TeX check | `theory/T3.11_PRL_tex_static_check.md` | PASS; superseded by Tectonic compile report |
-| Package static gate | `results/T2_NG15yr/prl_package_static_gate.md` | structural PASS; submission not ready |
+| Package static gate | `results/T2_NG15yr/prl_package_static_gate.md` | structural PASS; submission ready |
 
 ## Main Numerical Claims
 
@@ -84,25 +84,23 @@ Latest output:
 Latest verdict:
 
 - structural pass: `True`;
-- submission ready: pending rerun after URL insertion;
-- blockers: Zenodo DOI only if required by final submission policy;
-- word counts: REVTeX source `1612`, compressed Markdown `1512`, supplement
-  Markdown `986`, supplement TeX `1604`;
+- submission ready: `True`;
+- blockers: none;
+- word counts: REVTeX source `1673`, compressed Markdown `1522`, supplement
+  Markdown `1013`, supplement TeX `1611`;
 - background process scan: `0` matching compute tasks.
 
 ## Hard Blockers
 
 These must not be invented:
 
-1. Zenodo DOI, if the author wants the final availability statement to include
-   an archival DOI rather than only a public GitHub commit;
-2. acknowledgments, grant, or computing-resource text if the author wants them.
+1. acknowledgments, grant, or computing-resource text if the author wants them.
    The current PRL source omits acknowledgments rather than using a placeholder.
 
 Technical blockers:
 
 1. final PRL/arXiv package needs a PDF visual check after inserting the public
-   GitHub URL and optional Zenodo DOI;
+   GitHub URL and Zenodo DOI;
 2. final arbiter should be run on the actual compiled package, not only the
    Markdown draft.
 
