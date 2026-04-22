@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this code/data release, please cite the associated paper and this archived software/data release."
+title: "Curved SMBHB Spectra Compete with New-Physics Explanations in PTA Source Identification: Code and Compact Data Release"
+type: software
+authors:
+  - family-names: "DUAN"
+    given-names: "Ran"
+    affiliation: "chenli science"
+repository-code: "https://github.com/duan0004/paperdata"
+version: "prl-submission-2026-04-22"
+date-released: "2026-04-22"
+keywords:
+  - "pulsar timing arrays"
+  - "NANOGrav 15-year"
+  - "stochastic gravitational-wave background"
+  - "Bayes factors"
+  - "PTArcade"
+  - "ceffyl"
+  - "SMBHB"
+  - "scalar-induced gravitational waves"
+  - "cosmic strings"
+abstract: "Code, compact data products, derived evidence tables, figures, and manuscript sources for the PRL submission Curved SMBHB Spectra Compete with New-Physics Explanations in PTA Source Identification."

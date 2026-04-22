@@ -1,0 +1,49 @@
+{
+  "title": "Curved SMBHB Spectra Compete with New-Physics Explanations in PTA Source Identification: Code and Compact Data Release",
+  "upload_type": "software",
+  "description": "Code, compact data products, derived evidence tables, figures, and manuscript sources for the PRL submission Curved SMBHB Spectra Compete with New-Physics Explanations in PTA Source Identification. The release includes official public NANOGrav/PTArcade inputs needed by the analysis, compact derived outputs used by the paper, and reproduction commands. Large local MCMC chain dumps are excluded; summary diagnostics are included.",
+  "creators": [
+    {
+      "name": "DUAN, Ran",
+      "affiliation": "chenli science"
+    }
+  ],
+  "access_right": "open",
+  "license": "MIT",
+  "keywords": [
+    "pulsar timing arrays",
+    "NANOGrav 15-year",
+    "stochastic gravitational-wave background",
+    "Bayes factors",
+    "PTArcade",
+    "ceffyl",
+    "SMBHB",
+    "scalar-induced gravitational waves",
+    "cosmic strings"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/duan0004/paperdata",
+      "relation": "isSupplementTo",
+      "resource_type": "software"
+    },
+    {
+      "identifier": "10.5281/zenodo.8084351",
+      "relation": "references",
+      "resource_type": "dataset",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.5281/zenodo.10495907",
+      "relation": "references",
+      "resource_type": "dataset",
+      "scheme": "doi"
+    }
+  ],
+  "references": [
+    "G. Agazie et al. (NANOGrav Collaboration), The NANOGrav 15 yr Data Set: Evidence for a Gravitational-wave Background, arXiv:2306.16213.",
+    "G. Agazie et al. (NANOGrav Collaboration), The NANOGrav 15 yr Data Set: Observations and Timing of 68 Millisecond Pulsars, arXiv:2306.16214.",
+    "A. Afzal et al. (NANOGrav Collaboration), The NANOGrav 15 yr Data Set: Search for Signals from New Physics, arXiv:2306.16219.",
+    "A. Mitridate et al., PTArcade, arXiv:2306.16377."
+  ]
+}

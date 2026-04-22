@@ -22,6 +22,8 @@ Ran DUAN, chenli science, rduan@chenli.science
   and compiled PDFs.
 - `environment.yml`: pinned Python environment used for the saved results.
 - `REPRODUCIBILITY.md`: commands, input fingerprints, and expected outputs.
+- `.zenodo.json` and `CITATION.cff`: metadata for the Zenodo/GitHub archived
+  release.
 
 ## Public Data Provenance
 
