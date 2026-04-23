@@ -1,0 +1,51 @@
+{
+  "model": "SMBHB-Eccentric",
+  "tier": "hybrid3",
+  "ln_Z": -19.94129853692124,
+  "ln_Z_err": 0.16922470744741336,
+  "n_dim": 3,
+  "nlive": 250,
+  "dlogz": 0.2,
+  "seed": 20260422,
+  "n_likelihood_calls": 24917,
+  "wall_seconds": 1.6957130432128906,
+  "param_names": [
+    "log10_A",
+    "log10_fe",
+    "beta"
+  ],
+  "prior_range": {
+    "log10_A": [
+      -18.0,
+      -11.0
+    ],
+    "log10_fe": [
+      -10.0,
+      -6.8
+    ],
+    "beta": [
+      0.0,
+      3.0
+    ]
+  },
+  "median_params": {
+    "log10_A": -14.21588449001528,
+    "log10_fe": -8.035311837936352,
+    "beta": 1.3541711581341653
+  },
+  "ci_68": {
+    "log10_A": [
+      -14.676974824345184,
+      -13.124688806492973
+    ],
+    "log10_fe": [
+      -8.801441253445793,
+      -7.235701098172023
+    ],
+    "beta": [
+      0.6988947787529827,
+      2.296434234926096
+    ]
+  },
+  "output_dir": "/Volumes/MacData_External/Physics-Novel-Paper/研究计划2026/课题1-PTA引力波/results/prl_reference_bridge/P5_frequency_cut/le_5_nHz/SMBHB-Eccentric"
+}

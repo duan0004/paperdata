@@ -22,6 +22,7 @@ are not included; summary JSON diagnostics are included instead.
 | `results/T2_NG15yr/covariance/` | Covariance extraction products and CAR/null-calibration diagnostics. |
 | `results/T2_NG15yr/figures/` | PRL main figure and cumulative-bin figure. |
 | `results/T2_NG15yr/T2_*json` | Compact MCMC/posterior validation summaries. |
+| `results/prl_reference_bridge/` | P0--P6 cross-PTA posterior-summary bridge outputs, including local3/hybrid3 rankings, family evidence, gamma projection, frequency-cut diagnostics, and robustness checks. |
 
 ## Size Policy
 

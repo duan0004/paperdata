@@ -1,10 +1,9 @@
-# Curved SMBHB Spectra Compete with New-Physics Explanations in PTA Source Identification
+# Calibrated PTA Evidence Favors Curved Spectra but Not a Unique Nanohertz Source
 
 This repository contains the code, data products, derived evidence tables, and
 manuscript files for the PRL submission:
 
-**Curved SMBHB Spectra Compete with New-Physics Explanations in PTA Source
-Identification**  
+**Calibrated PTA Evidence Favors Curved Spectra but Not a Unique Nanohertz Source**  
 Ran DUAN, National Astronomical Observatories, Chinese Academy of Sciences, duanran@nao.cas.cn
 
 ## Contents
@@ -18,6 +17,9 @@ Ran DUAN, National Astronomical Observatories, Chinese Academy of Sciences, duan
 - `results/T2_NG15yr/`: compact derived outputs used in the paper tables and
   figures.  Large local MCMC chain directories are intentionally not included;
   their summary JSON files are included.
+- `results/prl_reference_bridge/`: P0--P6 cross-PTA posterior-summary bridge
+  outputs, including local3/hybrid3 evidence rankings, family evidence,
+  gamma projections, frequency-cut diagnostics, and robustness checks.
 - `theory/`: REVTeX manuscript source, supplement source, cover letter draft,
   and compiled PDFs.
 - `environment.yml`: pinned Python environment used for the saved results.
@@ -54,6 +56,7 @@ Run the fast checks:
 python3 code/gwb_templates.py
 python3 -m py_compile code/prl_*.py
 python3 code/prl_decisive_evidence_figure.py
+python3 code/prl_bridge_evidence_figure.py
 python3 code/prl_H10_systematic_envelope.py
 python3 code/prl_package_static_gate.py
 ```
@@ -65,6 +68,10 @@ is ready only when the manuscript points to this public repository.
 
 - Main figure:
   `results/T2_NG15yr/figures/prl_decisive_evidence_figure.pdf`
+- Cross-PTA bridge figure:
+  `results/T2_NG15yr/figures/prl_bridge_evidence_figure.pdf`
+- Cross-PTA bridge summary:
+  `results/prl_reference_bridge/P0_P6_run_summary.md`
 - Main evidence table:
   `results/T2_NG15yr/bayes_factors/prl_official_density_robustness.json`
   and `results/T2_NG15yr/bayes_factors/prl_H7_astrophysical_family.json`

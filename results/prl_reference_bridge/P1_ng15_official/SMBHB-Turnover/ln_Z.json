@@ -1,0 +1,61 @@
+{
+  "model": "SMBHB-Turnover",
+  "tier": "ng15_official",
+  "ln_Z": -109.80431543034895,
+  "ln_Z_err": 0.12095033542359304,
+  "n_dim": 4,
+  "nlive": 500,
+  "dlogz": 0.1,
+  "seed": 20260422,
+  "n_likelihood_calls": 82777,
+  "wall_seconds": 3.5126240253448486,
+  "param_names": [
+    "log10_A",
+    "gamma",
+    "log10_f_bend",
+    "kappa"
+  ],
+  "prior_range": {
+    "log10_A": [
+      -18.0,
+      -13.0
+    ],
+    "gamma": [
+      0.0,
+      7.0
+    ],
+    "log10_f_bend": [
+      -9.0,
+      -7.0
+    ],
+    "kappa": [
+      0.0,
+      6.666666666666667
+    ]
+  },
+  "median_params": {
+    "log10_A": -14.142332669406063,
+    "gamma": 3.6783528452700684,
+    "log10_f_bend": -8.332067579968182,
+    "kappa": 2.392358012015636
+  },
+  "ci_68": {
+    "log10_A": [
+      -14.368408251877014,
+      -13.918913584751822
+    ],
+    "gamma": [
+      3.085658447871461,
+      5.231110694864776
+    ],
+    "log10_f_bend": [
+      -8.785635564528038,
+      -7.404817667693079
+    ],
+    "kappa": [
+      0.7647636610287668,
+      4.452185199042093
+    ]
+  },
+  "output_dir": "/Volumes/MacData_External/Physics-Novel-Paper/研究计划2026/课题1-PTA引力波/results/prl_reference_bridge/P1_ng15_official/SMBHB-Turnover"
+}

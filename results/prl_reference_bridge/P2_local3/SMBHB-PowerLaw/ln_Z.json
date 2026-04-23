@@ -1,0 +1,41 @@
+{
+  "model": "SMBHB-PowerLaw",
+  "tier": "local3",
+  "ln_Z": -64.13023401122464,
+  "ln_Z_err": 0.12357081238349304,
+  "n_dim": 2,
+  "nlive": 500,
+  "dlogz": 0.1,
+  "seed": 20260422,
+  "n_likelihood_calls": 23394,
+  "wall_seconds": 3.376067876815796,
+  "param_names": [
+    "log10_A",
+    "gamma"
+  ],
+  "prior_range": {
+    "log10_A": [
+      -18.0,
+      -13.0
+    ],
+    "gamma": [
+      0.0,
+      7.0
+    ]
+  },
+  "median_params": {
+    "log10_A": -14.376582130518814,
+    "gamma": 3.5752844328282394
+  },
+  "ci_68": {
+    "log10_A": [
+      -14.504273467534542,
+      -14.244175866203214
+    ],
+    "gamma": [
+      3.2544352247069495,
+      3.9005525468681936
+    ]
+  },
+  "output_dir": "/Volumes/MacData_External/Physics-Novel-Paper/研究计划2026/课题1-PTA引力波/results/prl_reference_bridge/P2_local3/SMBHB-PowerLaw"
+}

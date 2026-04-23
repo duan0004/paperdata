@@ -352,13 +352,13 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 16.
 (umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1]
-Underfull \hbox (badness 10000) in paragraph at lines 99--101
+Underfull \hbox (badness 10000) in paragraph at lines 103--105
 []\TU/lmr/m/n/9 Gaussian prior on $\OT1/cmr/m/n/9 ([][] \OML/cmm/m/it/9 A; ^^M\
 OT1/cmr/m/n/9 )$ \TU/lmr/m/n/9 with $\OML/cmm/m/it/9 ^^V \OT1/cmr/m/n/9 =
  []
 
 
-Underfull \hbox (badness 2671) in paragraph at lines 102--103
+Underfull \hbox (badness 2671) in paragraph at lines 106--107
 []$[][] \OML/cmm/m/it/9 f[] \OMS/cmsy/m/n/9 ^^X \OML/cmm/m/it/9 U\OT1/cmr/m/n/9
  [\OMS/cmsy/m/n/9 ^^@\OT1/cmr/m/n/9 11\OML/cmm/m/it/9 ; \OMS/cmsy/m/n/9 ^^@\OT1
 /cmr/m/n/9 5]$\TU/lmr/m/n/9 , width $\OMS/cmsy/m/n/9 ^^X \OML/cmm/m/it/9 U\OT1/
@@ -367,39 +367,39 @@ cmr/m/n/9 [0\OML/cmm/m/it/9 :\OT1/cmr/m/n/9 1\OML/cmm/m/it/9 ; \OT1/cmr/m/n/9 3
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 110--110
+Underfull \hbox (badness 10000) in paragraph at lines 114--114
 []\TU/lmr/m/n/9 Environmental
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 113--114
+Underfull \hbox (badness 10000) in paragraph at lines 117--118
 []\TU/lmr/m/n/9 SMBHB environmental-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 113--114
+Underfull \hbox (badness 10000) in paragraph at lines 117--118
 \TU/lmr/m/n/9 hardening control moti-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 113--114
+Underfull \hbox (badness 10000) in paragraph at lines 117--118
 \TU/lmr/m/n/9 vated by arXiv:1211.5375 and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 115--117
+Underfull \hbox (badness 10000) in paragraph at lines 119--121
 []$[][] \OML/cmm/m/it/9 A \OMS/cmsy/m/n/9 ^^X \OML/cmm/m/it/9 U\OT1/cmr/m/n/9 [
 \OMS/cmsy/m/n/9 ^^@\OT1/cmr/m/n/9 18\OML/cmm/m/it/9 ; \OMS/cmsy/m/n/9 ^^@\OT1/c
 mr/m/n/9 11]$\TU/lmr/m/n/9 , $[][] \OML/cmm/m/it/9 f[] \OMS/cmsy/m/n/9 ^^X
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 118--118
+Underfull \hbox (badness 10000) in paragraph at lines 122--122
 []\TU/lmr/m/n/9 phenomenological low-frequency
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 121--122
+Underfull \hbox (badness 10000) in paragraph at lines 125--126
 []\TU/lmr/m/n/9 phenomenological eccentricity-
  []
 
@@ -407,8 +407,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 121--122
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[4] (prl_supplement.bbl) [5] (prl_supplement.aux)
+[4] [5] (prl_supplement.bbl [6]) [7] (prl_supplement.aux)
 Package rerunfilecheck Info: File `prl_supplement.out' has not changed.
-(rerunfilecheck)             Checksum: C85CA982886142AA152044D491510E9E;3698.
+(rerunfilecheck)             Checksum: CF6E09E975032835C3DA7BA14672D396;4397.
  )
-Output written on prl_supplement.xdv (5 pages, 99060 bytes).
+Output written on prl_supplement.xdv (7 pages, 139480 bytes).

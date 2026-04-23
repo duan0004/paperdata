@@ -1,4 +1,4 @@
-# Supplemental Material: Curved SMBHB Spectra Compete with New-Physics Explanations in PTA Source Identification
+# Supplemental Material: Calibrated PTA Evidence Favors Curved Spectra but Not a Unique Nanohertz Source
 
 **Date**: 2026-04-22  
 **Main draft**: `theory/paper_prl_submission.tex`  

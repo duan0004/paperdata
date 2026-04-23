@@ -1,0 +1,17 @@
+tier,family,mode,leave_out,n_models,ln_Z_family
+local3,Astro-simple,all,,2,-63.83954450655589
+local3,Astro-simple,leave_one_leader_out,SMBHB-Turnover,1,-64.13023401122464
+local3,Astro-curved,all,,3,-63.353723650820164
+local3,Astro-curved,leave_one_leader_out,SMBHB-Eccentric,2,-63.43124353395434
+local3,SIGW-like,all,,3,-62.833405983236
+local3,SIGW-like,leave_one_leader_out,SIGW-Delta,2,-62.900723088080674
+local3,Cosmo-other,all,,3,-63.48553308085005
+local3,Cosmo-other,leave_one_leader_out,Cosmic-Superstrings,2,-64.75512575305251
+hybrid3,Astro-simple,all,,2,-155.6502731590045
+hybrid3,Astro-simple,leave_one_leader_out,SMBHB-Turnover,1,-155.94133213872232
+hybrid3,Astro-curved,all,,3,-155.18189751962873
+hybrid3,Astro-curved,leave_one_leader_out,SMBHB-Eccentric,2,-155.26113433238223
+hybrid3,SIGW-like,all,,3,-154.60999590066265
+hybrid3,SIGW-like,leave_one_leader_out,SIGW-Delta,2,-154.6886596433521
+hybrid3,Cosmo-other,all,,3,-155.27859684559618
+hybrid3,Cosmo-other,leave_one_leader_out,Cosmic-Superstrings,2,-156.59355249285102

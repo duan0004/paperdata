@@ -1,0 +1,71 @@
+{
+  "model": "PhaseTransition-Total",
+  "tier": "ng15_official",
+  "ln_Z": -109.60458833268001,
+  "ln_Z_err": 0.12426708776048108,
+  "n_dim": 5,
+  "nlive": 500,
+  "dlogz": 0.1,
+  "seed": 20260422,
+  "n_likelihood_calls": 82158,
+  "wall_seconds": 7.428344249725342,
+  "param_names": [
+    "log10_T_star",
+    "log10_alpha",
+    "log10_beta_H",
+    "v_w",
+    "epsilon"
+  ],
+  "prior_range": {
+    "log10_T_star": [
+      -3.0,
+      3.0
+    ],
+    "log10_alpha": [
+      -2.0,
+      2.0
+    ],
+    "log10_beta_H": [
+      0.0,
+      4.0
+    ],
+    "v_w": [
+      0.1,
+      1.0
+    ],
+    "epsilon": [
+      0.01,
+      0.2
+    ]
+  },
+  "median_params": {
+    "log10_T_star": -2.071954378240943,
+    "log10_alpha": 0.6859053783543354,
+    "log10_beta_H": 1.1390506092306882,
+    "v_w": 0.5621974283486306,
+    "epsilon": 0.1001158754009042
+  },
+  "ci_68": {
+    "log10_T_star": [
+      -2.7354291836777054,
+      -0.9538816581083714
+    ],
+    "log10_alpha": [
+      0.009572217937674488,
+      1.5057890092937694
+    ],
+    "log10_beta_H": [
+      0.4909370199460592,
+      1.5814546847121456
+    ],
+    "v_w": [
+      0.3393531140226169,
+      0.8273265832405752
+    ],
+    "epsilon": [
+      0.04076026700418898,
+      0.1697725277563122
+    ]
+  },
+  "output_dir": "/Volumes/MacData_External/Physics-Novel-Paper/研究计划2026/课题1-PTA引力波/results/prl_reference_bridge/P1_ng15_official/PhaseTransition-Total"
+}

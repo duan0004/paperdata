@@ -2,9 +2,9 @@
 
 Dear Editors,
 
-We submit the Letter "Curved SMBHB Spectra Compete with New-Physics
-Explanations in PTA Source Identification" for consideration in Physical
-Review Letters.
+We submit the Letter "Calibrated PTA Evidence Favors Curved Spectra but
+Not a Unique Nanohertz Source" for consideration in Physical Review
+Letters.
 
 The recent NANOGrav 15-year Hellings-Downs signal has opened a new problem in
 source identification: several cosmological spectra receive strong but not
@@ -14,7 +14,7 @@ For absolute PTA source identification, the matched spectral template, the
 official free-spectrum density construction, the SMBHB prior baseline, and
 curved-SMBHB controls must be calibrated together.
 
-The main result is twofold.  First, local free-spectrum KDE reconstructions
+The main result is threefold.  First, local free-spectrum KDE reconstructions
 preserve the qualitative NANOGrav new-physics ranking but fail to reproduce
 the published absolute evidences.  When the official PTArcade templates and
 official PTArcade ceffyl density are used together, the leading SIGW-Gaussian,
@@ -25,6 +25,10 @@ surrogates, evaluated on the same official evidence scale and against the same
 PTArcade BHB-prior baseline, give ln B = 3.453--3.839, overlapping the
 cosmological range 3.558--4.520.  The top new-physics model exceeds the top
 curved-SMBHB model by only 0.681 nat, and SIGW-delta by only 0.091 nat.
+Third, a deliberately limited cross-PTA posterior-summary bridge using public
+PPTA, NANOGrav, and EPTA spectral information leaves cosmic, SIGW-like, and
+curved-SMBHB spectra in the same order-unity evidence tier rather than
+identifying a unique source class.
 
 This changes the interpretation of current PTA new-physics evidence.  The
 present data do not yet identify the physical origin of the background, and
@@ -35,9 +39,9 @@ nanohertz gravitational-wave cosmology.
 
 The manuscript uses public NANOGrav data products and official PTArcade model
 and density products.  The analysis code and compact data release are archived
-at https://doi.org/10.5281/zenodo.19688472 and mirrored at
-https://github.com/duan0004/paperdata, release v1.0.0, commit
-7a602df4d0369dea09b3a18d526a1468bbc436d0.
+at https://doi.org/10.5281/zenodo.19688587 and mirrored at
+https://github.com/duan0004/paperdata, release v1.0.1, commit
+2bc1dfeee7d452f6c3b58a8fd8f339e6ff0091f6.
 
 Sincerely,
 

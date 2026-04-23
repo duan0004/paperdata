@@ -1,0 +1,41 @@
+{
+  "model": "SIGW-Delta",
+  "tier": "hybrid3",
+  "ln_Z": -103.80883414744518,
+  "ln_Z_err": 0.17250530686409635,
+  "n_dim": 2,
+  "nlive": 250,
+  "dlogz": 0.2,
+  "seed": 20260422,
+  "n_likelihood_calls": 9934,
+  "wall_seconds": 2.0331180095672607,
+  "param_names": [
+    "log10_f_peak",
+    "log10_A"
+  ],
+  "prior_range": {
+    "log10_f_peak": [
+      -11.0,
+      -5.0
+    ],
+    "log10_A": [
+      -3.0,
+      1.0
+    ]
+  },
+  "median_params": {
+    "log10_f_peak": -5.901666724411341,
+    "log10_A": -0.765119249394199
+  },
+  "ci_68": {
+    "log10_f_peak": [
+      -6.706382112032536,
+      -5.2874744382574965
+    ],
+    "log10_A": [
+      -1.375851042734497,
+      -0.23881203572682375
+    ]
+  },
+  "output_dir": "/Volumes/MacData_External/Physics-Novel-Paper/研究计划2026/课题1-PTA引力波/results/prl_reference_bridge/P5_frequency_cut/le_20_nHz/SIGW-Delta"
+}

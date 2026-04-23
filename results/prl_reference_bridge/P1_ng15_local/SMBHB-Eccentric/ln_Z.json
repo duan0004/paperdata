@@ -1,0 +1,51 @@
+{
+  "model": "SMBHB-Eccentric",
+  "tier": "ng15_local",
+  "ln_Z": -17.858284285112894,
+  "ln_Z_err": 0.12072266295494273,
+  "n_dim": 3,
+  "nlive": 500,
+  "dlogz": 0.1,
+  "seed": 20260422,
+  "n_likelihood_calls": 74623,
+  "wall_seconds": 3.132254123687744,
+  "param_names": [
+    "log10_A",
+    "log10_fe",
+    "beta"
+  ],
+  "prior_range": {
+    "log10_A": [
+      -18.0,
+      -11.0
+    ],
+    "log10_fe": [
+      -10.0,
+      -6.8
+    ],
+    "beta": [
+      0.0,
+      3.0
+    ]
+  },
+  "median_params": {
+    "log10_A": -14.276525253071004,
+    "log10_fe": -8.106115713263437,
+    "beta": 1.0453909405063846
+  },
+  "ci_68": {
+    "log10_A": [
+      -14.455410887276377,
+      -14.021356328698452
+    ],
+    "log10_fe": [
+      -8.5509510041577,
+      -7.4086965764371655
+    ],
+    "beta": [
+      0.6355395029570979,
+      2.270103673175984
+    ]
+  },
+  "output_dir": "/Volumes/MacData_External/Physics-Novel-Paper/研究计划2026/课题1-PTA引力波/results/prl_reference_bridge/P1_ng15_local/SMBHB-Eccentric"
+}

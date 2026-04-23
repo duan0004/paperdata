@@ -1,0 +1,51 @@
+{
+  "model": "DomainWall",
+  "tier": "ng15_local",
+  "ln_Z": -19.542295367942202,
+  "ln_Z_err": 0.13883487094472374,
+  "n_dim": 3,
+  "nlive": 500,
+  "dlogz": 0.1,
+  "seed": 20260422,
+  "n_likelihood_calls": 88763,
+  "wall_seconds": 3.798198938369751,
+  "param_names": [
+    "log10_sigma_wall",
+    "log10_T_ann",
+    "epsilon_gw"
+  ],
+  "prior_range": {
+    "log10_sigma_wall": [
+      3.0,
+      12.0
+    ],
+    "log10_T_ann": [
+      -3.0,
+      3.0
+    ],
+    "epsilon_gw": [
+      0.1,
+      2.0
+    ]
+  },
+  "median_params": {
+    "log10_sigma_wall": 5.232672297728637,
+    "log10_T_ann": -0.23416629225923735,
+    "epsilon_gw": 0.9869529864060221
+  },
+  "ci_68": {
+    "log10_sigma_wall": [
+      4.837521401951673,
+      5.666483799258343
+    ],
+    "log10_T_ann": [
+      -0.3648473164769528,
+      -0.1185062278637572
+    ],
+    "epsilon_gw": [
+      0.3775971581029334,
+      1.6937979732122264
+    ]
+  },
+  "output_dir": "/Volumes/MacData_External/Physics-Novel-Paper/研究计划2026/课题1-PTA引力波/results/prl_reference_bridge/P1_ng15_local/DomainWall"
+}

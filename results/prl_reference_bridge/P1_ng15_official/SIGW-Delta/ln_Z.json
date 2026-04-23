@@ -1,0 +1,41 @@
+{
+  "model": "SIGW-Delta",
+  "tier": "ng15_official",
+  "ln_Z": -109.5833162671332,
+  "ln_Z_err": 0.10968983084611401,
+  "n_dim": 2,
+  "nlive": 500,
+  "dlogz": 0.1,
+  "seed": 20260422,
+  "n_likelihood_calls": 19506,
+  "wall_seconds": 2.1237871646881104,
+  "param_names": [
+    "log10_f_peak",
+    "log10_A"
+  ],
+  "prior_range": {
+    "log10_f_peak": [
+      -11.0,
+      -5.0
+    ],
+    "log10_A": [
+      -3.0,
+      1.0
+    ]
+  },
+  "median_params": {
+    "log10_f_peak": -5.776020805330781,
+    "log10_A": -0.599250727599725
+  },
+  "ci_68": {
+    "log10_f_peak": [
+      -6.5274759287489434,
+      -5.246484414442345
+    ],
+    "log10_A": [
+      -1.1989321584352166,
+      -0.1456500161251606
+    ]
+  },
+  "output_dir": "/Volumes/MacData_External/Physics-Novel-Paper/研究计划2026/课题1-PTA引力波/results/prl_reference_bridge/P1_ng15_official/SIGW-Delta"
+}

@@ -6,7 +6,7 @@
 
 \begin{document}
 
-\title{Supplemental Material for ``Curved SMBHB Spectra Compete with New-Physics Explanations in PTA Source Identification''}
+\title{Supplemental Material for ``Calibrated PTA Evidence Favors Curved Spectra but Not a Unique Nanohertz Source''}
 
 \author{Ran DUAN}
 \email{duanran@nao.cas.cn}
@@ -23,6 +23,10 @@ The analysis uses public NANOGrav 15-year data products
 (arXiv:2306.16219).  Official NANOGrav/PTArcade model files were taken
 from Zenodo DOI 10.5281/zenodo.8084351, and the official PTArcade
 \texttt{ceffyl} density product from Zenodo DOI 10.5281/zenodo.10495907.
+The cross-PTA bridge uses public posterior-summary spectral information
+from PPTA DR3, NANOGrav 15yr, and EPTA+InPTA DR2.  It is not a full IPTA
+timing-residual likelihood and is used only as a controlled
+source-ranking stress test.
 
 PTArcade model files return $h^2\Omega_\mathrm{GW}$.  The residual-density
 conversion used for official templates is
@@ -319,13 +323,136 @@ information for these stochastic spectral templates.  This is a diagnostic of
 the released free-spectrum likelihood, not a completeness statement for
 time-domain PBH or ULDM signal classes.
 
-\section*{S12. Minimal Local Verification Commands}
+\section*{S12. Cross-PTA Bridge Likelihood}
+
+The bridge likelihoods are products of posterior-summary spectral
+densities.  They are deliberately separated from the full timing-residual
+problem so that they test only whether the public spectral summaries already
+produce robust source identification.  We define
+\begin{equation}
+\ln\mathcal{L}_\mathrm{local3}
+=\ln\mathcal{L}_\mathrm{PPTA}^{\rm loc}
++\ln\mathcal{L}_\mathrm{NG15}^{\rm loc}
++\ln\mathcal{L}_\mathrm{EPTA}^{\rm loc},
+\end{equation}
+and
+\begin{equation}
+\ln\mathcal{L}_\mathrm{hybrid3}
+=\ln\mathcal{L}_\mathrm{PPTA}^{\rm loc}
++\ln\mathcal{L}_\mathrm{NG15}^{\rm off}
++\ln\mathcal{L}_\mathrm{EPTA}^{\rm loc}.
+\end{equation}
+The local terms use the same per-bin density construction for each public
+free-spectrum summary.  The official NANOGrav term uses the official
+PTArcade \texttt{ceffyl} density and the PTArcade BHB-prior baseline.  All
+11 bridge templates passed the PPTA-local, NANOGrav-local, EPTA-local, and
+NANOGrav-official adapter checks.
+
+\begin{table}[h]
+\caption{\label{tab:bridge}Leading bridge evidence values.  Values are absolute
+log evidences within the bridge likelihood, not Bayes factors relative to the
+NANOGrav-only BHB baseline.}
+\begin{ruledtabular}
+\begin{tabular}{lcc}
+Model & local3 $\ln Z$ & hybrid3 $\ln Z$ \\
+\hline
+Cosmic superstrings & $-62.594\pm0.109$ & $-154.377\pm0.109$ \\
+SIGW-delta & $-62.711\pm0.110$ & $-154.469\pm0.109$ \\
+PBH-SIGW analytic & $-62.774\pm0.114$ & $-154.550\pm0.114$ \\
+SIGW-Gaussian & $-63.046\pm0.114$ & $-154.850\pm0.115$ \\
+Ecc.-curved SMBHB & $-63.215\pm0.121$ & $-155.040\pm0.121$ \\
+Broken-PL SMBHB & $-63.344\pm0.121$ & $-155.209\pm0.121$ \\
+Env. SMBHB & $-63.527\pm0.123$ & $-155.316\pm0.123$ \\
+\end{tabular}
+\end{ruledtabular}
+\end{table}
+
+The hybrid3 ordering preserves the same qualitative tier as local3.  Relative
+to the best tested hybrid3 template, SIGW-delta, PBH-SIGW analytic,
+SIGW-Gaussian, eccentricity-inspired SMBHB curvature, broken-power-law SMBHB
+curvature, and environmental SMBHB turnover sit at $-0.092$, $-0.173$,
+$-0.472$, $-0.663$, $-0.832$, and $-0.939$ nat, respectively.
+
+\section*{S13. Bridge Family Evidence}
+
+Family evidences are computed as prior-volume mixtures over the tested
+representatives in each family,
+\begin{equation}
+Z_F=\frac{1}{N_F}\sum_{m\in F} Z_m .
+\end{equation}
+This prevents a family with more tested representatives from being rewarded
+solely for having more rows.
+
+\begin{table}[h]
+\caption{\label{tab:bridge-family}Bridge family evidences.}
+\begin{ruledtabular}
+\begin{tabular}{lccc}
+Tier & Family & all-representative $\ln Z_F$ & leave-one-leader-out $\ln Z_F$ \\
+\hline
+local3 & SIGW-like & $-62.833$ & $-62.901$ \\
+local3 & Astro-curved & $-63.354$ & $-63.431$ \\
+local3 & Cosmo-other & $-63.486$ & $-64.755$ \\
+local3 & Astro-simple & $-63.840$ & $-64.130$ \\
+hybrid3 & SIGW-like & $-154.610$ & $-154.689$ \\
+hybrid3 & Astro-curved & $-155.182$ & $-155.261$ \\
+hybrid3 & Cosmo-other & $-155.279$ & $-156.594$ \\
+hybrid3 & Astro-simple & $-155.650$ & $-155.941$ \\
+\end{tabular}
+\end{ruledtabular}
+\end{table}
+
+In hybrid3, the curved-SMBHB family is only $0.572$ nat below the SIGW-like
+family.  Removing the leading representative from each family preserves the
+same qualitative conclusion: curved SMBHB spectra remain in the same
+order-unity evidence tier as SIGW-like spectra.
+
+\section*{S14. Bridge Robustness and Frequency Diagnostics}
+
+The hybrid3 robustness sweep reran the three leading templates and
+SIGW-Gaussian with independent seeds and a higher-live-point configuration.
+The ranges over the three runs were $[-154.412,-154.348]$ for cosmic
+superstrings, $[-154.601,-154.428]$ for SIGW-delta,
+$[-154.571,-154.528]$ for PBH-SIGW analytic, and
+$[-154.982,-154.850]$ for SIGW-Gaussian.  A separate Sobol-QMC
+thermodynamic-integration check gave hybrid3 $\ln Z=-154.429$ for cosmic
+superstrings, $-154.604$ for SIGW-delta, and $-154.666$ for PBH-SIGW
+analytic.  These checks preserve the non-discrimination message.
+
+\begin{table}[h]
+\caption{\label{tab:gamma-bridge}Effective low-frequency spectral-index
+projection for the three curved-SMBHB controls.}
+\begin{ruledtabular}
+\begin{tabular}{lccc}
+Model & PPTA DR3 & NANOGrav 15yr & EPTA+InPTA DR2 \\
+\hline
+Ecc.-curved SMBHB & $3.729^{+0.330}_{-0.320}$ &
+$3.807^{+0.294}_{-0.301}$ & $4.022^{+0.199}_{-0.248}$ \\
+Broken-PL SMBHB & $3.781^{+0.351}_{-0.332}$ &
+$3.866^{+0.312}_{-0.332}$ & $4.103^{+0.184}_{-0.328}$ \\
+Env. SMBHB & $3.720^{+0.303}_{-0.320}$ &
+$3.814^{+0.284}_{-0.312}$ & $4.087^{+0.197}_{-0.328}$ \\
+\end{tabular}
+\end{ruledtabular}
+\end{table}
+
+The projection supports frequency-window curvature but should not be read as a
+claim that the reported PTA spectral-index differences are fully
+astrophysical.  The frequency-cut diagnostic similarly shows
+non-identification: with $f\le5$, 8, 12, and 20 nHz, PBH-SIGW analytic leads
+the reduced-bin hybrid diagnostic, while the all-bin diagnostic returns cosmic
+superstrings and SIGW-delta at the top with curved-SMBHB controls within
+about one nat.  Because this is a lower-live-point diagnostic, the main Letter
+uses it only to identify the frequency window driving the ranking.
+
+\section*{S15. Minimal Local Verification Commands}
 
 Run from the project root:
 \begin{verbatim}
 python3 code/gwb_templates.py
 python3 -m py_compile code/prl_*.py
 python3 code/prl_decisive_evidence_figure.py
+python3 code/prl_reference_bridge_pipeline.py all --profile production --force
+python3 code/prl_bridge_evidence_figure.py
 python3 code/prl_evidence_ti_qmc_crosscheck.py
 python3 code/prl_package_static_gate.py
 \end{verbatim}

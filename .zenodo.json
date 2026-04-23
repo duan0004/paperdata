@@ -1,7 +1,7 @@
 {
-  "title": "Curved SMBHB Spectra Compete with New-Physics Explanations in PTA Source Identification: Code and Compact Data Release",
+  "title": "Calibrated PTA Evidence Favors Curved Spectra but Not a Unique Nanohertz Source: Code and Compact Data Release",
   "upload_type": "software",
-  "description": "Code, compact data products, derived evidence tables, figures, and manuscript sources for the PRL submission Curved SMBHB Spectra Compete with New-Physics Explanations in PTA Source Identification. The release includes official public NANOGrav/PTArcade inputs needed by the analysis, compact derived outputs used by the paper, and reproduction commands. Large local MCMC chain dumps are excluded; summary diagnostics are included.",
+  "description": "Code, compact data products, derived evidence tables, cross-PTA bridge outputs, figures, and manuscript sources for the PRL submission Calibrated PTA Evidence Favors Curved Spectra but Not a Unique Nanohertz Source. The release includes official public NANOGrav/PTArcade inputs needed by the analysis, compact derived outputs used by the paper, P0--P6 posterior-summary bridge outputs, and reproduction commands. Large local MCMC chain dumps are excluded; summary diagnostics are included.",
   "creators": [
     {
       "name": "DUAN, Ran",

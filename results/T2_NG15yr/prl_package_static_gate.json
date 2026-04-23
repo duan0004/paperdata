@@ -19,12 +19,20 @@
     "title_present_tex": true
   },
   "citations": {
-    "bibitem_count": 13,
-    "cite_count": 13,
+    "bibitem_count": 15,
+    "cite_count": 15,
     "missing_bibitems": [],
     "unused_bibitems": []
   },
   "file_status": {
+    "bridge_figure": {
+      "exists": true,
+      "path": "results/T2_NG15yr/figures/prl_bridge_evidence_figure.pdf"
+    },
+    "bridge_summary": {
+      "exists": true,
+      "path": "results/prl_reference_bridge/P0_P6_run_summary.md"
+    },
     "compressed_md": {
       "exists": true,
       "path": "theory/paper_prl_compressed_draft.md"
@@ -82,7 +90,7 @@
       "path": "theory/T3.11_PRL_tex_static_check.md"
     }
   },
-  "generated": "2026-04-22T11:16:21",
+  "generated": "2026-04-23T09:39:29",
   "json_status": {
     "H10_systematic_envelope": {
       "complete": true,
@@ -170,11 +178,11 @@
     "tectonic": "/opt/homebrew/bin/tectonic",
     "xelatex": null
   },
-  "title": "Curved SMBHB Spectra Compete with New-Physics Explanations in PTA Source Identification",
+  "title": "Calibrated PTA Evidence Favors Curved Spectra but Not a Unique Nanohertz Source",
   "word_counts": {
-    "compressed_markdown": 1522,
-    "revtex_source": 1673,
-    "supplement_markdown": 1013,
-    "supplement_tex_source": 1611
+    "compressed_markdown": 1574,
+    "revtex_source": 2204,
+    "supplement_markdown": 1014,
+    "supplement_tex_source": 2253
   }
 }

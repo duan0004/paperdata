@@ -1,0 +1,41 @@
+{
+  "model": "Cosmic-Superstrings",
+  "tier": "ng15_official",
+  "ln_Z": -110.02591717872392,
+  "ln_Z_err": 0.11035904259507262,
+  "n_dim": 2,
+  "nlive": 500,
+  "dlogz": 0.1,
+  "seed": 20260422,
+  "n_likelihood_calls": 23273,
+  "wall_seconds": 2.618361234664917,
+  "param_names": [
+    "log10_Gmu",
+    "log10_P"
+  ],
+  "prior_range": {
+    "log10_Gmu": [
+      -14.0,
+      -6.0
+    ],
+    "log10_P": [
+      -3.0,
+      0.0
+    ]
+  },
+  "median_params": {
+    "log10_Gmu": -11.747764463613084,
+    "log10_P": -2.35465762302926
+  },
+  "ci_68": {
+    "log10_Gmu": [
+      -11.990537555461383,
+      -11.38133605215082
+    ],
+    "log10_P": [
+      -2.823106601512598,
+      -1.7125124890742809
+    ]
+  },
+  "output_dir": "/Volumes/MacData_External/Physics-Novel-Paper/研究计划2026/课题1-PTA引力波/results/prl_reference_bridge/P1_ng15_official/Cosmic-Superstrings"
+}

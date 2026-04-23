@@ -9,7 +9,7 @@
 
 \begin{document}
 
-\title{Curved SMBHB Spectra Compete with New-Physics Explanations in PTA Source Identification}
+\title{Calibrated PTA Evidence Favors Curved Spectra but Not a Unique Nanohertz Source}
 
 \author{Ran DUAN}
 \email{duanran@nao.cas.cn}
@@ -17,22 +17,27 @@
 \date{\today}
 
 \begin{abstract}
-The NANOGrav 15-year Hellings--Downs signal admits both astrophysical
-and cosmological interpretations.  We test whether the published
-new-physics Bayes factors remain discriminating once template
+The nanohertz gravitational-wave background admits both astrophysical
+and cosmological interpretations.  We test whether current PTA
+Bayesian evidence remains source-discriminating once template
 provenance, density construction, and curved-SMBHB controls are matched.
 Official PTArcade templates and official PTArcade \texttt{ceffyl}
-densities reproduce the published log-Bayes factors for SIGW-Gaussian,
-SIGW-delta, and cosmic superstrings at sub-nat agreement.  On that
-calibrated scale, one environmental SMBHB model and two phenomenological
-low-frequency curvature surrogates yield
+densities reproduce the published NANOGrav 15-year log-Bayes factors
+for SIGW-Gaussian, SIGW-delta, and cosmic superstrings at sub-nat
+agreement.  On that calibrated scale, one environmental SMBHB model and
+two phenomenological low-frequency curvature surrogates yield
 $\ln\mathcal{B}=3.45$--$3.84$, placing three distinct curved-SMBHB
 parameterizations within one nat of the leading cosmological evidence
 tier.  The $0.681$-nat gap between the leading SIGW-Gaussian model and
 the best curved-SMBHB control is comparable to the identified
-calibration and prior-boundary systematics.  Current data therefore do
-not yet support robust source discrimination between leading
-cosmological stochastic spectra and calibrated curved-SMBHB controls.
+calibration and prior-boundary systematics.  We then combine public
+PPTA, NANOGrav, and EPTA spectral information in a posterior-summary
+bridge.  In the hybrid bridge, cosmic superstrings, SIGW-delta,
+PBH-SIGW, SIGW-Gaussian, and three curved-SMBHB controls all fall within
+$0.94$ nat of the leader, while family evidence places curved SMBHB
+spectra only $0.572$ nat below the SIGW-like family.  Current public PTA
+evidence therefore favors low-frequency curved spectra but does not yet
+identify a unique astrophysical or cosmological source class.
 \end{abstract}
 
 \maketitle
@@ -42,9 +47,12 @@ Pulsar timing arrays have opened the nanohertz gravitational-wave
 window.  The NANOGrav 15-year data set reports a common red process with
 Hellings--Downs spatial correlations \cite{NANOGrav_15yr_GWB}.  The
 companion noise analysis \cite{NANOGrav_15yr_noise} provides the
-white-noise budget used in the public analyses.  The signal is
-compatible with an astrophysical supermassive-black-hole-binary (SMBHB)
-background \cite{Phinney_2001} and with several cosmological sources.
+white-noise budget used in the public analyses.  Comparable public PTA
+evidence for a nanohertz background is available from PPTA DR3
+\cite{PPTA_DR3} and EPTA+InPTA DR2 \cite{EPTA_InPTA_DR2}.  The signal
+is compatible with an astrophysical supermassive-black-hole-binary
+(SMBHB) background \cite{Phinney_2001} and with several cosmological
+sources.
 The NANOGrav
 new-physics search \cite{NANOGrav_15yr_NewPhysics}, using PTArcade
 \cite{PTArcade_2023}, reports strong-but-not-decisive Bayes factors
@@ -55,18 +63,21 @@ placing these models in the strong-but-not-decisive evidence range
 under the Kass--Raftery convention \cite{Kass_Raftery_1995}.
 We show below that one environmental SMBHB model and two phenomenological
 curved-SMBHB surrogates are competitive with these alternatives on the
-same evidence scale.
+same evidence scale, and that the same non-identification message
+survives a deliberately limited cross-PTA posterior-summary bridge.
 
 The central issue is reproducibility of Bayesian source identification.
 Order-unity shifts in $\ln\mathcal{B}$ can arise from the
 scalar-induced-gravitational-wave kernel, the radiation-era resonance,
 prior boundaries on peak frequency, or the density estimate used for the
 free-spectrum likelihood \cite{Kohri_Terada_2018}.  We therefore
-separate three questions: whether our PTA pipeline reproduces the
+separate four questions: whether our PTA pipeline reproduces the
 published Hellings--Downs posterior, whether a local spectral library
-reproduces the qualitative model ranking, and whether the official
-PTArcade spectra plus official density products reproduce the published
-absolute Bayes factors.
+reproduces the qualitative model ranking, whether the official PTArcade
+spectra plus official density products reproduce the published absolute
+Bayes factors, and whether adding public PPTA and EPTA spectral
+summaries turns the calibrated NANOGrav comparison into robust source
+identification.
 
 \emph{Templates and likelihood.}
 We model an isotropic stochastic background through the one-sided strain
@@ -92,6 +103,27 @@ NANOGrav_15yr_NewPhysics}.  Timing-model offsets are marginalized with
 Model evidences are computed either from local free-spectrum KDE
 products or from the official PTArcade \texttt{ceffyl} density grid
 using \texttt{dynesty} nested sampling \cite{Speagle_2020}.
+For the cross-PTA bridge we additionally define two posterior-summary
+likelihoods,
+\begin{equation}
+\ln\mathcal{L}_\mathrm{local3}
+=\ln\mathcal{L}_\mathrm{PPTA}^{\rm loc}
++\ln\mathcal{L}_\mathrm{NG15}^{\rm loc}
++\ln\mathcal{L}_\mathrm{EPTA}^{\rm loc},
+\end{equation}
+and
+\begin{equation}
+\ln\mathcal{L}_\mathrm{hybrid3}
+=\ln\mathcal{L}_\mathrm{PPTA}^{\rm loc}
++\ln\mathcal{L}_\mathrm{NG15}^{\rm off}
++\ln\mathcal{L}_\mathrm{EPTA}^{\rm loc}.
+\end{equation}
+Here ``loc'' denotes the same per-bin posterior-summary density
+construction applied to each public free-spectrum summary, while
+``off'' denotes the official NANOGrav/PTArcade density and BHB-prior
+baseline.  This bridge is not a full IPTA timing-residual likelihood; it
+is a controlled test of whether public spectral summaries already
+identify a unique source class.
 
 \emph{Pipeline validation.}
 Direct ingestion of the pre-sampled NANOGrav Hellings--Downs chain gives
@@ -207,9 +239,47 @@ Sobol thermodynamic integration agrees with the dynesty robust means to
 within $0.12$ nat for the leading cosmological templates and within
 $0.063$ nat for the tested curved-SMBHB representatives.
 
+\begin{figure}[t]
+\includegraphics[width=\columnwidth]{prl_bridge_evidence_figure.pdf}
+\caption{\label{fig:bridge}
+Cross-PTA posterior-summary bridge.  Panel A compares the local3 ranking
+with the hybrid3 ranking for the leading tested templates; points are
+shown as $\Delta\ln Z$ relative to the best model in each bridge.  The
+dashed vertical line marks one nat.  Panel B groups the hybrid3
+evidence by source family using a prior-volume mixture over the tested
+representatives.}
+\end{figure}
+
+\emph{Cross-PTA bridge.}
+We next ask whether adding public PPTA and EPTA spectral information
+breaks the NANOGrav degeneracy.  All 11 bridge templates passed the
+PPTA-local, NANOGrav-local, EPTA-local, and NANOGrav-official adapter
+checks.  In the local3 bridge the leading tested templates are cosmic
+superstrings, SIGW-delta, PBH-SIGW, SIGW-Gaussian, eccentricity-inspired
+SMBHB curvature, broken-power-law SMBHB curvature, and environmental
+SMBHB turnover, with the three curved-SMBHB controls within $0.933$ nat
+of the leader.  In the hybrid3 bridge, where the NANOGrav term is
+replaced by the official PTArcade density and BHB-prior baseline, the
+same qualitative tier persists: SIGW-delta, PBH-SIGW, SIGW-Gaussian,
+eccentricity-inspired SMBHB curvature, broken-power-law SMBHB curvature,
+and environmental SMBHB turnover lie $0.092$, $0.173$, $0.472$,
+$0.663$, $0.832$, and $0.939$ nat below cosmic superstrings,
+respectively.
+
+Figure~\ref{fig:bridge} also shows the family-level result.  A
+prior-volume mixture over the tested hybrid3 representatives gives
+$\ln Z_\mathrm{family}=-154.610$ for SIGW-like spectra and
+$-155.182$ for curved SMBHB spectra, a separation of only $0.572$ nat.
+Other cosmological spectra sit at $-155.279$, and simple SMBHB spectra
+at $-155.650$.  The bridge therefore strengthens the physical message
+rather than replacing it with a new source claim: current public PTA
+spectral information identifies a broad class of low-frequency-curved
+spectra, but not a unique astrophysical or cosmological origin.
+
 The Supplemental Material gives the full official-density stochastic-model
 ranking, curved-SMBHB family table, prior-boundary tests, and cumulative
-low-frequency-bin scan.  In the single-configuration official scan the
+low-frequency-bin scan, together with the cross-PTA bridge tables and
+robustness checks.  In the single-configuration official scan the
 leading six stochastic templates are SIGW-Gaussian, SIGW-delta, SIGW-box,
 cosmic superstrings, metastable strings, and domain walls.  Extending the
 SIGW-delta upper prior from $\log_{10}f_\mathrm{peak}\le -5$ to $-3$
@@ -221,10 +291,12 @@ lowest eight Fourier bins, whereas SIGW-Gaussian and broken-power-law
 curvature require ten bins.
 
 \emph{Interpretation and conclusions.}
-The NANOGrav 15-year data do not yet identify the physical origin of the
-background.  On a calibrated evidence scale, current leading
-new-physics preferences are compressed into the same model-comparison
-tier as curved SMBHB spectra.  The sharpest near-term
+The calibrated NANOGrav evidence and the cross-PTA posterior-summary
+bridge both point to the same conclusion: current public PTA data do not
+yet identify the physical origin of the background.  On a calibrated
+evidence scale, current leading new-physics preferences are compressed
+into the same model-comparison tier as curved SMBHB spectra.  The
+sharpest near-term
 discriminant is spectral shape at low frequency: SMBHBs give
 $h^2\Omega_\mathrm{GW}\propto f^{2/3}$, while causal cosmological
 sources such as SIGW and first-order phase transitions rise as $f^3$
@@ -243,10 +315,12 @@ alternatives should not be interpreted as source identification until
 they are calibrated against curved SMBHB controls.  On the calibrated
 evidence scale, three distinct curved-SMBHB parameterizations occupy the
 same model-comparison tier as the leading cosmological stochastic
-templates.  The remaining evidence gap is comparable to the calibration
-and prior-boundary systematics identified here, so the present NANOGrav
-15-year data do not yet support robust source identification between
-these leading cosmological templates and curved-SMBHB controls.
+templates; in the hybrid3 bridge the full leading set remains compressed
+within one nat of the best tested spectrum.  The remaining evidence gap
+is comparable to the calibration and prior-boundary systematics
+identified here, so present public PTA data do not yet support robust
+source identification between these leading cosmological templates and
+curved-SMBHB controls.
 CAR/bin covariance is a useful
 diagnostic but is not the
 dominant error budget for the leading SIGW/string comparisons.  This
@@ -262,17 +336,21 @@ NANOGrav/PTArcade model files from Zenodo DOI
 \href{https://doi.org/10.5281/zenodo.8084351}{10.5281/zenodo.8084351},
 and the official PTArcade \texttt{ceffyl} density product from Zenodo
 DOI \href{https://doi.org/10.5281/zenodo.10495907}
-{10.5281/zenodo.10495907}.  The code and compact data release corresponding
-to this submission is archived at Zenodo DOI
-\href{https://doi.org/10.5281/zenodo.19688472}{10.5281/zenodo.19688472}
+{10.5281/zenodo.10495907}.  The NANOGrav-calibration code and compact data
+snapshot is archived at Zenodo DOI
+\href{https://doi.org/10.5281/zenodo.19688587}{10.5281/zenodo.19688587}
 and mirrored at \href{https://github.com/duan0004/paperdata}
 {\texttt{github.com/duan0004/paperdata}}, release
-\href{https://github.com/duan0004/paperdata/releases/tag/v1.0.0}
-{\texttt{v1.0.0}}, at commit
-\texttt{7a602df4d0369dea09b3a18d526a1468bbc436d0}.  Local checksums and
-reproduction commands are recorded in \texttt{REPRODUCIBILITY.md}.
+\href{https://github.com/duan0004/paperdata/releases/tag/v1.0.1}
+{\texttt{v1.0.1}}, at commit
+\texttt{2bc1dfeee7d452f6c3b58a8fd8f339e6ff0091f6}.  Local checksums and
+reproduction commands are recorded in \texttt{REPRODUCIBILITY.md}.  The
+cross-PTA bridge extension used in this draft is mirrored in the same
+repository under \texttt{results/prl\_reference\_bridge/} and generated by
+\texttt{code/prl\_reference\_bridge\_pipeline.py}; it should receive its own
+Zenodo snapshot before final journal submission.
 
-\begin{thebibliography}{13}
+\begin{thebibliography}{15}
 
 \bibitem{NANOGrav_15yr_GWB}
 G. Agazie et al. (NANOGrav Collaboration), arXiv:2306.16213.
@@ -282,6 +360,14 @@ G. Agazie et al. (NANOGrav Collaboration), arXiv:2306.16214.
 
 \bibitem{NANOGrav_15yr_NewPhysics}
 A. Afzal et al. (NANOGrav Collaboration), arXiv:2306.16219.
+
+\bibitem{PPTA_DR3}
+D. J. Reardon et al. (PPTA Collaboration), Astrophys. J. Lett. 951,
+L6 (2023), arXiv:2306.16215.
+
+\bibitem{EPTA_InPTA_DR2}
+J. Antoniadis et al. (EPTA and InPTA Collaborations),
+Astron. Astrophys. 678, A50 (2023).
 
 \bibitem{PTArcade_2023}
 A. Mitridate et al., arXiv:2306.16377.

@@ -1,9 +1,10 @@
 # PRL Submission Package Manifest
 
-**Date**: 2026-04-22  
-**Status**: public GitHub code/data URL and Zenodo DOI inserted.  
-**Current title**: Curved SMBHB Spectra Compete with New-Physics
-Explanations in PTA Source Identification
+**Date**: 2026-04-23  
+**Status**: public GitHub code/data URL and Zenodo DOI inserted; P0--P6
+cross-PTA bridge incorporated in the working draft.  
+**Current title**: Calibrated PTA Evidence Favors Curved Spectra but Not a
+Unique Nanohertz Source
 
 ## Main Package
 
@@ -14,6 +15,7 @@ Explanations in PTA Source Identification
 | Supplement Markdown draft | `theory/prl_supplement_draft.md` | local Markdown source ready |
 | Supplement TeX draft | `theory/prl_supplement.tex` | Tectonic compile pass |
 | Main figure | `results/T2_NG15yr/figures/prl_decisive_evidence_figure.pdf` | exists; static path check passes |
+| Bridge figure | `results/T2_NG15yr/figures/prl_bridge_evidence_figure.pdf` | exists; generated from P0--P6 bridge outputs |
 | Compiled PRL PDF | `theory/pdf/revtex/paper_prl_submission.pdf` | Tectonic compile pass |
 | Compiled supplement PDF | `theory/pdf/revtex/prl_supplement.pdf` | Tectonic compile pass |
 | Reproducibility manifest | `REPRODUCIBILITY.md` | Zenodo DOI and GitHub release inserted |
@@ -42,6 +44,8 @@ use the official PTArcade `ceffyl` density.
 | Low-frequency bin driver | most rows within `0.5 nat` of 14-bin evidence by first 8 bins; SIGW-Gaussian by 10 bins | `prl_H9_bin_driver_analysis.json` |
 | CAR covariance diagnostic | effective rank `13.56/14`, max offdiag `0.227` | `car_null_calibration.json` |
 | HD convergence | `Rhat(log10_A)=1.047`, `Rhat(gamma)=1.047` | `T2_multichain_Rhat.json` |
+| hybrid3 bridge ranking | leading seven templates within `0.939 nat` of the best tested spectrum | `results/prl_reference_bridge/local3_vs_hybrid3_ranking.md` |
+| hybrid3 family evidence | curved-SMBHB family only `0.572 nat` below SIGW-like family | `results/prl_reference_bridge/family_evidence_sensitivity.md` |
 
 ## Supporting Material Candidates
 

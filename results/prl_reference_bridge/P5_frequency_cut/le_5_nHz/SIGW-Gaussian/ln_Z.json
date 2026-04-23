@@ -1,0 +1,51 @@
+{
+  "model": "SIGW-Gaussian",
+  "tier": "hybrid3",
+  "ln_Z": -19.624898120161028,
+  "ln_Z_err": 0.16314340623687962,
+  "n_dim": 3,
+  "nlive": 250,
+  "dlogz": 0.2,
+  "seed": 20260422,
+  "n_likelihood_calls": 22521,
+  "wall_seconds": 3.3318021297454834,
+  "param_names": [
+    "log10_fpeak",
+    "width",
+    "log10_A"
+  ],
+  "prior_range": {
+    "log10_fpeak": [
+      -11.0,
+      -5.0
+    ],
+    "width": [
+      0.1,
+      3.0
+    ],
+    "log10_A": [
+      -3.0,
+      1.0
+    ]
+  },
+  "median_params": {
+    "log10_fpeak": -6.377983923811882,
+    "width": 1.0846457272299048,
+    "log10_A": -0.3824310645328244
+  },
+  "ci_68": {
+    "log10_fpeak": [
+      -7.293563481127982,
+      -5.594877036104805
+    ],
+    "width": [
+      0.4410886520151137,
+      2.054721866314057
+    ],
+    "log10_A": [
+      -1.277939497791249,
+      0.606253900256255
+    ]
+  },
+  "output_dir": "/Volumes/MacData_External/Physics-Novel-Paper/研究计划2026/课题1-PTA引力波/results/prl_reference_bridge/P5_frequency_cut/le_5_nHz/SIGW-Gaussian"
+}

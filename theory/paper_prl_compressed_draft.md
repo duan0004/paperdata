@@ -1,14 +1,14 @@
-# Curved SMBHB Spectra Compete with New-Physics Explanations in PTA Source Identification
+# Calibrated PTA Evidence Favors Curved Spectra but Not a Unique Nanohertz Source
 
 **Ran DUAN**  
 **Affiliation**: National Astronomical Observatories, Chinese Academy of Sciences  
 **Email**: duanran@nao.cas.cn
 
-**Code/data release**: Zenodo DOI `10.5281/zenodo.19688472`; GitHub mirror https://github.com/duan0004/paperdata, release `v1.0.0`, commit `7a602df4d0369dea09b3a18d526a1468bbc436d0`.
+**Code/data release**: Zenodo DOI `10.5281/zenodo.19688587`; GitHub mirror https://github.com/duan0004/paperdata, release `v1.0.1`, commit `2bc1dfeee7d452f6c3b58a8fd8f339e6ff0091f6`.
 
 ## Abstract
 
-The NANOGrav 15-yr Hellings--Downs signal admits both astrophysical and cosmological interpretations. We test whether the published new-physics Bayes factors remain discriminating once template provenance, density construction, and curved-SMBHB controls are matched. Official PTArcade templates and official PTArcade `ceffyl` densities reproduce the published log-Bayes factors for SIGW-Gaussian, SIGW-delta, and cosmic superstrings at sub-nat agreement. On that calibrated scale, one environmental SMBHB model and two phenomenological low-frequency curvature surrogates yield $\ln\mathcal{B}=3.45$--$3.84$, placing three distinct curved-SMBHB parameterizations within one nat of the leading cosmological evidence tier. The $0.681$-nat gap between the leading SIGW-Gaussian model and the best curved-SMBHB control is comparable to the identified calibration and prior-boundary systematics. Current data therefore do not yet support robust source discrimination between leading cosmological stochastic spectra and calibrated curved-SMBHB controls.
+The nanohertz gravitational-wave background admits both astrophysical and cosmological interpretations. We test whether current PTA Bayesian evidence remains source-discriminating once template provenance, density construction, and curved-SMBHB controls are matched. Official PTArcade templates and official PTArcade `ceffyl` densities reproduce the published NANOGrav 15-year log-Bayes factors for SIGW-Gaussian, SIGW-delta, and cosmic superstrings at sub-nat agreement. On that calibrated scale, one environmental SMBHB model and two phenomenological low-frequency curvature surrogates yield $\ln\mathcal{B}=3.45$--$3.84$, placing three distinct curved-SMBHB parameterizations within one nat of the leading cosmological evidence tier. The $0.681$-nat gap between the leading SIGW-Gaussian model and the best curved-SMBHB control is comparable to the identified calibration and prior-boundary systematics. We then combine public PPTA, NANOGrav, and EPTA spectral information in a posterior-summary bridge. In the hybrid bridge, cosmic superstrings, SIGW-delta, PBH-SIGW, SIGW-Gaussian, and three curved-SMBHB controls all fall within $0.94$ nat of the leader, while family evidence places curved SMBHB spectra only $0.572$ nat below the SIGW-like family. Current public PTA evidence therefore favors low-frequency curved spectra but does not yet identify a unique astrophysical or cosmological source class.
 
 ## I. Introduction
 
@@ -90,7 +90,7 @@ The practical lesson is methodological. A local free-spectrum KDE product is use
 
 ## VI. Conclusions
 
-We constructed and validated a spectral-template analysis pipeline for the NANOGrav 15-year background. The ENTERPRISE/PTMCMCSampler HD run reproduces the published common-process posterior and passes a two-chain $\hat R<1.05$ diagnostic. Local refits reproduce the qualitative model ranking but expose sensitivity to KDE density construction. Official PTArcade templates plus official PTArcade `ceffyl` densities reproduce the published SIGW-Gaussian, SIGW-delta, and cosmic-superstring log-Bayes factors at sub-nat precision across seed/live-point repetitions, while a curved SMBHB family overlaps the leading cosmological evidence range. The PRL scientific gate is therefore stronger than a calibration note: current data do not robustly discriminate leading cosmological stochastic spectra from calibrated curved-SMBHB controls. The code/data release is archived at Zenodo DOI `10.5281/zenodo.19688472`; the remaining work before PRL submission is final human approval of any acknowledgments.
+We constructed and validated a spectral-template analysis pipeline for the NANOGrav 15-year background. The ENTERPRISE/PTMCMCSampler HD run reproduces the published common-process posterior and passes a two-chain $\hat R<1.05$ diagnostic. Local refits reproduce the qualitative model ranking but expose sensitivity to KDE density construction. Official PTArcade templates plus official PTArcade `ceffyl` densities reproduce the published SIGW-Gaussian, SIGW-delta, and cosmic-superstring log-Bayes factors at sub-nat precision across seed/live-point repetitions, while a curved SMBHB family overlaps the leading cosmological evidence range. The PRL scientific gate is therefore stronger than a calibration note: current data do not robustly discriminate leading cosmological stochastic spectra from calibrated curved-SMBHB controls. The code/data release is archived at Zenodo DOI `10.5281/zenodo.19688587`; the remaining work before PRL submission is final human approval of any acknowledgments.
 
 ## References
 

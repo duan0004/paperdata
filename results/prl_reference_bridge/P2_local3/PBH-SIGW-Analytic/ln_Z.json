@@ -1,0 +1,51 @@
+{
+  "model": "PBH-SIGW-Analytic",
+  "tier": "local3",
+  "ln_Z": -62.773792851090995,
+  "ln_Z_err": 0.11409525163911816,
+  "n_dim": 3,
+  "nlive": 500,
+  "dlogz": 0.1,
+  "seed": 20260422,
+  "n_likelihood_calls": 71764,
+  "wall_seconds": 503.2548930644989,
+  "param_names": [
+    "log10_A_zeta",
+    "log10_f_star",
+    "sigma_ps"
+  ],
+  "prior_range": {
+    "log10_A_zeta": [
+      -3.0,
+      0.0
+    ],
+    "log10_f_star": [
+      -10.0,
+      -6.0
+    ],
+    "sigma_ps": [
+      0.1,
+      3.0
+    ]
+  },
+  "median_params": {
+    "log10_A_zeta": -2.0700019977865205,
+    "log10_f_star": -7.239291511393407,
+    "sigma_ps": 1.3401942427126805
+  },
+  "ci_68": {
+    "log10_A_zeta": [
+      -2.2245379507543754,
+      -1.2478136356923852
+    ],
+    "log10_f_star": [
+      -7.6285880945519295,
+      -6.5948222193052715
+    ],
+    "sigma_ps": [
+      0.6773584213947208,
+      2.3657917157966057
+    ]
+  },
+  "output_dir": "/Volumes/MacData_External/Physics-Novel-Paper/研究计划2026/课题1-PTA引力波/results/prl_reference_bridge/P2_local3/PBH-SIGW-Analytic"
+}

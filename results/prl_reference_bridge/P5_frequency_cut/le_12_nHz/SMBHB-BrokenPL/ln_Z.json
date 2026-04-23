@@ -1,0 +1,61 @@
+{
+  "model": "SMBHB-BrokenPL",
+  "tier": "hybrid3",
+  "ln_Z": -58.11873527651145,
+  "ln_Z_err": 0.1824023306731382,
+  "n_dim": 4,
+  "nlive": 250,
+  "dlogz": 0.2,
+  "seed": 20260422,
+  "n_likelihood_calls": 32846,
+  "wall_seconds": 2.4475319385528564,
+  "param_names": [
+    "log10_A",
+    "log10_fbend",
+    "delta",
+    "kappa"
+  ],
+  "prior_range": {
+    "log10_A": [
+      -18.0,
+      -11.0
+    ],
+    "log10_fbend": [
+      -10.0,
+      -6.8
+    ],
+    "delta": [
+      0.0,
+      6.0
+    ],
+    "kappa": [
+      0.5,
+      8.0
+    ]
+  },
+  "median_params": {
+    "log10_A": -14.55696233004404,
+    "log10_fbend": -8.514117990572366,
+    "delta": 2.290070919574707,
+    "kappa": 3.7464970046427206
+  },
+  "ci_68": {
+    "log10_A": [
+      -14.671305963859037,
+      -14.283138328289768
+    ],
+    "log10_fbend": [
+      -8.99706582990423,
+      -7.674801717119675
+    ],
+    "delta": [
+      0.9205784844490437,
+      5.168533996443955
+    ],
+    "kappa": [
+      1.3951155520382366,
+      6.788207052856568
+    ]
+  },
+  "output_dir": "/Volumes/MacData_External/Physics-Novel-Paper/研究计划2026/课题1-PTA引力波/results/prl_reference_bridge/P5_frequency_cut/le_12_nHz/SMBHB-BrokenPL"
+}

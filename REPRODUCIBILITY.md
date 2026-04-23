@@ -1,12 +1,12 @@
 # Reproducibility Manifest
 
-**Project**: PTA stochastic-GWB spectral-template comparison with NANOGrav 15yr data  
-**Last updated**: 2026-04-22  
-**Archived release DOI**: `10.5281/zenodo.19688472`  
-**Archived release URL**: `https://doi.org/10.5281/zenodo.19688472`  
+**Project**: PTA stochastic-GWB spectral-template comparison with NANOGrav 15yr data and cross-PTA posterior-summary bridge  
+**Last updated**: 2026-04-23  
+**Archived release DOI**: `10.5281/zenodo.19688587`  
+**Archived release URL**: `https://doi.org/10.5281/zenodo.19688587`  
 **Public repository**: `https://github.com/duan0004/paperdata`  
-**GitHub release tag**: `v1.0.0`  
-**Submission package commit**: `7a602df4d0369dea09b3a18d526a1468bbc436d0`  
+**GitHub release tag**: `v1.0.1`  
+**Submission package commit**: `2bc1dfeee7d452f6c3b58a8fd8f339e6ff0091f6` for the archived NANOGrav-calibration snapshot; the P0--P6 bridge update is recorded in the Git history after that release.  
 **Runtime used for saved results**: Python 3.9.6 on macOS 26.0 arm64
 
 This manifest records the local environment, input data fingerprints, and
@@ -73,6 +73,12 @@ Additional NANOGrav pre-sampled cores used by the analysis are under
 | CAR template projection diagnostic | `results/T2_NG15yr/covariance/template_projection.json` |
 | CAR null calibration | `results/T2_NG15yr/covariance/car_null_calibration.json` |
 | PRL package static gate | `results/T2_NG15yr/prl_package_static_gate.json` |
+| P0--P6 bridge run summary | `results/prl_reference_bridge/P0_P6_run_summary.md` |
+| local3 versus hybrid3 bridge ranking | `results/prl_reference_bridge/local3_vs_hybrid3_ranking.md` |
+| hybrid3 family evidence sensitivity | `results/prl_reference_bridge/family_evidence_sensitivity.md` |
+| bridge gamma projection | `results/prl_reference_bridge/gamma_projection.md` |
+| bridge frequency-cut diagnostic | `results/prl_reference_bridge/frequency_cut_evidence.md` |
+| bridge robustness and QMC/TI checks | `results/prl_reference_bridge/robustness_budget.csv`, `results/prl_reference_bridge/ti_crosscheck_top_models.csv` |
 
 ## Minimal Verification Commands
 
@@ -91,6 +97,8 @@ python3 -m py_compile \
   code/prl_H4_env_robustness.py \
   code/prl_H7_astrophysical_family.py \
   code/prl_decisive_evidence_figure.py \
+  code/prl_bridge_evidence_figure.py \
+  code/prl_reference_bridge_pipeline.py \
   code/prl_H9_bin_driver_analysis.py \
   code/prl_H10_systematic_envelope.py \
   code/prl_evidence_ti_qmc_crosscheck.py \
@@ -123,14 +131,18 @@ To run the PRL package static gate:
 ```bash
 python3 code/prl_evidence_ti_qmc_crosscheck.py
 python3 code/prl_decisive_evidence_figure.py
+python3 code/prl_reference_bridge_pipeline.py all --profile production --force
+python3 code/prl_bridge_evidence_figure.py
 python3 code/prl_H10_systematic_envelope.py
-tectonic --keep-logs -o theory/pdf/revtex theory/paper_prl_submission.tex
-tectonic --keep-logs -o theory/pdf/revtex theory/prl_supplement.tex
+(cd theory && tectonic --keep-logs --keep-intermediates --outdir pdf/revtex paper_prl_submission.tex)
+(cd theory && tectonic --keep-logs --keep-intermediates --outdir pdf/revtex prl_supplement.tex)
 python3 code/prl_package_static_gate.py
 ```
 
-As of 2026-04-22, Tectonic is available locally and the REVTeX main text and
+As of 2026-04-23, Tectonic is available locally and the REVTeX main text and
 supplement compile to `theory/pdf/revtex/`.  The public code/data release is
-archived at Zenodo DOI `10.5281/zenodo.19688472` and mirrored at
-`https://github.com/duan0004/paperdata`, release `v1.0.0`, commit
-`7a602df4d0369dea09b3a18d526a1468bbc436d0`.
+archived at Zenodo DOI `10.5281/zenodo.19688587` and mirrored at
+`https://github.com/duan0004/paperdata`, release `v1.0.1`, commit
+`2bc1dfeee7d452f6c3b58a8fd8f339e6ff0091f6`.  The cross-PTA bridge update is
+included in the repository history after that release and should receive its
+own Zenodo snapshot before final journal submission.

@@ -1,0 +1,184 @@
+[2026-04-22 17:15:53] START stage=p0 profile=production force=True
+[2026-04-22 17:15:53] P0 bridge manifest
+[2026-04-22 17:16:15] FINISH stage=p0 profile=production
+[2026-04-22 17:16:53] START stage=all profile=production force=True
+[2026-04-22 17:16:53] P0 bridge manifest
+[2026-04-22 17:17:14] P1 NANOGrav calibration anchor
+[2026-04-22 17:17:14] RUN ng15_local SMBHB-PowerLaw nlive=500 dlogz=0.1 seed=20260422
+[2026-04-22 17:17:16] DONE ng15_local SMBHB-PowerLaw: lnZ=-17.831 +/- 0.121; wall=2.0s
+[2026-04-22 17:17:16] RUN ng15_official SMBHB-PowerLaw nlive=500 dlogz=0.1 seed=20260422
+[2026-04-22 17:17:18] DONE ng15_official SMBHB-PowerLaw: lnZ=-109.639 +/- 0.121; wall=1.9s
+[2026-04-22 17:17:18] RUN ng15_local SMBHB-Turnover nlive=500 dlogz=0.1 seed=20260422
+[2026-04-22 17:17:22] DONE ng15_local SMBHB-Turnover: lnZ=-18.011 +/- 0.122; wall=3.4s
+[2026-04-22 17:17:22] RUN ng15_official SMBHB-Turnover nlive=500 dlogz=0.1 seed=20260422
+[2026-04-22 17:17:25] DONE ng15_official SMBHB-Turnover: lnZ=-109.804 +/- 0.121; wall=3.5s
+[2026-04-22 17:17:25] RUN ng15_local SMBHB-Env nlive=500 dlogz=0.1 seed=20260422
+[2026-04-22 17:17:28] DONE ng15_local SMBHB-Env: lnZ=-18.354 +/- 0.125; wall=3.3s
+[2026-04-22 17:17:28] RUN ng15_official SMBHB-Env nlive=500 dlogz=0.1 seed=20260422
+[2026-04-22 17:17:32] DONE ng15_official SMBHB-Env: lnZ=-110.192 +/- 0.126; wall=3.2s
+[2026-04-22 17:17:32] RUN ng15_local SMBHB-BrokenPL nlive=500 dlogz=0.1 seed=20260422
+[2026-04-22 17:17:35] DONE ng15_local SMBHB-BrokenPL: lnZ=-18.085 +/- 0.123; wall=3.3s
+[2026-04-22 17:17:35] RUN ng15_official SMBHB-BrokenPL nlive=500 dlogz=0.1 seed=20260422
+[2026-04-22 17:17:38] DONE ng15_official SMBHB-BrokenPL: lnZ=-109.887 +/- 0.122; wall=3.4s
+[2026-04-22 17:17:38] RUN ng15_local SMBHB-Eccentric nlive=500 dlogz=0.1 seed=20260422
+[2026-04-22 17:17:42] DONE ng15_local SMBHB-Eccentric: lnZ=-17.858 +/- 0.121; wall=3.1s
+[2026-04-22 17:17:42] RUN ng15_official SMBHB-Eccentric nlive=500 dlogz=0.1 seed=20260422
+[2026-04-22 17:17:45] DONE ng15_official SMBHB-Eccentric: lnZ=-109.702 +/- 0.122; wall=3.1s
+[2026-04-22 17:17:45] RUN ng15_local PBH-SIGW-Analytic nlive=500 dlogz=0.1 seed=20260422
+[2026-04-22 17:20:22] DONE ng15_local PBH-SIGW-Analytic: lnZ=-16.451 +/- 0.108; wall=157.3s
+[2026-04-22 17:20:22] RUN ng15_official PBH-SIGW-Analytic nlive=500 dlogz=0.1 seed=20260422
+[2026-04-22 17:23:27] DONE ng15_official PBH-SIGW-Analytic: lnZ=-108.238 +/- 0.108; wall=185.0s
+[2026-04-22 17:23:27] RUN ng15_local SIGW-Gaussian nlive=500 dlogz=0.1 seed=20260422
+[2026-04-22 17:23:32] DONE ng15_local SIGW-Gaussian: lnZ=-17.091 +/- 0.114; wall=4.9s
+[2026-04-22 17:23:32] RUN ng15_official SIGW-Gaussian nlive=500 dlogz=0.1 seed=20260422
+[2026-04-22 17:23:37] DONE ng15_official SIGW-Gaussian: lnZ=-108.900 +/- 0.114; wall=4.9s
+[2026-04-22 17:23:37] RUN ng15_local SIGW-Delta nlive=500 dlogz=0.1 seed=20260422
+[2026-04-22 17:23:39] DONE ng15_local SIGW-Delta: lnZ=-17.776 +/- 0.110; wall=2.3s
+[2026-04-22 17:23:39] RUN ng15_official SIGW-Delta nlive=500 dlogz=0.1 seed=20260422
+[2026-04-22 17:23:41] DONE ng15_official SIGW-Delta: lnZ=-109.583 +/- 0.110; wall=2.1s
+[2026-04-22 17:23:41] RUN ng15_local Cosmic-Superstrings nlive=500 dlogz=0.1 seed=20260422
+[2026-04-22 17:23:44] DONE ng15_local Cosmic-Superstrings: lnZ=-18.227 +/- 0.111; wall=2.4s
+[2026-04-22 17:23:44] RUN ng15_official Cosmic-Superstrings nlive=500 dlogz=0.1 seed=20260422
+[2026-04-22 17:23:46] DONE ng15_official Cosmic-Superstrings: lnZ=-110.026 +/- 0.110; wall=2.6s
+[2026-04-22 17:23:46] RUN ng15_local DomainWall nlive=500 dlogz=0.1 seed=20260422
+[2026-04-22 17:23:50] DONE ng15_local DomainWall: lnZ=-19.542 +/- 0.139; wall=3.8s
+[2026-04-22 17:23:50] RUN ng15_official DomainWall nlive=500 dlogz=0.1 seed=20260422
+[2026-04-22 17:23:54] DONE ng15_official DomainWall: lnZ=-111.236 +/- 0.138; wall=4.0s
+[2026-04-22 17:23:54] RUN ng15_local PhaseTransition-Total nlive=500 dlogz=0.1 seed=20260422
+[2026-04-22 17:23:59] DONE ng15_local PhaseTransition-Total: lnZ=-17.749 +/- 0.123; wall=4.9s
+[2026-04-22 17:23:59] RUN ng15_official PhaseTransition-Total nlive=500 dlogz=0.1 seed=20260422
+[2026-04-22 17:24:06] DONE ng15_official PhaseTransition-Total: lnZ=-109.605 +/- 0.124; wall=7.4s
+[2026-04-22 17:24:06] P2 local3 versus hybrid3 evidence
+[2026-04-22 17:24:18] RUN local3 SMBHB-PowerLaw nlive=500 dlogz=0.1 seed=20260422
+[2026-04-22 17:24:22] DONE local3 SMBHB-PowerLaw: lnZ=-64.130 +/- 0.124; wall=3.4s
+[2026-04-22 17:24:34] RUN local3 SMBHB-Turnover nlive=500 dlogz=0.1 seed=20260422
+[2026-04-22 17:24:43] DONE local3 SMBHB-Turnover: lnZ=-63.615 +/- 0.124; wall=8.6s
+[2026-04-22 17:24:55] RUN local3 SMBHB-Env nlive=500 dlogz=0.1 seed=20260422
+[2026-04-22 17:25:03] DONE local3 SMBHB-Env: lnZ=-63.527 +/- 0.123; wall=7.6s
+[2026-04-22 17:25:15] RUN local3 SMBHB-BrokenPL nlive=500 dlogz=0.1 seed=20260422
+[2026-04-22 17:25:23] DONE local3 SMBHB-BrokenPL: lnZ=-63.344 +/- 0.121; wall=7.7s
+[2026-04-22 17:25:35] RUN local3 SMBHB-Eccentric nlive=500 dlogz=0.1 seed=20260422
+[2026-04-22 17:25:42] DONE local3 SMBHB-Eccentric: lnZ=-63.215 +/- 0.121; wall=7.6s
+[2026-04-22 17:25:55] RUN local3 PBH-SIGW-Analytic nlive=500 dlogz=0.1 seed=20260422
+[2026-04-22 17:34:18] DONE local3 PBH-SIGW-Analytic: lnZ=-62.774 +/- 0.114; wall=503.3s
+[2026-04-22 17:34:29] RUN local3 SIGW-Gaussian nlive=500 dlogz=0.1 seed=20260422
+[2026-04-22 17:34:44] DONE local3 SIGW-Gaussian: lnZ=-63.046 +/- 0.114; wall=14.2s
+[2026-04-22 17:34:55] RUN local3 SIGW-Delta nlive=500 dlogz=0.1 seed=20260422
+[2026-04-22 17:35:00] DONE local3 SIGW-Delta: lnZ=-62.711 +/- 0.110; wall=4.3s
+[2026-04-22 17:35:12] RUN local3 Cosmic-Superstrings nlive=500 dlogz=0.1 seed=20260422
+[2026-04-22 17:35:17] DONE local3 Cosmic-Superstrings: lnZ=-62.594 +/- 0.109; wall=5.0s
+[2026-04-22 17:35:29] RUN local3 DomainWall nlive=500 dlogz=0.1 seed=20260422
+[2026-04-22 17:35:37] DONE local3 DomainWall: lnZ=-65.121 +/- 0.135; wall=8.4s
+[2026-04-22 17:35:50] RUN local3 PhaseTransition-Total nlive=500 dlogz=0.1 seed=20260422
+[2026-04-22 17:36:04] DONE local3 PhaseTransition-Total: lnZ=-64.488 +/- 0.129; wall=14.1s
+[2026-04-22 17:36:16] RUN hybrid3 SMBHB-PowerLaw nlive=500 dlogz=0.1 seed=20260422
+[2026-04-22 17:36:19] DONE hybrid3 SMBHB-PowerLaw: lnZ=-155.941 +/- 0.124; wall=3.7s
+[2026-04-22 17:36:31] RUN hybrid3 SMBHB-Turnover nlive=500 dlogz=0.1 seed=20260422
+[2026-04-22 17:36:40] DONE hybrid3 SMBHB-Turnover: lnZ=-155.425 +/- 0.124; wall=8.8s
+[2026-04-22 17:36:52] RUN hybrid3 SMBHB-Env nlive=500 dlogz=0.1 seed=20260422
+[2026-04-22 17:37:00] DONE hybrid3 SMBHB-Env: lnZ=-155.316 +/- 0.123; wall=7.6s
+[2026-04-22 17:37:12] RUN hybrid3 SMBHB-BrokenPL nlive=500 dlogz=0.1 seed=20260422
+[2026-04-22 17:37:20] DONE hybrid3 SMBHB-BrokenPL: lnZ=-155.209 +/- 0.121; wall=7.9s
+[2026-04-22 17:37:32] RUN hybrid3 SMBHB-Eccentric nlive=500 dlogz=0.1 seed=20260422
+[2026-04-22 17:37:39] DONE hybrid3 SMBHB-Eccentric: lnZ=-155.040 +/- 0.121; wall=7.5s
+[2026-04-22 17:37:52] RUN hybrid3 PBH-SIGW-Analytic nlive=500 dlogz=0.1 seed=20260422
+[2026-04-22 17:46:45] DONE hybrid3 PBH-SIGW-Analytic: lnZ=-154.550 +/- 0.114; wall=533.0s
+[2026-04-22 17:46:57] RUN hybrid3 SIGW-Gaussian nlive=500 dlogz=0.1 seed=20260422
+[2026-04-22 17:47:11] DONE hybrid3 SIGW-Gaussian: lnZ=-154.850 +/- 0.115; wall=14.4s
+[2026-04-22 17:47:23] RUN hybrid3 SIGW-Delta nlive=500 dlogz=0.1 seed=20260422
+[2026-04-22 17:47:27] DONE hybrid3 SIGW-Delta: lnZ=-154.469 +/- 0.109; wall=4.3s
+[2026-04-22 17:47:39] RUN hybrid3 Cosmic-Superstrings nlive=500 dlogz=0.1 seed=20260422
+[2026-04-22 17:47:44] DONE hybrid3 Cosmic-Superstrings: lnZ=-154.377 +/- 0.109; wall=5.0s
+[2026-04-22 17:47:57] RUN hybrid3 DomainWall nlive=500 dlogz=0.1 seed=20260422
+[2026-04-22 17:48:06] DONE hybrid3 DomainWall: lnZ=-157.171 +/- 0.137; wall=9.3s
+[2026-04-22 17:48:18] RUN hybrid3 PhaseTransition-Total nlive=500 dlogz=0.1 seed=20260422
+[2026-04-22 17:48:35] DONE hybrid3 PhaseTransition-Total: lnZ=-156.230 +/- 0.131; wall=17.1s
+[2026-04-22 17:48:35] P3 family evidence
+[2026-04-22 17:48:35] P4 gamma projection
+[2026-04-22 17:48:52] P5 low-frequency discrimination scan
+[2026-04-22 17:49:06] RUN hybrid3 Cosmic-Superstrings nlive=250 dlogz=0.2 seed=20260422
+[2026-04-22 17:49:08] DONE hybrid3 Cosmic-Superstrings: lnZ=-19.843 +/- 0.153; wall=1.7s
+[2026-04-22 17:49:10] RUN hybrid3 SIGW-Delta nlive=250 dlogz=0.2 seed=20260422
+[2026-04-22 17:49:11] DONE hybrid3 SIGW-Delta: lnZ=-20.084 +/- 0.160; wall=1.7s
+[2026-04-22 17:49:13] RUN hybrid3 PBH-SIGW-Analytic nlive=250 dlogz=0.2 seed=20260422
+[2026-04-22 17:51:42] DONE hybrid3 PBH-SIGW-Analytic: lnZ=-19.173 +/- 0.152; wall=149.2s
+[2026-04-22 17:51:44] RUN hybrid3 SIGW-Gaussian nlive=250 dlogz=0.2 seed=20260422
+[2026-04-22 17:51:47] DONE hybrid3 SIGW-Gaussian: lnZ=-19.625 +/- 0.163; wall=3.3s
+[2026-04-22 17:51:49] RUN hybrid3 SMBHB-Eccentric nlive=250 dlogz=0.2 seed=20260422
+[2026-04-22 17:51:50] DONE hybrid3 SMBHB-Eccentric: lnZ=-19.941 +/- 0.169; wall=1.7s
+[2026-04-22 17:51:52] RUN hybrid3 SMBHB-BrokenPL nlive=250 dlogz=0.2 seed=20260422
+[2026-04-22 17:51:53] DONE hybrid3 SMBHB-BrokenPL: lnZ=-19.603 +/- 0.163; wall=1.7s
+[2026-04-22 17:51:56] RUN hybrid3 Cosmic-Superstrings nlive=250 dlogz=0.2 seed=20260422
+[2026-04-22 17:51:58] DONE hybrid3 Cosmic-Superstrings: lnZ=-35.458 +/- 0.168; wall=1.8s
+[2026-04-22 17:52:01] RUN hybrid3 SIGW-Delta nlive=250 dlogz=0.2 seed=20260422
+[2026-04-22 17:52:02] DONE hybrid3 SIGW-Delta: lnZ=-35.390 +/- 0.169; wall=1.7s
+[2026-04-22 17:52:05] RUN hybrid3 PBH-SIGW-Analytic nlive=250 dlogz=0.2 seed=20260422
+[2026-04-22 17:55:01] DONE hybrid3 PBH-SIGW-Analytic: lnZ=-34.642 +/- 0.165; wall=176.3s
+[2026-04-22 17:55:04] RUN hybrid3 SIGW-Gaussian nlive=250 dlogz=0.2 seed=20260422
+[2026-04-22 17:55:08] DONE hybrid3 SIGW-Gaussian: lnZ=-35.102 +/- 0.172; wall=4.2s
+[2026-04-22 17:55:11] RUN hybrid3 SMBHB-Eccentric nlive=250 dlogz=0.2 seed=20260422
+[2026-04-22 17:55:13] DONE hybrid3 SMBHB-Eccentric: lnZ=-35.746 +/- 0.181; wall=2.1s
+[2026-04-22 17:55:16] RUN hybrid3 SMBHB-BrokenPL nlive=250 dlogz=0.2 seed=20260422
+[2026-04-22 17:55:18] DONE hybrid3 SMBHB-BrokenPL: lnZ=-35.689 +/- 0.181; wall=2.3s
+[2026-04-22 17:55:22] RUN hybrid3 Cosmic-Superstrings nlive=250 dlogz=0.2 seed=20260422
+[2026-04-22 17:55:24] DONE hybrid3 Cosmic-Superstrings: lnZ=-57.691 +/- 0.169; wall=1.9s
+[2026-04-22 17:55:27] RUN hybrid3 SIGW-Delta nlive=250 dlogz=0.2 seed=20260422
+[2026-04-22 17:55:29] DONE hybrid3 SIGW-Delta: lnZ=-57.635 +/- 0.169; wall=1.8s
+[2026-04-22 17:55:33] RUN hybrid3 PBH-SIGW-Analytic nlive=250 dlogz=0.2 seed=20260422
+[2026-04-22 17:58:39] DONE hybrid3 PBH-SIGW-Analytic: lnZ=-57.105 +/- 0.169; wall=185.7s
+[2026-04-22 17:58:43] RUN hybrid3 SIGW-Gaussian nlive=250 dlogz=0.2 seed=20260422
+[2026-04-22 17:58:47] DONE hybrid3 SIGW-Gaussian: lnZ=-57.600 +/- 0.172; wall=4.6s
+[2026-04-22 17:58:51] RUN hybrid3 SMBHB-Eccentric nlive=250 dlogz=0.2 seed=20260422
+[2026-04-22 17:58:53] DONE hybrid3 SMBHB-Eccentric: lnZ=-58.212 +/- 0.183; wall=2.3s
+[2026-04-22 17:58:57] RUN hybrid3 SMBHB-BrokenPL nlive=250 dlogz=0.2 seed=20260422
+[2026-04-22 17:59:00] DONE hybrid3 SMBHB-BrokenPL: lnZ=-58.119 +/- 0.182; wall=2.4s
+[2026-04-22 17:59:07] RUN hybrid3 Cosmic-Superstrings nlive=250 dlogz=0.2 seed=20260422
+[2026-04-22 17:59:09] DONE hybrid3 Cosmic-Superstrings: lnZ=-103.944 +/- 0.175; wall=2.2s
+[2026-04-22 17:59:16] RUN hybrid3 SIGW-Delta nlive=250 dlogz=0.2 seed=20260422
+[2026-04-22 17:59:18] DONE hybrid3 SIGW-Delta: lnZ=-103.809 +/- 0.173; wall=2.0s
+[2026-04-22 17:59:25] RUN hybrid3 PBH-SIGW-Analytic nlive=250 dlogz=0.2 seed=20260422
+[2026-04-22 18:02:43] DONE hybrid3 PBH-SIGW-Analytic: lnZ=-103.395 +/- 0.165; wall=198.6s
+[2026-04-22 18:02:50] RUN hybrid3 SIGW-Gaussian nlive=250 dlogz=0.2 seed=20260422
+[2026-04-22 18:02:56] DONE hybrid3 SIGW-Gaussian: lnZ=-103.876 +/- 0.177; wall=5.4s
+[2026-04-22 18:03:03] RUN hybrid3 SMBHB-Eccentric nlive=250 dlogz=0.2 seed=20260422
+[2026-04-22 18:03:05] DONE hybrid3 SMBHB-Eccentric: lnZ=-104.580 +/- 0.191; wall=2.8s
+[2026-04-22 18:03:12] RUN hybrid3 SMBHB-BrokenPL nlive=250 dlogz=0.2 seed=20260422
+[2026-04-22 18:03:15] DONE hybrid3 SMBHB-BrokenPL: lnZ=-104.610 +/- 0.190; wall=2.9s
+[2026-04-22 18:03:27] RUN hybrid3 Cosmic-Superstrings nlive=250 dlogz=0.2 seed=20260422
+[2026-04-22 18:03:30] DONE hybrid3 Cosmic-Superstrings: lnZ=-154.478 +/- 0.175; wall=2.5s
+[2026-04-22 18:03:42] RUN hybrid3 SIGW-Delta nlive=250 dlogz=0.2 seed=20260422
+[2026-04-22 18:03:44] DONE hybrid3 SIGW-Delta: lnZ=-154.515 +/- 0.174; wall=2.2s
+[2026-04-22 18:03:56] RUN hybrid3 PBH-SIGW-Analytic nlive=250 dlogz=0.2 seed=20260422
+[2026-04-22 18:07:52] DONE hybrid3 PBH-SIGW-Analytic: lnZ=-154.598 +/- 0.181; wall=236.0s
+[2026-04-22 18:08:04] RUN hybrid3 SIGW-Gaussian nlive=250 dlogz=0.2 seed=20260422
+[2026-04-22 18:08:10] DONE hybrid3 SIGW-Gaussian: lnZ=-154.960 +/- 0.185; wall=6.3s
+[2026-04-22 18:08:22] RUN hybrid3 SMBHB-Eccentric nlive=250 dlogz=0.2 seed=20260422
+[2026-04-22 18:08:26] DONE hybrid3 SMBHB-Eccentric: lnZ=-155.217 +/- 0.193; wall=3.4s
+[2026-04-22 18:08:38] RUN hybrid3 SMBHB-BrokenPL nlive=250 dlogz=0.2 seed=20260422
+[2026-04-22 18:08:41] DONE hybrid3 SMBHB-BrokenPL: lnZ=-155.184 +/- 0.193; wall=3.4s
+[2026-04-22 18:08:41] P6 robustness suite
+[2026-04-22 18:08:53] RUN hybrid3 Cosmic-Superstrings nlive=500 dlogz=0.1 seed=20260422
+[2026-04-22 18:08:58] DONE hybrid3 Cosmic-Superstrings: lnZ=-154.377 +/- 0.109; wall=5.0s
+[2026-04-22 18:09:11] RUN hybrid3 Cosmic-Superstrings nlive=500 dlogz=0.1 seed=20260423
+[2026-04-22 18:09:16] DONE hybrid3 Cosmic-Superstrings: lnZ=-154.412 +/- 0.109; wall=5.0s
+[2026-04-22 18:09:28] RUN hybrid3 Cosmic-Superstrings nlive=1000 dlogz=0.1 seed=20260422
+[2026-04-22 18:09:38] DONE hybrid3 Cosmic-Superstrings: lnZ=-154.348 +/- 0.079; wall=10.1s
+[2026-04-22 18:09:50] RUN hybrid3 SIGW-Delta nlive=500 dlogz=0.1 seed=20260422
+[2026-04-22 18:09:54] DONE hybrid3 SIGW-Delta: lnZ=-154.469 +/- 0.109; wall=4.3s
+[2026-04-22 18:10:06] RUN hybrid3 SIGW-Delta nlive=500 dlogz=0.1 seed=20260423
+[2026-04-22 18:10:11] DONE hybrid3 SIGW-Delta: lnZ=-154.428 +/- 0.109; wall=4.4s
+[2026-04-22 18:10:23] RUN hybrid3 SIGW-Delta nlive=1000 dlogz=0.1 seed=20260422
+[2026-04-22 18:10:31] DONE hybrid3 SIGW-Delta: lnZ=-154.601 +/- 0.081; wall=8.7s
+[2026-04-22 18:10:44] RUN hybrid3 PBH-SIGW-Analytic nlive=500 dlogz=0.1 seed=20260422
+[2026-04-22 18:19:38] DONE hybrid3 PBH-SIGW-Analytic: lnZ=-154.550 +/- 0.114; wall=534.2s
+[2026-04-22 18:19:50] RUN hybrid3 PBH-SIGW-Analytic nlive=500 dlogz=0.1 seed=20260423
+[2026-04-22 18:28:39] DONE hybrid3 PBH-SIGW-Analytic: lnZ=-154.528 +/- 0.113; wall=529.5s
+[2026-04-22 18:28:51] RUN hybrid3 PBH-SIGW-Analytic nlive=1000 dlogz=0.1 seed=20260422
+[2026-04-22 18:46:18] DONE hybrid3 PBH-SIGW-Analytic: lnZ=-154.571 +/- 0.083; wall=1046.8s
+[2026-04-22 18:46:28] RUN hybrid3 SIGW-Gaussian nlive=500 dlogz=0.1 seed=20260422
+[2026-04-22 18:46:42] DONE hybrid3 SIGW-Gaussian: lnZ=-154.850 +/- 0.115; wall=14.0s
+[2026-04-22 18:46:53] RUN hybrid3 SIGW-Gaussian nlive=500 dlogz=0.1 seed=20260423
+[2026-04-22 18:47:07] DONE hybrid3 SIGW-Gaussian: lnZ=-154.869 +/- 0.114; wall=14.0s
+[2026-04-22 18:47:18] RUN hybrid3 SIGW-Gaussian nlive=1000 dlogz=0.1 seed=20260422
+[2026-04-22 18:47:46] DONE hybrid3 SIGW-Gaussian: lnZ=-154.982 +/- 0.084; wall=28.5s
+[2026-04-22 18:49:19] FINISH stage=all profile=production

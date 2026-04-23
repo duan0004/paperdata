@@ -20,7 +20,7 @@ ROOT = Path(__file__).resolve().parents[1]
 OUT_JSON = ROOT / "results/T2_NG15yr/prl_package_static_gate.json"
 OUT_MD = ROOT / "results/T2_NG15yr/prl_package_static_gate.md"
 
-TITLE = "Curved SMBHB Spectra Compete with New-Physics Explanations in PTA Source Identification"
+TITLE = "Calibrated PTA Evidence Favors Curved Spectra but Not a Unique Nanohertz Source"
 
 REQUIRED_FILES = {
     "revtex": "theory/paper_prl_submission.tex",
@@ -33,6 +33,8 @@ REQUIRED_FILES = {
     "human_gate": "theory/PRL_submission_human_gate.md",
     "cover_letter": "theory/PRL_cover_letter_draft.md",
     "figure": "results/T2_NG15yr/figures/prl_decisive_evidence_figure.pdf",
+    "bridge_figure": "results/T2_NG15yr/figures/prl_bridge_evidence_figure.pdf",
+    "bridge_summary": "results/prl_reference_bridge/P0_P6_run_summary.md",
     "revtex_pdf": "theory/pdf/revtex/paper_prl_submission.pdf",
     "supplement_pdf": "theory/pdf/revtex/prl_supplement.pdf",
     "reproducibility": "REPRODUCIBILITY.md",
