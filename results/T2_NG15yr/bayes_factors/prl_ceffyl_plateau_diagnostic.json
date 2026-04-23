@@ -1,0 +1,76 @@
+{
+  "generated": "2026-04-23T10:47:12",
+  "ptarcade_version": "1.1.5",
+  "ceffyl_version": "1.41.2",
+  "official_model_archive": "PTArcade_models_1.0.0/models_1.0.0",
+  "official_density_archive": "PTArcade_ceffyl_0.2.0/ng15_30f_fs{hd}_ceffyl",
+  "diagnostic": "counts lower-grid clipping and upper-grid -inf events for equal-weight official-density posterior samples",
+  "rows": [
+    {
+      "model": "SIGW-Gaussian",
+      "n_posterior_samples_checked": 512,
+      "n_grid_cells_checked": 7168,
+      "lower_boundary_fraction": 0.0,
+      "upper_boundary_fraction": 0.0,
+      "min_log10_rho": -9.011587218061168,
+      "max_log10_rho": -6.039045738191253,
+      "grid_min_log10_rho": -15.1007100710071,
+      "grid_max_log10_rho": -0.9
+    },
+    {
+      "model": "SIGW-Delta",
+      "n_posterior_samples_checked": 512,
+      "n_grid_cells_checked": 7168,
+      "lower_boundary_fraction": 0.0,
+      "upper_boundary_fraction": 0.0,
+      "min_log10_rho": -8.858512282966684,
+      "max_log10_rho": -6.104222957810697,
+      "grid_min_log10_rho": -15.1007100710071,
+      "grid_max_log10_rho": -0.9
+    },
+    {
+      "model": "Cosmic-Superstrings",
+      "n_posterior_samples_checked": 512,
+      "n_grid_cells_checked": 7168,
+      "lower_boundary_fraction": 0.0,
+      "upper_boundary_fraction": 0.0,
+      "min_log10_rho": -8.782225916063707,
+      "max_log10_rho": -6.044307503590352,
+      "grid_min_log10_rho": -15.1007100710071,
+      "grid_max_log10_rho": -0.9
+    },
+    {
+      "model": "SMBHB-Eccentric",
+      "n_posterior_samples_checked": 512,
+      "n_grid_cells_checked": 7168,
+      "lower_boundary_fraction": 0.0,
+      "upper_boundary_fraction": 0.0,
+      "min_log10_rho": -8.71636390475968,
+      "max_log10_rho": -6.03513140420006,
+      "grid_min_log10_rho": -15.1007100710071,
+      "grid_max_log10_rho": -0.9
+    },
+    {
+      "model": "SMBHB-BrokenPL",
+      "n_posterior_samples_checked": 512,
+      "n_grid_cells_checked": 7168,
+      "lower_boundary_fraction": 0.0,
+      "upper_boundary_fraction": 0.0,
+      "min_log10_rho": -8.654462836341429,
+      "max_log10_rho": -6.010404264880271,
+      "grid_min_log10_rho": -15.1007100710071,
+      "grid_max_log10_rho": -0.9
+    },
+    {
+      "model": "SMBHB-Env",
+      "n_posterior_samples_checked": 512,
+      "n_grid_cells_checked": 7168,
+      "lower_boundary_fraction": 0.0,
+      "upper_boundary_fraction": 0.0,
+      "min_log10_rho": -8.762046584341588,
+      "max_log10_rho": -6.081588106280433,
+      "grid_min_log10_rho": -15.1007100710071,
+      "grid_max_log10_rho": -0.9
+    }
+  ]
+}

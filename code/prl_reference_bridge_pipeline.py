@@ -401,11 +401,11 @@ class BridgeEvidenceProblem:
 
         if tier in ("ng15_local", "local3"):
             self.ng15_local = NG15FreeSpectrumLUT(n_freq=self.n_freq["ng15"], analysis=ng15_analysis)
-        if tier in ("ppta", "local3", "hybrid3"):
+        if tier in ("ppta", "local3", "hybrid3", "ng15off_ppta"):
             self.ppta = PPTAFreeSpectrumLUT(n_freq=self.n_freq["ppta"])
-        if tier in ("epta", "local3", "hybrid3"):
+        if tier in ("epta", "local3", "hybrid3", "ng15off_epta"):
             self.epta = EPTAFreeSpectrumLUT(n_freq=self.n_freq["epta"], dataset="DR2new")
-        if tier in ("ng15_official", "hybrid3"):
+        if tier in ("ng15_official", "hybrid3", "ng15off_ppta", "ng15off_epta"):
             self.official_ll, self.official_order = make_official_loglike(model, self.n_freq["official"])
 
     def log_likelihood(self, params: dict[str, float]) -> float:
@@ -424,6 +424,16 @@ class BridgeEvidenceProblem:
                 return float(
                     self.ppta.log_likelihood(self.model, params)
                     + self.official_ll(params)
+                    + self.epta.log_likelihood(self.model, params)
+                )
+            if self.tier == "ng15off_ppta":
+                return float(
+                    self.official_ll(params)
+                    + self.ppta.log_likelihood(self.model, params)
+                )
+            if self.tier == "ng15off_epta":
+                return float(
+                    self.official_ll(params)
                     + self.epta.log_likelihood(self.model, params)
                 )
         except Exception:
@@ -732,6 +742,100 @@ def write_ranking_md() -> None:
     (OUT / "local3_vs_hybrid3_ranking.md").write_text("\n".join(md) + "\n")
 
 
+def stage_p2seq(args, models: dict[str, object], profile: dict) -> None:
+    log("P2 sequential anchored bridge ablation")
+    keys = load_manifest_passes()
+    tier_specs = [
+        ("ng15_official", "NG15-off", "ng15_official", OUT / "P1_ng15_official"),
+        ("ng15off_ppta", "NG15-off+PPTA-local", "ng15off_ppta", OUT / "P2_sequential" / "ng15off_ppta"),
+        ("ng15off_epta", "NG15-off+EPTA-local", "ng15off_epta", OUT / "P2_sequential" / "ng15off_epta"),
+        ("hybrid3", "hybrid3", "hybrid3", OUT / "P2_hybrid3"),
+    ]
+    rows = []
+    for tier_key, label, run_tier, base_dir in tier_specs:
+        tier_rows = []
+        for key in keys:
+            model = models[key]
+            try:
+                res = run_evidence(
+                    model,
+                    run_tier,
+                    profile=profile,
+                    out_dir=base_dir / key,
+                    force=args.force and tier_key not in ("ng15_official", "hybrid3"),
+                )
+                row = {
+                    "tier": tier_key,
+                    "label": label,
+                    "model": key,
+                    "family": getattr(model, "family", ""),
+                    "ln_Z": res.ln_Z,
+                    "ln_Z_err": res.ln_Z_err,
+                    "n_dim": res.n_dim,
+                    "nlive": res.nlive,
+                    "seed": res.seed,
+                    "status": "pass",
+                    "error": "",
+                }
+            except Exception as exc:
+                row = {
+                    "tier": tier_key,
+                    "label": label,
+                    "model": key,
+                    "family": getattr(model, "family", ""),
+                    "status": "fail",
+                    "error": f"{type(exc).__name__}: {exc}",
+                }
+                log(traceback.format_exc())
+            tier_rows.append(row)
+        rows.extend(tier_rows)
+
+    for tier_key, _, _, _ in tier_specs:
+        good = [r for r in rows if r["tier"] == tier_key and r.get("status") == "pass"]
+        good.sort(key=lambda r: float(r["ln_Z"]), reverse=True)
+        best = float(good[0]["ln_Z"]) if good else np.nan
+        rank = {r["model"]: i + 1 for i, r in enumerate(good)}
+        for r in rows:
+            if r["tier"] == tier_key and r.get("status") == "pass":
+                r["rank"] = rank[r["model"]]
+                r["delta_to_best"] = float(r["ln_Z"]) - best
+
+    csv_write(
+        OUT / "sequential_bridge_ablation.csv",
+        rows,
+        ["tier", "label", "rank", "model", "family", "ln_Z", "ln_Z_err", "delta_to_best", "n_dim", "nlive", "seed", "status", "error"],
+    )
+    write_sequential_bridge_md(tier_specs)
+
+
+def write_sequential_bridge_md(tier_specs: list[tuple[str, str, str, Path]]) -> None:
+    rows = read_csv_dict(OUT / "sequential_bridge_ablation.csv")
+    md = [
+        "# P2b sequential anchored bridge ablation",
+        "",
+        f"Generated: {time.strftime('%Y-%m-%d %H:%M:%S')}",
+        "",
+        "The sequence is an anchored source-ranking stress test, not a fully calibrated multi-PTA Bayes-factor scale.",
+        "",
+    ]
+    for tier_key, label, _, _ in tier_specs:
+        good = [r for r in rows if r["tier"] == tier_key and r.get("status") == "pass"]
+        good.sort(key=lambda r: int(r["rank"]))
+        md.extend([f"## {label}", "", "| Rank | Model | Family | ln Z | delta to best |", "|---:|---|---|---:|---:|"])
+        for r in good:
+            md.append(f"| {r['rank']} | `{r['model']}` | `{r['family']}` | {float(r['ln_Z']):+.3f} +/- {float(r['ln_Z_err']):.3f} | {float(r['delta_to_best']):+.3f} |")
+        md.append("")
+    leaders = []
+    for tier_key, label, _, _ in tier_specs:
+        good = [r for r in rows if r["tier"] == tier_key and r.get("status") == "pass"]
+        if not good:
+            continue
+        best = min(good, key=lambda r: int(r["rank"]))
+        leaders.append(f"- {label}: `{best['model']}` ({float(best['ln_Z']):+.3f})")
+    md.extend(["## Leaders", "", *leaders, ""])
+    (OUT / "sequential_bridge_ablation.md").write_text("\n".join(md) + "\n")
+
+
 def logsumexp_family(rows: list[dict], family: str, leave_out: str | None = None) -> tuple[float, int]:
     vals = []
     for r in rows:
@@ -981,6 +1085,7 @@ def write_run_summary() -> None:
         "frequency_cut_evidence.csv",
         "robustness_budget.csv",
         "ti_crosscheck_top_models.csv",
+        "sequential_bridge_ablation.csv",
     ]:
         p = OUT / name
         lines.append(f"- `{p.relative_to(ROOT)}`: {'exists' if p.exists() else 'missing'}")
@@ -997,6 +1102,8 @@ def run_selected(stage: str, args) -> None:
         stage_p1(args, models, profile)
     if stage in ("p2", "all"):
         stage_p2(args, models, profile)
+    if stage in ("p2seq", "all"):
+        stage_p2seq(args, models, profile)
     if stage in ("p3", "all"):
         stage_p3(args)
     if stage in ("p4", "all"):
@@ -1009,7 +1116,7 @@ def run_selected(stage: str, args) -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("stage", choices=["p0", "p1", "p2", "p3", "p4", "p5", "p6", "all"])
+    parser.add_argument("stage", choices=["p0", "p1", "p2", "p2seq", "p3", "p4", "p5", "p6", "all"])
     parser.add_argument("--profile", choices=sorted(PROFILES), default="production")
     parser.add_argument("--force", action="store_true", help="rerun even if output files exist")
     args = parser.parse_args()
@@ -1020,4 +1127,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

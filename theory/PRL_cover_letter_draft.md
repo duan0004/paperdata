@@ -25,10 +25,12 @@ surrogates, evaluated on the same official evidence scale and against the same
 PTArcade BHB-prior baseline, give ln B = 3.453--3.839, overlapping the
 cosmological range 3.558--4.520.  The top new-physics model exceeds the top
 curved-SMBHB model by only 0.681 nat, and SIGW-delta by only 0.091 nat.
-Third, a deliberately limited cross-PTA posterior-summary bridge using public
-PPTA, NANOGrav, and EPTA spectral information leaves cosmic, SIGW-like, and
-curved-SMBHB spectra in the same order-unity evidence tier rather than
-identifying a unique source class.
+Third, a deliberately limited cross-PTA posterior-summary bridge, anchored to
+the official NANOGrav evidence scale and using public PPTA and EPTA spectral
+summaries, leaves cosmological templates and curved-SMBHB controls within an
+order-unity evidence tier rather than identifying a unique source class.  We
+present it as an anchored ranking stress test, not as a fully calibrated
+multi-PTA Bayes-factor scale.
 
 This changes the interpretation of current PTA new-physics evidence.  The
 present data do not yet identify the physical origin of the background, and
@@ -41,7 +43,8 @@ The manuscript uses public NANOGrav data products and official PTArcade model
 and density products.  The analysis code and compact data release are archived
 at https://doi.org/10.5281/zenodo.19688587 and mirrored at
 https://github.com/duan0004/paperdata, release v1.0.1, commit
-2bc1dfeee7d452f6c3b58a8fd8f339e6ff0091f6.
+2bc1dfeee7d452f6c3b58a8fd8f339e6ff0091f6.  The cross-PTA bridge revision is
+mirrored at GitHub tag prl-calibration-bridge-2026-04-23.
 
 Sincerely,
 

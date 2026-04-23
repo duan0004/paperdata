@@ -1,14 +1,15 @@
 # Supplemental Material: Calibrated PTA Evidence Favors Curved Spectra but Not a Unique Nanohertz Source
 
-**Date**: 2026-04-22  
+**Date**: 2026-04-23  
 **Main draft**: `theory/paper_prl_submission.tex`  
 **Status**: Markdown mirror of the compiled supplement source
 `theory/prl_supplement.tex`.
 
 This supplement records the data products, density convention, evidence
-ablation, prior choices, curved-SMBHB control family, convergence diagnostics,
-and QMC/TI cross-checks used by the PRL Letter.  The compiled submission source
-is `theory/prl_supplement.tex`.
+ablation, prior choices, curved-SMBHB control family, cross-PTA bridge
+stress tests, convergence diagnostics, plateau diagnostics, and QMC/TI
+cross-checks used by the PRL Letter.  The compiled submission source is
+`theory/prl_supplement.tex`.
 
 ## S1. Data Products and Density Convention
 
@@ -133,7 +134,33 @@ three-scramble family cross-check.  The cumulative-bin scan uses the
 representative single configuration also used in the ranking table, so the
 14-bin values need not equal the five-configuration means in the Letter.
 
-## S12. Minimal Local Verification Commands
+## S12-S15. Cross-PTA Bridge and Version Diagnostics
+
+The compiled supplement now includes:
+
+- the full 11-template bridge model list, including family membership,
+  official-template status, official-density-adapter status, and whether the
+  model is a published NANOGrav calibration target;
+- the sequential anchored bridge ablation:
+  `NG15-off`, `NG15-off+PPTA-local`, `NG15-off+EPTA-local`, and `hybrid3`;
+- the explicit statement that `hybrid3` is an anchored source-ranking stress
+  test rather than a fully calibrated multi-PTA Bayes-factor scale;
+- tested-representative family mixtures, not complete source-class
+  marginalizations;
+- the effective low-frequency slope projection,
+  `gamma_eff ~ 3.7--4.1`, for the three curved-SMBHB controls across PPTA,
+  NANOGrav, and EPTA windows;
+- PTArcade version `1.1.5`, `ceffyl` version `1.41.2`, and the official-density
+  grid-boundary diagnostic showing zero checked lower/upper-boundary fractions
+  for SIGW-Gaussian, SIGW-delta, cosmic superstrings, eccentricity-inspired
+  curvature, broken-power-law curvature, and environmental turnover.
+
+The sequential ablation is saved at
+`results/prl_reference_bridge/sequential_bridge_ablation.md`; the plateau
+diagnostic is saved at
+`results/T2_NG15yr/bayes_factors/prl_ceffyl_plateau_diagnostic.md`.
+
+## S16. Minimal Local Verification Commands
 
 Run from the project root:
 
@@ -141,7 +168,9 @@ Run from the project root:
 python3 code/gwb_templates.py
 python3 -m py_compile code/prl_*.py
 python3 code/prl_decisive_evidence_figure.py
+python3 code/prl_reference_bridge_pipeline.py p2seq --profile production
 python3 code/prl_evidence_ti_qmc_crosscheck.py
+python3 code/prl_ceffyl_plateau_diagnostic.py
 python3 code/prl_package_static_gate.py
 ```
 

@@ -348,6 +348,35 @@ PTArcade \texttt{ceffyl} density and the PTArcade BHB-prior baseline.  All
 11 bridge templates passed the PPTA-local, NANOGrav-local, EPTA-local, and
 NANOGrav-official adapter checks.
 
+Because only the NANOGrav term is anchored to the official PTArcade density,
+\texttt{hybrid3} is an anchored source-ranking stress test rather than a fully
+calibrated multi-PTA Bayes-factor scale.
+
+\begin{table}[h]
+\caption{\label{tab:bridge-models}Full bridge model list and calibration
+status.  ``Official template'' means that the row uses a public PTArcade
+\texttt{spectrum(f,...)} implementation; ``official-density adapter'' means
+that the template passes the NANOGrav-official \texttt{ceffyl} likelihood
+adapter used in the bridge.}
+\begin{ruledtabular}
+\begin{tabular}{lcccc}
+Model & family & official template & official-density adapter & NG15 target \\
+\hline
+SMBHB-PowerLaw & Astro-simple & no & yes & no \\
+SMBHB-Turnover & Astro-simple & no & yes & no \\
+SMBHB-Env & Astro-curved & no & yes & no \\
+SMBHB-BrokenPL & Astro-curved & no & yes & no \\
+SMBHB-Eccentric & Astro-curved & no & yes & no \\
+PBH-SIGW-Analytic & SIGW-like & no & yes & no \\
+SIGW-Gaussian & SIGW-like & yes & yes & yes \\
+SIGW-Delta & SIGW-like & yes & yes & yes \\
+Cosmic-Superstrings & Cosmo-other & yes & yes & yes \\
+DomainWall & Cosmo-other & no & yes & no \\
+PhaseTransition-Total & Cosmo-other & no & yes & no \\
+\end{tabular}
+\end{ruledtabular}
+\end{table}
+
 \begin{table}[h]
 \caption{\label{tab:bridge}Leading bridge evidence values.  Values are absolute
 log evidences within the bridge likelihood, not Bayes factors relative to the
@@ -373,15 +402,43 @@ SIGW-Gaussian, eccentricity-inspired SMBHB curvature, broken-power-law SMBHB
 curvature, and environmental SMBHB turnover sit at $-0.092$, $-0.173$,
 $-0.472$, $-0.663$, $-0.832$, and $-0.939$ nat, respectively.
 
+\begin{table}[h]
+\caption{\label{tab:bridge-sequence}Sequential anchored bridge ablation.
+Values are absolute log evidences within each bridge stage; deltas are relative
+to the stage leader.}
+\begin{ruledtabular}
+\begin{tabular}{lccc}
+Stage & leader & selected cosmological deltas & curved-SMBHB delta range \\
+\hline
+NG15-off & PBH-SIGW analytic & SIGW-Gaussian $-0.663$, strings $-1.788$ &
+$[-1.954,-1.464]$ \\
+NG15-off+PPTA-local & PBH-SIGW analytic & SIGW-delta $-0.089$, strings $-0.173$ &
+$[-1.055,-0.762]$ \\
+NG15-off+EPTA-local & PBH-SIGW analytic & SIGW-Gaussian $-0.558$, strings $-0.887$ &
+$[-1.364,-1.004]$ \\
+hybrid3 & cosmic superstrings & SIGW-delta $-0.092$, PBH-SIGW $-0.173$ &
+$[-0.939,-0.663]$ \\
+\end{tabular}
+\end{ruledtabular}
+\end{table}
+
+The leader changes to cosmic superstrings only after both public local terms
+are included with the official NANOGrav anchor.  The stable conclusion is not
+the identity of that leader, but the order-unity compression of cosmological
+templates and curved-SMBHB controls.
+
 \section*{S13. Bridge Family Evidence}
 
-Family evidences are computed as prior-volume mixtures over the tested
-representatives in each family,
+Family evidences are computed as equal-weight prior-volume mixtures over the
+tested representatives in each family,
 \begin{equation}
 Z_F=\frac{1}{N_F}\sum_{m\in F} Z_m .
 \end{equation}
 This prevents a family with more tested representatives from being rewarded
-solely for having more rows.
+solely for having more rows.  These numbers are not a complete
+marginalization over all realizations of a physical source class; they are
+tested-representative family mixtures for the bridge model set in
+Table~\ref{tab:bridge-models}.
 
 \begin{table}[h]
 \caption{\label{tab:bridge-family}Bridge family evidences.}
@@ -444,7 +501,41 @@ superstrings and SIGW-delta at the top with curved-SMBHB controls within
 about one nat.  Because this is a lower-live-point diagnostic, the main Letter
 uses it only to identify the frequency window driving the ranking.
 
-\section*{S15. Minimal Local Verification Commands}
+\section*{S15. PTArcade/ceffyl Version and Plateau Diagnostic}
+
+The official-density calculations used PTArcade version \texttt{1.1.5},
+\texttt{ceffyl} version \texttt{1.41.2}, and the density archive
+\texttt{PTArcade\_ceffyl\_0.2.0/ng15\_30f\_fs\{hd\}\_ceffyl}.  We checked
+512 equal-weight posterior samples for each leading calibrated row against the
+official density grid.  The lower-boundary and upper-boundary fractions were
+zero for SIGW-Gaussian, SIGW-delta, cosmic superstrings, eccentricity-inspired
+SMBHB curvature, broken-power-law SMBHB curvature, and environmental SMBHB
+turnover.
+
+\begin{table}[h]
+\caption{\label{tab:plateau}Official-density grid-boundary diagnostic for the
+leading calibrated rows.  The common grid range is
+$[-15.101,-0.900]$ in $\log_{10}\rho$.}
+\begin{ruledtabular}
+\begin{tabular}{lccc}
+Model & lower fraction & upper fraction & sampled $\log_{10}\rho$ range \\
+\hline
+SIGW-Gaussian & $0.000000$ & $0.000000$ & $[-9.012,-6.039]$ \\
+SIGW-delta & $0.000000$ & $0.000000$ & $[-8.859,-6.104]$ \\
+Cosmic superstrings & $0.000000$ & $0.000000$ & $[-8.782,-6.044]$ \\
+Ecc.-curved SMBHB & $0.000000$ & $0.000000$ & $[-8.716,-6.035]$ \\
+Broken-PL SMBHB & $0.000000$ & $0.000000$ & $[-8.654,-6.010]$ \\
+Env. SMBHB & $0.000000$ & $0.000000$ & $[-8.762,-6.082]$ \\
+\end{tabular}
+\end{ruledtabular}
+\end{table}
+
+This diagnostic does not assert that all possible PTArcade/ceffyl likelihood
+settings are plateau-free; it records that the leading rows used in this
+Letter do not hit the official grid boundaries in the checked posterior-sample
+region.
+
+\section*{S16. Minimal Local Verification Commands}
 
 Run from the project root:
 \begin{verbatim}
@@ -452,7 +543,9 @@ python3 code/gwb_templates.py
 python3 -m py_compile code/prl_*.py
 python3 code/prl_decisive_evidence_figure.py
 python3 code/prl_reference_bridge_pipeline.py all --profile production --force
+python3 code/prl_reference_bridge_pipeline.py p2seq --profile production
 python3 code/prl_bridge_evidence_figure.py
+python3 code/prl_ceffyl_plateau_diagnostic.py
 python3 code/prl_evidence_ti_qmc_crosscheck.py
 python3 code/prl_package_static_gate.py
 \end{verbatim}

@@ -2,7 +2,7 @@
 
 **Date**: 2026-04-23  
 **Status**: public GitHub code/data URL and Zenodo DOI inserted; P0--P6
-cross-PTA bridge incorporated in the working draft.  
+cross-PTA bridge incorporated; reviewer-risk bridge framing cleanup applied.  
 **Current title**: Calibrated PTA Evidence Favors Curved Spectra but Not a
 Unique Nanohertz Source
 
@@ -16,6 +16,8 @@ Unique Nanohertz Source
 | Supplement TeX draft | `theory/prl_supplement.tex` | Tectonic compile pass |
 | Main figure | `results/T2_NG15yr/figures/prl_decisive_evidence_figure.pdf` | exists; static path check passes |
 | Bridge figure | `results/T2_NG15yr/figures/prl_bridge_evidence_figure.pdf` | exists; generated from P0--P6 bridge outputs |
+| Sequential bridge ablation | `results/prl_reference_bridge/sequential_bridge_ablation.md` | exists; anchored stress-test table |
+| ceffyl plateau diagnostic | `results/T2_NG15yr/bayes_factors/prl_ceffyl_plateau_diagnostic.md` | exists; version/grid-boundary check |
 | Compiled PRL PDF | `theory/pdf/revtex/paper_prl_submission.pdf` | Tectonic compile pass |
 | Compiled supplement PDF | `theory/pdf/revtex/prl_supplement.pdf` | Tectonic compile pass |
 | Reproducibility manifest | `REPRODUCIBILITY.md` | Zenodo DOI and GitHub release inserted |
@@ -45,7 +47,9 @@ use the official PTArcade `ceffyl` density.
 | CAR covariance diagnostic | effective rank `13.56/14`, max offdiag `0.227` | `car_null_calibration.json` |
 | HD convergence | `Rhat(log10_A)=1.047`, `Rhat(gamma)=1.047` | `T2_multichain_Rhat.json` |
 | hybrid3 bridge ranking | leading seven templates within `0.939 nat` of the best tested spectrum | `results/prl_reference_bridge/local3_vs_hybrid3_ranking.md` |
-| hybrid3 family evidence | curved-SMBHB family only `0.572 nat` below SIGW-like family | `results/prl_reference_bridge/family_evidence_sensitivity.md` |
+| hybrid3 tested-representative family mixture | curved-SMBHB mixture only `0.572 nat` below SIGW-like mixture | `results/prl_reference_bridge/family_evidence_sensitivity.md` |
+| sequential anchored bridge ablation | cosmic superstrings leads only in full hybrid3; PBH-SIGW analytic leads the three partial stages | `results/prl_reference_bridge/sequential_bridge_ablation.md` |
+| ceffyl version/plateau diagnostic | PTArcade `1.1.5`, ceffyl `1.41.2`, zero checked boundary fractions for six leading rows | `results/T2_NG15yr/bayes_factors/prl_ceffyl_plateau_diagnostic.md` |
 
 ## Supporting Material Candidates
 
@@ -59,6 +63,10 @@ The current supplement draft is `theory/prl_supplement_draft.md`.  It collects:
   `results/T2_NG15yr/bayes_factors/prl_H4_H5_H6_experiments.md`;
 - curved-SMBHB control family:
   `results/T2_NG15yr/bayes_factors/prl_H7_astrophysical_family.md`;
+- full bridge model list and sequential anchored bridge ablation:
+  `results/prl_reference_bridge/sequential_bridge_ablation.md`;
+- PTArcade/ceffyl version and grid-boundary diagnostic:
+  `results/T2_NG15yr/bayes_factors/prl_ceffyl_plateau_diagnostic.md`;
 - official-density cumulative-bin driver:
   `results/T2_NG15yr/bayes_factors/prl_H9_bin_driver_analysis.md`;
 - systematic evidence envelope:

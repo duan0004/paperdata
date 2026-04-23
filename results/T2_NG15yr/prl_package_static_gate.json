@@ -19,8 +19,8 @@
     "title_present_tex": true
   },
   "citations": {
-    "bibitem_count": 15,
-    "cite_count": 15,
+    "bibitem_count": 18,
+    "cite_count": 18,
     "missing_bibitems": [],
     "unused_bibitems": []
   },
@@ -28,6 +28,10 @@
     "bridge_figure": {
       "exists": true,
       "path": "results/T2_NG15yr/figures/prl_bridge_evidence_figure.pdf"
+    },
+    "bridge_sequential_ablation": {
+      "exists": true,
+      "path": "results/prl_reference_bridge/sequential_bridge_ablation.md"
     },
     "bridge_summary": {
       "exists": true,
@@ -61,6 +65,10 @@
       "exists": true,
       "path": "theory/PRL_submission_package_manifest.md"
     },
+    "plateau_diagnostic": {
+      "exists": true,
+      "path": "results/T2_NG15yr/bayes_factors/prl_ceffyl_plateau_diagnostic.md"
+    },
     "reproducibility": {
       "exists": true,
       "path": "REPRODUCIBILITY.md"
@@ -90,7 +98,7 @@
       "path": "theory/T3.11_PRL_tex_static_check.md"
     }
   },
-  "generated": "2026-04-23T09:44:08",
+  "generated": "2026-04-23T11:00:31",
   "json_status": {
     "H10_systematic_envelope": {
       "complete": true,
@@ -132,6 +140,12 @@
       "complete": true,
       "exists": true,
       "path": "results/T2_NG15yr/bayes_factors/prl_official_density_robustness.json",
+      "readable": true
+    },
+    "plateau_diagnostic": {
+      "complete": true,
+      "exists": true,
+      "path": "results/T2_NG15yr/bayes_factors/prl_ceffyl_plateau_diagnostic.json",
       "readable": true
     },
     "rhat": {
@@ -180,9 +194,9 @@
   },
   "title": "Calibrated PTA Evidence Favors Curved Spectra but Not a Unique Nanohertz Source",
   "word_counts": {
-    "compressed_markdown": 1574,
-    "revtex_source": 2198,
-    "supplement_markdown": 1014,
-    "supplement_tex_source": 2253
+    "compressed_markdown": 1752,
+    "revtex_source": 2427,
+    "supplement_markdown": 1165,
+    "supplement_tex_source": 2787
   }
 }

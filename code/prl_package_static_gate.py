@@ -35,6 +35,8 @@ REQUIRED_FILES = {
     "figure": "results/T2_NG15yr/figures/prl_decisive_evidence_figure.pdf",
     "bridge_figure": "results/T2_NG15yr/figures/prl_bridge_evidence_figure.pdf",
     "bridge_summary": "results/prl_reference_bridge/P0_P6_run_summary.md",
+    "bridge_sequential_ablation": "results/prl_reference_bridge/sequential_bridge_ablation.md",
+    "plateau_diagnostic": "results/T2_NG15yr/bayes_factors/prl_ceffyl_plateau_diagnostic.md",
     "revtex_pdf": "theory/pdf/revtex/paper_prl_submission.pdf",
     "supplement_pdf": "theory/pdf/revtex/prl_supplement.pdf",
     "reproducibility": "REPRODUCIBILITY.md",
@@ -49,6 +51,7 @@ JSON_RESULTS = {
     "H9_bin_driver": "results/T2_NG15yr/bayes_factors/prl_H9_bin_driver_analysis.json",
     "H10_systematic_envelope": "results/T2_NG15yr/bayes_factors/prl_H10_systematic_envelope.json",
     "ti_qmc_crosscheck": "results/T2_NG15yr/bayes_factors/prl_evidence_ti_qmc_crosscheck.json",
+    "plateau_diagnostic": "results/T2_NG15yr/bayes_factors/prl_ceffyl_plateau_diagnostic.json",
     "car_null_calibration": "results/T2_NG15yr/covariance/car_null_calibration.json",
     "rhat": "results/T2_NG15yr/T2_multichain_Rhat.json",
 }

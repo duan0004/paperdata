@@ -30,14 +30,12 @@ $\ln\mathcal{B}=3.45$--$3.84$, placing three distinct curved-SMBHB
 parameterizations within one nat of the leading cosmological evidence
 tier.  The $0.681$-nat gap between the leading SIGW-Gaussian model and
 the best curved-SMBHB control is comparable to the identified
-calibration and prior-boundary systematics.  We then combine public
-PPTA, NANOGrav, and EPTA spectral information in a posterior-summary
-bridge.  In the hybrid bridge, cosmic superstrings, SIGW-delta,
-PBH-SIGW, SIGW-Gaussian, and three curved-SMBHB controls all fall within
-$0.94$ nat of the leader, while family evidence places curved SMBHB
-spectra only $0.572$ nat below the SIGW-like family.  Current public PTA
-evidence therefore favors low-frequency curved spectra but does not yet
-identify a unique astrophysical or cosmological source class.
+calibration and prior-boundary systematics.  In a cross-PTA public-data
+bridge anchored to the official NANOGrav evidence scale, the leading
+cosmological templates and three curved-SMBHB controls all remain within
+approximately one nat of one another.  Current public PTA evidence
+therefore identifies low-frequency spectral curvature, not yet a unique
+source class.
 \end{abstract}
 
 \maketitle
@@ -65,6 +63,16 @@ We show below that one environmental SMBHB model and two phenomenological
 curved-SMBHB surrogates are competitive with these alternatives on the
 same evidence scale, and that the same non-identification message
 survives a deliberately limited cross-PTA posterior-summary bridge.
+
+Recent public-data studies have separately pursued direct multi-PTA data
+combination \cite{FivePTA_2026}, Fourier-space reuse of posterior
+summaries \cite{Valtolina_Haasteren_2025}, and Bayesian discrimination
+among selected source classes \cite{Lai_Li_2025}.  Our bridge is
+different: we anchor source identification to the official
+NANOGrav/PTArcade evidence scale, calibrate cosmological templates
+against curved-SMBHB controls on that same scale, and then test whether
+the resulting non-identification survives a deliberately limited
+cross-PTA posterior-summary bridge.
 
 The central issue is reproducibility of Bayesian source identification.
 Order-unity shifts in $\ln\mathcal{B}$ can arise from the
@@ -121,9 +129,12 @@ and
 Here ``loc'' denotes the same per-bin posterior-summary density
 construction applied to each public free-spectrum summary, while
 ``off'' denotes the official NANOGrav/PTArcade density and BHB-prior
-baseline.  This bridge is not a full IPTA timing-residual likelihood; it
-is a controlled test of whether public spectral summaries already
-identify a unique source class.
+baseline.  Because only the NANOGrav term is anchored to the official
+PTArcade density in this bridge pipeline, \texttt{hybrid3} should be
+interpreted as an anchored source-ranking stress test rather than as a
+fully calibrated multi-PTA Bayes-factor scale.  It is a controlled test
+of whether public spectral summaries already identify a unique source
+class.
 
 \emph{Pipeline validation.}
 Direct ingestion of the pre-sampled NANOGrav Hellings--Downs chain gives
@@ -142,9 +153,7 @@ A second $5\times10^5$-step chain initialized from dispersed cold
 conditions converges to $\log_{10}A=-14.251\pm0.168$ and
 $\gamma=3.401\pm0.418$.  Tail-aligned warm+cold segments yield
 $\hat R(\log_{10}A)=1.047$ and $\hat R(\gamma)=1.047$, below an
-a priori convergence threshold of $1.05$.  A third hot-chain attempt was
-rejected because it remained at $-\infty$ posterior metadata with zero
-accepted jumps.
+a priori convergence threshold of $1.05$.
 
 \begin{figure}[t]
 \includegraphics[width=\columnwidth]{prl_decisive_evidence_figure.pdf}
@@ -191,8 +200,8 @@ files return $h^2\Omega_\mathrm{GW}$, so the residual conversion is
 \rho^2=\frac{(H_0/h)^2\,h^2\Omega_\mathrm{GW}}
 {8\pi^4 f^5 T}.
 \end{equation}
-This conversion was checked against \texttt{ptarcade.models\_utils.
-omega2cross} to relative precision below $5\times10^{-16}$.
+Dimensional and code-level conversion checks are reported in the
+Supplemental Material.
 
 \begin{table}[t]
 \caption{\label{tab:lnb}
@@ -246,7 +255,7 @@ Cross-PTA posterior-summary bridge.  Panel A compares the local3 ranking
 with the hybrid3 ranking for the leading tested templates; points are
 shown as $\Delta\ln Z$ relative to the best model in each bridge.  The
 dashed vertical line marks one nat.  Panel B groups the hybrid3
-evidence by source family using a prior-volume mixture over the tested
+evidence by source family using an equal-weight mixture over the tested
 representatives.}
 \end{figure}
 
@@ -254,7 +263,9 @@ representatives.}
 We next ask whether adding public PPTA and EPTA spectral information
 breaks the NANOGrav degeneracy.  All 11 bridge templates passed the
 PPTA-local, NANOGrav-local, EPTA-local, and NANOGrav-official adapter
-checks.  In the local3 bridge the leading tested templates are cosmic
+checks.  This is an anchored ranking stress test, not a fully calibrated
+multi-PTA Bayes-factor scale.  In the local3 bridge the leading tested
+templates are cosmic
 superstrings, SIGW-delta, PBH-SIGW, SIGW-Gaussian, eccentricity-inspired
 SMBHB curvature, broken-power-law SMBHB curvature, and environmental
 SMBHB turnover, with the three curved-SMBHB controls within $0.933$ nat
@@ -266,8 +277,18 @@ and environmental SMBHB turnover lie $0.092$, $0.173$, $0.472$,
 $0.663$, $0.832$, and $0.939$ nat below cosmic superstrings,
 respectively.
 
-Figure~\ref{fig:bridge} also shows the family-level result.  A
-prior-volume mixture over the tested hybrid3 representatives gives
+The sequential anchored ablation gives the same warning against
+over-interpreting the bridge leader.  PBH-SIGW analytic leads the
+NG15-official-only, NG15-official+PPTA-local, and
+NG15-official+EPTA-local bridges, while cosmic superstrings leads only
+after both public local terms are included.  In the full \texttt{hybrid3}
+stress test, the leading tested spectrum and all three curved-SMBHB
+controls remain within one nat.
+
+Figure~\ref{fig:bridge} also shows the tested-representative family
+mixture.  This is an equal-weight mixture over the tested representatives,
+not a complete marginalization over all physical realizations of a source
+class.  It gives
 $\ln Z_\mathrm{family}=-154.610$ for SIGW-like spectra and
 $-155.182$ for curved SMBHB spectra, a separation of only $0.572$ nat.
 Other cosmological spectra sit at $-155.279$, and simple SMBHB spectra
@@ -278,8 +299,10 @@ spectra, but not a unique astrophysical or cosmological origin.
 
 The Supplemental Material gives the full official-density stochastic-model
 ranking, curved-SMBHB family table, prior-boundary tests, and cumulative
-low-frequency-bin scan, together with the cross-PTA bridge tables and
-robustness checks.  In the single-configuration official scan the
+low-frequency-bin scan, together with the cross-PTA bridge model list,
+sequential ablation, tested-representative family mixtures, version and
+plateau diagnostics, and robustness checks.  In the single-configuration
+official scan the
 leading six stochastic templates are SIGW-Gaussian, SIGW-delta, SIGW-box,
 cosmic superstrings, metastable strings, and domain walls.  Extending the
 SIGW-delta upper prior from $\log_{10}f_\mathrm{peak}\le -5$ to $-3$
@@ -289,6 +312,11 @@ cosmic superstrings, eccentricity-inspired curvature, and environmental
 turnover are already within $0.5$ nat of their 14-bin values by the
 lowest eight Fourier bins, whereas SIGW-Gaussian and broken-power-law
 curvature require ten bins.
+Consistently, the three curved-SMBHB controls project to effective
+low-frequency slopes $\gamma_\mathrm{eff}\simeq3.7$--$4.1$ across the
+PPTA, NANOGrav, and EPTA frequency windows, qualitatively matching a
+window-dependent slope drift without implying a unique astrophysical
+explanation.
 
 \emph{Interpretation and conclusions.}
 The calibrated NANOGrav evidence and the cross-PTA posterior-summary
@@ -297,10 +325,14 @@ yet identify the physical origin of the background.  On a calibrated
 evidence scale, current leading new-physics preferences are compressed
 into the same model-comparison tier as curved SMBHB spectra.  The
 sharpest near-term
-discriminant is spectral shape at low frequency: SMBHBs give
-$h^2\Omega_\mathrm{GW}\propto f^{2/3}$, while causal cosmological
-sources such as SIGW and first-order phase transitions rise as $f^3$
-below their characteristic scale \cite{Caprini_Figueroa_2018}.  Our
+discriminant is spectral shape at low frequency.  For GW-driven SMBHB
+backgrounds the reference scaling is
+$h^2\Omega_\mathrm{GW}\propto f^{2/3}$, while environmental or eccentric
+effects flatten this behavior at the lowest PTA frequencies.  By
+contrast, peaked cosmological alternatives such as SIGW or first-order
+phase transitions rise causally as $f^3$ below their characteristic
+scale \cite{Caprini_Figueroa_2018}.  String-like spectra form a separate
+near-degenerate branch in the current PTA band.  Our
 cumulative-bin scan makes this quantitative: the lowest eight to ten
 Fourier bins already determine the matched-scale ranking to within
 $0.5$ nat for the leading stochastic templates.
@@ -348,10 +380,10 @@ reproduction commands are recorded in \texttt{REPRODUCIBILITY.md}.  The
 cross-PTA bridge extension used in this draft is mirrored in the same
 repository under \texttt{results/prl\_reference\_bridge/} and generated by
 \texttt{code/prl\_reference\_bridge\_pipeline.py} at GitHub tag
-\href{https://github.com/duan0004/paperdata/tree/bridge-prl-2026-04-23}
-{\texttt{bridge-prl-2026-04-23}}.
+\href{https://github.com/duan0004/paperdata/tree/prl-calibration-bridge-2026-04-23}
+{\texttt{prl-calibration-bridge-2026-04-23}}.
 
-\begin{thebibliography}{15}
+\begin{thebibliography}{18}
 
 \bibitem{NANOGrav_15yr_GWB}
 G. Agazie et al. (NANOGrav Collaboration), arXiv:2306.16213.
@@ -369,6 +401,16 @@ L6 (2023), arXiv:2306.16215.
 \bibitem{EPTA_InPTA_DR2}
 J. Antoniadis et al. (EPTA and InPTA Collaborations),
 Astron. Astrophys. 678, A50 (2023).
+
+\bibitem{FivePTA_2026}
+W.-W. Yu and B. Allen, arXiv:2512.08666.
+
+\bibitem{Valtolina_Haasteren_2025}
+S. Valtolina and R. van Haasteren, Phys. Rev. D 112, 043046 (2025),
+arXiv:2412.11894.
+
+\bibitem{Lai_Li_2025}
+J. Lai and C. Li, arXiv:2504.04211.
 
 \bibitem{PTArcade_2023}
 A. Mitridate et al., arXiv:2306.16377.

@@ -1,6 +1,6 @@
 # PRL Submission Human Gate
 
-**Date**: 2026-04-22  
+**Date**: 2026-04-23  
 **Target**: Physical Review Letters  
 **Current package**: `theory/paper_prl_submission.tex` +
 `theory/prl_supplement.tex`
@@ -23,16 +23,25 @@
   - supplement includes prior ranges, selection rule, and QMC/TI residual
     convention notes.
 - Public GitHub code/data release inserted:
-  - Zenodo DOI `10.5281/zenodo.19688472`
-  - Zenodo URL `https://doi.org/10.5281/zenodo.19688472`
+  - Zenodo DOI `10.5281/zenodo.19688587`
+  - Zenodo URL `https://doi.org/10.5281/zenodo.19688587`
   - `https://github.com/duan0004/paperdata`
-  - commit `7a602df4d0369dea09b3a18d526a1468bbc436d0`
-  - release tag `v1.0.0`
+  - commit `2bc1dfeee7d452f6c3b58a8fd8f339e6ff0091f6`
+  - release tag `v1.0.1`
   - release URL:
-    `https://github.com/duan0004/paperdata/releases/tag/v1.0.0`
+    `https://github.com/duan0004/paperdata/releases/tag/v1.0.1`
 - Evidence cross-check added:
   - `results/T2_NG15yr/bayes_factors/prl_evidence_ti_qmc_crosscheck.json`
   - `results/T2_NG15yr/bayes_factors/prl_evidence_ti_qmc_crosscheck.md`
+- Cross-PTA bridge-framing cleanup added:
+  - `hybrid3` is now explicitly described as an anchored source-ranking
+    stress test, not a fully calibrated multi-PTA Bayes-factor scale;
+  - sequential bridge ablation is saved in
+    `results/prl_reference_bridge/sequential_bridge_ablation.md`;
+  - PTArcade/ceffyl version and plateau diagnostics are saved in
+    `results/T2_NG15yr/bayes_factors/prl_ceffyl_plateau_diagnostic.md`;
+  - the bridge revision is mirrored at GitHub tag
+    `prl-calibration-bridge-2026-04-23`.
 - Acknowledgments section has been removed from the main draft rather than
   leaving a placeholder.  Add one back only if there is real grant,
   collaboration, or computing-resource text.
