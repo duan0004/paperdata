@@ -465,12 +465,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 333--352
 \TU/lmr/m/n/10 release []\TU/lmtt/m/n/10 v1.0.1[]\TU/lmr/m/n/10 , at commit
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 333--352
-\TU/lmr/m/n/10 by \TU/lmtt/m/n/10 code/prl_reference_bridge_pipeline.py\TU/lmr/
-m/n/10 ; it
- []
-
 [3]
 Underfull \hbox (badness 10000) in paragraph at lines 356--357
  []\TU/lmr/m/n/9 G. Agazie et al. (NANOGrav Collaboration),
@@ -490,4 +484,4 @@ Underfull \hbox (badness 10000) in paragraph at lines 362--363
 Package rerunfilecheck Info: File `paper_prl_submission.out' has not changed.
 (rerunfilecheck)             Checksum: 9093B49969B808F3D94008965CC3CBEC;863.
  )
-Output written on paper_prl_submission.xdv (4 pages, 167092 bytes).
+Output written on paper_prl_submission.xdv (4 pages, 166928 bytes).
