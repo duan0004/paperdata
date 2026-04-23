@@ -6,7 +6,7 @@
 **Archived release URL**: `https://doi.org/10.5281/zenodo.19688587`  
 **Public repository**: `https://github.com/duan0004/paperdata`  
 **GitHub release tag**: `v1.0.1`  
-**Submission package commit**: `2bc1dfeee7d452f6c3b58a8fd8f339e6ff0091f6` for the archived NANOGrav-calibration snapshot; the P0--P6 bridge update is mirrored at commit `2329c03e330c5d47f0262e6ca7d45ea6f1d4812f`.  
+**Submission package commit**: `2bc1dfeee7d452f6c3b58a8fd8f339e6ff0091f6` for the archived NANOGrav-calibration snapshot; the P0--P6 bridge update is mirrored at Git tag `bridge-prl-2026-04-23`.  
 **Runtime used for saved results**: Python 3.9.6 on macOS 26.0 arm64
 
 This manifest records the local environment, input data fingerprints, and
@@ -144,4 +144,4 @@ supplement compile to `theory/pdf/revtex/`.  The public code/data release is
 archived at Zenodo DOI `10.5281/zenodo.19688587` and mirrored at
 `https://github.com/duan0004/paperdata`, release `v1.0.1`, commit
 `2bc1dfeee7d452f6c3b58a8fd8f339e6ff0091f6`.  The cross-PTA bridge update is
-mirrored at commit `2329c03e330c5d47f0262e6ca7d45ea6f1d4812f`.
+mirrored at Git tag `bridge-prl-2026-04-23`.

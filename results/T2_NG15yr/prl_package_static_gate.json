@@ -90,7 +90,7 @@
       "path": "theory/T3.11_PRL_tex_static_check.md"
     }
   },
-  "generated": "2026-04-23T09:41:46",
+  "generated": "2026-04-23T09:44:08",
   "json_status": {
     "H10_systematic_envelope": {
       "complete": true,
@@ -181,7 +181,7 @@
   "title": "Calibrated PTA Evidence Favors Curved Spectra but Not a Unique Nanohertz Source",
   "word_counts": {
     "compressed_markdown": 1574,
-    "revtex_source": 2197,
+    "revtex_source": 2198,
     "supplement_markdown": 1014,
     "supplement_tex_source": 2253
   }
