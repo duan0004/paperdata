@@ -21,21 +21,20 @@ The nanohertz gravitational-wave background admits both astrophysical
 and cosmological interpretations.  We test whether current PTA
 Bayesian evidence remains source-discriminating once template
 provenance, density construction, and curved-SMBHB controls are matched.
-Official PTArcade templates and official PTArcade \texttt{ceffyl}
-densities reproduce the published NANOGrav 15-year log-Bayes factors
-for SIGW-Gaussian, SIGW-delta, and cosmic superstrings at sub-nat
-agreement.  On that calibrated scale, one environmental SMBHB model and
-two phenomenological low-frequency curvature surrogates yield
-$\ln\mathcal{B}=3.45$--$3.84$, placing three distinct curved-SMBHB
-parameterizations in the same approximately one-nat evidence tier as the
-leading cosmological templates.  The $0.681$-nat gap between the leading SIGW-Gaussian model and
-the best curved-SMBHB control is comparable to the identified
-calibration and prior-boundary systematics.  In a cross-PTA public-data
-bridge anchored to the official NANOGrav evidence scale, the leading
-cosmological templates and three curved-SMBHB controls all remain within
-approximately one nat of one another.  Current public PTA spectral evidence
-therefore identifies low-frequency spectral curvature, not yet a unique
-source class.
+Official PTArcade templates and official \texttt{ceffyl} densities
+reproduce the published NANOGrav 15-year log-Bayes factors for
+SIGW-Gaussian, SIGW-delta, and cosmic superstrings at sub-nat agreement.
+On that calibrated scale, one physical environmental-SMBHB control and
+two predeclared phenomenological low-frequency curvature surrogates yield
+$\ln\mathcal{B}=3.45$--$3.84$.  The best curvature surrogate lies
+$0.681$ nat below SIGW-Gaussian, while the physical environmental control
+lies $1.067$ nat below SIGW-Gaussian and $0.476$ nat below SIGW-delta,
+comparable to identified calibration and prior-boundary systematics.  The
+phenomenological rows are null tests of low-frequency curvature, not
+population-synthesis predictions.  A public cross-PTA posterior-summary
+bridge preserves the same order-unity compression.  Current public PTA
+spectral evidence identifies low-frequency curvature more robustly than a
+unique source class.
 \end{abstract}
 
 \maketitle
@@ -59,10 +58,12 @@ alternatives, including SIGW-Gaussian ($\mathcal{B}=57$), SIGW-delta
 ($\mathcal{B}=44$), and cosmic superstrings ($\mathcal{B}=46$),
 placing these models in the strong-but-not-decisive evidence range
 under the Kass--Raftery convention \cite{Kass_Raftery_1995}.
-We show below that one environmental SMBHB model and two phenomenological
-curved-SMBHB surrogates are competitive with these alternatives on the
-same evidence scale, and that the same non-identification message
-survives a deliberately limited cross-PTA posterior-summary bridge.
+That analysis already makes SMBHB modeling a key caveat for interpreting
+apparent new-physics preferences.  Here we make the caveat quantitative:
+we isolate the local-density versus official-density evidence shift,
+evaluate one physical environmental-SMBHB control and two predeclared
+curvature surrogates on the same official scale, and test whether a public
+cross-PTA spectral bridge breaks the resulting non-identification.
 
 Recent public-data studies have pursued direct multi-PTA combination
 \cite{FivePTA_2026}, Fourier-space reuse of posterior summaries
@@ -98,16 +99,17 @@ All $\Omega_\mathrm{GW}$ calculations are dimension-checked in
 only templates evaluable as stochastic spectra on the PTArcade
 \texttt{ceffyl} density.
 
-For the PTA likelihood we use ENTERPRISE \cite{ENTERPRISE_2019}.
-White-noise parameters EFAC, EQUAD, and ECORR are fixed to the official
-NANOGrav 15-year noise dictionary \cite{NANOGrav_15yr_noise}.  The
-common process uses 14 GWB Fourier bins at $f_i=i/T$, matching the
-NANOGrav low-frequency truncation \cite{NANOGrav_15yr_GWB,
-NANOGrav_15yr_NewPhysics}.  Timing-model offsets are marginalized with
-\texttt{MarginalizingTimingModel}; timing-model files are not modified.
-Model evidences are computed either from local free-spectrum KDE products
-or from the official PTArcade \texttt{ceffyl} density grid using
-\texttt{dynesty} nested sampling \cite{Speagle_2020}.  The cross-PTA
+The calibrated evidence rows evaluate stochastic spectral templates on
+released NANOGrav free-spectrum densities and on the official PTArcade
+\texttt{ceffyl} density product.  ENTERPRISE \cite{ENTERPRISE_2019} is
+used for Hellings--Downs chain validation and for the development
+timing-level gates in the Supplemental Material, not as the production
+likelihood for the official-density evidence rows.  In those validation
+models, white-noise parameters are fixed to the official NANOGrav 15-year
+noise dictionary \cite{NANOGrav_15yr_noise}, the common process uses 14
+GWB Fourier bins at $f_i=i/T$, and timing-model files are not modified.
+Model evidences are computed with \texttt{dynesty} nested sampling
+\cite{Speagle_2020}.  The cross-PTA
 bridge multiplies public PPTA, NANOGrav, and EPTA posterior-summary
 spectral densities.  Its \texttt{hybrid3} version replaces only the
 NANOGrav term by the official \texttt{ceffyl} density, so only
@@ -136,6 +138,9 @@ curved-SMBHB controls (orange) on the matched evidence scale.}
 \end{figure}
 
 \emph{Evidence calibration.}
+All source-template comparisons below are conditional on the
+HD-correlated stochastic-background hypothesis; we do not re-evaluate the
+detection evidence for the HD spatial correlation itself.
 Our local \texttt{ceffyl}-style refit starts from the released
 Hellings--Downs 30-bin free-spectrum core, builds independent per-bin
 KDEs for the 14 lowest bins, and evaluates each spectral template
@@ -153,9 +158,11 @@ published absolute values.  The ablation below identifies the local density
 construction as the main source of the absolute-evidence mismatch.
 
 The released Hellings--Downs free-spectrum covariance is nearly diagonal.
-A covariance-aware projection shifts SIGW-Gaussian versus SMBHB by only
-$-0.006$ nat, so covariance restoration cannot explain a multi-nat
-absolute-Bayes-factor gap.
+Covariance restoration shifts the leading SIGW-Gaussian versus SMBHB
+projection by only $-0.006$ nat, although it can be order-unity for spectra
+far from the data, such as the stable-string proxy.  It therefore does not
+explain the multi-nat local-vs-official evidence mismatch for the leading
+comparisons.
 
 The decisive test uses the official NANOGrav/PTArcade model files and
 the official PTArcade \texttt{ceffyl} density product.  PTArcade model
@@ -164,6 +171,8 @@ files return $h^2\Omega_\mathrm{GW}$, so the residual conversion is
 \rho^2=\frac{(H_0/h)^2\,h^2\Omega_\mathrm{GW}}
 {8\pi^4 f^5 T}.
 \end{equation}
+This is the PTArcade \texttt{ceffyl} stochastic-spectrum convention used to
+map $h^2\Omega_\mathrm{GW}$ into the residual-density coordinate.
 Dimensional and code-level conversion checks are reported in the
 Supplemental Material.
 
@@ -196,18 +205,22 @@ SIGW-Gaussian spectrum while retaining the local scipy-KDE density gives
 $\ln\mathcal{B}=+0.687\pm0.147$, still low by $3.36$ nats.  Absolute
 evidence alignment is therefore controlled primarily by official density
 construction and template fidelity, not by bin covariance.
+The curved-control classes and their prior variants were specified before
+the official-density sweep; all tested variants are reported in the
+Supplemental Material.
 
 The same matched evidence scale changes the physical interpretation.
 Curved-SMBHB controls are not a single-model accident:
 eccentricity-inspired, smooth broken-power-law, and environmental
 turnover parameterizations give five-configuration means
 $3.839\pm0.043$, $3.656\pm0.154$, and $3.453\pm0.062$,
-respectively.  The best curved-SMBHB model lies only $0.681$ nat below
-SIGW-Gaussian and $0.091$ nat below SIGW-delta, and exceeds the
-superstring mean.  The $0.681$-nat gap between the leading
-SIGW-Gaussian model and the best curved-SMBHB control is comparable to the
-identified calibration and prior-boundary systematics, so it should not
-be interpreted as robust source discrimination.  Independent prior-space
+respectively.  The best phenomenological curvature surrogate lies only
+$0.681$ nat below SIGW-Gaussian and $0.091$ nat below SIGW-delta.  The
+physical environmental-SMBHB control lies $1.067$ nat below SIGW-Gaussian,
+$0.476$ nat below SIGW-delta, and $0.104$ nat below superstrings.  These
+gaps are comparable to identified calibration and prior-boundary
+systematics, so they should not be interpreted as robust source
+discrimination.  Independent prior-space
 Sobol thermodynamic integration agrees with the dynesty robust means to
 within $0.12$ nat for the leading cosmological templates and within
 $0.063$ nat for the tested curved-SMBHB representatives.
@@ -290,7 +303,8 @@ lowest eight Fourier bins, whereas SIGW-Gaussian and broken-power-law
 curvature require ten bins.
 Consistently, the three curved-SMBHB controls project to effective
 low-frequency slopes $\gamma_\mathrm{eff}\simeq3.7$--$4.1$ across the
-PPTA, NANOGrav, and EPTA frequency windows, qualitatively matching a
+PPTA, NANOGrav, and EPTA frequency windows, flatter than the GW-driven
+SMBHB value $\gamma=13/3\simeq4.33$.  This qualitatively matches a
 window-dependent slope drift without implying a unique astrophysical
 explanation.  A final posterior-summary diagnostic gives comparable
 low-four-bin residuals for Astro-curved, SIGW-like, and other
