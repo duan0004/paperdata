@@ -46,9 +46,10 @@ source class.
 
 The manuscript uses public NANOGrav data products and official PTArcade model
 and density products.  The analysis code and compact data release are archived
-under Zenodo concept DOI https://doi.org/10.5281/zenodo.19688471 and mirrored at
-https://github.com/duan0004/paperdata, release v1.0.2.  The cross-PTA bridge revision is
-mirrored at GitHub tag prl-calibration-bridge-2026-04-23.
+as Zenodo version DOI https://doi.org/10.5281/zenodo.19751735 under concept DOI
+https://doi.org/10.5281/zenodo.19688471 and mirrored at
+https://github.com/duan0004/paperdata, release v1.0.2.  The cross-PTA bridge
+revision is mirrored at GitHub tag prl-calibration-bridge-2026-04-23.
 
 Sincerely,
 
