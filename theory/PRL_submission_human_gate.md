@@ -23,14 +23,14 @@
   - supplement includes prior ranges, selection rule, and QMC/TI residual
     convention notes.
 - Public GitHub code/data release inserted:
-  - Zenodo version DOI `10.5281/zenodo.19751735`
-  - Zenodo version URL `https://doi.org/10.5281/zenodo.19751735`
+  - Zenodo version DOI `10.5281/zenodo.19688471`
+  - Zenodo version URL `https://doi.org/10.5281/zenodo.19688471`
   - Zenodo concept DOI `10.5281/zenodo.19688471`
   - Zenodo concept URL `https://doi.org/10.5281/zenodo.19688471`
   - `https://github.com/duan0004/paperdata`
-  - release tag `v1.0.2`
+  - release tag `v1.0.4`
   - release URL:
-    `https://github.com/duan0004/paperdata/releases/tag/v1.0.2`
+    `https://github.com/duan0004/paperdata/releases/tag/v1.0.4`
 - Evidence cross-check added:
   - `results/T2_NG15yr/bayes_factors/prl_evidence_ti_qmc_crosscheck.json`
   - `results/T2_NG15yr/bayes_factors/prl_evidence_ti_qmc_crosscheck.md`

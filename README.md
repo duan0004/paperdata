@@ -1,9 +1,9 @@
-# Calibrated PTA Evidence Identifies Low-Frequency Curvature but Not a Unique Nanohertz Source
+# Calibrated PTA Evidence: Low-Frequency Curvature Without a Unique Nanohertz Source
 
 This repository contains the code, data products, derived evidence tables, and
 manuscript files for the PRL submission:
 
-**Calibrated PTA Evidence Identifies Low-Frequency Curvature but Not a Unique Nanohertz Source**  
+**Calibrated PTA Evidence: Low-Frequency Curvature Without a Unique Nanohertz Source**  
 Ran DUAN, National Astronomical Observatories, Chinese Academy of Sciences, duanran@nao.cas.cn
 
 ## Contents

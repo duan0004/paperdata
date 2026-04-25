@@ -4,7 +4,7 @@
 **Affiliation**: National Astronomical Observatories, Chinese Academy of Sciences  
 **Email**: duanran@nao.cas.cn
 
-**Code/data release**: Zenodo version DOI `10.5281/zenodo.19751735` under concept DOI `10.5281/zenodo.19688471`; GitHub mirror https://github.com/duan0004/paperdata, release `v1.0.2`; bridge revision tag `prl-calibration-bridge-2026-04-23`.
+**Code/data release**: Zenodo version DOI `10.5281/zenodo.19688471` under concept DOI `10.5281/zenodo.19688471`; GitHub mirror https://github.com/duan0004/paperdata, release `v1.0.4`; bridge revision tag `prl-calibration-bridge-2026-04-23`.
 
 ## Abstract
 
@@ -88,7 +88,7 @@ The practical lesson is methodological. A local free-spectrum KDE product is use
 
 ## VI. Conclusions
 
-We constructed and validated a spectral-template analysis pipeline for the NANOGrav 15-year background. The ENTERPRISE/PTMCMCSampler HD run reproduces the published common-process posterior and passes a two-chain $\hat R<1.05$ diagnostic. Local refits reproduce the qualitative model ranking but expose sensitivity to KDE density construction. Official PTArcade templates plus official PTArcade `ceffyl` densities reproduce the published SIGW-Gaussian, SIGW-delta, and cosmic-superstring log-Bayes factors at sub-nat precision across seed/live-point repetitions, while a curved SMBHB family overlaps the leading cosmological evidence range. The PRL scientific gate is therefore stronger than a calibration note: current data do not robustly discriminate leading cosmological stochastic spectra from calibrated curved-SMBHB controls. The code/data release is archived as Zenodo version DOI `10.5281/zenodo.19751735` under concept DOI `10.5281/zenodo.19688471`; the remaining work before PRL submission is final human approval of any acknowledgments.
+We constructed and validated a spectral-template analysis pipeline for the NANOGrav 15-year background. The ENTERPRISE/PTMCMCSampler HD run reproduces the published common-process posterior and passes a two-chain $\hat R<1.05$ diagnostic. Local refits reproduce the qualitative model ranking but expose sensitivity to KDE density construction. Official PTArcade templates plus official PTArcade `ceffyl` densities reproduce the published SIGW-Gaussian, SIGW-delta, and cosmic-superstring log-Bayes factors at sub-nat precision across seed/live-point repetitions, while a curved SMBHB family overlaps the leading cosmological evidence range. The PRL scientific gate is therefore stronger than a calibration note: current data do not robustly discriminate leading cosmological stochastic spectra from calibrated curved-SMBHB controls. The code/data release is archived as Zenodo version DOI `10.5281/zenodo.19688471` under concept DOI `10.5281/zenodo.19688471`; the remaining work before PRL submission is final human approval of any acknowledgments.
 
 ## References
 
