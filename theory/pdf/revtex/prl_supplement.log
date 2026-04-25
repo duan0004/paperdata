@@ -277,90 +277,110 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 \Hy@SectionHShift=\skip54
 ) (placeins.sty
 Package: placeins 2005/04/18  v 2.2
+) (float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count287
+\float@exts=\toks24
+\float@box=\box68
+\@float@everytoks=\toks25
+\@floatcapt=\box69
 )
 Class revtex4-2 Info: Unrecognized LaTeX tabular. Please update this document c
-lass! (Proceeding with fingers crossed.) on input line 8.
-Class revtex4-2 Info: cite was not loaded (OK!) on input line 8.
-Class revtex4-2 Info: mcite was not loaded (OK!) on input line 8.
-Class revtex4-2 Info: multicol was not loaded (OK!) on input line 8.
- (l3backend-xetex.def
+lass! (Proceeding with fingers crossed.) on input line 9.
+
+
+Class revtex4-2 Warning: Repair the float package.
+
+Class revtex4-2 Info: cite was not loaded (OK!) on input line 9.
+Class revtex4-2 Info: mcite was not loaded (OK!) on input line 9.
+Class revtex4-2 Info: multicol was not loaded (OK!) on input line 9.
+(l3backend-xetex.def
 File: l3backend-xetex.def 2022-02-07 L3 backend support: XeTeX
-\c__kernel_sys_dvipdfmx_version_int=\count287
-\l__color_backend_stack_int=\count288
-\g__color_backend_stack_int=\count289
-\g__graphics_track_int=\count290
-\l__pdf_internal_box=\box68
-\g__pdf_backend_object_int=\count291
-\g__pdf_backend_annotation_int=\count292
-\g__pdf_backend_link_int=\count293
-)
-(prl_supplement.aux)
+\c__kernel_sys_dvipdfmx_version_int=\count288
+\l__color_backend_stack_int=\count289
+\g__color_backend_stack_int=\count290
+\g__graphics_track_int=\count291
+\l__pdf_internal_box=\box70
+\g__pdf_backend_object_int=\count292
+\g__pdf_backend_annotation_int=\count293
+\g__pdf_backend_link_int=\count294
+) (prl_supplement.aux)
 \openout1 = `prl_supplement.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 8.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 8
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 9.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 9
 .
  (ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-Package hyperref Info: Link coloring OFF on input line 8.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+Package hyperref Info: Link coloring OFF on input line 9.
  (nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
- (refcount.sty
+
+(refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
-)
-(gettitlestring.sty
+) (gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count294
+\c@section@level=\count295
 )
-LaTeX Info: Redefining \ref on input line 8.
-LaTeX Info: Redefining \pageref on input line 8.
-LaTeX Info: Redefining \nameref on input line 8.
+LaTeX Info: Redefining \ref on input line 9.
+LaTeX Info: Redefining \pageref on input line 9.
+LaTeX Info: Redefining \nameref on input line 9.
  (prl_supplement.out) (prl_supplement.out)
 \@outlinefile=\write4
 \openout4 = `prl_supplement.out'.
 
-Class revtex4-2 Info: Taking \maketitle back from hyperref on input line 8.
+Class revtex4-2 Info: Taking \maketitle back from hyperref on input line 9.
 \openout3 = `prl_supplementNotes.bib'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 17.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 18.
 
- (umsa.fd
+
+(umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 17.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 18.
 
-
-(umsb.fd
+ (umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1]
-Underfull \hbox (badness 10000) in paragraph at lines 105--107
+)
+Underfull \hbox (badness 10000) in paragraph at lines 52--61
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--84
+
+ []
+
+[1]
+Underfull \hbox (badness 10000) in paragraph at lines 106--108
 []\TU/lmr/m/n/9 Gaussian prior on $\OT1/cmr/m/n/9 ([][] \OML/cmm/m/it/9 A; ^^M\
 OT1/cmr/m/n/9 )$ \TU/lmr/m/n/9 with $\OML/cmm/m/it/9 ^^V \OT1/cmr/m/n/9 =
  []
 
 
-Underfull \hbox (badness 2671) in paragraph at lines 108--109
+Underfull \hbox (badness 2671) in paragraph at lines 109--110
 []$[][] \OML/cmm/m/it/9 f[] \OMS/cmsy/m/n/9 ^^X \OML/cmm/m/it/9 U\OT1/cmr/m/n/9
  [\OMS/cmsy/m/n/9 ^^@\OT1/cmr/m/n/9 11\OML/cmm/m/it/9 ; \OMS/cmsy/m/n/9 ^^@\OT1
 /cmr/m/n/9 5]$\TU/lmr/m/n/9 , width $\OMS/cmsy/m/n/9 ^^X \OML/cmm/m/it/9 U\OT1/
@@ -369,84 +389,149 @@ cmr/m/n/9 [0\OML/cmm/m/it/9 :\OT1/cmr/m/n/9 1\OML/cmm/m/it/9 ; \OT1/cmr/m/n/9 3
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 116--116
+Underfull \hbox (badness 10000) in paragraph at lines 117--117
 []\TU/lmr/m/n/9 Environmental
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 119--120
+Underfull \hbox (badness 10000) in paragraph at lines 120--121
 []\TU/lmr/m/n/9 SMBHB environmental-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 119--120
+Underfull \hbox (badness 10000) in paragraph at lines 120--121
 \TU/lmr/m/n/9 hardening control moti-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 119--120
+Underfull \hbox (badness 10000) in paragraph at lines 120--121
 \TU/lmr/m/n/9 vated by arXiv:1211.5375 and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 121--123
+Underfull \hbox (badness 10000) in paragraph at lines 122--124
 []$[][] \OML/cmm/m/it/9 A \OMS/cmsy/m/n/9 ^^X \OML/cmm/m/it/9 U\OT1/cmr/m/n/9 [
 \OMS/cmsy/m/n/9 ^^@\OT1/cmr/m/n/9 18\OML/cmm/m/it/9 ; \OMS/cmsy/m/n/9 ^^@\OT1/c
 mr/m/n/9 11]$\TU/lmr/m/n/9 , $[][] \OML/cmm/m/it/9 f[] \OMS/cmsy/m/n/9 ^^X
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 124--124
+Underfull \hbox (badness 10000) in paragraph at lines 125--125
 []\TU/lmr/m/n/9 phenomenological low-frequency
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 127--128
+Underfull \hbox (badness 10000) in paragraph at lines 128--129
 []\TU/lmr/m/n/9 phenomenological eccentricity-
  []
 
-[2] [3] [4]
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Underfull \hbox (badness 10000) in paragraph at lines 103--132
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
+ []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Underfull \hbox (badness 10000) in paragraph at lines 149--160
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--195
+
+ []
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 202--210
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 221--232
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 245--252
+
+ []
+
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 259--270
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 294--306
+
+ []
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 327--338
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 388--404
+
+ []
 
 [5]
+Underfull \hbox (badness 10000) in paragraph at lines 411--423
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+ []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Underfull \hbox (badness 10000) in paragraph at lines 436--449
+
+ []
 
 [6]
+Underfull \hbox (badness 10000) in paragraph at lines 472--485
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
+ []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Underfull \hbox (badness 10000) in paragraph at lines 508--519
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
+ []
 
 [7]
+Underfull \hbox (badness 10000) in paragraph at lines 543--551
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
+ []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Underfull \hbox (badness 10000) in paragraph at lines 561--573
 
-[8] [9] [10] (prl_supplement.bbl) [11] (prl_supplement.aux)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 582--591
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 615--626
+
+ []
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 664--675
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 695--703
+
+ []
+
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 722--732
+
+ []
+
+[10] (prl_supplement.bbl) [11] (prl_supplement.aux)
 Package rerunfilecheck Info: File `prl_supplement.out' has not changed.
-(rerunfilecheck)             Checksum: 9B3D31009BB081B04F91A046A9E5DAAE;5577.
+(rerunfilecheck)             Checksum: 37FF6A6F47F14140141C66589AD97246;5647.
  )
-Output written on prl_supplement.xdv (11 pages, 261188 bytes).
+Output written on prl_supplement.xdv (11 pages, 262696 bytes).

@@ -400,7 +400,7 @@ Underfull \hbox (badness 2573) in paragraph at lines 88--100
 \TU/lmr/m/n/10 SIGW analytic template and two non-official cos-
  []
 
-
+[1]
 Underfull \hbox (badness 7326) in paragraph at lines 116--124
 []\TU/lmr/m/it/10 Pipeline validation. \TU/lmr/m/n/10 Direct ingestion of the
  []
@@ -410,7 +410,6 @@ Underfull \hbox (badness 1072) in paragraph at lines 116--124
 \TU/lmr/m/n/10 pre-sampled NANOGrav Hellings–Downs chain gives
  []
 
-[1]
 File: ../results/T2_NG15yr/figures//prl_decisive_evidence_figure.pdf Graphic fi
 le (type pdf)
 <use ../results/T2_NG15yr/figures//prl_decisive_evidence_figure.pdf>
@@ -517,4 +516,4 @@ Underfull \hbox (badness 10000) in paragraph at lines 377--378
 Package rerunfilecheck Info: File `paper_prl_submission.out' has not changed.
 (rerunfilecheck)             Checksum: B8E99EFFAE9299FE829FF36837E4FD70;928.
  )
-Output written on paper_prl_submission.xdv (4 pages, 187608 bytes).
+Output written on paper_prl_submission.xdv (4 pages, 187992 bytes).
