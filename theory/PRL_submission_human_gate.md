@@ -23,8 +23,8 @@
   - supplement includes prior ranges, selection rule, and QMC/TI residual
     convention notes.
 - Public GitHub code/data release inserted:
-  - Zenodo DOI `10.5281/zenodo.19688587`
-  - Zenodo URL `https://doi.org/10.5281/zenodo.19688587`
+  - Zenodo concept DOI `10.5281/zenodo.19688471`
+  - Zenodo concept URL `https://doi.org/10.5281/zenodo.19688471`
   - `https://github.com/duan0004/paperdata`
   - release tag `v1.0.2`
   - release URL:

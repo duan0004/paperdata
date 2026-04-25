@@ -102,7 +102,7 @@
       "path": "theory/T3.11_PRL_tex_static_check.md"
     }
   },
-  "generated": "2026-04-25T11:21:26",
+  "generated": "2026-04-25T11:26:02",
   "json_status": {
     "H10_systematic_envelope": {
       "complete": true,
@@ -198,7 +198,7 @@
   },
   "title": "Calibrated PTA Evidence Identifies Low-Frequency Curvature but Not a Unique Nanohertz Source",
   "word_counts": {
-    "compressed_markdown": 1756,
+    "compressed_markdown": 1758,
     "revtex_source": 2431,
     "supplement_markdown": 1165,
     "supplement_tex_source": 4106

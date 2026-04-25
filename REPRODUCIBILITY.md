@@ -2,8 +2,8 @@
 
 **Project**: PTA stochastic-GWB spectral-template comparison with NANOGrav 15yr data  
 **Last updated**: 2026-04-25  
-**Archived release DOI**: `10.5281/zenodo.19688587`  
-**Archived release URL**: `https://doi.org/10.5281/zenodo.19688587`  
+**Zenodo concept DOI**: `10.5281/zenodo.19688471`  
+**Zenodo concept URL**: `https://doi.org/10.5281/zenodo.19688471`  
 **Public repository**: `https://github.com/duan0004/paperdata`  
 **GitHub release tag**: `v1.0.2`  
 **Cross-PTA bridge revision tag**: `prl-calibration-bridge-2026-04-23`  
@@ -167,7 +167,7 @@ and NG15+2MPZ LSS baselines have not yet been reproduced.
 
 As of 2026-04-25, Tectonic is available locally and the REVTeX main text and
 supplement compile to `theory/pdf/revtex/`.  The public code/data release is
-archived at Zenodo DOI `10.5281/zenodo.19688587` and mirrored at
+archived under Zenodo concept DOI `10.5281/zenodo.19688471` and mirrored at
 `https://github.com/duan0004/paperdata`, release `v1.0.2`.  The cross-PTA
 bridge revision used by the current draft is also mirrored at GitHub tag
 `prl-calibration-bridge-2026-04-23`.
