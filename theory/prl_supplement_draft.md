@@ -1,4 +1,4 @@
-# Supplemental Material: Calibrated PTA Evidence Identifies Low-Frequency Curvature but Not a Unique Nanohertz Source
+# Supplemental Material: Calibrated PTA Evidence: Low-Frequency Curvature Without a Unique Nanohertz Source
 
 **Date**: 2026-04-23
 **Main draft**: `theory/paper_prl_submission.tex`
@@ -23,7 +23,7 @@ PTArcade model files return `h^2 Omega_GW`.  The residual-density conversion
 used for official templates is
 
 ```text
-rho^2 = (H0/h)^2 h^2Omega_GW / (8 pi^4 f^5 Tspan).
+rho_k^2 = (H0/h)^2 h^2Omega_GW(f_k) / (8 pi^4 f_k^5 T_span).
 ```
 
 This conversion was checked against `ptarcade.models_utils.omega2cross` to

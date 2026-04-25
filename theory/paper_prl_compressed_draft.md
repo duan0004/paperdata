@@ -1,4 +1,4 @@
-# Calibrated PTA Evidence Identifies Low-Frequency Curvature but Not a Unique Nanohertz Source
+# Calibrated PTA Evidence: Low-Frequency Curvature Without a Unique Nanohertz Source
 
 **Ran DUAN**  
 **Affiliation**: National Astronomical Observatories, Chinese Academy of Sciences  
@@ -8,7 +8,7 @@
 
 ## Abstract
 
-The nanohertz gravitational-wave background admits both astrophysical and cosmological interpretations. We test whether current PTA Bayesian evidence remains source-discriminating once template provenance, density construction, and curved-SMBHB controls are matched. Official PTArcade templates and official `ceffyl` densities reproduce the published NANOGrav 15-year log-Bayes factors for SIGW-Gaussian, SIGW-delta, and cosmic superstrings at sub-nat agreement. On that calibrated scale, one physical environmental-SMBHB control and two predeclared phenomenological low-frequency curvature surrogates yield $\ln\mathcal{B}=3.45$--$3.84$. The best curvature surrogate lies $0.681$ nat below SIGW-Gaussian, while the physical environmental control lies $1.067$ nat below SIGW-Gaussian and $0.476$ nat below SIGW-delta, comparable to identified calibration and prior-boundary systematics. The phenomenological rows are null tests of low-frequency curvature, not population-synthesis predictions. A public cross-PTA posterior-summary bridge preserves the same order-unity compression. Current public PTA spectral evidence identifies low-frequency curvature more robustly than a unique source class.
+The nanohertz gravitational-wave background admits both astrophysical and cosmological interpretations. We test whether current PTA Bayesian evidence remains source-discriminating once template provenance, density construction, and curved-SMBHB controls are matched. Official PTArcade templates evaluated on official `ceffyl` densities reproduce the published NANOGrav 15-year log-Bayes factors at sub-nat agreement. On this calibrated scale, one physical environmental-SMBHB control and two predeclared phenomenological low-frequency curvature surrogates fall in the same approximately one-nat evidence tier as leading cosmological templates. A public cross-PTA posterior-summary bridge preserves this compression. Present public PTA spectral evidence therefore does not yet discriminate leading cosmological templates from calibrated curved-SMBHB controls.
 
 ## I. Introduction
 
@@ -56,10 +56,10 @@ We next isolate the source of the discrepancy. The released HD free-spectrum cov
 
 The decisive test uses the official NANOGrav/PTArcade model files and the official PTArcade `ceffyl` density product. PTArcade model files return $h^2\Omega_\mathrm{GW}$, so the residual conversion is
 $$
-\rho^2=\frac{(H_0/h)^2\,h^2\Omega_\mathrm{GW}}
-{8\pi^4 f^5 T}.
+\rho_k^2=\frac{(H_0/h)^2\,h^2\Omega_\mathrm{GW}(f_k)}
+{8\pi^4 f_k^5 T_\mathrm{span}}.
 $$
-This is the PTArcade `ceffyl` stochastic-spectrum convention used to map $h^2\Omega_\mathrm{GW}$ into the residual-density coordinate. Dimensional and code-level conversion checks are reported in the supplement.
+Here $T_\mathrm{span}$ is the data span; this is the PTArcade/`ceffyl` stochastic-spectrum convention used to map $h^2\Omega_\mathrm{GW}$ into the residual-density coordinate. Dimensional and code-level conversion checks are reported in the supplement.
 
 The official-density robustness results, averaged over five seed/live-point configurations, are:
 
@@ -82,7 +82,7 @@ As an orthogonal diagnostic, we scan the number of retained Fourier bins. The fl
 
 ## V. Interpretation
 
-The NANOGrav 15-yr data do not yet identify the physical origin of the background. On a calibrated evidence scale, current leading new-physics preferences are compressed into the same model-comparison tier as curved SMBHB spectra. The most robust near-term discriminant is spectral shape at low frequency. For GW-driven SMBHB backgrounds the reference scaling is $h^2\Omega_\mathrm{GW}\propto f^{2/3}$, while environmental or eccentric effects flatten this behavior at the lowest PTA frequencies. Peaked cosmological alternatives such as SIGW or first-order phase transitions rise causally as $f^3$ below their characteristic scale, while string-like spectra form a separate near-degenerate branch in the current PTA band. The cumulative-bin scan makes this quantitative: the lowest eight to ten Fourier bins already determine the matched-scale ranking to within $0.5$ nat for the leading stochastic templates. Consistently, the three curved-SMBHB controls project to $\gamma_\mathrm{eff}\simeq3.7$--$4.1$ across PPTA, NANOGrav, and EPTA windows, flatter than the GW-driven SMBHB value $\gamma=13/3\simeq4.33$, without implying a unique astrophysical explanation.
+Current public PTA spectral evidence does not yet identify the physical origin of the background. On a matched official-density scale, leading cosmological templates and calibrated curved-SMBHB controls occupy the same model-comparison tier, with remaining gaps comparable to identified calibration, prior-boundary, and bridge-robustness systematics. The most robust near-term discriminator is spectral shape at low frequency. For GW-driven SMBHB backgrounds the reference scaling is $h^2\Omega_\mathrm{GW}\propto f^{2/3}$, while environmental or eccentric effects flatten this behavior at the lowest PTA frequencies. Peaked cosmological alternatives such as SIGW or first-order phase transitions rise causally as $f^3$ below their characteristic scale, while string-like spectra form a separate near-degenerate branch in the current PTA band. Current public spectral summaries do not yet separate these leading cosmological spectra from curved-SMBHB alternatives.
 
 The practical lesson is methodological. A local free-spectrum KDE product is useful for fast diagnostics, but it is not automatically equivalent to the official PTArcade `ceffyl` density. For absolute Bayes factors at the sub-nat level, the official density product, the exact template implementation, and the matched SMBHB prior baseline must be used together; cosmological alternatives must also be calibrated against curved SMBHB controls. Free-spectrum bin covariance is a useful diagnostic but is not the dominant error budget for the leading SIGW/string comparisons.
 

@@ -8,7 +8,7 @@
 
 \begin{document}
 
-\title{Supplemental Material for ``Calibrated PTA Evidence Identifies Low-Frequency Curvature but Not a Unique Nanohertz Source''}
+\title{Supplemental Material for ``Calibrated PTA Evidence: Low-Frequency Curvature Without a Unique Nanohertz Source''}
 
 \author{Ran DUAN}
 \email{duanran@nao.cas.cn}
@@ -34,9 +34,9 @@ source-ranking stress test.
 PTArcade model files return $h^2\Omega_\mathrm{GW}$.  The residual-density
 conversion used for official templates is
 \begin{equation}
-\rho^2 =
-\frac{(H_0/h)^2 h^2\Omega_\mathrm{GW}}
-{8\pi^4 f^5 T_\mathrm{span}} .
+\rho_k^2 =
+\frac{(H_0/h)^2 h^2\Omega_\mathrm{GW}(f_k)}
+{8\pi^4 f_k^5 T_\mathrm{span}} .
 \end{equation}
 This conversion was checked against \nolinkurl{ptarcade.models_utils.omega2cross}
 to relative precision below $5\times10^{-16}$.
@@ -379,6 +379,11 @@ posterior-summary adapters and the NANOGrav official-density
 likelihood-evaluation adapter; only the rows marked below are official
 PTArcade spectrum implementations.
 
+PBH-SIGW-Analytic is the analytic scalar-induced-GW template used in the
+cross-PTA bridge, inherited from the previous posterior-summary template
+library.  It is not an official PTArcade spectrum implementation and is
+therefore not used as a NANOGrav official calibration target.
+
 Because only the NANOGrav term is anchored to the official PTArcade density,
 \texttt{hybrid3} is an anchored source-ranking stress test rather than a fully
 calibrated multi-PTA Bayes-factor scale.  This product neglects cross-PTA
@@ -559,8 +564,9 @@ SIGW-like & $0.465$ & $1.646$ & $0.914$ \\
 \end{table}
 
 The comparable low-four-bin residuals support the restricted interpretation
-that current public spectral summaries identify a low-frequency-curvature
-feature shared by several tested families, not a unique source label.
+that current public spectral summaries are most sensitive to a
+low-frequency-curvature feature shared by several tested families, but do not
+yet identify a unique source label.
 
 \begin{table}[H]
 \caption{\label{tab:final-budget}Evidence and systematic scales relevant to

@@ -1,7 +1,7 @@
 # PRL Submission Human Gate
 
-**Date**: 2026-04-25  
-**Target**: Physical Review Letters  
+**Date**: 2026-04-23
+**Target**: Physical Review Letters
 **Current package**: `theory/paper_prl_submission.tex` +
 `theory/prl_supplement.tex`
 
@@ -19,10 +19,12 @@
     fully astrophysical model family;
   - submission-facing sources no longer use internal milestone labels or
     preregistration language;
-  - Fig. 1 Panel A states the row-specific baseline convention;
+  - Fig. 1 Panel A now uses only the matched PTArcade BHB-prior baseline;
   - supplement includes prior ranges, selection rule, and QMC/TI residual
     convention notes.
 - Public GitHub code/data release inserted:
+  - Zenodo version DOI `10.5281/zenodo.19751735`
+  - Zenodo version URL `https://doi.org/10.5281/zenodo.19751735`
   - Zenodo concept DOI `10.5281/zenodo.19688471`
   - Zenodo concept URL `https://doi.org/10.5281/zenodo.19688471`
   - `https://github.com/duan0004/paperdata`
@@ -39,6 +41,8 @@
     `results/prl_reference_bridge/sequential_bridge_ablation.md`;
   - PTArcade/ceffyl version and plateau diagnostics are saved in
     `results/T2_NG15yr/bayes_factors/prl_ceffyl_plateau_diagnostic.md`;
+  - final stability diagnostics are saved in
+    `results/T2_NG15yr/bayes_factors/prl_final_stability_diagnostics.md`;
   - the bridge revision is mirrored at GitHub tag
     `prl-calibration-bridge-2026-04-23`.
 - Acknowledgments section has been removed from the main draft rather than

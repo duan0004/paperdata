@@ -9,7 +9,7 @@
 
 \begin{document}
 
-\title{Calibrated PTA Evidence Identifies Low-Frequency Curvature but Not a Unique Nanohertz Source}
+\title{Calibrated PTA Evidence: Low-Frequency Curvature Without a Unique Nanohertz Source}
 
 \author{Ran DUAN}
 \email{duanran@nao.cas.cn}
@@ -21,20 +21,15 @@ The nanohertz gravitational-wave background admits both astrophysical
 and cosmological interpretations.  We test whether current PTA
 Bayesian evidence remains source-discriminating once template
 provenance, density construction, and curved-SMBHB controls are matched.
-Official PTArcade templates and official \texttt{ceffyl} densities
-reproduce the published NANOGrav 15-year log-Bayes factors for
-SIGW-Gaussian, SIGW-delta, and cosmic superstrings at sub-nat agreement.
-On that calibrated scale, one physical environmental-SMBHB control and
-two predeclared phenomenological low-frequency curvature surrogates yield
-$\ln\mathcal{B}=3.45$--$3.84$.  The best curvature surrogate lies
-$0.681$ nat below SIGW-Gaussian, while the physical environmental control
-lies $1.067$ nat below SIGW-Gaussian and $0.476$ nat below SIGW-delta,
-comparable to identified calibration and prior-boundary systematics.  The
-phenomenological rows are null tests of low-frequency curvature, not
-population-synthesis predictions.  A public cross-PTA posterior-summary
-bridge preserves the same order-unity compression.  Current public PTA
-spectral evidence identifies low-frequency curvature more robustly than a
-unique source class.
+Official PTArcade templates evaluated on official \texttt{ceffyl}
+densities reproduce the published NANOGrav 15-year log-Bayes factors at
+sub-nat agreement.  On this calibrated scale, one physical
+environmental-SMBHB control and two predeclared phenomenological
+low-frequency curvature surrogates fall in the same approximately
+one-nat evidence tier as leading cosmological templates.  A public
+cross-PTA posterior-summary bridge preserves this compression.  Present
+public PTA spectral evidence therefore does not yet discriminate leading
+cosmological templates from calibrated curved-SMBHB controls.
 \end{abstract}
 
 \maketitle
@@ -58,12 +53,13 @@ alternatives, including SIGW-Gaussian ($\mathcal{B}=57$), SIGW-delta
 ($\mathcal{B}=44$), and cosmic superstrings ($\mathcal{B}=46$),
 placing these models in the strong-but-not-decisive evidence range
 under the Kass--Raftery convention \cite{Kass_Raftery_1995}.
-That analysis already makes SMBHB modeling a key caveat for interpreting
-apparent new-physics preferences.  Here we make the caveat quantitative:
+That analysis already made SMBHB modeling a key caveat for interpreting
+apparent new-physics preferences.  Here we make this caveat quantitative:
 we isolate the local-density versus official-density evidence shift,
 evaluate one physical environmental-SMBHB control and two predeclared
-curvature surrogates on the same official scale, and test whether a public
-cross-PTA spectral bridge breaks the resulting non-identification.
+phenomenological curvature surrogates on the same official
+PTArcade/\texttt{ceffyl} scale, and test whether a public cross-PTA
+posterior-summary bridge breaks the resulting non-discrimination.
 
 Recent public-data studies have pursued direct multi-PTA combination
 \cite{FivePTA_2026}, Fourier-space reuse of posterior summaries
@@ -85,7 +81,8 @@ calibration, and a cross-PTA posterior-summary stress test.
 We model an isotropic stochastic background through the one-sided strain
 power spectral density $S_h(f)$ and
 \begin{equation}
-\Omega_\mathrm{GW}(f)=\frac{2\pi^2}{3H_0^2} f^3 S_h(f),
+\Omega_\mathrm{GW}(f)
+=\frac{2\pi^2}{3H_0^2}\,f^3 S_h(f),
 \end{equation}
 with $H_0=67.4\,\mathrm{km\,s^{-1}\,Mpc^{-1}}$.  The calibrated
 NANOGrav official-template set includes SMBHB power laws, SMBHB
@@ -99,6 +96,9 @@ All $\Omega_\mathrm{GW}$ calculations are dimension-checked in
 only templates evaluable as stochastic spectra on the PTArcade
 \texttt{ceffyl} density.
 
+All source-template comparisons below are conditional on the
+HD-correlated stochastic-background hypothesis; we do not re-evaluate the
+detection evidence for the HD spatial correlation.
 The calibrated evidence rows evaluate stochastic spectral templates on
 released NANOGrav free-spectrum densities and on the official PTArcade
 \texttt{ceffyl} density product.  ENTERPRISE \cite{ENTERPRISE_2019} is
@@ -138,9 +138,6 @@ curved-SMBHB controls (orange) on the matched evidence scale.}
 \end{figure}
 
 \emph{Evidence calibration.}
-All source-template comparisons below are conditional on the
-HD-correlated stochastic-background hypothesis; we do not re-evaluate the
-detection evidence for the HD spatial correlation itself.
 Our local \texttt{ceffyl}-style refit starts from the released
 Hellings--Downs 30-bin free-spectrum core, builds independent per-bin
 KDEs for the 14 lowest bins, and evaluates each spectral template
@@ -168,11 +165,14 @@ The decisive test uses the official NANOGrav/PTArcade model files and
 the official PTArcade \texttt{ceffyl} density product.  PTArcade model
 files return $h^2\Omega_\mathrm{GW}$, so the residual conversion is
 \begin{equation}
-\rho^2=\frac{(H_0/h)^2\,h^2\Omega_\mathrm{GW}}
-{8\pi^4 f^5 T}.
+\rho_k^2
+=\frac{(H_0/h)^2\,h^2\Omega_\mathrm{GW}(f_k)}
+{8\pi^4 f_k^5 T_\mathrm{span}} .
 \end{equation}
-This is the PTArcade \texttt{ceffyl} stochastic-spectrum convention used to
-map $h^2\Omega_\mathrm{GW}$ into the residual-density coordinate.
+Here $T_\mathrm{span}$ is the data span; this is the
+PTArcade/\texttt{ceffyl} stochastic-spectrum convention used to map
+$h^2\Omega_\mathrm{GW}$ into the residual-density coordinate
+\cite{PTArcade_2023,NANOGrav_15yr_NewPhysics}.
 Dimensional and code-level conversion checks are reported in the
 Supplemental Material.
 
@@ -210,17 +210,19 @@ the official-density sweep; all tested variants are reported in the
 Supplemental Material.
 
 The same matched evidence scale changes the physical interpretation.
-Curved-SMBHB controls are not a single-model accident:
-eccentricity-inspired, smooth broken-power-law, and environmental
-turnover parameterizations give five-configuration means
-$3.839\pm0.043$, $3.656\pm0.154$, and $3.453\pm0.062$,
-respectively.  The best phenomenological curvature surrogate lies only
+Curved-SMBHB controls are not a single-model accident: the single
+predeclared eccentricity-inspired surrogate, the single predeclared
+broken-power-law surrogate, and the physical environmental-turnover
+control give five-configuration means $3.839\pm0.043$,
+$3.656\pm0.154$, and $3.453\pm0.062$, respectively.  Environmental
+prior variants are reported in the Supplemental Material.  The best
+phenomenological curvature surrogate, the eccentricity-inspired row, lies
 $0.681$ nat below SIGW-Gaussian and $0.091$ nat below SIGW-delta.  The
-physical environmental-SMBHB control lies $1.067$ nat below SIGW-Gaussian,
-$0.476$ nat below SIGW-delta, and $0.104$ nat below superstrings.  These
-gaps are comparable to identified calibration and prior-boundary
-systematics, so they should not be interpreted as robust source
-discrimination.  Independent prior-space
+physical environmental-SMBHB control lies $1.067$ nat below
+SIGW-Gaussian, $0.476$ nat below SIGW-delta, and $0.104$ nat below
+superstrings.  These gaps are comparable to identified calibration and
+prior-boundary systematics, so they should not be interpreted as robust
+source discrimination.  Independent prior-space
 Sobol thermodynamic integration agrees with the dynesty robust means to
 within $0.12$ nat for the leading cosmological templates and within
 $0.063$ nat for the tested curved-SMBHB representatives.
@@ -279,8 +281,8 @@ $-155.182$ for curved SMBHB spectra, a separation of only $0.572$ nat.
 Other cosmological spectra sit at $-155.279$, and simple SMBHB spectra
 at $-155.650$.  The bridge therefore strengthens the physical message
 rather than replacing it with a new source claim: current public PTA
-spectral information identifies a broad class of low-frequency-curved
-spectra, but not a unique astrophysical or cosmological origin.
+spectral information is most sensitive to a shared low-frequency
+curvature structure, but does not yet discriminate its physical origin.
 
 The Supplemental Material gives the full official-density stochastic-model
 ranking, curved-SMBHB family table, prior-boundary tests, and cumulative
@@ -315,47 +317,31 @@ check.
 
 \emph{Interpretation and conclusions.}
 The calibrated NANOGrav evidence and the cross-PTA posterior-summary
-bridge both point to the same conclusion: current public PTA data do not
-yet identify the physical origin of the background.  On a calibrated
-evidence scale, current leading new-physics preferences are compressed
-into the same model-comparison tier as curved SMBHB spectra.  The
-sharpest near-term
-discriminant is spectral shape at low frequency.  For GW-driven SMBHB
-backgrounds the reference scaling is
-$h^2\Omega_\mathrm{GW}\propto f^{2/3}$, while environmental or eccentric
-effects flatten this behavior at the lowest PTA frequencies.  By
-contrast, peaked cosmological alternatives such as SIGW or first-order
-phase transitions rise causally as $f^3$ below their characteristic
-scale \cite{Caprini_Figueroa_2018}.  String-like spectra form a separate
-near-degenerate branch in the current PTA band.  Our
-cumulative-bin scan makes this quantitative: the lowest eight to ten
-Fourier bins already determine the matched-scale ranking to within
-$0.5$ nat for the leading stochastic templates.
+bridge both point to the same conclusion: current public PTA spectral
+evidence does not yet identify the physical origin of the nanohertz
+background.  On a matched official-density scale, leading cosmological
+templates and calibrated curved-SMBHB controls occupy the same
+model-comparison tier, with remaining gaps comparable to identified
+calibration, prior-boundary, and bridge-robustness systematics.
 
-The practical lesson is physical as well as methodological.  A local
-free-spectrum KDE product is useful for fast diagnostics, but it is not
-automatically equivalent to the official PTArcade \texttt{ceffyl}
-density.  For absolute Bayes factors at the sub-nat level, the official
-density product, exact template implementation, and matched SMBHB prior
-baseline must be used together.  More importantly, cosmological
-alternatives should not be interpreted as source identification until
-they are calibrated against curved SMBHB controls.  On the calibrated
-evidence scale, three distinct curved-SMBHB parameterizations occupy the
-same model-comparison tier as the leading cosmological stochastic
-templates; in the hybrid3 bridge the full leading set remains compressed
-into an order-unity interval around the best tested spectrum.  The
-remaining evidence gap is comparable to the calibration and
-prior-boundary systematics identified here, so present public PTA data do
-not yet support robust source identification between these leading
-cosmological templates and
-curved-SMBHB controls.
-Free-spectrum bin covariance is a useful
-diagnostic but is not the
-dominant error budget for the leading SIGW/string comparisons.  This
-claim is restricted to stochastic spectral-template comparisons
-evaluable on the released free-spectrum density; PBH/ULDM templates exposed
-only as time-domain \texttt{signal(toas,...)} objects require their own
-likelihood objects.
+The practical lesson is methodological as well as physical.  Local
+free-spectrum KDE products are useful for rapid diagnostics, but sub-nat
+absolute Bayes-factor interpretation requires the official density
+product, exact template implementation, and matched SMBHB prior baseline.
+Cosmological templates should therefore not be interpreted as source
+identification until they are calibrated against curved astrophysical
+controls.
+
+The sharpest near-term discriminator remains the low-frequency spectral
+shape.  For GW-driven SMBHB backgrounds the reference scaling is
+$h^2\Omega_\mathrm{GW}\propto f^{2/3}$, while environmental or eccentric
+effects flatten this behavior at the lowest PTA frequencies.  Peaked
+cosmological alternatives such as SIGW or first-order phase transitions
+rise causally as $f^3$ below their characteristic scale
+\cite{Caprini_Figueroa_2018}, while string-like spectra form a separate
+near-degenerate branch in the current PTA band.  Current public spectral
+summaries do not yet separate these leading cosmological spectra from
+curved-SMBHB alternatives.
 
 \section*{Data and Code Availability}
 

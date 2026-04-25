@@ -1,11 +1,10 @@
 # PRL Submission Package Manifest
 
-**Date**: 2026-04-25  
-**Status**: final PRL clean applied; public GitHub/Zenodo archive updated to
-release `v1.0.2`; P0--P6 bridge, final stability diagnostics, and non-evidence
-timing/LSS production gates are included.  
-**Current title**: Calibrated PTA Evidence Identifies Low-Frequency Curvature
-but Not a Unique Nanohertz Source
+**Date**: 2026-04-23
+**Status**: public GitHub code/data URL and Zenodo DOI inserted; P0--P6
+cross-PTA bridge incorporated; reviewer-risk bridge framing cleanup applied.
+**Current title**: Calibrated PTA Evidence: Low-Frequency Curvature Without a
+Unique Nanohertz Source
 
 ## Main Package
 
@@ -19,7 +18,7 @@ but Not a Unique Nanohertz Source
 | Bridge figure | `results/T2_NG15yr/figures/prl_bridge_evidence_figure.pdf` | exists; generated from P0--P6 bridge outputs |
 | Sequential bridge ablation | `results/prl_reference_bridge/sequential_bridge_ablation.md` | exists; anchored stress-test table |
 | ceffyl plateau diagnostic | `results/T2_NG15yr/bayes_factors/prl_ceffyl_plateau_diagnostic.md` | exists; version/grid-boundary check |
-| Final PRL stability diagnostics | `results/T2_NG15yr/bayes_factors/prl_final_stability_diagnostics.md` | exists; posterior-summary PPC and uncertainty budget |
+| Final stability diagnostics | `results/T2_NG15yr/bayes_factors/prl_final_stability_diagnostics.md` | exists; PPC, uncertainty budget, environmental-prior sensitivity |
 | Compiled PRL PDF | `theory/pdf/revtex/paper_prl_submission.pdf` | Tectonic compile pass |
 | Compiled supplement PDF | `theory/pdf/revtex/prl_supplement.pdf` | Tectonic compile pass |
 | Reproducibility manifest | `REPRODUCIBILITY.md` | Zenodo DOI and GitHub release inserted |
@@ -46,7 +45,7 @@ use the official PTArcade `ceffyl` density.
 | TI/QMC evidence cross-check | four main non-baseline rows agree with dynesty robust means within `0.12 nat` | `prl_evidence_ti_qmc_crosscheck.json` |
 | SIGW-delta prior-boundary shift | `+0.426 nat` when `log10_f_peak<=-3` | `prl_H4_H5_H6_experiments.json` |
 | Low-frequency bin driver | most rows within `0.5 nat` of 14-bin evidence by first 8 bins; SIGW-Gaussian by 10 bins | `prl_H9_bin_driver_analysis.json` |
-| Free-spectrum covariance diagnostic | effective rank `13.56/14`, max offdiag `0.227` | `car_null_calibration.json` |
+| CAR covariance diagnostic | effective rank `13.56/14`, max offdiag `0.227` | `car_null_calibration.json` |
 | HD convergence | `Rhat(log10_A)=1.047`, `Rhat(gamma)=1.047` | `T2_multichain_Rhat.json` |
 | hybrid3 bridge ranking | leading seven templates within `0.939 nat` of the best tested spectrum | `results/prl_reference_bridge/local3_vs_hybrid3_ranking.md` |
 | hybrid3 tested-representative family mixture | curved-SMBHB mixture only `0.572 nat` below SIGW-like mixture | `results/prl_reference_bridge/family_evidence_sensitivity.md` |
@@ -69,16 +68,13 @@ The current supplement draft is `theory/prl_supplement_draft.md`.  It collects:
   `results/prl_reference_bridge/sequential_bridge_ablation.md`;
 - PTArcade/ceffyl version and grid-boundary diagnostic:
   `results/T2_NG15yr/bayes_factors/prl_ceffyl_plateau_diagnostic.md`;
-- final posterior-summary stability diagnostics and evidence uncertainty
-  budget:
-  `results/T2_NG15yr/bayes_factors/prl_final_stability_diagnostics.md`;
 - official-density cumulative-bin driver:
   `results/T2_NG15yr/bayes_factors/prl_H9_bin_driver_analysis.md`;
 - systematic evidence envelope:
   `results/T2_NG15yr/bayes_factors/prl_H10_systematic_envelope.md`;
 - Sobol-QMC thermodynamic-integration evidence cross-check:
   `results/T2_NG15yr/bayes_factors/prl_evidence_ti_qmc_crosscheck.md`;
-- free-spectrum covariance null calibration:
+- CAR null calibration:
   `results/T2_NG15yr/covariance/car_null_calibration.md`;
 - legacy local-KDE `lnB(N_bins)` truncation diagnostic:
   `results/T2_NG15yr/bayes_factors/Nbins_scan.json`;

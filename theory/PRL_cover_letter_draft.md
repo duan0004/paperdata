@@ -2,8 +2,8 @@
 
 Dear Editors,
 
-We submit the Letter "Calibrated PTA Evidence Identifies Low-Frequency
-Curvature but Not a Unique Nanohertz Source" for consideration in Physical Review
+We submit the Letter "Calibrated PTA Evidence: Low-Frequency Curvature
+Without a Unique Nanohertz Source" for consideration in Physical Review
 Letters.
 
 The recent NANOGrav 15-year Hellings-Downs signal has opened a new problem in
@@ -40,9 +40,10 @@ result is not another template ranking; it is a calibration principle for PTA
 source identification.  Order-unity Bayes-factor preferences for cosmological
 stochastic templates should not be interpreted as source-discriminating unless
 they are calibrated against matched official densities, matched baselines, and
-curved-SMBHB controls.  The present public data identify low-frequency
-spectral curvature more robustly than a unique astrophysical or cosmological
-source class.
+curved-SMBHB controls.  The present public data are most sensitive to
+low-frequency spectral curvature as the shared structure driving the
+comparison, but do not yet discriminate leading cosmological templates from
+calibrated curved-SMBHB controls.
 
 The manuscript uses public NANOGrav data products and official PTArcade model
 and density products.  The analysis code and compact data release are archived
