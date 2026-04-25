@@ -1,0 +1,92 @@
+{
+  "arrays": [
+    "NG15_TIMING"
+  ],
+  "components_gw": 4,
+  "components_rn": 5,
+  "ephem": "FROM_PAR",
+  "epta_variant": "DR2new+",
+  "exclude_pulsars": [],
+  "generated": "2026-04-25T10:04:10",
+  "include_red_noise": false,
+  "lnlikelihood": 1066062.014441524,
+  "lnprior": -3.555348061489414,
+  "max_per_array": 8,
+  "missing_white_noise_parameters": [],
+  "n_noise_parameters": 697,
+  "n_pulsars": 8,
+  "ndim": 2,
+  "noise_provenance": {
+    "NG15": "data/NG15yr/tutorials/data/15yr_wn_dict.json"
+  },
+  "output_tag": "baseline_powerlaw_pilot_ng15_timing_8_gw4",
+  "param_names": [
+    "gamma_gw",
+    "log10_A_gw"
+  ],
+  "ppta_noise_aliases": [],
+  "pulsars": [
+    {
+      "array": "NG15_TIMING",
+      "name": "B1855+09",
+      "parfile": "\u53c2\u8003\u7814\u7a76\u8bfe\u9898-PTA\u5f15\u529b\u6ce2/data/nanograv_15yr/NANOGrav15yr_PulsarTiming_v2.1.0/narrowband/par/B1855+09_PINT_20220301.nb.par",
+      "source": "par_tim",
+      "timfile": "\u53c2\u8003\u7814\u7a76\u8bfe\u9898-PTA\u5f15\u529b\u6ce2/data/nanograv_15yr/NANOGrav15yr_PulsarTiming_v2.1.0/narrowband/tim/B1855+09_PINT_20220301.nb.tim"
+    },
+    {
+      "array": "NG15_TIMING",
+      "name": "B1937+21",
+      "parfile": "\u53c2\u8003\u7814\u7a76\u8bfe\u9898-PTA\u5f15\u529b\u6ce2/data/nanograv_15yr/NANOGrav15yr_PulsarTiming_v2.1.0/narrowband/par/B1937+21_PINT_20220306.nb.par",
+      "source": "par_tim",
+      "timfile": "\u53c2\u8003\u7814\u7a76\u8bfe\u9898-PTA\u5f15\u529b\u6ce2/data/nanograv_15yr/NANOGrav15yr_PulsarTiming_v2.1.0/narrowband/tim/B1937+21_PINT_20220306.nb.tim"
+    },
+    {
+      "array": "NG15_TIMING",
+      "name": "B1953+29",
+      "parfile": "\u53c2\u8003\u7814\u7a76\u8bfe\u9898-PTA\u5f15\u529b\u6ce2/data/nanograv_15yr/NANOGrav15yr_PulsarTiming_v2.1.0/narrowband/par/B1953+29_PINT_20220301.nb.par",
+      "source": "par_tim",
+      "timfile": "\u53c2\u8003\u7814\u7a76\u8bfe\u9898-PTA\u5f15\u529b\u6ce2/data/nanograv_15yr/NANOGrav15yr_PulsarTiming_v2.1.0/narrowband/tim/B1953+29_PINT_20220301.nb.tim"
+    },
+    {
+      "array": "NG15_TIMING",
+      "name": "J0023+0923",
+      "parfile": "\u53c2\u8003\u7814\u7a76\u8bfe\u9898-PTA\u5f15\u529b\u6ce2/data/nanograv_15yr/NANOGrav15yr_PulsarTiming_v2.1.0/narrowband/par/J0023+0923_PINT_20220301.nb.par",
+      "source": "par_tim",
+      "timfile": "\u53c2\u8003\u7814\u7a76\u8bfe\u9898-PTA\u5f15\u529b\u6ce2/data/nanograv_15yr/NANOGrav15yr_PulsarTiming_v2.1.0/narrowband/tim/J0023+0923_PINT_20220301.nb.tim"
+    },
+    {
+      "array": "NG15_TIMING",
+      "name": "J0030+0451",
+      "parfile": "\u53c2\u8003\u7814\u7a76\u8bfe\u9898-PTA\u5f15\u529b\u6ce2/data/nanograv_15yr/NANOGrav15yr_PulsarTiming_v2.1.0/narrowband/par/J0030+0451_PINT_20220302.nb.par",
+      "source": "par_tim",
+      "timfile": "\u53c2\u8003\u7814\u7a76\u8bfe\u9898-PTA\u5f15\u529b\u6ce2/data/nanograv_15yr/NANOGrav15yr_PulsarTiming_v2.1.0/narrowband/tim/J0030+0451_PINT_20220302.nb.tim"
+    },
+    {
+      "array": "NG15_TIMING",
+      "name": "J0340+4130",
+      "parfile": "\u53c2\u8003\u7814\u7a76\u8bfe\u9898-PTA\u5f15\u529b\u6ce2/data/nanograv_15yr/NANOGrav15yr_PulsarTiming_v2.1.0/narrowband/par/J0340+4130_PINT_20220302.nb.par",
+      "source": "par_tim",
+      "timfile": "\u53c2\u8003\u7814\u7a76\u8bfe\u9898-PTA\u5f15\u529b\u6ce2/data/nanograv_15yr/NANOGrav15yr_PulsarTiming_v2.1.0/narrowband/tim/J0340+4130_PINT_20220302.nb.tim"
+    },
+    {
+      "array": "NG15_TIMING",
+      "name": "J0406+3039",
+      "parfile": "\u53c2\u8003\u7814\u7a76\u8bfe\u9898-PTA\u5f15\u529b\u6ce2/data/nanograv_15yr/NANOGrav15yr_PulsarTiming_v2.1.0/narrowband/par/J0406+3039_PINT_20220304.nb.par",
+      "source": "par_tim",
+      "timfile": "\u53c2\u8003\u7814\u7a76\u8bfe\u9898-PTA\u5f15\u529b\u6ce2/data/nanograv_15yr/NANOGrav15yr_PulsarTiming_v2.1.0/narrowband/tim/J0406+3039_PINT_20220304.nb.tim"
+    },
+    {
+      "array": "NG15_TIMING",
+      "name": "J0437-4715",
+      "parfile": "\u53c2\u8003\u7814\u7a76\u8bfe\u9898-PTA\u5f15\u529b\u6ce2/data/nanograv_15yr/NANOGrav15yr_PulsarTiming_v2.1.0/narrowband/par/J0437-4715_PINT_20220301.nb.par",
+      "source": "par_tim",
+      "timfile": "\u53c2\u8003\u7814\u7a76\u8bfe\u9898-PTA\u5f15\u529b\u6ce2/data/nanograv_15yr/NANOGrav15yr_PulsarTiming_v2.1.0/narrowband/tim/J0437-4715_PINT_20220301.nb.tim"
+    }
+  ],
+  "seed": 20260423,
+  "skipped_pulsars": [],
+  "status": "PASS",
+  "task": "P2 timing-level baseline pilot",
+  "tspan_seconds": 501144715.09652996,
+  "tspan_years": 15.88031773951536
+}

@@ -1,10 +1,10 @@
-# Calibrated PTA Evidence Favors Curved Spectra but Not a Unique Nanohertz Source
+# Calibrated PTA Evidence Identifies Low-Frequency Curvature but Not a Unique Nanohertz Source
 
 **Ran DUAN**  
 **Affiliation**: National Astronomical Observatories, Chinese Academy of Sciences  
 **Email**: duanran@nao.cas.cn
 
-**Code/data release**: Zenodo DOI `10.5281/zenodo.19688587`; GitHub mirror https://github.com/duan0004/paperdata, release `v1.0.1`, commit `2bc1dfeee7d452f6c3b58a8fd8f339e6ff0091f6`; bridge revision tag `prl-calibration-bridge-2026-04-23`.
+**Code/data release**: Zenodo DOI `10.5281/zenodo.19688587`; GitHub mirror https://github.com/duan0004/paperdata, release `v1.0.2`; bridge revision tag `prl-calibration-bridge-2026-04-23`.
 
 ## Abstract
 
@@ -40,7 +40,7 @@ The full HD production model contains 140 sampled parameters: 67 intrinsic-red-n
 
 ## III. Pipeline Validation
 
-We first validate against the public NANOGrav posterior products. Direct ingestion of the pre-sampled HD chain gives $\log_{10}A_\mathrm{HD,vg}=-14.20\pm0.13$ and $\gamma=3.25\pm0.35$, matching the published result \cite{NANOGrav_15yr_GWB}. This confirms the data loading, noise dictionary, and posterior parsing.
+We first validate against the public NANOGrav posterior products. Direct ingestion of the pre-sampled HD chain gives $\log_{10}A_\mathrm{HD}=-14.20\pm0.13$ and $\gamma=3.25\pm0.35$, matching the published result \cite{NANOGrav_15yr_GWB}. This confirms the data loading, noise dictionary, and posterior parsing.
 
 We then run our own HD PTMCMC chain. A $2\times10^6$-step warm chain gives
 $$
@@ -56,9 +56,9 @@ $$
 \ln\mathcal{L}(\theta)=\sum_{k=1}^{14}
 \ln\mathrm{KDE}_k\!\left[\log_{10}\rho_k^\mathrm{model}(\theta)\right].
 $$
-This local refit reproduces the qualitative NANOGrav ranking but not the published absolute values. With our semi-analytic templates, SIGW-Gaussian gives $\ln\mathcal{B}=-1.59\pm0.15$ relative to the fixed-$\gamma$ SMBHB baseline, while the deliberately flat stable-string proxy is strongly disfavored. Sensitivity sweeps show that KDE bandwidth, not nested-sampler seed or `nlive`, dominates this local-refit uncertainty.
+This local refit reproduces the qualitative NANOGrav ranking but not the published absolute values. With our semi-analytic templates, SIGW-Gaussian gives $\ln\mathcal{B}=-1.59\pm0.15$ relative to the fixed-$\gamma$ SMBHB baseline, while the deliberately flat stable-string proxy is strongly disfavored. The ablation identifies local density construction, rather than nested-sampler seed or `nlive`, as the main source of the absolute-evidence mismatch.
 
-We next isolate the source of the discrepancy. The released HD free-spectrum covariance is nearly diagonal: max $|\mathrm{corr}_{ij}|=0.227$, mean $|\mathrm{corr}_{ij}|=0.030$, and effective rank $13.56/14$. A CAR projection gives a negligible correction for SIGW-Gaussian versus SMBHB, $\Delta\ln\mathcal{Z}\simeq-0.006$ nat, and a modest correction for the poor flat-string proxy, $\simeq+1.31$ nat. Covariance restoration therefore cannot explain a multi-nat absolute-Bayes-factor gap.
+We next isolate the source of the discrepancy. The released HD free-spectrum covariance is nearly diagonal: max $|\mathrm{corr}_{ij}|=0.227$, mean $|\mathrm{corr}_{ij}|=0.030$, and effective rank $13.56/14$. A covariance-aware projection gives a negligible correction for SIGW-Gaussian versus SMBHB, $\Delta\ln\mathcal{Z}\simeq-0.006$ nat, and a modest correction for the poor flat-string proxy, $\simeq+1.31$ nat. Covariance restoration therefore cannot explain a multi-nat absolute-Bayes-factor gap.
 
 The decisive test uses the official NANOGrav/PTArcade model files and the official PTArcade `ceffyl` density product. PTArcade model files return $h^2\Omega_\mathrm{GW}$, so the residual conversion is
 $$
@@ -90,7 +90,7 @@ As an orthogonal diagnostic, we scan the number of retained Fourier bins. The fl
 
 The NANOGrav 15-yr data do not yet identify the physical origin of the background. On a calibrated evidence scale, current leading new-physics preferences are compressed into the same model-comparison tier as curved SMBHB spectra. The most robust near-term discriminant is spectral shape at low frequency. For GW-driven SMBHB backgrounds the reference scaling is $h^2\Omega_\mathrm{GW}\propto f^{2/3}$, while environmental or eccentric effects flatten this behavior at the lowest PTA frequencies. Peaked cosmological alternatives such as SIGW or first-order phase transitions rise causally as $f^3$ below their characteristic scale, while string-like spectra form a separate near-degenerate branch in the current PTA band. The cumulative-bin scan makes this quantitative: the lowest eight to ten Fourier bins already determine the matched-scale ranking to within $0.5$ nat for the leading stochastic templates. Consistently, the three curved-SMBHB controls project to $\gamma_\mathrm{eff}\simeq3.7$--$4.1$ across PPTA, NANOGrav, and EPTA windows without implying a unique astrophysical explanation.
 
-The practical lesson is methodological. A local free-spectrum KDE product is useful for fast diagnostics, but it is not automatically equivalent to the official PTArcade `ceffyl` density. For absolute Bayes factors at the sub-nat level, the official density product, the exact template implementation, and the matched SMBHB prior baseline must be used together; cosmological alternatives must also be calibrated against curved SMBHB controls. CAR/bin covariance is a useful diagnostic but is not the dominant error budget for the leading SIGW/string comparisons.
+The practical lesson is methodological. A local free-spectrum KDE product is useful for fast diagnostics, but it is not automatically equivalent to the official PTArcade `ceffyl` density. For absolute Bayes factors at the sub-nat level, the official density product, the exact template implementation, and the matched SMBHB prior baseline must be used together; cosmological alternatives must also be calibrated against curved SMBHB controls. Free-spectrum bin covariance is a useful diagnostic but is not the dominant error budget for the leading SIGW/string comparisons.
 
 ## VI. Conclusions
 

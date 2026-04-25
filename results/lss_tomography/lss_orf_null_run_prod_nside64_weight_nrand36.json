@@ -1,0 +1,11 @@
+{
+  "generated": "2026-04-25T09:52:37",
+  "tag": "prod_nside64_weight_nrand36",
+  "nside": 64,
+  "nulls": 128,
+  "seed": 20260425,
+  "n_pulsars": 67,
+  "n_pairs": 2211,
+  "summary": "results/lss_tomography/lss_orf_template_summary_prod_nside64_weight_nrand36.csv",
+  "null_summary": "results/lss_tomography/lss_orf_null_summary_prod_nside64_weight_nrand36.csv"
+}

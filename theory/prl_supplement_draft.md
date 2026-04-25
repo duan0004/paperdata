@@ -1,6 +1,6 @@
-# Supplemental Material: Calibrated PTA Evidence Favors Curved Spectra but Not a Unique Nanohertz Source
+# Supplemental Material: Calibrated PTA Evidence Identifies Low-Frequency Curvature but Not a Unique Nanohertz Source
 
-**Date**: 2026-04-23  
+**Date**: 2026-04-25  
 **Main draft**: `theory/paper_prl_submission.tex`  
 **Status**: Markdown mirror of the compiled supplement source
 `theory/prl_supplement.tex`.

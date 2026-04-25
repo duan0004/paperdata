@@ -1,9 +1,9 @@
-# Calibrated PTA Evidence Favors Curved Spectra but Not a Unique Nanohertz Source
+# Calibrated PTA Evidence Identifies Low-Frequency Curvature but Not a Unique Nanohertz Source
 
 This repository contains the code, data products, derived evidence tables, and
 manuscript files for the PRL submission:
 
-**Calibrated PTA Evidence Favors Curved Spectra but Not a Unique Nanohertz Source**  
+**Calibrated PTA Evidence Identifies Low-Frequency Curvature but Not a Unique Nanohertz Source**  
 Ran DUAN, National Astronomical Observatories, Chinese Academy of Sciences, duanran@nao.cas.cn
 
 ## Contents
@@ -20,6 +20,9 @@ Ran DUAN, National Astronomical Observatories, Chinese Academy of Sciences, duan
 - `results/prl_reference_bridge/`: P0--P6 cross-PTA posterior-summary bridge
   outputs, including local3/hybrid3 evidence rankings, family evidence,
   gamma projections, frequency-cut diagnostics, and robustness checks.
+- `results/5pta_timing/` and `results/lss_tomography/`: local production-gate
+  diagnostics for timing-level and LSS-tomography follow-up work. These files
+  are included for transparency and are not used as evidence in the Letter.
 - `theory/`: REVTeX manuscript source, supplement source, cover letter draft,
   and compiled PDFs.
 - `environment.yml`: pinned Python environment used for the saved results.
@@ -58,6 +61,7 @@ python3 -m py_compile code/prl_*.py
 python3 code/prl_decisive_evidence_figure.py
 python3 code/prl_bridge_evidence_figure.py
 python3 code/prl_H10_systematic_envelope.py
+python3 code/prl_final_stability_diagnostics.py
 python3 code/prl_package_static_gate.py
 ```
 
@@ -81,6 +85,10 @@ is ready only when the manuscript points to this public repository.
   `results/T2_NG15yr/bayes_factors/prl_H9_bin_driver_analysis.json`
 - Static package gate:
   `results/T2_NG15yr/prl_package_static_gate.json`
+- Final PRL stability diagnostics:
+  `results/T2_NG15yr/bayes_factors/prl_final_stability_diagnostics.json`
+- Timing/LSS production-gate diagnostics:
+  `results/5pta_timing/` and `results/lss_tomography/`
 
 The full nested-sampling sweeps are reproducible from the included scripts and
 data, but they are computationally heavier than the figure/static-gate checks.

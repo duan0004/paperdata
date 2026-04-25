@@ -1,6 +1,6 @@
 # PRL Evidence Cross-Check: Sobol-QMC Thermodynamic Integration
 
-**Generated**: 2026-04-21 16:56:11
+**Generated**: 2026-04-25 09:33:45
 **JSON**: `results/T2_NG15yr/bayes_factors/prl_evidence_ti_qmc_crosscheck.json`
 
 ## Method

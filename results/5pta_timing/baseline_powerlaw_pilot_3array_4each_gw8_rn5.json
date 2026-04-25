@@ -1,0 +1,172 @@
+{
+  "arrays": [
+    "NG15_TIMING",
+    "EPTA",
+    "PPTA"
+  ],
+  "components_gw": 8,
+  "components_rn": 5,
+  "ephem": "FROM_PAR",
+  "epta_variant": "DR2new+",
+  "exclude_pulsars": [],
+  "generated": "2026-04-25T10:04:10",
+  "include_red_noise": true,
+  "lnlikelihood": 709610.5056703854,
+  "lnprior": -53.27296477818781,
+  "max_per_array": 4,
+  "missing_white_noise_parameters": [],
+  "n_noise_parameters": 1060,
+  "n_pulsars": 12,
+  "ndim": 26,
+  "noise_provenance": {
+    "EPTA": [
+      "data/EPTA_DR2/epta-dr2/EPTA-DR2/noisefiles/DR2new+/J0030+0451_noise.json",
+      "data/EPTA_DR2/epta-dr2/EPTA-DR2/noisefiles/DR2new+/J0613-0200_noise.json",
+      "data/EPTA_DR2/epta-dr2/EPTA-DR2/noisefiles/DR2new+/J0751+1807_noise.json",
+      "data/EPTA_DR2/epta-dr2/EPTA-DR2/noisefiles/DR2new+/J0900-3144_noise.json"
+    ],
+    "NG15": "data/NG15yr/tutorials/data/15yr_wn_dict.json",
+    "PPTA": [
+      "data/PPTA_DR3/ppta_dr3/toas_and_parameters/noisefiles/J0030+0451_singlePsrNoise_sw_nesw0_noise.json",
+      "data/PPTA_DR3/ppta_dr3/toas_and_parameters/noisefiles/J0613-0200_singlePsrNoise_sw_nesw0_noise.json",
+      "data/PPTA_DR3/ppta_dr3/toas_and_parameters/noisefiles/J0900-3144_singlePsrNoise_sw_nesw0_noise.json",
+      "data/PPTA_DR3/ppta_dr3/toas_and_parameters/noisefiles/J0125-2327_singlePsrNoise_sw_nesw0_noise.json",
+      "data/PPTA_DR3/ppta_dr3/toas_and_parameters/noisefiles/J0437-4715_singlePsrNoise_sw_nesw0_noise.json",
+      "data/PPTA_DR3/ppta_dr3/toas_and_parameters/noisefiles/J0614-3329_singlePsrNoise_sw_nesw0_noise.json",
+      "data/PPTA_DR3/ppta_dr3/toas_and_parameters/noisefiles/J0711-6830_singlePsrNoise_sw_nesw0_noise.json"
+    ]
+  },
+  "output_tag": "baseline_powerlaw_pilot_3array_4each_gw8_rn5",
+  "param_names": [
+    "B1855+09_red_noise_gamma",
+    "B1855+09_red_noise_log10_A",
+    "B1937+21_red_noise_gamma",
+    "B1937+21_red_noise_log10_A",
+    "B1953+29_red_noise_gamma",
+    "B1953+29_red_noise_log10_A",
+    "J0023+0923_red_noise_gamma",
+    "J0023+0923_red_noise_log10_A",
+    "J0030+0451_red_noise_gamma",
+    "J0030+0451_red_noise_log10_A",
+    "J0125-2327_red_noise_gamma",
+    "J0125-2327_red_noise_log10_A",
+    "J0437-4715_red_noise_gamma",
+    "J0437-4715_red_noise_log10_A",
+    "J0613-0200_red_noise_gamma",
+    "J0613-0200_red_noise_log10_A",
+    "J0614-3329_red_noise_gamma",
+    "J0614-3329_red_noise_log10_A",
+    "J0711-6830_red_noise_gamma",
+    "J0711-6830_red_noise_log10_A",
+    "J0751+1807_red_noise_gamma",
+    "J0751+1807_red_noise_log10_A",
+    "J0900-3144_red_noise_gamma",
+    "J0900-3144_red_noise_log10_A",
+    "gamma_gw",
+    "log10_A_gw"
+  ],
+  "ppta_noise_aliases": [],
+  "pulsars": [
+    {
+      "array": "NG15_TIMING",
+      "name": "B1855+09",
+      "parfile": "\u53c2\u8003\u7814\u7a76\u8bfe\u9898-PTA\u5f15\u529b\u6ce2/data/nanograv_15yr/NANOGrav15yr_PulsarTiming_v2.1.0/narrowband/par/B1855+09_PINT_20220301.nb.par",
+      "source": "par_tim",
+      "timfile": "\u53c2\u8003\u7814\u7a76\u8bfe\u9898-PTA\u5f15\u529b\u6ce2/data/nanograv_15yr/NANOGrav15yr_PulsarTiming_v2.1.0/narrowband/tim/B1855+09_PINT_20220301.nb.tim"
+    },
+    {
+      "array": "NG15_TIMING",
+      "name": "B1937+21",
+      "parfile": "\u53c2\u8003\u7814\u7a76\u8bfe\u9898-PTA\u5f15\u529b\u6ce2/data/nanograv_15yr/NANOGrav15yr_PulsarTiming_v2.1.0/narrowband/par/B1937+21_PINT_20220306.nb.par",
+      "source": "par_tim",
+      "timfile": "\u53c2\u8003\u7814\u7a76\u8bfe\u9898-PTA\u5f15\u529b\u6ce2/data/nanograv_15yr/NANOGrav15yr_PulsarTiming_v2.1.0/narrowband/tim/B1937+21_PINT_20220306.nb.tim"
+    },
+    {
+      "array": "NG15_TIMING",
+      "name": "B1953+29",
+      "parfile": "\u53c2\u8003\u7814\u7a76\u8bfe\u9898-PTA\u5f15\u529b\u6ce2/data/nanograv_15yr/NANOGrav15yr_PulsarTiming_v2.1.0/narrowband/par/B1953+29_PINT_20220301.nb.par",
+      "source": "par_tim",
+      "timfile": "\u53c2\u8003\u7814\u7a76\u8bfe\u9898-PTA\u5f15\u529b\u6ce2/data/nanograv_15yr/NANOGrav15yr_PulsarTiming_v2.1.0/narrowband/tim/B1953+29_PINT_20220301.nb.tim"
+    },
+    {
+      "array": "NG15_TIMING",
+      "name": "J0023+0923",
+      "parfile": "\u53c2\u8003\u7814\u7a76\u8bfe\u9898-PTA\u5f15\u529b\u6ce2/data/nanograv_15yr/NANOGrav15yr_PulsarTiming_v2.1.0/narrowband/par/J0023+0923_PINT_20220301.nb.par",
+      "source": "par_tim",
+      "timfile": "\u53c2\u8003\u7814\u7a76\u8bfe\u9898-PTA\u5f15\u529b\u6ce2/data/nanograv_15yr/NANOGrav15yr_PulsarTiming_v2.1.0/narrowband/tim/J0023+0923_PINT_20220301.nb.tim"
+    },
+    {
+      "array": "EPTA",
+      "name": "J0030+0451",
+      "parfile": "data/EPTA_DR2/epta-dr2/EPTA-DR2/DR2new+/J0030+0451/J0030+0451.par",
+      "source": "par_tim",
+      "timfile": "data/EPTA_DR2/epta-dr2/EPTA-DR2/DR2new+/J0030+0451/J0030+0451_all.tim"
+    },
+    {
+      "array": "EPTA",
+      "name": "J0613-0200",
+      "parfile": "data/EPTA_DR2/epta-dr2/EPTA-DR2/DR2new+/J0613-0200/J0613-0200.par",
+      "source": "par_tim",
+      "timfile": "data/EPTA_DR2/epta-dr2/EPTA-DR2/DR2new+/J0613-0200/J0613-0200_all.tim"
+    },
+    {
+      "array": "EPTA",
+      "name": "J0751+1807",
+      "parfile": "data/EPTA_DR2/epta-dr2/EPTA-DR2/DR2new+/J0751+1807/J0751+1807.par",
+      "source": "par_tim",
+      "timfile": "data/EPTA_DR2/epta-dr2/EPTA-DR2/DR2new+/J0751+1807/J0751+1807_all.tim"
+    },
+    {
+      "array": "EPTA",
+      "name": "J0900-3144",
+      "parfile": "data/EPTA_DR2/epta-dr2/EPTA-DR2/DR2new+/J0900-3144/J0900-3144.par",
+      "source": "par_tim",
+      "timfile": "data/EPTA_DR2/epta-dr2/EPTA-DR2/DR2new+/J0900-3144/J0900-3144_all.tim"
+    },
+    {
+      "array": "PPTA",
+      "name": "J0125-2327",
+      "parfile": "data/PPTA_DR3_github/analysis_codes/data/all/J0125-2327.par",
+      "source": "par_tim",
+      "timfile": "data/PPTA_DR3_github/analysis_codes/data/all/J0125-2327.tim"
+    },
+    {
+      "array": "PPTA",
+      "name": "J0437-4715",
+      "parfile": "data/PPTA_DR3_github/analysis_codes/data/all/J0437-4715.par",
+      "source": "par_tim",
+      "timfile": "data/PPTA_DR3_github/analysis_codes/data/all/J0437-4715.tim"
+    },
+    {
+      "array": "PPTA",
+      "name": "J0614-3329",
+      "parfile": "data/PPTA_DR3_github/analysis_codes/data/all/J0614-3329.par",
+      "source": "par_tim",
+      "timfile": "data/PPTA_DR3_github/analysis_codes/data/all/J0614-3329.tim"
+    },
+    {
+      "array": "PPTA",
+      "name": "J0711-6830",
+      "parfile": "data/PPTA_DR3_github/analysis_codes/data/all/J0711-6830.par",
+      "source": "par_tim",
+      "timfile": "data/PPTA_DR3_github/analysis_codes/data/all/J0711-6830.tim"
+    }
+  ],
+  "seed": 20260423,
+  "skipped_pulsars": [
+    {
+      "array": "PPTA",
+      "name": "J0030+0451",
+      "reason": "duplicate pulsar name in pilot namespace"
+    },
+    {
+      "array": "PPTA",
+      "name": "J0613-0200",
+      "reason": "duplicate pulsar name in pilot namespace"
+    }
+  ],
+  "status": "PASS",
+  "task": "P2 timing-level baseline pilot",
+  "tspan_seconds": 570585970.7349472,
+  "tspan_years": 18.080778346101958
+}

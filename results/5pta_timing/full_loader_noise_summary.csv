@@ -1,0 +1,7 @@
+test_label,array,status,expected_pairs,available_pulsars,loaded,failures,json
+NG15,NG15,PASS,67,67,67,0,results/5pta_timing/full_loader_noise_NG15.json
+EPTA_DR2new+,EPTA,PASS,25,25,25,0,results/5pta_timing/full_loader_noise_EPTA_DR2new+.json
+PPTA_DR3,PPTA,PASS,32,32,32,0,results/5pta_timing/full_loader_noise_PPTA_DR3.json
+InPTA_DR1_NB,InPTA_DR1_NB,PARTIAL,14,14,13,1,results/5pta_timing/full_loader_noise_InPTA_DR1_NB.json
+InPTA_DR1_WB,InPTA_DR1_WB,FAIL,14,14,0,14,results/5pta_timing/full_loader_noise_InPTA_DR1_WB.json
+MPTA_4p5yr,MPTA_4p5yr,PASS,83,83,83,0,results/5pta_timing/full_loader_noise_MPTA_4p5yr.json

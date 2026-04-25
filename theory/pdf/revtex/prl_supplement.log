@@ -275,12 +275,14 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 86.
 )
 \Hy@SectionHShift=\skip54
+) (placeins.sty
+Package: placeins 2005/04/18  v 2.2
 )
 Class revtex4-2 Info: Unrecognized LaTeX tabular. Please update this document c
-lass! (Proceeding with fingers crossed.) on input line 7.
-Class revtex4-2 Info: cite was not loaded (OK!) on input line 7.
-Class revtex4-2 Info: mcite was not loaded (OK!) on input line 7.
-Class revtex4-2 Info: multicol was not loaded (OK!) on input line 7.
+lass! (Proceeding with fingers crossed.) on input line 8.
+Class revtex4-2 Info: cite was not loaded (OK!) on input line 8.
+Class revtex4-2 Info: mcite was not loaded (OK!) on input line 8.
+Class revtex4-2 Info: multicol was not loaded (OK!) on input line 8.
  (l3backend-xetex.def
 File: l3backend-xetex.def 2022-02-07 L3 backend support: XeTeX
 \c__kernel_sys_dvipdfmx_version_int=\count287
@@ -295,32 +297,32 @@ File: l3backend-xetex.def 2022-02-07 L3 backend support: XeTeX
 (prl_supplement.aux)
 \openout1 = `prl_supplement.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 7.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 7
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 8.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 8
 .
  (ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-Package hyperref Info: Link coloring OFF on input line 7.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+Package hyperref Info: Link coloring OFF on input line 8.
  (nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (refcount.sty
@@ -331,34 +333,34 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count294
 )
-LaTeX Info: Redefining \ref on input line 7.
-LaTeX Info: Redefining \pageref on input line 7.
-LaTeX Info: Redefining \nameref on input line 7.
+LaTeX Info: Redefining \ref on input line 8.
+LaTeX Info: Redefining \pageref on input line 8.
+LaTeX Info: Redefining \nameref on input line 8.
  (prl_supplement.out) (prl_supplement.out)
 \@outlinefile=\write4
 \openout4 = `prl_supplement.out'.
 
-Class revtex4-2 Info: Taking \maketitle back from hyperref on input line 7.
+Class revtex4-2 Info: Taking \maketitle back from hyperref on input line 8.
 \openout3 = `prl_supplementNotes.bib'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 16.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 17.
 
  (umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 16.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 17.
 
 
 (umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1]
-Underfull \hbox (badness 10000) in paragraph at lines 103--105
+Underfull \hbox (badness 10000) in paragraph at lines 105--107
 []\TU/lmr/m/n/9 Gaussian prior on $\OT1/cmr/m/n/9 ([][] \OML/cmm/m/it/9 A; ^^M\
 OT1/cmr/m/n/9 )$ \TU/lmr/m/n/9 with $\OML/cmm/m/it/9 ^^V \OT1/cmr/m/n/9 =
  []
 
 
-Underfull \hbox (badness 2671) in paragraph at lines 106--107
+Underfull \hbox (badness 2671) in paragraph at lines 108--109
 []$[][] \OML/cmm/m/it/9 f[] \OMS/cmsy/m/n/9 ^^X \OML/cmm/m/it/9 U\OT1/cmr/m/n/9
  [\OMS/cmsy/m/n/9 ^^@\OT1/cmr/m/n/9 11\OML/cmm/m/it/9 ; \OMS/cmsy/m/n/9 ^^@\OT1
 /cmr/m/n/9 5]$\TU/lmr/m/n/9 , width $\OMS/cmsy/m/n/9 ^^X \OML/cmm/m/it/9 U\OT1/
@@ -367,48 +369,84 @@ cmr/m/n/9 [0\OML/cmm/m/it/9 :\OT1/cmr/m/n/9 1\OML/cmm/m/it/9 ; \OT1/cmr/m/n/9 3
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--114
+Underfull \hbox (badness 10000) in paragraph at lines 116--116
 []\TU/lmr/m/n/9 Environmental
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 117--118
+Underfull \hbox (badness 10000) in paragraph at lines 119--120
 []\TU/lmr/m/n/9 SMBHB environmental-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 117--118
+Underfull \hbox (badness 10000) in paragraph at lines 119--120
 \TU/lmr/m/n/9 hardening control moti-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 117--118
+Underfull \hbox (badness 10000) in paragraph at lines 119--120
 \TU/lmr/m/n/9 vated by arXiv:1211.5375 and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 119--121
+Underfull \hbox (badness 10000) in paragraph at lines 121--123
 []$[][] \OML/cmm/m/it/9 A \OMS/cmsy/m/n/9 ^^X \OML/cmm/m/it/9 U\OT1/cmr/m/n/9 [
 \OMS/cmsy/m/n/9 ^^@\OT1/cmr/m/n/9 18\OML/cmm/m/it/9 ; \OMS/cmsy/m/n/9 ^^@\OT1/c
 mr/m/n/9 11]$\TU/lmr/m/n/9 , $[][] \OML/cmm/m/it/9 f[] \OMS/cmsy/m/n/9 ^^X
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 122--122
+Underfull \hbox (badness 10000) in paragraph at lines 124--124
 []\TU/lmr/m/n/9 phenomenological low-frequency
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 125--126
+Underfull \hbox (badness 10000) in paragraph at lines 127--128
 []\TU/lmr/m/n/9 phenomenological eccentricity-
  []
 
-[2] [3]
+[2] [3] [4]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[4] [5] (prl_supplement.bbl [6]) [7] (prl_supplement.aux)
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[5]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[6]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[7]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[8] [9] [10] (prl_supplement.bbl) [11] (prl_supplement.aux)
 Package rerunfilecheck Info: File `prl_supplement.out' has not changed.
-(rerunfilecheck)             Checksum: CF6E09E975032835C3DA7BA14672D396;4397.
+(rerunfilecheck)             Checksum: 9B3D31009BB081B04F91A046A9E5DAAE;5577.
  )
-Output written on prl_supplement.xdv (7 pages, 139480 bytes).
+Output written on prl_supplement.xdv (11 pages, 261188 bytes).

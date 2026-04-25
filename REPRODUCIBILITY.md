@@ -1,13 +1,13 @@
 # Reproducibility Manifest
 
 **Project**: PTA stochastic-GWB spectral-template comparison with NANOGrav 15yr data  
-**Last updated**: 2026-04-23  
+**Last updated**: 2026-04-25  
 **Archived release DOI**: `10.5281/zenodo.19688587`  
 **Archived release URL**: `https://doi.org/10.5281/zenodo.19688587`  
 **Public repository**: `https://github.com/duan0004/paperdata`  
-**GitHub release tag**: `v1.0.1`  
+**GitHub release tag**: `v1.0.2`  
 **Cross-PTA bridge revision tag**: `prl-calibration-bridge-2026-04-23`  
-**Submission package commit**: `2bc1dfeee7d452f6c3b58a8fd8f339e6ff0091f6`  
+**Submission package commit**: see the annotated Git tag `v1.0.2`  
 **Runtime used for saved results**: Python 3.9.6 on macOS 26.0 arm64
 
 This manifest records the local environment, input data fingerprints, and
@@ -76,6 +76,11 @@ Additional NANOGrav pre-sampled cores used by the analysis are under
 | PRL package static gate | `results/T2_NG15yr/prl_package_static_gate.json` |
 | PRL ceffyl plateau diagnostic | `results/T2_NG15yr/bayes_factors/prl_ceffyl_plateau_diagnostic.json` |
 | PRL sequential anchored bridge ablation | `results/prl_reference_bridge/sequential_bridge_ablation.csv` |
+| Final PRL stability diagnostics | `results/T2_NG15yr/bayes_factors/prl_final_stability_diagnostics.json` |
+| Final environmental-prior sensitivity table | `results/T2_NG15yr/bayes_factors/prl_final_environmental_prior_sensitivity.csv` |
+| Final uncertainty budget | `results/T2_NG15yr/bayes_factors/prl_final_uncertainty_budget.csv` |
+| Timing-level production-gate diagnostics | `results/5pta_timing/` |
+| LSS-tomography production-gate diagnostics | `results/lss_tomography/` |
 
 ## Minimal Verification Commands
 
@@ -99,6 +104,13 @@ python3 -m py_compile \
   code/prl_evidence_ti_qmc_crosscheck.py \
   code/prl_reference_bridge_pipeline.py \
   code/prl_ceffyl_plateau_diagnostic.py \
+  code/prl_final_stability_diagnostics.py \
+  code/smbhb_population_controls.py \
+  code/pta_identifiability_ppc.py \
+  code/lss_tomography_manifest.py \
+  code/lss_2mpz_lowell_reference_gate.py \
+  code/manifest_v2_baseline_gate.py \
+  code/pta_full_loader_noise_tests.py \
   code/prl_package_static_gate.py
 ```
 
@@ -131,15 +143,31 @@ python3 code/prl_decisive_evidence_figure.py
 python3 code/prl_H10_systematic_envelope.py
 python3 code/prl_reference_bridge_pipeline.py p2seq --profile production
 python3 code/prl_ceffyl_plateau_diagnostic.py
+python3 code/prl_final_stability_diagnostics.py
+python3 code/smbhb_population_controls.py
 tectonic --keep-logs -o theory/pdf/revtex theory/paper_prl_submission.tex
 tectonic --keep-logs -o theory/pdf/revtex theory/prl_supplement.tex
 python3 code/prl_package_static_gate.py
 ```
 
-As of 2026-04-23, Tectonic is available locally and the REVTeX main text and
+The timing-level and LSS production-gate diagnostics can be refreshed with:
+
+```bash
+python3 code/pta_full_loader_noise_tests.py
+python3 code/manifest_v2_baseline_gate.py --tag 2026-04-25-local-refresh
+python3 code/pta_direct_combination_manifest_audit.py --backend NB --tag 2026-04-25-local-refresh
+python3 code/pta_direct_combination_manifest_audit.py --backend WB --tag 2026-04-25-local-refresh
+python3 code/lss_tomography_manifest.py
+python3 code/lss_2mpz_lowell_reference_gate.py --nside 64 --tag prod_nside64_lowell_update_20260425 --nulls 128 --seed 20260425
+```
+
+These production-gate diagnostics are included for transparency. They are not
+used as source-identification evidence because the required public timing-level
+and NG15+2MPZ LSS baselines have not yet been reproduced.
+
+As of 2026-04-25, Tectonic is available locally and the REVTeX main text and
 supplement compile to `theory/pdf/revtex/`.  The public code/data release is
 archived at Zenodo DOI `10.5281/zenodo.19688587` and mirrored at
-`https://github.com/duan0004/paperdata`, release `v1.0.1`, commit
-`2bc1dfeee7d452f6c3b58a8fd8f339e6ff0091f6`.  The cross-PTA bridge
-revision used by the current draft is mirrored at GitHub tag
+`https://github.com/duan0004/paperdata`, release `v1.0.2`.  The cross-PTA
+bridge revision used by the current draft is also mirrored at GitHub tag
 `prl-calibration-bridge-2026-04-23`.

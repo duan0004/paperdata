@@ -1,0 +1,5 @@
+model,physical_status,lnB,sample_std,gap_to_sigw_gaussian,gap_to_sigw_delta,gap_to_superstrings,interpretation
+env_fixed_gamma,physical control,3.45330777903,0.0616299923763,1.0666183222550565,0.4764267480286075,0.10426980652192519,SMBHB environmental-hardening spectral control
+env_free_gamma,physical control with extra spectral freedom,3.36018740546,0.202384934319,1.1597386958250566,0.5695471215986077,0.19739018009192533,environmental-hardening control plus free effective gamma
+env_broadbend_fixed_gamma,physical-prior sensitivity,2.9924843697,0.1416424292,1.5274417315850566,0.9372501573586076,0.5650932158519253,environmental-hardening prior-range sensitivity
+env_lowbend_fixed_gamma,physical-prior sensitivity,2.66574528166,0.102815452059,1.8541808196250567,1.2639892453986077,0.8918323038919254,environmental-hardening prior-range sensitivity

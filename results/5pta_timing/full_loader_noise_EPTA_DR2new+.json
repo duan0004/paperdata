@@ -1,0 +1,264 @@
+{
+  "array": "EPTA",
+  "available_pulsars": 25,
+  "ephem": "FROM_PAR",
+  "expected_pairs": 25,
+  "failures": [],
+  "loaded_pulsars": [
+    {
+      "mjd_max": 59294.678146480175,
+      "mjd_min": 55722.48033738443,
+      "n_toas": 3347,
+      "name": "J0030+0451",
+      "parfile": "data/EPTA_DR2/epta-dr2/EPTA-DR2/DR2new+/J0030+0451/J0030+0451.par",
+      "source": "par_tim",
+      "timfile": "data/EPTA_DR2/epta-dr2/EPTA-DR2/DR2new+/J0030+0451/J0030+0451_all.tim",
+      "toaerr_median_s": 3.6259999999999997e-06
+    },
+    {
+      "mjd_max": 59635.555220054186,
+      "mjd_min": 55614.72352604391,
+      "n_toas": 2260,
+      "name": "J0613-0200",
+      "parfile": "data/EPTA_DR2/epta-dr2/EPTA-DR2/DR2new+/J0613-0200/J0613-0200.par",
+      "source": "par_tim",
+      "timfile": "data/EPTA_DR2/epta-dr2/EPTA-DR2/DR2new+/J0613-0200/J0613-0200_all.tim",
+      "toaerr_median_s": 1.544e-06
+    },
+    {
+      "mjd_max": 59635.52737905482,
+      "mjd_min": 55611.96732200053,
+      "n_toas": 2674,
+      "name": "J0751+1807",
+      "parfile": "data/EPTA_DR2/epta-dr2/EPTA-DR2/DR2new+/J0751+1807/J0751+1807.par",
+      "source": "par_tim",
+      "timfile": "data/EPTA_DR2/epta-dr2/EPTA-DR2/DR2new+/J0751+1807/J0751+1807_all.tim",
+      "toaerr_median_s": 2.0295e-06
+    },
+    {
+      "mjd_max": 59269.92497292373,
+      "mjd_min": 55669.75965403101,
+      "n_toas": 5525,
+      "name": "J0900-3144",
+      "parfile": "data/EPTA_DR2/epta-dr2/EPTA-DR2/DR2new+/J0900-3144/J0900-3144.par",
+      "source": "par_tim",
+      "timfile": "data/EPTA_DR2/epta-dr2/EPTA-DR2/DR2new+/J0900-3144/J0900-3144_all.tim",
+      "toaerr_median_s": 3.1749999999999997e-06
+    },
+    {
+      "mjd_max": 59635.58788366103,
+      "mjd_min": 55614.9120350206,
+      "n_toas": 4586,
+      "name": "J1012+5307",
+      "parfile": "data/EPTA_DR2/epta-dr2/EPTA-DR2/DR2new+/J1012+5307/J1012+5307.par",
+      "source": "par_tim",
+      "timfile": "data/EPTA_DR2/epta-dr2/EPTA-DR2/DR2new+/J1012+5307/J1012+5307_all.tim",
+      "toaerr_median_s": 2.1165e-06
+    },
+    {
+      "mjd_max": 59627.679822325,
+      "mjd_min": 55612.02906204944,
+      "n_toas": 2619,
+      "name": "J1022+1001",
+      "parfile": "data/EPTA_DR2/epta-dr2/EPTA-DR2/DR2new+/J1022+1001/J1022+1001.par",
+      "source": "par_tim",
+      "timfile": "data/EPTA_DR2/epta-dr2/EPTA-DR2/DR2new+/J1022+1001/J1022+1001_all.tim",
+      "toaerr_median_s": 3.612e-06
+    },
+    {
+      "mjd_max": 59294.97101008958,
+      "mjd_min": 55614.98785594488,
+      "n_toas": 2112,
+      "name": "J1024-0719",
+      "parfile": "data/EPTA_DR2/epta-dr2/EPTA-DR2/DR2new+/J1024-0719/J1024-0719.par",
+      "source": "par_tim",
+      "timfile": "data/EPTA_DR2/epta-dr2/EPTA-DR2/DR2new+/J1024-0719/J1024-0719_all.tim",
+      "toaerr_median_s": 2.511e-06
+    },
+    {
+      "mjd_max": 59117.604087018975,
+      "mjd_min": 55732.89069258315,
+      "n_toas": 2433,
+      "name": "J1455-3330",
+      "parfile": "data/EPTA_DR2/epta-dr2/EPTA-DR2/DR2new+/J1455-3330/J1455-3330.par",
+      "source": "par_tim",
+      "timfile": "data/EPTA_DR2/epta-dr2/EPTA-DR2/DR2new+/J1455-3330/J1455-3330_all.tim",
+      "toaerr_median_s": 7.716e-06
+    },
+    {
+      "mjd_max": 59630.098709728896,
+      "mjd_min": 55612.1863241984,
+      "n_toas": 2868,
+      "name": "J1600-3053",
+      "parfile": "data/EPTA_DR2/epta-dr2/EPTA-DR2/DR2new+/J1600-3053/J1600-3053.par",
+      "source": "par_tim",
+      "timfile": "data/EPTA_DR2/epta-dr2/EPTA-DR2/DR2new+/J1600-3053/J1600-3053_all.tim",
+      "toaerr_median_s": 5.79e-07
+    },
+    {
+      "mjd_max": 59385.10093125502,
+      "mjd_min": 55653.03711457728,
+      "n_toas": 1546,
+      "name": "J1640+2224",
+      "parfile": "data/EPTA_DR2/epta-dr2/EPTA-DR2/DR2new+/J1640+2224/J1640+2224.par",
+      "source": "par_tim",
+      "timfile": "data/EPTA_DR2/epta-dr2/EPTA-DR2/DR2new+/J1640+2224/J1640+2224_all.tim",
+      "toaerr_median_s": 3.5915000000000003e-06
+    },
+    {
+      "mjd_max": 59309.06023476409,
+      "mjd_min": 55615.063705859924,
+      "n_toas": 4539,
+      "name": "J1713+0747",
+      "parfile": "data/EPTA_DR2/epta-dr2/EPTA-DR2/DR2new+/J1713+0747/J1713+0747.par",
+      "source": "par_tim",
+      "timfile": "data/EPTA_DR2/epta-dr2/EPTA-DR2/DR2new+/J1713+0747/J1713+0747_all.tim",
+      "toaerr_median_s": 4.12e-07
+    },
+    {
+      "mjd_max": 59279.39094373937,
+      "mjd_min": 55652.24775016186,
+      "n_toas": 1163,
+      "name": "J1730-2304",
+      "parfile": "data/EPTA_DR2/epta-dr2/EPTA-DR2/DR2new+/J1730-2304/J1730-2304.par",
+      "source": "par_tim",
+      "timfile": "data/EPTA_DR2/epta-dr2/EPTA-DR2/DR2new+/J1730-2304/J1730-2304_all.tim",
+      "toaerr_median_s": 1.6069999999999998e-06
+    },
+    {
+      "mjd_max": 59259.34701061052,
+      "mjd_min": 55615.219980522335,
+      "n_toas": 749,
+      "name": "J1738+0333",
+      "parfile": "data/EPTA_DR2/epta-dr2/EPTA-DR2/DR2new+/J1738+0333/J1738+0333.par",
+      "source": "par_tim",
+      "timfile": "data/EPTA_DR2/epta-dr2/EPTA-DR2/DR2new+/J1738+0333/J1738+0333_all.tim",
+      "toaerr_median_s": 4.033e-06
+    },
+    {
+      "mjd_max": 59644.160113298705,
+      "mjd_min": 55670.24423410423,
+      "n_toas": 1890,
+      "name": "J1744-1134",
+      "parfile": "data/EPTA_DR2/epta-dr2/EPTA-DR2/DR2new+/J1744-1134/J1744-1134.par",
+      "source": "par_tim",
+      "timfile": "data/EPTA_DR2/epta-dr2/EPTA-DR2/DR2new+/J1744-1134/J1744-1134_all.tim",
+      "toaerr_median_s": 1.051e-06
+    },
+    {
+      "mjd_max": 59111.770633953965,
+      "mjd_min": 55668.13536824262,
+      "n_toas": 305,
+      "name": "J1751-2857",
+      "parfile": "data/EPTA_DR2/epta-dr2/EPTA-DR2/DR2new+/J1751-2857/J1751-2857.par",
+      "source": "par_tim",
+      "timfile": "data/EPTA_DR2/epta-dr2/EPTA-DR2/DR2new+/J1751-2857/J1751-2857_all.tim",
+      "toaerr_median_s": 3.436e-06
+    },
+    {
+      "mjd_max": 59214.537705000344,
+      "mjd_min": 55655.37435445618,
+      "n_toas": 384,
+      "name": "J1801-1417",
+      "parfile": "data/EPTA_DR2/epta-dr2/EPTA-DR2/DR2new+/J1801-1417/J1801-1417.par",
+      "source": "par_tim",
+      "timfile": "data/EPTA_DR2/epta-dr2/EPTA-DR2/DR2new+/J1801-1417/J1801-1417_all.tim",
+      "toaerr_median_s": 4.323e-06
+    },
+    {
+      "mjd_max": 59145.68355644534,
+      "mjd_min": 55660.17714966309,
+      "n_toas": 648,
+      "name": "J1804-2717",
+      "parfile": "data/EPTA_DR2/epta-dr2/EPTA-DR2/DR2new+/J1804-2717/J1804-2717.par",
+      "source": "par_tim",
+      "timfile": "data/EPTA_DR2/epta-dr2/EPTA-DR2/DR2new+/J1804-2717/J1804-2717_all.tim",
+      "toaerr_median_s": 5.8035e-06
+    },
+    {
+      "mjd_max": 59293.39253549726,
+      "mjd_min": 55611.436606423194,
+      "n_toas": 736,
+      "name": "J1843-1113",
+      "parfile": "data/EPTA_DR2/epta-dr2/EPTA-DR2/DR2new+/J1843-1113/J1843-1113.par",
+      "source": "par_tim",
+      "timfile": "data/EPTA_DR2/epta-dr2/EPTA-DR2/DR2new+/J1843-1113/J1843-1113_all.tim",
+      "toaerr_median_s": 1.3835e-06
+    },
+    {
+      "mjd_max": 59630.2137246015,
+      "mjd_min": 55614.35728595,
+      "n_toas": 1915,
+      "name": "J1857+0943",
+      "parfile": "data/EPTA_DR2/epta-dr2/EPTA-DR2/DR2new+/J1857+0943/J1857+0943.par",
+      "source": "par_tim",
+      "timfile": "data/EPTA_DR2/epta-dr2/EPTA-DR2/DR2new+/J1857+0943/J1857+0943_all.tim",
+      "toaerr_median_s": 3.312e-06
+    },
+    {
+      "mjd_max": 59630.17857356019,
+      "mjd_min": 55812.82104642442,
+      "n_toas": 2870,
+      "name": "J1909-3744",
+      "parfile": "data/EPTA_DR2/epta-dr2/EPTA-DR2/DR2new+/J1909-3744/J1909-3744.par",
+      "source": "par_tim",
+      "timfile": "data/EPTA_DR2/epta-dr2/EPTA-DR2/DR2new+/J1909-3744/J1909-3744_all.tim",
+      "toaerr_median_s": 3.98e-07
+    },
+    {
+      "mjd_max": 59282.59286263374,
+      "mjd_min": 55661.52946044671,
+      "n_toas": 460,
+      "name": "J1910+1256",
+      "parfile": "data/EPTA_DR2/epta-dr2/EPTA-DR2/DR2new+/J1910+1256/J1910+1256.par",
+      "source": "par_tim",
+      "timfile": "data/EPTA_DR2/epta-dr2/EPTA-DR2/DR2new+/J1910+1256/J1910+1256_all.tim",
+      "toaerr_median_s": 2.652e-06
+    },
+    {
+      "mjd_max": 59282.59728031528,
+      "mjd_min": 55659.00189376973,
+      "n_toas": 811,
+      "name": "J1911+1347",
+      "parfile": "data/EPTA_DR2/epta-dr2/EPTA-DR2/DR2new+/J1911+1347/J1911+1347.par",
+      "source": "par_tim",
+      "timfile": "data/EPTA_DR2/epta-dr2/EPTA-DR2/DR2new+/J1911+1347/J1911+1347_all.tim",
+      "toaerr_median_s": 1.234e-06
+    },
+    {
+      "mjd_max": 59294.391602676806,
+      "mjd_min": 55611.472600681205,
+      "n_toas": 1138,
+      "name": "J1918-0642",
+      "parfile": "data/EPTA_DR2/epta-dr2/EPTA-DR2/DR2new+/J1918-0642/J1918-0642.par",
+      "source": "par_tim",
+      "timfile": "data/EPTA_DR2/epta-dr2/EPTA-DR2/DR2new+/J1918-0642/J1918-0642_all.tim",
+      "toaerr_median_s": 1.9165e-06
+    },
+    {
+      "mjd_max": 59630.246492871345,
+      "mjd_min": 55677.29794656171,
+      "n_toas": 2197,
+      "name": "J2124-3358",
+      "parfile": "data/EPTA_DR2/epta-dr2/EPTA-DR2/DR2new+/J2124-3358/J2124-3358.par",
+      "source": "par_tim",
+      "timfile": "data/EPTA_DR2/epta-dr2/EPTA-DR2/DR2new+/J2124-3358/J2124-3358_all.tim",
+      "toaerr_median_s": 5.067e-06
+    },
+    {
+      "mjd_max": 59268.72522062042,
+      "mjd_min": 55731.41469018572,
+      "n_toas": 674,
+      "name": "J2322+2057",
+      "parfile": "data/EPTA_DR2/epta-dr2/EPTA-DR2/DR2new+/J2322+2057/J2322+2057.par",
+      "source": "par_tim",
+      "timfile": "data/EPTA_DR2/epta-dr2/EPTA-DR2/DR2new+/J2322+2057/J2322+2057_all.tim",
+      "toaerr_median_s": 1.10535e-05
+    }
+  ],
+  "loader": "enterprise.pulsar.Pulsar",
+  "status": "PASS",
+  "test_label": "EPTA_DR2new+",
+  "timing_package": "auto",
+  "variant": "DR2new+"
+}

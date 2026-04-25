@@ -1,0 +1,53 @@
+{
+  "alias_groups": [
+    {
+      "arrays": "EPTA;InPTA_WB;NG15;PPTA",
+      "canonical_name": "J1857+0943",
+      "has_alias_names": true,
+      "input_names": "B1855+09;J1857+0943",
+      "is_duplicate": true,
+      "occurrences": 4
+    },
+    {
+      "arrays": "InPTA_WB;NG15;PPTA",
+      "canonical_name": "J1939+2134",
+      "has_alias_names": true,
+      "input_names": "B1937+21;J1939+2134",
+      "is_duplicate": true,
+      "occurrences": 3
+    }
+  ],
+  "canonical_failures": [
+    {
+      "array": "PPTA",
+      "base_name": "J2241-5236",
+      "canonical_error": "ValueError: Some FBn parameters are set but FB0 is not.",
+      "canonical_name": "J2241-5236",
+      "input_name": "J2241-5236",
+      "par": "data/PPTA_DR3_github/analysis_codes/data/all/J2241-5236.par",
+      "tim": "data/PPTA_DR3_github/analysis_codes/data/all/J2241-5236.tim"
+    },
+    {
+      "array": "MPTA",
+      "base_name": "J1825-0319",
+      "canonical_error": "ValueError: Companion mass M2 cannot be negative (-0.4480919945782576 solMass)",
+      "canonical_name": "J1825-0319",
+      "input_name": "J1825-0319",
+      "par": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1825-0319.par",
+      "tim": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1825-0319.tim"
+    }
+  ],
+  "generated": "2026-04-25T10:03:38",
+  "group_csv": "results/5pta_timing/direct_combination_manifest_audit_wb_2026-04-25-local-refresh_groups.csv",
+  "inpta_band": "WB",
+  "json": "results/5pta_timing/direct_combination_manifest_audit_wb_2026-04-25-local-refresh.json",
+  "markdown": "theory/5PTA_direct_combination_manifest_audit_wb_2026-04-25-local-refresh.md",
+  "occurrence_csv": "results/5pta_timing/direct_combination_manifest_audit_wb_2026-04-25-local-refresh_occurrences.csv",
+  "summary": {
+    "alias_groups": 2,
+    "canonical_failures": 2,
+    "canonical_unique": 121,
+    "duplicate_groups": 56,
+    "occurrences": 222
+  }
+}

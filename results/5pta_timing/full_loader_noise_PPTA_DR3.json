@@ -1,0 +1,333 @@
+{
+  "array": "PPTA",
+  "available_pulsars": 32,
+  "ephem": "FROM_PAR",
+  "expected_pairs": 32,
+  "failures": [],
+  "loaded_pulsars": [
+    {
+      "mjd_max": 59645.19487906724,
+      "mjd_min": 58486.288898291954,
+      "n_toas": 593,
+      "name": "J0030+0451",
+      "parfile": "data/PPTA_DR3_github/analysis_codes/data/all/J0030+0451.par",
+      "source": "par_tim",
+      "timfile": "data/PPTA_DR3_github/analysis_codes/data/all/J0030+0451.tim",
+      "toaerr_median_s": 3.5249999999999997e-06
+    },
+    {
+      "mjd_max": 59645.113222902255,
+      "mjd_min": 58480.50152173572,
+      "n_toas": 2706,
+      "name": "J0125-2327",
+      "parfile": "data/PPTA_DR3_github/analysis_codes/data/all/J0125-2327.par",
+      "source": "par_tim",
+      "timfile": "data/PPTA_DR3_github/analysis_codes/data/all/J0125-2327.tim",
+      "toaerr_median_s": 9.27e-07
+    },
+    {
+      "mjd_max": 59645.40327427789,
+      "mjd_min": 54297.852481019836,
+      "n_toas": 11637,
+      "name": "J0437-4715",
+      "parfile": "data/PPTA_DR3_github/analysis_codes/data/all/J0437-4715.par",
+      "source": "par_tim",
+      "timfile": "data/PPTA_DR3_github/analysis_codes/data/all/J0437-4715.tim",
+      "toaerr_median_s": 9.499999999999999e-08
+    },
+    {
+      "mjd_max": 59645.35231882859,
+      "mjd_min": 53044.54972629238,
+      "n_toas": 4927,
+      "name": "J0613-0200",
+      "parfile": "data/PPTA_DR3_github/analysis_codes/data/all/J0613-0200.par",
+      "source": "par_tim",
+      "timfile": "data/PPTA_DR3_github/analysis_codes/data/all/J0613-0200.tim",
+      "toaerr_median_s": 1.445e-06
+    },
+    {
+      "mjd_max": 59645.25354422806,
+      "mjd_min": 58481.721496053826,
+      "n_toas": 698,
+      "name": "J0614-3329",
+      "parfile": "data/PPTA_DR3_github/analysis_codes/data/all/J0614-3329.par",
+      "source": "par_tim",
+      "timfile": "data/PPTA_DR3_github/analysis_codes/data/all/J0614-3329.tim",
+      "toaerr_median_s": 2.5129999999999995e-06
+    },
+    {
+      "mjd_max": 59645.45462052112,
+      "mjd_min": 53041.45032960738,
+      "n_toas": 5538,
+      "name": "J0711-6830",
+      "parfile": "data/PPTA_DR3_github/analysis_codes/data/all/J0711-6830.par",
+      "source": "par_tim",
+      "timfile": "data/PPTA_DR3_github/analysis_codes/data/all/J0711-6830.tim",
+      "toaerr_median_s": 3.718e-06
+    },
+    {
+      "mjd_max": 59644.59189649862,
+      "mjd_min": 58626.39162543872,
+      "n_toas": 1832,
+      "name": "J0900-3144",
+      "parfile": "data/PPTA_DR3_github/analysis_codes/data/all/J0900-3144.par",
+      "source": "par_tim",
+      "timfile": "data/PPTA_DR3_github/analysis_codes/data/all/J0900-3144.tim",
+      "toaerr_median_s": 4.0535e-06
+    },
+    {
+      "mjd_max": 59645.50466230145,
+      "mjd_min": 55393.970407749315,
+      "n_toas": 5887,
+      "name": "J1017-7156",
+      "parfile": "data/PPTA_DR3_github/analysis_codes/data/all/J1017-7156.par",
+      "source": "par_tim",
+      "timfile": "data/PPTA_DR3_github/analysis_codes/data/all/J1017-7156.tim",
+      "toaerr_median_s": 8.08e-07
+    },
+    {
+      "mjd_max": 59644.54381958082,
+      "mjd_min": 53041.68465540227,
+      "n_toas": 5242,
+      "name": "J1022+1001",
+      "parfile": "data/PPTA_DR3_github/analysis_codes/data/all/J1022+1001.par",
+      "source": "par_tim",
+      "timfile": "data/PPTA_DR3_github/analysis_codes/data/all/J1022+1001.tim",
+      "toaerr_median_s": 2.599e-06
+    },
+    {
+      "mjd_max": 59644.64202682202,
+      "mjd_min": 53041.711682034496,
+      "n_toas": 1841,
+      "name": "J1024-0719",
+      "parfile": "data/PPTA_DR3_github/analysis_codes/data/all/J1024-0719.par",
+      "source": "par_tim",
+      "timfile": "data/PPTA_DR3_github/analysis_codes/data/all/J1024-0719.tim",
+      "toaerr_median_s": 2.806e-06
+    },
+    {
+      "mjd_max": 59645.56194970641,
+      "mjd_min": 53042.66715802996,
+      "n_toas": 4316,
+      "name": "J1045-4509",
+      "parfile": "data/PPTA_DR3_github/analysis_codes/data/all/J1045-4509.par",
+      "source": "par_tim",
+      "timfile": "data/PPTA_DR3_github/analysis_codes/data/all/J1045-4509.tim",
+      "toaerr_median_s": 5.3395e-06
+    },
+    {
+      "mjd_max": 59626.619296074794,
+      "mjd_min": 54440.917656959646,
+      "n_toas": 2832,
+      "name": "J1125-6014",
+      "parfile": "data/PPTA_DR3_github/analysis_codes/data/all/J1125-6014.par",
+      "source": "par_tim",
+      "timfile": "data/PPTA_DR3_github/analysis_codes/data/all/J1125-6014.tim",
+      "toaerr_median_s": 8.294999999999999e-07
+    },
+    {
+      "mjd_max": 59644.70548712825,
+      "mjd_min": 55593.66782874215,
+      "n_toas": 732,
+      "name": "J1446-4701",
+      "parfile": "data/PPTA_DR3_github/analysis_codes/data/all/J1446-4701.par",
+      "source": "par_tim",
+      "timfile": "data/PPTA_DR3_github/analysis_codes/data/all/J1446-4701.tim",
+      "toaerr_median_s": 1.4554999999999999e-06
+    },
+    {
+      "mjd_max": 59645.64877146124,
+      "mjd_min": 55685.43573135833,
+      "n_toas": 2454,
+      "name": "J1545-4550",
+      "parfile": "data/PPTA_DR3_github/analysis_codes/data/all/J1545-4550.par",
+      "source": "par_tim",
+      "timfile": "data/PPTA_DR3_github/analysis_codes/data/all/J1545-4550.tim",
+      "toaerr_median_s": 1.3244999999999998e-06
+    },
+    {
+      "mjd_max": 59645.68117364856,
+      "mjd_min": 53041.00972326062,
+      "n_toas": 5146,
+      "name": "J1600-3053",
+      "parfile": "data/PPTA_DR3_github/analysis_codes/data/all/J1600-3053.par",
+      "source": "par_tim",
+      "timfile": "data/PPTA_DR3_github/analysis_codes/data/all/J1600-3053.tim",
+      "toaerr_median_s": 1.2145e-06
+    },
+    {
+      "mjd_max": 59645.600034528565,
+      "mjd_min": 53041.80625469152,
+      "n_toas": 5141,
+      "name": "J1603-7202",
+      "parfile": "data/PPTA_DR3_github/analysis_codes/data/all/J1603-7202.par",
+      "source": "par_tim",
+      "timfile": "data/PPTA_DR3_github/analysis_codes/data/all/J1603-7202.tim",
+      "toaerr_median_s": 2.6739999999999997e-06
+    },
+    {
+      "mjd_max": 59643.78323880647,
+      "mjd_min": 53042.837215294145,
+      "n_toas": 4183,
+      "name": "J1643-1224",
+      "parfile": "data/PPTA_DR3_github/analysis_codes/data/all/J1643-1224.par",
+      "source": "par_tim",
+      "timfile": "data/PPTA_DR3_github/analysis_codes/data/all/J1643-1224.tim",
+      "toaerr_median_s": 2.366e-06
+    },
+    {
+      "mjd_max": 59303.780493001366,
+      "mjd_min": 53040.94212352177,
+      "n_toas": 5140,
+      "name": "J1713+0747",
+      "parfile": "data/PPTA_DR3_github/analysis_codes/data/all/J1713+0747.par",
+      "source": "par_tim",
+      "timfile": "data/PPTA_DR3_github/analysis_codes/data/all/J1713+0747.tim",
+      "toaerr_median_s": 4.86e-07
+    },
+    {
+      "mjd_max": 59643.97380277705,
+      "mjd_min": 53041.0344125862,
+      "n_toas": 3306,
+      "name": "J1730-2304",
+      "parfile": "data/PPTA_DR3_github/analysis_codes/data/all/J1730-2304.par",
+      "source": "par_tim",
+      "timfile": "data/PPTA_DR3_github/analysis_codes/data/all/J1730-2304.tim",
+      "toaerr_median_s": 2.7195e-06
+    },
+    {
+      "mjd_max": 59595.005988181874,
+      "mjd_min": 58660.531318870984,
+      "n_toas": 111,
+      "name": "J1741+1351",
+      "parfile": "data/PPTA_DR3_github/analysis_codes/data/all/J1741+1351.par",
+      "source": "par_tim",
+      "timfile": "data/PPTA_DR3_github/analysis_codes/data/all/J1741+1351.tim",
+      "toaerr_median_s": 1.3849999999999999e-06
+    },
+    {
+      "mjd_max": 59644.025985877524,
+      "mjd_min": 53041.070056927005,
+      "n_toas": 5401,
+      "name": "J1744-1134",
+      "parfile": "data/PPTA_DR3_github/analysis_codes/data/all/J1744-1134.par",
+      "source": "par_tim",
+      "timfile": "data/PPTA_DR3_github/analysis_codes/data/all/J1744-1134.tim",
+      "toaerr_median_s": 8.86e-07
+    },
+    {
+      "mjd_max": 59378.62663420621,
+      "mjd_min": 53163.7455156317,
+      "n_toas": 1284,
+      "name": "J1824-2452A",
+      "parfile": "data/PPTA_DR3_github/analysis_codes/data/all/J1824-2452A.par",
+      "source": "par_tim",
+      "timfile": "data/PPTA_DR3_github/analysis_codes/data/all/J1824-2452A.tim",
+      "toaerr_median_s": 9.984999999999998e-07
+    },
+    {
+      "mjd_max": 59607.08114399819,
+      "mjd_min": 56260.28245049579,
+      "n_toas": 385,
+      "name": "J1832-0836",
+      "parfile": "data/PPTA_DR3_github/analysis_codes/data/all/J1832-0836.par",
+      "source": "par_tim",
+      "timfile": "data/PPTA_DR3_github/analysis_codes/data/all/J1832-0836.tim",
+      "toaerr_median_s": 1.113e-06
+    },
+    {
+      "mjd_max": 59624.90905556669,
+      "mjd_min": 53042.10376604097,
+      "n_toas": 2594,
+      "name": "J1857+0943",
+      "parfile": "data/PPTA_DR3_github/analysis_codes/data/all/J1857+0943.par",
+      "source": "par_tim",
+      "timfile": "data/PPTA_DR3_github/analysis_codes/data/all/J1857+0943.tim",
+      "toaerr_median_s": 3.191e-06
+    },
+    {
+      "mjd_max": 59644.79594289083,
+      "mjd_min": 58604.852554331905,
+      "n_toas": 501,
+      "name": "J1902-5105",
+      "parfile": "data/PPTA_DR3_github/analysis_codes/data/all/J1902-5105.par",
+      "source": "par_tim",
+      "timfile": "data/PPTA_DR3_github/analysis_codes/data/all/J1902-5105.tim",
+      "toaerr_median_s": 1.7749999999999997e-06
+    },
+    {
+      "mjd_max": 59644.842819949685,
+      "mjd_min": 53041.162605681406,
+      "n_toas": 9644,
+      "name": "J1909-3744",
+      "parfile": "data/PPTA_DR3_github/analysis_codes/data/all/J1909-3744.par",
+      "source": "par_tim",
+      "timfile": "data/PPTA_DR3_github/analysis_codes/data/all/J1909-3744.tim",
+      "toaerr_median_s": 2.12e-07
+    },
+    {
+      "mjd_max": 59644.89136431683,
+      "mjd_min": 58485.32666733566,
+      "n_toas": 893,
+      "name": "J1933-6211",
+      "parfile": "data/PPTA_DR3_github/analysis_codes/data/all/J1933-6211.par",
+      "source": "par_tim",
+      "timfile": "data/PPTA_DR3_github/analysis_codes/data/all/J1933-6211.tim",
+      "toaerr_median_s": 3.0729999999999996e-06
+    },
+    {
+      "mjd_max": 59567.14180691071,
+      "mjd_min": 53082.9014092883,
+      "n_toas": 1473,
+      "name": "J1939+2134",
+      "parfile": "data/PPTA_DR3_github/analysis_codes/data/all/J1939+2134.par",
+      "source": "par_tim",
+      "timfile": "data/PPTA_DR3_github/analysis_codes/data/all/J1939+2134.tim",
+      "toaerr_median_s": 1.29e-07
+    },
+    {
+      "mjd_max": 59645.15441967208,
+      "mjd_min": 53041.265537118954,
+      "n_toas": 3411,
+      "name": "J2124-3358",
+      "parfile": "data/PPTA_DR3_github/analysis_codes/data/all/J2124-3358.par",
+      "source": "par_tim",
+      "timfile": "data/PPTA_DR3_github/analysis_codes/data/all/J2124-3358.tim",
+      "toaerr_median_s": 4.458999999999999e-06
+    },
+    {
+      "mjd_max": 59645.011457878485,
+      "mjd_min": 53162.90681959379,
+      "n_toas": 2921,
+      "name": "J2129-5721",
+      "parfile": "data/PPTA_DR3_github/analysis_codes/data/all/J2129-5721.par",
+      "source": "par_tim",
+      "timfile": "data/PPTA_DR3_github/analysis_codes/data/all/J2129-5721.tim",
+      "toaerr_median_s": 2.485e-06
+    },
+    {
+      "mjd_max": 59645.05017708099,
+      "mjd_min": 53084.07488409968,
+      "n_toas": 4944,
+      "name": "J2145-0750",
+      "parfile": "data/PPTA_DR3_github/analysis_codes/data/all/J2145-0750.par",
+      "source": "par_tim",
+      "timfile": "data/PPTA_DR3_github/analysis_codes/data/all/J2145-0750.tim",
+      "toaerr_median_s": 2.3575e-06
+    },
+    {
+      "mjd_max": 59644.24178685667,
+      "mjd_min": 55235.18611066315,
+      "n_toas": 6238,
+      "name": "J2241-5236",
+      "parfile": "data/PPTA_DR3_github/analysis_codes/data/all/J2241-5236.par",
+      "source": "par_tim",
+      "timfile": "data/PPTA_DR3_github/analysis_codes/data/all/J2241-5236.tim",
+      "toaerr_median_s": 5e-07
+    }
+  ],
+  "loader": "enterprise.pulsar.Pulsar",
+  "status": "PASS",
+  "test_label": "PPTA_DR3",
+  "timing_package": "auto"
+}

@@ -29,7 +29,7 @@
 
 The figure shows that the absolute-evidence recovery requires the matched
 official template, official density, and matched BHB-prior baseline.  Panel A
-uses the row-specific baseline listed above; Panel B uses only the matched
-PTArcade BHB-prior baseline.  On that matched scale, multiple curved-SMBHB
+plots only the matched PTArcade BHB-prior ablation; the fixed-gamma local
+diagnostic is retained in the data table.  On that matched scale, multiple curved-SMBHB
 controls occupy the same evidence tier as the leading stochastic new-physics
 templates.

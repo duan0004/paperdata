@@ -1,0 +1,146 @@
+{
+  "generated": "2026-04-25T10:27:22",
+  "source_files": {
+    "h10": "results/T2_NG15yr/bayes_factors/prl_H10_systematic_envelope.json",
+    "identifiability": "results/identifiability/mode_compression.md",
+    "ppc": "results/ppc/family_ppc_lowfreq.csv",
+    "physical_smbhb": "results/physical_smbhb/ng15_official_family.csv",
+    "bridge_robustness": "results/prl_reference_bridge/robustness_budget.csv"
+  },
+  "mode_compression": {
+    "spectral_basis_rows": [
+      {
+        "mode": "amplitude_like_common_power",
+        "diagnostic": "finite timing-likelihood pilot plus bridge posterior samples",
+        "value": "finite pilot likelihood; bridge posteriors available",
+        "interpretation": "baseline amplitude mode is technically measurable but not yet production timing evidence"
+      },
+      {
+        "mode": "low_frequency_curvature",
+        "diagnostic": "gamma_eff projection across PPTA/NG15/EPTA windows",
+        "value": "gamma_eff median span 0.382568",
+        "interpretation": "curved templates project to steep effective slopes in the public PTA windows"
+      },
+      {
+        "mode": "source_family_label",
+        "diagnostic": "hybrid3 tested-representative family mixture",
+        "value": "Astro-curved delta -0.571902 nat",
+        "interpretation": "source-family separation remains order-unity for the tested representatives"
+      }
+    ],
+    "astro_curved_family_delta_nat": -0.5719016189660806,
+    "gamma_eff_median_range": [
+      3.720254981776356,
+      4.102822986963302
+    ],
+    "interpretation": "amplitude-like and low-frequency-curvature diagnostics are more stable than source-family labels"
+  },
+  "family_ppc": [
+    {
+      "family": "Astro-curved",
+      "mean_abs_z_low4": 0.46152012069840354,
+      "max_abs_z_low4": 1.6174692466065757,
+      "coverage_low4": 0.19444444444444445,
+      "mean_abs_z_high_bins": 0.9226497662706257,
+      "max_abs_z_high_bins": 1.5997997370447217,
+      "interpretation": "posterior-summary diagnostic only; comparable low-frequency residuals across top families"
+    },
+    {
+      "family": "Cosmo-other",
+      "mean_abs_z_low4": 0.47795126745069694,
+      "max_abs_z_low4": 1.5588269599699456,
+      "coverage_low4": 0.25,
+      "mean_abs_z_high_bins": 0.9105785726079831,
+      "max_abs_z_high_bins": 1.6037669655973004,
+      "interpretation": "posterior-summary diagnostic only; comparable low-frequency residuals across top families"
+    },
+    {
+      "family": "SIGW-like",
+      "mean_abs_z_low4": 0.46513995509987044,
+      "max_abs_z_low4": 1.645816191536679,
+      "coverage_low4": 0.2222222222222222,
+      "mean_abs_z_high_bins": 0.9142131856237532,
+      "max_abs_z_high_bins": 1.638819514978589,
+      "interpretation": "posterior-summary diagnostic only; comparable low-frequency residuals across top families"
+    }
+  ],
+  "uncertainty_budget": [
+    {
+      "effect": "official-density reproduction residual",
+      "size_nat": 0.6943404236165724,
+      "scope": "maximum absolute single-configuration residual among the three calibrated NANOGrav targets"
+    },
+    {
+      "effect": "SIGW-delta peak-frequency prior boundary",
+      "size_nat": 0.4263190335579168,
+      "scope": "scan over tested upper peak-frequency bounds"
+    },
+    {
+      "effect": "dynesty/QMC-TI residual, main rows",
+      "size_nat": 0.11716695254411036,
+      "scope": "independent Sobol-QMC/TI cross-check"
+    },
+    {
+      "effect": "dynesty/QMC-TI residual, curved rows",
+      "size_nat": 0.06328224454733888,
+      "scope": "family cross-check for tested curved-SMBHB representatives"
+    },
+    {
+      "effect": "hybrid3 leading-row seed/live range",
+      "size_nat": 0.173019013746881,
+      "scope": "maximum range over the bridge robustness sweep"
+    },
+    {
+      "effect": "SIGW-Gaussian minus best curved-SMBHB model",
+      "size_nat": 0.6814043795889968,
+      "scope": "matched NG15 official-density scale"
+    },
+    {
+      "effect": "SIGW-like minus Astro-curved family",
+      "size_nat": 0.5719016189660806,
+      "scope": "hybrid3 equal-weight tested-representative family mixture"
+    }
+  ],
+  "environmental_prior_sensitivity": [
+    {
+      "model": "env_fixed_gamma",
+      "physical_status": "physical control",
+      "lnB": 3.45330777903,
+      "sample_std": 0.0616299923763,
+      "gap_to_sigw_gaussian": 1.0666183222550565,
+      "gap_to_sigw_delta": 0.4764267480286075,
+      "gap_to_superstrings": 0.10426980652192519,
+      "interpretation": "SMBHB environmental-hardening spectral control"
+    },
+    {
+      "model": "env_free_gamma",
+      "physical_status": "physical control with extra spectral freedom",
+      "lnB": 3.36018740546,
+      "sample_std": 0.202384934319,
+      "gap_to_sigw_gaussian": 1.1597386958250566,
+      "gap_to_sigw_delta": 0.5695471215986077,
+      "gap_to_superstrings": 0.19739018009192533,
+      "interpretation": "environmental-hardening control plus free effective gamma"
+    },
+    {
+      "model": "env_broadbend_fixed_gamma",
+      "physical_status": "physical-prior sensitivity",
+      "lnB": 2.9924843697,
+      "sample_std": 0.1416424292,
+      "gap_to_sigw_gaussian": 1.5274417315850566,
+      "gap_to_sigw_delta": 0.9372501573586076,
+      "gap_to_superstrings": 0.5650932158519253,
+      "interpretation": "environmental-hardening prior-range sensitivity"
+    },
+    {
+      "model": "env_lowbend_fixed_gamma",
+      "physical_status": "physical-prior sensitivity",
+      "lnB": 2.66574528166,
+      "sample_std": 0.102815452059,
+      "gap_to_sigw_gaussian": 1.8541808196250567,
+      "gap_to_sigw_delta": 1.2639892453986077,
+      "gap_to_superstrings": 0.8918323038919254,
+      "interpretation": "environmental-hardening prior-range sensitivity"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "generated": "2026-04-25T10:03:55",
+  "targets": 28,
+  "fitflag_anomalies": 1,
+  "nb_fitflag_anomalies": 1,
+  "wb_without_format_1": 14,
+  "malformed_c_prefix_rows": 5,
+  "report": "results/5pta_timing/inpta_loader_failure_diagnostic.md"
+}

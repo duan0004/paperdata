@@ -3,10 +3,11 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{hyperref}
+\usepackage{placeins}
 
 \begin{document}
 
-\title{Supplemental Material for ``Calibrated PTA Evidence Favors Curved Spectra but Not a Unique Nanohertz Source''}
+\title{Supplemental Material for ``Calibrated PTA Evidence Identifies Low-Frequency Curvature but Not a Unique Nanohertz Source''}
 
 \author{Ran DUAN}
 \email{duanran@nao.cas.cn}
@@ -19,7 +20,8 @@
 
 The analysis uses public NANOGrav 15-year data products
 (arXiv:2306.16213), the NANOGrav 15-year noise analysis
-(arXiv:2306.16214), and the NANOGrav new-physics model-comparison paper
+(arXiv:2306.16214), the NANOGrav timing-data release paper
+(arXiv:2306.16217), and the NANOGrav new-physics model-comparison paper
 (arXiv:2306.16219).  Official NANOGrav/PTArcade model files were taken
 from Zenodo DOI 10.5281/zenodo.8084351, and the official PTArcade
 \texttt{ceffyl} density product from Zenodo DOI 10.5281/zenodo.10495907.
@@ -35,7 +37,7 @@ conversion used for official templates is
 \frac{(H_0/h)^2 h^2\Omega_\mathrm{GW}}
 {8\pi^4 f^5 T_\mathrm{span}} .
 \end{equation}
-This conversion was checked against \texttt{ptarcade.models\_utils.omega2cross}
+This conversion was checked against \nolinkurl{ptarcade.models_utils.omega2cross}
 to relative precision below $5\times10^{-16}$.
 
 \section*{S2. Evidence-Ablation Check}
@@ -80,9 +82,9 @@ Cosmic superstrings & $+3.558$ & $\ln(46)=+3.829$ & $-0.271$ & $0.491$ \\
 \end{ruledtabular}
 \end{table}
 
-The main text should describe this as sub-nat reproduction rather than as
-``every run within 0.5 nat,'' because the largest SIGW-Gaussian residual in
-the sweep is $0.694$ nat.
+We therefore describe the reproduction as sub-nat rather than as uniformly
+within $0.5$ nat, because the largest SIGW-Gaussian residual in the sweep is
+$0.694$ nat.
 
 \section*{S4. Priors and Model-Selection Rule}
 
@@ -232,6 +234,22 @@ The leading covariance mode is real against the independent-Gaussian null, but
 the overall rank remains close to the full 14-bin rank.  This supports treating
 bin covariance as a subdominant correction for the leading comparisons.
 
+\begin{table}[h]
+\caption{\label{tab:cov-proj}Model-level covariance-aware projection check.
+The first two numeric columns are diagonal and covariance-aware quadratic
+distances in the 14-bin projection diagnostic; the last column is the implied
+$-\Delta\chi^2/2$ correction quoted in the main text.  These are projection
+diagnostics, not replacement Bayes factors.}
+\begin{ruledtabular}
+\begin{tabular}{lccc}
+Comparison & diagonal & covariance-aware & implied $\Delta\ln Z$ shift \\
+\hline
+SIGW-Gaussian vs SMBHB & $0.480151$ & $0.491693$ & $-0.005771$ \\
+stable-string proxy vs SMBHB & $308.923326$ & $306.301428$ & $+1.310949$ \\
+\end{tabular}
+\end{ruledtabular}
+\end{table}
+
 \section*{S9. Chain Convergence and Failed-Chain Handling}
 
 \begin{table}[h]
@@ -343,10 +361,17 @@ and
 +\ln\mathcal{L}_\mathrm{EPTA}^{\rm loc}.
 \end{equation}
 The local terms use the same per-bin density construction for each public
-free-spectrum summary.  The official NANOGrav term uses the official
-PTArcade \texttt{ceffyl} density and the PTArcade BHB-prior baseline.  All
-11 bridge templates passed the PPTA-local, NANOGrav-local, EPTA-local, and
-NANOGrav-official adapter checks.
+free-spectrum summary.  Since the released free-spectrum priors are uniform in
+$\log_{10}\rho_k$ over the retained range, these posterior densities are
+proportional to likelihood factors up to model-independent constants.  The
+official NANOGrav term uses the official PTArcade \texttt{ceffyl} density.  In
+NG15-only comparisons, Bayes factors are reported relative to the PTArcade
+BHB-prior baseline; in the bridge tables below, values are absolute log
+evidences within each bridge likelihood and should be compared only through
+within-bridge $\Delta\ln Z$.  All 11 bridge templates passed the local
+posterior-summary adapters and the NANOGrav official-density
+likelihood-evaluation adapter; only the rows marked below are official
+PTArcade spectrum implementations.
 
 Because only the NANOGrav term is anchored to the official PTArcade density,
 \texttt{hybrid3} is an anchored source-ranking stress test rather than a fully
@@ -356,8 +381,8 @@ calibrated multi-PTA Bayes-factor scale.
 \caption{\label{tab:bridge-models}Full bridge model list and calibration
 status.  ``Official template'' means that the row uses a public PTArcade
 \texttt{spectrum(f,...)} implementation; ``official-density adapter'' means
-that the template passes the NANOGrav-official \texttt{ceffyl} likelihood
-adapter used in the bridge.}
+that the template can be evaluated on the NANOGrav official
+\texttt{ceffyl} likelihood term used in the bridge.}
 \begin{ruledtabular}
 \begin{tabular}{lcccc}
 Model & family & official template & official-density adapter & NG15 target \\
@@ -501,7 +526,76 @@ superstrings and SIGW-delta at the top with curved-SMBHB controls within
 about one nat.  Because this is a lower-live-point diagnostic, the main Letter
 uses it only to identify the frequency window driving the ranking.
 
-\section*{S15. PTArcade/ceffyl Version and Plateau Diagnostic}
+\section*{S15. Final Stability Diagnostics}
+
+The final stability diagnostics consolidate completed runs rather than adding
+new evidence calculations.  They test whether the title-level statement can be
+supported by low-dimensional posterior-summary quantities and by the known
+calibration/systematic budget.
+
+\begin{table}[h]
+\caption{\label{tab:final-ppc}Posterior-summary low-frequency predictive
+diagnostic for the leading families.  Residuals are absolute median residuals
+in units of the corresponding LUT standard deviation; this is not a
+timing-residual PPC.}
+\begin{ruledtabular}
+\begin{tabular}{lccc}
+Family & mean low-4 & max low-4 & mean high-bin \\
+\hline
+Astro-curved & $0.462$ & $1.617$ & $0.923$ \\
+Cosmo-other & $0.478$ & $1.559$ & $0.911$ \\
+SIGW-like & $0.465$ & $1.646$ & $0.914$ \\
+\end{tabular}
+\end{ruledtabular}
+\end{table}
+
+The comparable low-four-bin residuals support the restricted interpretation
+that current public spectral summaries identify a low-frequency-curvature
+feature shared by several tested families, not a unique source label.
+
+\begin{table}[h]
+\caption{\label{tab:final-budget}Evidence and systematic scales relevant to
+source-identification interpretation.}
+\begin{ruledtabular}
+\begin{tabular}{lcc}
+Effect & size (nat) & scope \\
+\hline
+official-density reproduction residual & $0.694$ & max single-config residual \\
+SIGW-delta prior boundary & $0.426$ & tested upper-bound scan \\
+dynesty/QMC-TI residual, main rows & $0.117$ & independent cross-check \\
+dynesty/QMC-TI residual, curved rows & $0.063$ & curved-family cross-check \\
+hybrid3 seed/live range & $0.173$ & bridge robustness sweep \\
+SIGW-Gaussian minus best curved-SMBHB & $0.681$ & NG15 official scale \\
+SIGW-like minus Astro-curved family & $0.572$ & hybrid3 family mixture \\
+\end{tabular}
+\end{ruledtabular}
+\end{table}
+
+Thus the remaining leading-model and family gaps are comparable to identified
+calibration, prior-boundary, and bridge-robustness scales.
+
+\begin{table}[h]
+\caption{\label{tab:env-prior-final}Environmental-turnover prior sensitivity on
+the official-density scale.  Gaps are relative to the listed cosmological row.}
+\begin{ruledtabular}
+\begin{tabular}{lcccc}
+Environmental row & $\ln B$ & SIGW-Gauss. gap & SIGW-delta gap & string gap \\
+\hline
+fixed $\gamma=13/3$ & $3.453$ & $1.067$ & $0.476$ & $0.104$ \\
+free $\gamma$ & $3.360$ & $1.160$ & $0.570$ & $0.197$ \\
+broad bend prior & $2.992$ & $1.527$ & $0.937$ & $0.565$ \\
+low-bend prior & $2.666$ & $1.854$ & $1.264$ & $0.892$ \\
+\end{tabular}
+\end{ruledtabular}
+\end{table}
+
+The environmental turnover is the physical SMBHB control in this set; the
+broken-power-law and eccentricity-inspired rows are phenomenological curvature
+controls.  The environmental-prior variants remain competitive with at least
+part of the leading cosmological tier, but this is not a complete
+population-synthesis marginalization.
+
+\section*{S16. PTArcade/ceffyl Version and Plateau Diagnostic}
 
 The official-density calculations used PTArcade version \texttt{1.1.5},
 \texttt{ceffyl} version \texttt{1.41.2}, and the density archive
@@ -535,7 +629,122 @@ settings are plateau-free; it records that the leading rows used in this
 Letter do not hit the official grid boundaries in the checked posterior-sample
 region.
 
-\section*{S16. Minimal Local Verification Commands}
+\section*{S17. Timing-Level Production and Development Gates}
+
+These timing-level checks are development diagnostics only.  They use an
+NG15-priority deduplicated reduced 87-pulsar namespace, with 67 NG15,
+5 EPTA, and 15 PPTA pulsars retained and 36 duplicate occurrences skipped.
+This object is not a public five-PTA direct combination.  The manifest is
+recorded in \nolinkurl{results/5pta_timing/manifest_v2_ng15_priority_dedup_3array_development_2026-04-24.csv}.
+The corresponding unique-only diagnostic retains 61 pulsars after excluding
+all names occurring in more than one array.
+
+All free-red, selected-red, and grouped-red timing-level routes remain below
+the evidence-claim threshold because they failed the predeclared convergence
+gate.  Fixed-red duplicate-priority diagnostics were stable in the two shared
+GWB parameters, but higher-basis fixed-red tests did not pass the same gate:
+GW4/RN5 passed, whereas GW8/RN5 and GW14/RN5 produced large
+$\hat R_{\log A}$ excursions.  The current diagnostics are most consistent
+with the red-noise/noise-policy block being the main blocker, but this has not
+been isolated from duplicate-handling and Fourier-basis effects.  These tests
+are therefore not Bayes factors and have no nested-sampling or
+thermodynamic-integration evidence.
+
+We also ran a refreshed exact-baseline local-ingestion gate on the public PTA
+products.  This gate is read-only, uses ENTERPRISE loaders, and does not edit
+timing-model files.  It separates local data availability from likelihood-policy
+harmonization.
+
+\begin{table}[h]
+\caption{\label{tab:full-loader}Full public-PTA loader and noise-product gate.
+PASS means that the staged par/tim or feather product loads through the local
+standard loader; it is not a timing-level evidence calculation.}
+\begin{ruledtabular}
+\begin{tabular}{lcccc}
+Product & expected & loaded & failures & status \\
+\hline
+NG15 feather route & 67 & 67 & 0 & PASS \\
+EPTA DR2new+ & 25 & 25 & 0 & PASS \\
+PPTA DR3 & 32 & 32 & 0 & PASS \\
+MPTA 4.5 yr & 83 & 83 & 0 & PASS \\
+InPTA DR1 NB & 14 & 13 & 1 & PARTIAL \\
+InPTA DR1 WB & 14 & 0 & 14 & FAIL \\
+\end{tabular}
+\end{ruledtabular}
+\end{table}
+
+The refreshed manifest target contains 68 NANOGrav timing names, 25 EPTA
+names, 32 PPTA names, 14 InPTA names, and 83 MPTA names.  The local MPTA
+DataCentral partim refresh now matches the 83-pulsar target, but production use
+still requires the exact duplicate-combination and noise-policy recipe.  InPTA
+remains policy-blocked: the read-only diagnostics identify a fitted
+\texttt{DMXR1} anomaly in the NB route and missing \texttt{FORMAT 1}/malformed
+\texttt{C}-prefix rows in the WB route.  The direct-combination manifest audit
+finds 222 input occurrences, 121 canonical pulsar groups, 56 duplicate groups,
+two alias groups, and two canonical-name failures; all 56 duplicate or alias
+groups are listed in
+\nolinkurl{theory/5PTA_duplicate_policy_worklist_2026-04-25.md}.
+
+\begin{table}[h]
+\caption{\label{tab:timing-pilots}Mechanical ENTERPRISE timing-pilot gates.
+These pilots test object construction and a single likelihood evaluation only;
+they are not convergence tests, Bayes factors, or source-identification
+results.}
+\begin{ruledtabular}
+\begin{tabular}{lcccc}
+Pilot & pulsars & GW bins & RN bins & status \\
+\hline
+NG15 timing route & 8 & 4 & 0 & PASS \\
+NG15+EPTA+PPTA & 12 & 4 & 0 & PASS \\
+NG15+EPTA+PPTA & 12 & 8 & 5 & PASS \\
+\end{tabular}
+\end{ruledtabular}
+\end{table}
+
+The exact-baseline decision is therefore unchanged: no timing-level family
+evidence is used in this Letter.  A production timing-level comparison must
+first reproduce a selected public five-PTA baseline with the same
+direct-combination, white-noise, and InPTA preprocessing policy; only then
+should minimal family evidence be run.
+
+\section*{S18. LSS Tomography Production Gate}
+
+We also staged a separate LSS-correlated-anisotropy production gate.  Its first
+science requirement is reproduction of the published NG15+2MPZ null before any
+DESI or WISE$\times$SuperCOSMOS redshift-bin ORF is interpreted.  The current
+gate therefore supplies only geometry and resource diagnostics.
+
+\begin{table}[h]
+\caption{\label{tab:lss-gate}LSS local production-gate status.  None of these
+rows is an LSS evidence result.}
+\begin{ruledtabular}
+\begin{tabular}{lcc}
+Gate & local result & interpretation \\
+\hline
+2MPZ input & 933447 valid rows & staged input \\
+DESI/WISE$\times$SCOS ORFs & present & staged inputs only \\
+NaMaster/MAP map gate & \texttt{pymaster} missing & environment blocker \\
+low-$\ell$ 2MPZ fallback & PASS & deterministic fallback diagnostic \\
+NG15+2MPZ published null & not reproduced & blocks LSS science claim \\
+\end{tabular}
+\end{ruledtabular}
+\end{table}
+
+The fallback low-$\ell$ 2MPZ gate uses the two reference slices
+$0<z\le0.1$ and $0.1<z\le0.2$, a Galactic latitude cut
+$|b|\ge20^\circ$, weighted monopole/dipole subtraction, and
+$2\le\ell\le12$ truncation.  At \texttt{nside=64}, it gives NG15 pair-ORF
+correlations with Hellings--Downs of $-0.103$ for the low-redshift slice and
+$-0.212$ for the higher-redshift slice.  These values are useful for
+debugging geometry and normalization, but they do not replace NaMaster C1
+apodization, MASTER/MAP reconstruction, or a hypermodel likelihood.  DESI and
+WISE$\times$SuperCOSMOS tomography therefore remain future production inputs
+until the NG15+2MPZ published null (arXiv:2603.02110) is reproduced.
+
+\FloatBarrier
+\clearpage
+
+\section*{S19. Minimal Local Verification Commands}
 
 Run from the project root:
 \begin{verbatim}
@@ -546,6 +755,22 @@ python3 code/prl_reference_bridge_pipeline.py all --profile production --force
 python3 code/prl_reference_bridge_pipeline.py p2seq --profile production
 python3 code/prl_bridge_evidence_figure.py
 python3 code/prl_ceffyl_plateau_diagnostic.py
+python3 code/pta_identifiability_ppc.py
+python3 code/smbhb_population_controls.py
+python3 code/prl_final_stability_diagnostics.py
+python3 code/manifest_v2_baseline_gate.py --tag 2026-04-25-local-refresh
+python3 code/pta_full_loader_noise_tests.py
+python3 code/pta_direct_combination_manifest_audit.py --inpta-band NB \
+  --tag 2026-04-25-local-refresh
+python3 code/inpta_loader_failure_diagnostic.py
+python3 code/pta_timing_baseline_pilot.py --arrays NG15_TIMING EPTA PPTA \
+  --max-per-array 4 --components-gw 8 --components-rn 5 \
+  --include-red-noise --output-suffix 3array_4each_gw8_rn5
+python3 code/lss_tomography_manifest.py
+python3 code/lss_2mpz_lowell_reference_gate.py --nside 64 \
+  --tag prod_nside64_lowell_update_20260425 --nulls 128 --seed 20260425
+python3 code/fixed_red_sensitivity_experiments.py --mode duplicate \
+  --steps 2000 --tag 2026-04-24_BC
 python3 code/prl_evidence_ti_qmc_crosscheck.py
 python3 code/prl_package_static_gate.py
 \end{verbatim}

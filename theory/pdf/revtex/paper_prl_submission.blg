@@ -11,6 +11,10 @@ Warning--I didn't find a database entry for "Phinney_2001"
 Warning--I didn't find a database entry for "NANOGrav_15yr_NewPhysics"
 Warning--I didn't find a database entry for "PTArcade_2023"
 Warning--I didn't find a database entry for "Kass_Raftery_1995"
+Warning--I didn't find a database entry for "FivePTA_2026"
+Warning--I didn't find a database entry for "Valtolina_Haasteren_2025"
+Warning--I didn't find a database entry for "Lai_Li_2025"
+Warning--I didn't find a database entry for "Wang_Zhang_Xu_2025"
 Warning--I didn't find a database entry for "Kohri_Terada_2018"
 Warning--I didn't find a database entry for "Sesana_2013"
 Warning--I didn't find a database entry for "Sampson_2015"
@@ -18,6 +22,7 @@ Warning--I didn't find a database entry for "ENTERPRISE_2019"
 Warning--I didn't find a database entry for "Speagle_2020"
 Warning--I didn't find a database entry for "PTMCMCSampler_2017"
 Warning--I didn't find a database entry for "Caprini_Figueroa_2018"
+Warning--I didn't find a database entry for "NANOGrav_15yr_timing"
 control{REVTEX42Control}, control.key{N/A}, control.author{N/A}, control.editor{N/A}, control.title{N/A}, control.pages{N/A}, control.year{N/A}, control.eprint{N/A}, 
 control{apsrev42Control}, control.key{N/A}, control.author{08}, control.editor{1}, control.title{0}, control.pages{0}, control.year{1}, control.eprint{N/A}, 
 Warning--jnrlst (dependency: not reversed) set 1
@@ -29,4 +34,4 @@ Control: production of article title (0) allowed
 Control: page (0) single
 Control: year (1) truncated
 Control: production of eprint (0) enabled
-(There were 16 warnings)
+(There were 21 warnings)

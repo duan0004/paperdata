@@ -1,0 +1,682 @@
+{
+  "array": "NG15",
+  "available_pulsars": 67,
+  "data_root": "data/NG15yr/tutorials/data/feathers",
+  "expected_pairs": 67,
+  "loaded_pulsars": [
+    {
+      "mjd_max": 59051.13881728276,
+      "mjd_min": 55731.19898116864,
+      "n_toas": 4570,
+      "name": "J1853+1303",
+      "parfile": "",
+      "source": "feather",
+      "timfile": "",
+      "toaerr_median_s": 2.816e-06
+    },
+    {
+      "mjd_max": 59056.148621751636,
+      "mjd_min": 55135.876727024,
+      "n_toas": 6856,
+      "name": "J1903+0327",
+      "parfile": "",
+      "source": "feather",
+      "timfile": "",
+      "toaerr_median_s": 2.17e-06
+    },
+    {
+      "mjd_max": 58945.65590769055,
+      "mjd_min": 57681.063164304745,
+      "n_toas": 4982,
+      "name": "J2124-3358",
+      "parfile": "",
+      "source": "feather",
+      "timfile": "",
+      "toaerr_median_s": 6.142499999999999e-06
+    },
+    {
+      "mjd_max": 59067.37530852327,
+      "mjd_min": 53394.85368635221,
+      "n_toas": 19571,
+      "name": "J0030+0451",
+      "parfile": "",
+      "source": "feather",
+      "timfile": "",
+      "toaerr_median_s": 2.185e-06
+    },
+    {
+      "mjd_max": 59065.27791468946,
+      "mjd_min": 55989.645072228006,
+      "n_toas": 7406,
+      "name": "J2214+3000",
+      "parfile": "",
+      "source": "feather",
+      "timfile": "",
+      "toaerr_median_s": 4.3845e-06
+    },
+    {
+      "mjd_max": 59071.00791290851,
+      "mjd_min": 53393.55878314818,
+      "n_toas": 59389,
+      "name": "J1713+0747",
+      "parfile": "",
+      "source": "feather",
+      "timfile": "",
+      "toaerr_median_s": 4.65e-07
+    },
+    {
+      "mjd_max": 58943.06034828176,
+      "mjd_min": 57714.50583635324,
+      "n_toas": 797,
+      "name": "J1012-4235",
+      "parfile": "",
+      "source": "feather",
+      "timfile": "",
+      "toaerr_median_s": 7.182e-06
+    },
+    {
+      "mjd_max": 58956.467152881865,
+      "mjd_min": 54400.65606219293,
+      "n_toas": 22955,
+      "name": "J1600-3053",
+      "parfile": "",
+      "source": "feather",
+      "timfile": "",
+      "toaerr_median_s": 1.528e-06
+    },
+    {
+      "mjd_max": 59056.00124486329,
+      "mjd_min": 56497.972603346476,
+      "n_toas": 2551,
+      "name": "J1453+1902",
+      "parfile": "",
+      "source": "feather",
+      "timfile": "",
+      "toaerr_median_s": 9.301e-06
+    },
+    {
+      "mjd_max": 58940.43419707449,
+      "mjd_min": 53216.13176545291,
+      "n_toas": 17745,
+      "name": "J1744-1134",
+      "parfile": "",
+      "source": "feather",
+      "timfile": "",
+      "toaerr_median_s": 1.006e-06
+    },
+    {
+      "mjd_max": 59056.55017941898,
+      "mjd_min": 57755.097706953704,
+      "n_toas": 2169,
+      "name": "J0509+0856",
+      "parfile": "",
+      "source": "feather",
+      "timfile": "",
+      "toaerr_median_s": 6.042e-06
+    },
+    {
+      "mjd_max": 59030.30724332942,
+      "mjd_min": 55989.61697601341,
+      "n_toas": 3512,
+      "name": "J2017+0603",
+      "parfile": "",
+      "source": "feather",
+      "timfile": "",
+      "toaerr_median_s": 1.7729999999999998e-06
+    },
+    {
+      "mjd_max": 58945.45824926695,
+      "mjd_min": 56640.391020207295,
+      "n_toas": 13401,
+      "name": "J0740+6620",
+      "parfile": "",
+      "source": "feather",
+      "timfile": "",
+      "toaerr_median_s": 2.942e-06
+    },
+    {
+      "mjd_max": 59056.28366109865,
+      "mjd_min": 56668.80266133745,
+      "n_toas": 3566,
+      "name": "J2234+0611",
+      "parfile": "",
+      "source": "feather",
+      "timfile": "",
+      "toaerr_median_s": 1.3304999999999998e-06
+    },
+    {
+      "mjd_max": 58945.57769254217,
+      "mjd_min": 57682.95984246133,
+      "n_toas": 4595,
+      "name": "J1843-1113",
+      "parfile": "",
+      "source": "feather",
+      "timfile": "",
+      "toaerr_median_s": 2.9039999999999996e-06
+    },
+    {
+      "mjd_max": 58940.29863558756,
+      "mjd_min": 54724.87287715658,
+      "n_toas": 18445,
+      "name": "J1614-2230",
+      "parfile": "",
+      "source": "feather",
+      "timfile": "",
+      "toaerr_median_s": 2.39e-06
+    },
+    {
+      "mjd_max": 58940.4160566352,
+      "mjd_min": 57682.87735440524,
+      "n_toas": 4870,
+      "name": "J1730-2304",
+      "parfile": "",
+      "source": "feather",
+      "timfile": "",
+      "toaerr_median_s": 3.867999999999999e-06
+    },
+    {
+      "mjd_max": 58939.958795630526,
+      "mjd_min": 55704.04004654596,
+      "n_toas": 10403,
+      "name": "J0645+5158",
+      "parfile": "",
+      "source": "feather",
+      "timfile": "",
+      "toaerr_median_s": 2.583e-06
+    },
+    {
+      "mjd_max": 59051.170566780966,
+      "mjd_min": 53358.72367537951,
+      "n_toas": 7758,
+      "name": "B1855+09",
+      "parfile": "",
+      "source": "feather",
+      "timfile": "",
+      "toaerr_median_s": 1.233e-06
+    },
+    {
+      "mjd_max": 59051.41471054279,
+      "mjd_min": 55758.34779000173,
+      "n_toas": 15896,
+      "name": "J0023+0923",
+      "parfile": "",
+      "source": "feather",
+      "timfile": "",
+      "toaerr_median_s": 3.1989999999999998e-06
+    },
+    {
+      "mjd_max": 58942.029335065374,
+      "mjd_min": 55118.584233281756,
+      "n_toas": 12635,
+      "name": "J1024-0719",
+      "parfile": "",
+      "source": "feather",
+      "timfile": "",
+      "toaerr_median_s": 4.0639999999999995e-06
+    },
+    {
+      "mjd_max": 59056.51249580277,
+      "mjd_min": 57755.05880651512,
+      "n_toas": 2446,
+      "name": "J0406+3039",
+      "parfile": "",
+      "source": "feather",
+      "timfile": "",
+      "toaerr_median_s": 1.6685e-06
+    },
+    {
+      "mjd_max": 59065.30983796648,
+      "mjd_min": 56498.24595310422,
+      "n_toas": 3711,
+      "name": "J2229+2643",
+      "parfile": "",
+      "source": "feather",
+      "timfile": "",
+      "toaerr_median_s": 3.823e-06
+    },
+    {
+      "mjd_max": 58950.609463344794,
+      "mjd_min": 53292.01663450055,
+      "n_toas": 35037,
+      "name": "J1909-3744",
+      "parfile": "",
+      "source": "feather",
+      "timfile": "",
+      "toaerr_median_s": 5.13e-07
+    },
+    {
+      "mjd_max": 59056.56820134979,
+      "mjd_min": 57389.18277487187,
+      "n_toas": 525,
+      "name": "J0557+1551",
+      "parfile": "",
+      "source": "feather",
+      "timfile": "",
+      "toaerr_median_s": 4.809e-06
+    },
+    {
+      "mjd_max": 58957.92539828021,
+      "mjd_min": 57221.64778503859,
+      "n_toas": 5830,
+      "name": "J0437-4715",
+      "parfile": "",
+      "source": "feather",
+      "timfile": "",
+      "toaerr_median_s": 2.7e-07
+    },
+    {
+      "mjd_max": 58942.92773221709,
+      "mjd_min": 55972.08141781889,
+      "n_toas": 11093,
+      "name": "J0340+4130",
+      "parfile": "",
+      "source": "feather",
+      "timfile": "",
+      "toaerr_median_s": 6.19e-06
+    },
+    {
+      "mjd_max": 58945.598501246735,
+      "mjd_min": 56354.49431601998,
+      "n_toas": 7739,
+      "name": "J1832-0836",
+      "parfile": "",
+      "source": "feather",
+      "timfile": "",
+      "toaerr_median_s": 2.7200000000000002e-06
+    },
+    {
+      "mjd_max": 58942.97556334852,
+      "mjd_min": 56351.06190187514,
+      "n_toas": 5473,
+      "name": "J0931-1902",
+      "parfile": "",
+      "source": "feather",
+      "timfile": "",
+      "toaerr_median_s": 6.426e-06
+    },
+    {
+      "mjd_max": 59065.1114431163,
+      "mjd_min": 55791.0995263102,
+      "n_toas": 3974,
+      "name": "J1923+2515",
+      "parfile": "",
+      "source": "feather",
+      "timfile": "",
+      "toaerr_median_s": 3.3999999999999996e-06
+    },
+    {
+      "mjd_max": 58939.97644948309,
+      "mjd_min": 53267.356788602825,
+      "n_toas": 25837,
+      "name": "J1012+5307",
+      "parfile": "",
+      "source": "feather",
+      "timfile": "",
+      "toaerr_median_s": 3.3849999999999998e-06
+    },
+    {
+      "mjd_max": 58943.01565581955,
+      "mjd_min": 57713.294184486855,
+      "n_toas": 554,
+      "name": "J0605+3757",
+      "parfile": "",
+      "source": "feather",
+      "timfile": "",
+      "toaerr_median_s": 6.968e-06
+    },
+    {
+      "mjd_max": 58944.50441886476,
+      "mjd_min": 57682.89784080134,
+      "n_toas": 2025,
+      "name": "J1751-2857",
+      "parfile": "",
+      "source": "feather",
+      "timfile": "",
+      "toaerr_median_s": 6.699e-06
+    },
+    {
+      "mjd_max": 59065.20246549528,
+      "mjd_min": 54998.28775045163,
+      "n_toas": 5126,
+      "name": "B1953+29",
+      "parfile": "",
+      "source": "feather",
+      "timfile": "",
+      "toaerr_median_s": 3.467e-06
+    },
+    {
+      "mjd_max": 58939.93012877902,
+      "mjd_min": 56640.40184592868,
+      "n_toas": 8723,
+      "name": "J1125+7819",
+      "parfile": "",
+      "source": "feather",
+      "timfile": "",
+      "toaerr_median_s": 7.611e-06
+    },
+    {
+      "mjd_max": 59065.134081351105,
+      "mjd_min": 53267.08925416526,
+      "n_toas": 23023,
+      "name": "B1937+21",
+      "parfile": "",
+      "source": "feather",
+      "timfile": "",
+      "toaerr_median_s": 5.7e-08
+    },
+    {
+      "mjd_max": 59070.96974077214,
+      "mjd_min": 53420.41836220558,
+      "n_toas": 14066,
+      "name": "J1640+2224",
+      "parfile": "",
+      "source": "feather",
+      "timfile": "",
+      "toaerr_median_s": 1.232e-06
+    },
+    {
+      "mjd_max": 59056.62333923153,
+      "mjd_min": 57389.21785309905,
+      "n_toas": 3030,
+      "name": "J0709+0458",
+      "parfile": "",
+      "source": "feather",
+      "timfile": "",
+      "toaerr_median_s": 1.1983499999999998e-05
+    },
+    {
+      "mjd_max": 59056.078527036814,
+      "mjd_min": 55135.795838312704,
+      "n_toas": 8790,
+      "name": "J1738+0333",
+      "parfile": "",
+      "source": "feather",
+      "timfile": "",
+      "toaerr_median_s": 3.0314999999999997e-06
+    },
+    {
+      "mjd_max": 58940.403780231354,
+      "mjd_min": 57682.84997632028,
+      "n_toas": 6356,
+      "name": "J1719-1438",
+      "parfile": "",
+      "source": "feather",
+      "timfile": "",
+      "toaerr_median_s": 1.3181499999999999e-05
+    },
+    {
+      "mjd_max": 58945.61744044384,
+      "mjd_min": 53292.062711330276,
+      "n_toas": 18875,
+      "name": "J1918-0642",
+      "parfile": "",
+      "source": "feather",
+      "timfile": "",
+      "toaerr_median_s": 3.535e-06
+    },
+    {
+      "mjd_max": 59066.20605836003,
+      "mjd_min": 55760.26679747202,
+      "n_toas": 7397,
+      "name": "J2043+1711",
+      "parfile": "",
+      "source": "feather",
+      "timfile": "",
+      "toaerr_median_s": 1.0269999999999999e-06
+    },
+    {
+      "mjd_max": 58945.558274631985,
+      "mjd_min": 57682.93896047022,
+      "n_toas": 5266,
+      "name": "J1811-2405",
+      "parfile": "",
+      "source": "feather",
+      "timfile": "",
+      "toaerr_median_s": 2.3905000000000002e-06
+    },
+    {
+      "mjd_max": 59051.332405054534,
+      "mjd_min": 56458.385228119805,
+      "n_toas": 7535,
+      "name": "J2234+0944",
+      "parfile": "",
+      "source": "feather",
+      "timfile": "",
+      "toaerr_median_s": 2.745e-06
+    },
+    {
+      "mjd_max": 58942.55175680883,
+      "mjd_min": 53267.18899769783,
+      "n_toas": 18675,
+      "name": "J2145-0750",
+      "parfile": "",
+      "source": "feather",
+      "timfile": "",
+      "toaerr_median_s": 2.363e-06
+    },
+    {
+      "mjd_max": 59056.11478377861,
+      "mjd_min": 54882.599530798536,
+      "n_toas": 6486,
+      "name": "J1910+1256",
+      "parfile": "",
+      "source": "feather",
+      "timfile": "",
+      "toaerr_median_s": 1.842e-06
+    },
+    {
+      "mjd_max": 58940.28080487778,
+      "mjd_min": 53217.01097320541,
+      "n_toas": 10818,
+      "name": "J1455-3330",
+      "parfile": "",
+      "source": "feather",
+      "timfile": "",
+      "toaerr_median_s": 7.502e-06
+    },
+    {
+      "mjd_max": 58942.53376662129,
+      "mjd_min": 55094.89469024428,
+      "n_toas": 17077,
+      "name": "J2010-1323",
+      "parfile": "",
+      "source": "feather",
+      "timfile": "",
+      "toaerr_median_s": 3.2280000000000003e-06
+    },
+    {
+      "mjd_max": 58942.86503193013,
+      "mjd_min": 55972.05970136254,
+      "n_toas": 10211,
+      "name": "J2302+4442",
+      "parfile": "",
+      "source": "feather",
+      "timfile": "",
+      "toaerr_median_s": 7.932e-06
+    },
+    {
+      "mjd_max": 59065.0338762863,
+      "mjd_min": 55042.04701004124,
+      "n_toas": 5582,
+      "name": "J1741+1351",
+      "parfile": "",
+      "source": "feather",
+      "timfile": "",
+      "toaerr_median_s": 1.3279999999999998e-06
+    },
+    {
+      "mjd_max": 58939.94954806056,
+      "mjd_min": 56640.378708430406,
+      "n_toas": 32222,
+      "name": "J0636+5128",
+      "parfile": "",
+      "source": "feather",
+      "timfile": "",
+      "toaerr_median_s": 5.073e-06
+    },
+    {
+      "mjd_max": 59055.73880479008,
+      "mjd_min": 57028.3022514055,
+      "n_toas": 3978,
+      "name": "J1022+1001",
+      "parfile": "",
+      "source": "feather",
+      "timfile": "",
+      "toaerr_median_s": 1.6939999999999998e-06
+    },
+    {
+      "mjd_max": 58942.95083415288,
+      "mjd_min": 53448.79483883171,
+      "n_toas": 17124,
+      "name": "J0613-0200",
+      "parfile": "",
+      "source": "feather",
+      "timfile": "",
+      "toaerr_median_s": 1.2159999999999999e-06
+    },
+    {
+      "mjd_max": 59070.33162635966,
+      "mjd_min": 53355.88885236036,
+      "n_toas": 13927,
+      "name": "J2317+1439",
+      "parfile": "",
+      "source": "feather",
+      "timfile": "",
+      "toaerr_median_s": 1.6359999999999999e-06
+    },
+    {
+      "mjd_max": 59055.89037448881,
+      "mjd_min": 57389.43850662768,
+      "n_toas": 1705,
+      "name": "J1312+0051",
+      "parfile": "",
+      "source": "feather",
+      "timfile": "",
+      "toaerr_median_s": 7.273e-06
+    },
+    {
+      "mjd_max": 59065.349168380104,
+      "mjd_min": 57075.76141761256,
+      "n_toas": 3088,
+      "name": "J2322+2057",
+      "parfile": "",
+      "source": "feather",
+      "timfile": "",
+      "toaerr_median_s": 3.9109999999999995e-06
+    },
+    {
+      "mjd_max": 58942.49712978446,
+      "mjd_min": 55976.54893728292,
+      "n_toas": 11055,
+      "name": "J1747-4036",
+      "parfile": "",
+      "source": "feather",
+      "timfile": "",
+      "toaerr_median_s": 5.717999999999999e-06
+    },
+    {
+      "mjd_max": 59056.18176102454,
+      "mjd_min": 54505.59319550061,
+      "n_toas": 5328,
+      "name": "J1944+0907",
+      "parfile": "",
+      "source": "feather",
+      "timfile": "",
+      "toaerr_median_s": 3.3905e-06
+    },
+    {
+      "mjd_max": 58945.5427459955,
+      "mjd_min": 57682.914465418864,
+      "n_toas": 6796,
+      "name": "J1802-2124",
+      "parfile": "",
+      "source": "feather",
+      "timfile": "",
+      "toaerr_median_s": 6.1329999999999996e-06
+    },
+    {
+      "mjd_max": 59051.20291208448,
+      "mjd_min": 56498.165506907535,
+      "n_toas": 3786,
+      "name": "J1911+1347",
+      "parfile": "",
+      "source": "feather",
+      "timfile": "",
+      "toaerr_median_s": 9.13e-07
+    },
+    {
+      "mjd_max": 59065.1667604574,
+      "mjd_min": 56970.87280579845,
+      "n_toas": 4743,
+      "name": "J1946+3417",
+      "parfile": "",
+      "source": "feather",
+      "timfile": "",
+      "toaerr_median_s": 1.8959999999999997e-06
+    },
+    {
+      "mjd_max": 59051.10414140641,
+      "mjd_min": 57390.598553119846,
+      "n_toas": 3017,
+      "name": "J1745+1017",
+      "parfile": "",
+      "source": "feather",
+      "timfile": "",
+      "toaerr_median_s": 2.997e-06
+    },
+    {
+      "mjd_max": 58939.38465492125,
+      "mjd_min": 57579.18428784352,
+      "n_toas": 9871,
+      "name": "J1705-1903",
+      "parfile": "",
+      "source": "feather",
+      "timfile": "",
+      "toaerr_median_s": 1.6879999999999998e-06
+    },
+    {
+      "mjd_max": 58956.503911348125,
+      "mjd_min": 53217.10299536069,
+      "n_toas": 22144,
+      "name": "J1643-1224",
+      "parfile": "",
+      "source": "feather",
+      "timfile": "",
+      "toaerr_median_s": 2.1939999999999997e-06
+    },
+    {
+      "mjd_max": 58942.915570326295,
+      "mjd_min": 57713.317771259135,
+      "n_toas": 4885,
+      "name": "J0610-2100",
+      "parfile": "",
+      "source": "feather",
+      "timfile": "",
+      "toaerr_median_s": 8.381999999999999e-06
+    },
+    {
+      "mjd_max": 59056.21599317256,
+      "mjd_min": 56510.20414463073,
+      "n_toas": 3847,
+      "name": "J2033+1734",
+      "parfile": "",
+      "source": "feather",
+      "timfile": "",
+      "toaerr_median_s": 4.138e-06
+    },
+    {
+      "mjd_max": 58945.47898543658,
+      "mjd_min": 57681.825624422454,
+      "n_toas": 1815,
+      "name": "J1630+3734",
+      "parfile": "",
+      "source": "feather",
+      "timfile": "",
+      "toaerr_median_s": 3.681e-06
+    }
+  ],
+  "loader": "enterprise_extensions.load_feathers_from_folder",
+  "noise_file": "data/NG15yr/tutorials/data/15yr_wn_dict.json",
+  "status": "PASS",
+  "test_label": "NG15"
+}

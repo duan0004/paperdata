@@ -1,0 +1,843 @@
+{
+  "array": "MPTA_4p5yr",
+  "available_pulsars": 83,
+  "ephem": "FROM_PAR",
+  "expected_pairs": 83,
+  "failures": [],
+  "loaded_pulsars": [
+    {
+      "mjd_max": 60149.19605426985,
+      "mjd_min": 58786.97062555861,
+      "n_toas": 2880,
+      "name": "J0030+0451",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J0030+0451.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J0030+0451.tim",
+      "toaerr_median_s": 4.307999999999999e-06
+    },
+    {
+      "mjd_max": 60149.20621389821,
+      "mjd_min": 58755.05865831871,
+      "n_toas": 1430,
+      "name": "J0101-6422",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J0101-6422.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J0101-6422.tim",
+      "toaerr_median_s": 3.2395e-06
+    },
+    {
+      "mjd_max": 60149.215229657726,
+      "mjd_min": 58596.25598199616,
+      "n_toas": 3170,
+      "name": "J0125-2327",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J0125-2327.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J0125-2327.tim",
+      "toaerr_median_s": 1.006e-06
+    },
+    {
+      "mjd_max": 60156.45740079186,
+      "mjd_min": 58665.47354565221,
+      "n_toas": 3517,
+      "name": "J0437-4715",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J0437-4715.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J0437-4715.tim",
+      "toaerr_median_s": 4.2e-08
+    },
+    {
+      "mjd_max": 60156.46250740399,
+      "mjd_min": 58753.16772931408,
+      "n_toas": 2758,
+      "name": "J0610-2100",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J0610-2100.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J0610-2100.tim",
+      "toaerr_median_s": 4.1964999999999995e-06
+    },
+    {
+      "mjd_max": 60156.45833740298,
+      "mjd_min": 58595.45853116817,
+      "n_toas": 3067,
+      "name": "J0613-0200",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J0613-0200.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J0613-0200.tim",
+      "toaerr_median_s": 1.272e-06
+    },
+    {
+      "mjd_max": 60156.46645877187,
+      "mjd_min": 58595.47083914983,
+      "n_toas": 3499,
+      "name": "J0614-3329",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J0614-3329.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J0614-3329.tim",
+      "toaerr_median_s": 3.039e-06
+    },
+    {
+      "mjd_max": 60156.47847328451,
+      "mjd_min": 58617.44349155962,
+      "n_toas": 2217,
+      "name": "J0636-3044",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J0636-3044.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J0636-3044.tim",
+      "toaerr_median_s": 5.566e-06
+    },
+    {
+      "mjd_max": 60156.47245119232,
+      "mjd_min": 58589.898555617896,
+      "n_toas": 2830,
+      "name": "J0711-6830",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J0711-6830.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J0711-6830.tim",
+      "toaerr_median_s": 3.964e-06
+    },
+    {
+      "mjd_max": 60156.48701504257,
+      "mjd_min": 58589.935116844914,
+      "n_toas": 3262,
+      "name": "J0900-3144",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J0900-3144.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J0900-3144.tim",
+      "toaerr_median_s": 2.991e-06
+    },
+    {
+      "mjd_max": 60156.49094994687,
+      "mjd_min": 58707.640557716906,
+      "n_toas": 1903,
+      "name": "J0931-1902",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J0931-1902.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J0931-1902.tim",
+      "toaerr_median_s": 4.64e-06
+    },
+    {
+      "mjd_max": 60156.49982868477,
+      "mjd_min": 58568.80444318761,
+      "n_toas": 6167,
+      "name": "J0955-6150",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J0955-6150.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J0955-6150.tim",
+      "toaerr_median_s": 4.773e-06
+    },
+    {
+      "mjd_max": 60156.50339576532,
+      "mjd_min": 58595.71767844814,
+      "n_toas": 2898,
+      "name": "J1012-4235",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1012-4235.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1012-4235.tim",
+      "toaerr_median_s": 4.3389999999999995e-06
+    },
+    {
+      "mjd_max": 60156.50952739917,
+      "mjd_min": 58557.202011501766,
+      "n_toas": 3321,
+      "name": "J1017-7156",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1017-7156.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1017-7156.tim",
+      "toaerr_median_s": 5.22e-07
+    },
+    {
+      "mjd_max": 60156.50824712659,
+      "mjd_min": 58623.80613621435,
+      "n_toas": 2945,
+      "name": "J1022+1001",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1022+1001.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1022+1001.tim",
+      "toaerr_median_s": 1.8839999999999999e-06
+    },
+    {
+      "mjd_max": 60156.51210561366,
+      "mjd_min": 58595.73390950237,
+      "n_toas": 2783,
+      "name": "J1024-0719",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1024-0719.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1024-0719.tim",
+      "toaerr_median_s": 3.293e-06
+    },
+    {
+      "mjd_max": 60156.52218101155,
+      "mjd_min": 58665.51745065863,
+      "n_toas": 2046,
+      "name": "J1036-8317",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1036-8317.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1036-8317.tim",
+      "toaerr_median_s": 2.8845e-06
+    },
+    {
+      "mjd_max": 60156.52244418817,
+      "mjd_min": 58575.97355858418,
+      "n_toas": 3231,
+      "name": "J1045-4509",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1045-4509.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1045-4509.tim",
+      "toaerr_median_s": 3.998e-06
+    },
+    {
+      "mjd_max": 60156.53272571184,
+      "mjd_min": 58575.99458478845,
+      "n_toas": 3693,
+      "name": "J1101-6424",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1101-6424.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1101-6424.tim",
+      "toaerr_median_s": 5.121000000000001e-06
+    },
+    {
+      "mjd_max": 60156.546956243335,
+      "mjd_min": 58557.1958139432,
+      "n_toas": 3233,
+      "name": "J1125-5825",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1125-5825.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1125-5825.tim",
+      "toaerr_median_s": 2.9929999999999996e-06
+    },
+    {
+      "mjd_max": 60156.55023281949,
+      "mjd_min": 58589.90756457092,
+      "n_toas": 2636,
+      "name": "J1125-6014",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1125-6014.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1125-6014.tim",
+      "toaerr_median_s": 7.93e-07
+    },
+    {
+      "mjd_max": 60156.55409204993,
+      "mjd_min": 58557.210585812354,
+      "n_toas": 3256,
+      "name": "J1216-6410",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1216-6410.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1216-6410.tim",
+      "toaerr_median_s": 1.3854999999999997e-06
+    },
+    {
+      "mjd_max": 60156.56607901441,
+      "mjd_min": 58589.95121339854,
+      "n_toas": 2129,
+      "name": "J1231-1411",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1231-1411.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1231-1411.tim",
+      "toaerr_median_s": 4.3949999999999994e-06
+    },
+    {
+      "mjd_max": 60139.61687530671,
+      "mjd_min": 58855.23531541355,
+      "n_toas": 788,
+      "name": "J1327-0755",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1327-0755.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1327-0755.tim",
+      "toaerr_median_s": 2.2059999999999997e-06
+    },
+    {
+      "mjd_max": 60154.782467848694,
+      "mjd_min": 58595.74212724367,
+      "n_toas": 2994,
+      "name": "J1421-4409",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1421-4409.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1421-4409.tim",
+      "toaerr_median_s": 5.7114999999999994e-06
+    },
+    {
+      "mjd_max": 60156.58471489587,
+      "mjd_min": 58550.256168180385,
+      "n_toas": 3138,
+      "name": "J1431-5740",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1431-5740.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1431-5740.tim",
+      "toaerr_median_s": 4.887e-06
+    },
+    {
+      "mjd_max": 60156.58814275515,
+      "mjd_min": 58557.17431495345,
+      "n_toas": 3976,
+      "name": "J1435-6100",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1435-6100.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1435-6100.tim",
+      "toaerr_median_s": 4.0519999999999995e-06
+    },
+    {
+      "mjd_max": 60156.59125268339,
+      "mjd_min": 58550.26142512826,
+      "n_toas": 2207,
+      "name": "J1446-4701",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1446-4701.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1446-4701.tim",
+      "toaerr_median_s": 2.044e-06
+    },
+    {
+      "mjd_max": 60156.59538749051,
+      "mjd_min": 58589.98286193661,
+      "n_toas": 2448,
+      "name": "J1455-3330",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1455-3330.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1455-3330.tim",
+      "toaerr_median_s": 5.011499999999999e-06
+    },
+    {
+      "mjd_max": 60156.60121874582,
+      "mjd_min": 58834.06545456735,
+      "n_toas": 713,
+      "name": "J1514-4946",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1514-4946.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1514-4946.tim",
+      "toaerr_median_s": 2.363e-06
+    },
+    {
+      "mjd_max": 60156.60761266887,
+      "mjd_min": 58832.29059960044,
+      "n_toas": 9504,
+      "name": "J1525-5545",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1525-5545.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1525-5545.tim",
+      "toaerr_median_s": 4.2574999999999995e-06
+    },
+    {
+      "mjd_max": 60156.61354931284,
+      "mjd_min": 58557.216195142195,
+      "n_toas": 2685,
+      "name": "J1543-5149",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1543-5149.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1543-5149.tim",
+      "toaerr_median_s": 5.440999999999999e-06
+    },
+    {
+      "mjd_max": 60156.616729815854,
+      "mjd_min": 58576.08786669165,
+      "n_toas": 4905,
+      "name": "J1545-4550",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1545-4550.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1545-4550.tim",
+      "toaerr_median_s": 1.3899999999999998e-06
+    },
+    {
+      "mjd_max": 60156.62198663281,
+      "mjd_min": 58617.19049852804,
+      "n_toas": 2870,
+      "name": "J1547-5709",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1547-5709.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1547-5709.tim",
+      "toaerr_median_s": 5.2154999999999994e-06
+    },
+    {
+      "mjd_max": 60156.627596459795,
+      "mjd_min": 58568.97957052669,
+      "n_toas": 6200,
+      "name": "J1600-3053",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1600-3053.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1600-3053.tim",
+      "toaerr_median_s": 6.42e-07
+    },
+    {
+      "mjd_max": 60154.788042363834,
+      "mjd_min": 58550.26443704621,
+      "n_toas": 3121,
+      "name": "J1603-7202",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1603-7202.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1603-7202.tim",
+      "toaerr_median_s": 2.374e-06
+    },
+    {
+      "mjd_max": 60154.792382835236,
+      "mjd_min": 58589.95784253617,
+      "n_toas": 3027,
+      "name": "J1614-2230",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1614-2230.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1614-2230.tim",
+      "toaerr_median_s": 1.536e-06
+    },
+    {
+      "mjd_max": 60154.79604591075,
+      "mjd_min": 58550.269670723785,
+      "n_toas": 3106,
+      "name": "J1629-6902",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1629-6902.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1629-6902.tim",
+      "toaerr_median_s": 2.354e-06
+    },
+    {
+      "mjd_max": 60154.80071164696,
+      "mjd_min": 58589.96104228269,
+      "n_toas": 3162,
+      "name": "J1643-1224",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1643-1224.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1643-1224.tim",
+      "toaerr_median_s": 1.497e-06
+    },
+    {
+      "mjd_max": 60154.80842509782,
+      "mjd_min": 58595.854192163235,
+      "n_toas": 3124,
+      "name": "J1652-4838",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1652-4838.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1652-4838.tim",
+      "toaerr_median_s": 3.0155e-06
+    },
+    {
+      "mjd_max": 60154.82222615829,
+      "mjd_min": 58595.858437334035,
+      "n_toas": 2686,
+      "name": "J1653-2054",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1653-2054.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1653-2054.tim",
+      "toaerr_median_s": 5.782499999999999e-06
+    },
+    {
+      "mjd_max": 60154.832400677864,
+      "mjd_min": 58672.850391618354,
+      "n_toas": 1161,
+      "name": "J1658-5324",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1658-5324.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1658-5324.tim",
+      "toaerr_median_s": 3.5199999999999998e-06
+    },
+    {
+      "mjd_max": 60154.84540013437,
+      "mjd_min": 59005.94341847448,
+      "n_toas": 2492,
+      "name": "J1708-3506",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1708-3506.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1708-3506.tim",
+      "toaerr_median_s": 4.4255e-06
+    },
+    {
+      "mjd_max": 59318.95134742751,
+      "mjd_min": 58596.16430291726,
+      "n_toas": 1273,
+      "name": "J1713+0747",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1713+0747.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1713+0747.tim",
+      "toaerr_median_s": 3.45e-07
+    },
+    {
+      "mjd_max": 60154.85979679263,
+      "mjd_min": 58596.24042948716,
+      "n_toas": 2659,
+      "name": "J1719-1438",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1719-1438.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1719-1438.tim",
+      "toaerr_median_s": 5.8559999999999995e-06
+    },
+    {
+      "mjd_max": 60154.87457896,
+      "mjd_min": 58948.166642164266,
+      "n_toas": 2112,
+      "name": "J1721-2457",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1721-2457.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1721-2457.tim",
+      "toaerr_median_s": 5.2784999999999995e-06
+    },
+    {
+      "mjd_max": 60154.886906860695,
+      "mjd_min": 58596.19735921309,
+      "n_toas": 3030,
+      "name": "J1730-2304",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1730-2304.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1730-2304.tim",
+      "toaerr_median_s": 2.3545e-06
+    },
+    {
+      "mjd_max": 60154.89004838558,
+      "mjd_min": 58526.34140586396,
+      "n_toas": 4442,
+      "name": "J1732-5049",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1732-5049.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1732-5049.tim",
+      "toaerr_median_s": 3.894999999999999e-06
+    },
+    {
+      "mjd_max": 60154.89768500487,
+      "mjd_min": 58596.16908961528,
+      "n_toas": 3258,
+      "name": "J1737-0811",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1737-0811.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1737-0811.tim",
+      "toaerr_median_s": 5.8215e-06
+    },
+    {
+      "mjd_max": 60154.90472047425,
+      "mjd_min": 58596.17732759937,
+      "n_toas": 2957,
+      "name": "J1744-1134",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1744-1134.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1744-1134.tim",
+      "toaerr_median_s": 7.319999999999999e-07
+    },
+    {
+      "mjd_max": 60154.90818230123,
+      "mjd_min": 58665.706111908046,
+      "n_toas": 3098,
+      "name": "J1747-4036",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1747-4036.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1747-4036.tim",
+      "toaerr_median_s": 3.0985e-06
+    },
+    {
+      "mjd_max": 60154.913293581674,
+      "mjd_min": 58596.21872004854,
+      "n_toas": 2967,
+      "name": "J1751-2857",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1751-2857.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1751-2857.tim",
+      "toaerr_median_s": 4.7689999999999996e-06
+    },
+    {
+      "mjd_max": 60154.917816634224,
+      "mjd_min": 58623.83647752769,
+      "n_toas": 3323,
+      "name": "J1757-5322",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1757-5322.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1757-5322.tim",
+      "toaerr_median_s": 4.0469999999999995e-06
+    },
+    {
+      "mjd_max": 60154.92201427645,
+      "mjd_min": 58596.181901573684,
+      "n_toas": 3069,
+      "name": "J1801-1417",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1801-1417.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1801-1417.tim",
+      "toaerr_median_s": 3.799e-06
+    },
+    {
+      "mjd_max": 60154.92525808167,
+      "mjd_min": 58550.172203442926,
+      "n_toas": 3039,
+      "name": "J1802-2124",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1802-2124.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1802-2124.tim",
+      "toaerr_median_s": 2.231e-06
+    },
+    {
+      "mjd_max": 60154.92866537694,
+      "mjd_min": 59008.98282021496,
+      "n_toas": 1569,
+      "name": "J1804-2717",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1804-2717.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1804-2717.tim",
+      "toaerr_median_s": 6.205e-06
+    },
+    {
+      "mjd_max": 60154.93688818052,
+      "mjd_min": 58707.85632121904,
+      "n_toas": 2167,
+      "name": "J1804-2858",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1804-2858.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1804-2858.tim",
+      "toaerr_median_s": 5.272999999999999e-06
+    },
+    {
+      "mjd_max": 60154.94507514597,
+      "mjd_min": 58576.163006361225,
+      "n_toas": 6290,
+      "name": "J1811-2405",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1811-2405.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1811-2405.tim",
+      "toaerr_median_s": 1.24e-06
+    },
+    {
+      "mjd_max": 60149.04469354452,
+      "mjd_min": 58672.93446614886,
+      "n_toas": 3044,
+      "name": "J1825-0319",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1825-0319.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1825-0319.tim",
+      "toaerr_median_s": 4.3025e-06
+    },
+    {
+      "mjd_max": 60154.94846625824,
+      "mjd_min": 58590.01029063544,
+      "n_toas": 1949,
+      "name": "J1832-0836",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1832-0836.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1832-0836.tim",
+      "toaerr_median_s": 1.9459999999999997e-06
+    },
+    {
+      "mjd_max": 60154.9517932362,
+      "mjd_min": 58596.14464612271,
+      "n_toas": 2886,
+      "name": "J1843-1113",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1843-1113.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1843-1113.tim",
+      "toaerr_median_s": 1.8469999999999998e-06
+    },
+    {
+      "mjd_max": 60149.06171921587,
+      "mjd_min": 58596.14133783558,
+      "n_toas": 1969,
+      "name": "J1843-1448",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1843-1448.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1843-1448.tim",
+      "toaerr_median_s": 1.4587999999999998e-05
+    },
+    {
+      "mjd_max": 60149.07386463962,
+      "mjd_min": 58589.98624397608,
+      "n_toas": 3438,
+      "name": "J1902-5105",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1902-5105.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1902-5105.tim",
+      "toaerr_median_s": 1.6485e-06
+    },
+    {
+      "mjd_max": 60149.07587753443,
+      "mjd_min": 58557.35951904626,
+      "n_toas": 2913,
+      "name": "J1903-7051",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1903-7051.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1903-7051.tim",
+      "toaerr_median_s": 2.88e-06
+    },
+    {
+      "mjd_max": 60154.955280726615,
+      "mjd_min": 58526.21059216978,
+      "n_toas": 7199,
+      "name": "J1909-3744",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1909-3744.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1909-3744.tim",
+      "toaerr_median_s": 2.1399999999999998e-07
+    },
+    {
+      "mjd_max": 60149.09016189458,
+      "mjd_min": 59042.026085871046,
+      "n_toas": 1804,
+      "name": "J1911-1114",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1911-1114.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1911-1114.tim",
+      "toaerr_median_s": 3.8245e-06
+    },
+    {
+      "mjd_max": 60149.09597126453,
+      "mjd_min": 58672.91996780014,
+      "n_toas": 3123,
+      "name": "J1918-0642",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1918-0642.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1918-0642.tim",
+      "toaerr_median_s": 2.1139999999999996e-06
+    },
+    {
+      "mjd_max": 60149.0988454779,
+      "mjd_min": 58550.283226182364,
+      "n_toas": 2937,
+      "name": "J1933-6211",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1933-6211.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1933-6211.tim",
+      "toaerr_median_s": 3.797e-06
+    },
+    {
+      "mjd_max": 60149.103181027414,
+      "mjd_min": 58672.8730956999,
+      "n_toas": 1815,
+      "name": "J1946-5403",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1946-5403.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J1946-5403.tim",
+      "toaerr_median_s": 1.6939999999999998e-06
+    },
+    {
+      "mjd_max": 60149.10755199759,
+      "mjd_min": 58595.37782259753,
+      "n_toas": 3121,
+      "name": "J2010-1323",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J2010-1323.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J2010-1323.tim",
+      "toaerr_median_s": 2.4689999999999996e-06
+    },
+    {
+      "mjd_max": 60149.111275114956,
+      "mjd_min": 58672.90461492979,
+      "n_toas": 1917,
+      "name": "J2039-3616",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J2039-3616.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J2039-3616.tim",
+      "toaerr_median_s": 3.6259999999999997e-06
+    },
+    {
+      "mjd_max": 60149.11501086013,
+      "mjd_min": 58595.35458167399,
+      "n_toas": 3138,
+      "name": "J2124-3358",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J2124-3358.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J2124-3358.tim",
+      "toaerr_median_s": 2.9655e-06
+    },
+    {
+      "mjd_max": 60149.11738235079,
+      "mjd_min": 58576.19267038314,
+      "n_toas": 3039,
+      "name": "J2129-5721",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J2129-5721.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J2129-5721.tim",
+      "toaerr_median_s": 2.7749999999999997e-06
+    },
+    {
+      "mjd_max": 60149.12170499581,
+      "mjd_min": 58595.42103352474,
+      "n_toas": 2966,
+      "name": "J2145-0750",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J2145-0750.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J2145-0750.tim",
+      "toaerr_median_s": 1.8609999999999998e-06
+    },
+    {
+      "mjd_max": 60149.124669198274,
+      "mjd_min": 58684.0593649141,
+      "n_toas": 2091,
+      "name": "J2150-0326",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J2150-0326.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J2150-0326.tim",
+      "toaerr_median_s": 3.089e-06
+    },
+    {
+      "mjd_max": 60149.12740035843,
+      "mjd_min": 58684.11112832867,
+      "n_toas": 2993,
+      "name": "J2222-0137",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J2222-0137.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J2222-0137.tim",
+      "toaerr_median_s": 2.745e-06
+    },
+    {
+      "mjd_max": 60149.131885600524,
+      "mjd_min": 58786.89397604527,
+      "n_toas": 2094,
+      "name": "J2229+2643",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J2229+2643.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J2229+2643.tim",
+      "toaerr_median_s": 6.0085e-06
+    },
+    {
+      "mjd_max": 60149.13875844838,
+      "mjd_min": 58810.796895271254,
+      "n_toas": 2365,
+      "name": "J2234+0944",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J2234+0944.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J2234+0944.tim",
+      "toaerr_median_s": 3.249e-06
+    },
+    {
+      "mjd_max": 60149.15576376618,
+      "mjd_min": 58595.388567892056,
+      "n_toas": 1599,
+      "name": "J2236-5527",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J2236-5527.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J2236-5527.tim",
+      "toaerr_median_s": 5.6249999999999995e-06
+    },
+    {
+      "mjd_max": 60149.17353330501,
+      "mjd_min": 58550.36283341037,
+      "n_toas": 3405,
+      "name": "J2241-5236",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J2241-5236.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J2241-5236.tim",
+      "toaerr_median_s": 3.19e-07
+    },
+    {
+      "mjd_max": 60149.177583079865,
+      "mjd_min": 58786.96329963846,
+      "n_toas": 1948,
+      "name": "J2317+1439",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J2317+1439.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J2317+1439.tim",
+      "toaerr_median_s": 3.9499999999999995e-06
+    },
+    {
+      "mjd_max": 60149.1848246839,
+      "mjd_min": 58786.95719540894,
+      "n_toas": 1756,
+      "name": "J2322+2057",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J2322+2057.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J2322+2057.tim",
+      "toaerr_median_s": 4.572e-06
+    },
+    {
+      "mjd_max": 60149.19447758187,
+      "mjd_min": 58750.95985718197,
+      "n_toas": 1967,
+      "name": "J2322-2650",
+      "parfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J2322-2650.par",
+      "source": "par_tim",
+      "timfile": "data/MPTA_4p5yr/partim_datacentral_20260425/partim/J2322-2650.tim",
+      "toaerr_median_s": 3.777e-06
+    }
+  ],
+  "loader": "enterprise.pulsar.Pulsar",
+  "status": "PASS",
+  "test_label": "MPTA_4p5yr",
+  "timing_package": "auto"
+}

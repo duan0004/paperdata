@@ -1,0 +1,6 @@
+array,noise_root,noise_json_files,noise_param_entries,auxiliary_entries,note
+NG15,data/NG15yr/tutorials/data/15yr_wn_dict.json,1,697,,Official NANOGrav 15yr white-noise dictionary used by local NG15 loaders.
+EPTA_DR2new+,data/EPTA_DR2/epta-dr2/EPTA-DR2/noisefiles/DR2new+,25,,3,EPTA DR2new+ per-pulsar noise JSON plus red/dm/chrom dictionaries.
+PPTA_DR3,data/PPTA_DR3/ppta_dr3/toas_and_parameters/noisefiles,32,,,PPTA DR3 single-pulsar noise JSON files.
+InPTA_DR1,data/InPTA_DR1/InPTA.DR1,0,,28,No explicit noise JSON was located in the staged public repository; DM time-series products are present.
+MPTA_4p5yr,data/MPTA_4p5yr/partim_datacentral_20260425/partim,0,,,Staged public product is the noise-subtracted residual par/tim release; no separate noise JSON was located.

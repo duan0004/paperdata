@@ -1,0 +1,4 @@
+family,mean_abs_z_low4,max_abs_z_low4,coverage_low4,mean_abs_z_high_bins,max_abs_z_high_bins,interpretation
+Astro-curved,0.46152012069840354,1.6174692466065757,0.19444444444444445,0.9226497662706257,1.5997997370447217,posterior-summary diagnostic only; comparable low-frequency residuals across top families
+Cosmo-other,0.47795126745069694,1.5588269599699456,0.25,0.9105785726079831,1.6037669655973004,posterior-summary diagnostic only; comparable low-frequency residuals across top families
+SIGW-like,0.46513995509987044,1.645816191536679,0.2222222222222222,0.9142131856237532,1.638819514978589,posterior-summary diagnostic only; comparable low-frequency residuals across top families

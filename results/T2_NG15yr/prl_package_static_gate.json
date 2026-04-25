@@ -19,8 +19,8 @@
     "title_present_tex": true
   },
   "citations": {
-    "bibitem_count": 18,
-    "cite_count": 18,
+    "bibitem_count": 20,
+    "cite_count": 20,
     "missing_bibitems": [],
     "unused_bibitems": []
   },
@@ -52,6 +52,10 @@
     "figure": {
       "exists": true,
       "path": "results/T2_NG15yr/figures/prl_decisive_evidence_figure.pdf"
+    },
+    "final_stability_diagnostics": {
+      "exists": true,
+      "path": "results/T2_NG15yr/bayes_factors/prl_final_stability_diagnostics.md"
     },
     "formal_compile_report": {
       "exists": true,
@@ -98,7 +102,7 @@
       "path": "theory/T3.11_PRL_tex_static_check.md"
     }
   },
-  "generated": "2026-04-23T11:00:31",
+  "generated": "2026-04-25T11:21:26",
   "json_status": {
     "H10_systematic_envelope": {
       "complete": true,
@@ -192,11 +196,11 @@
     "tectonic": "/opt/homebrew/bin/tectonic",
     "xelatex": null
   },
-  "title": "Calibrated PTA Evidence Favors Curved Spectra but Not a Unique Nanohertz Source",
+  "title": "Calibrated PTA Evidence Identifies Low-Frequency Curvature but Not a Unique Nanohertz Source",
   "word_counts": {
-    "compressed_markdown": 1752,
-    "revtex_source": 2427,
+    "compressed_markdown": 1756,
+    "revtex_source": 2431,
     "supplement_markdown": 1165,
-    "supplement_tex_source": 2787
+    "supplement_tex_source": 4106
   }
 }

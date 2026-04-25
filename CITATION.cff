@@ -1,14 +1,14 @@
 cff-version: 1.2.0
 message: "If you use this code/data release, please cite the associated paper and this archived software/data release."
-title: "Calibrated PTA Evidence Favors Curved Spectra but Not a Unique Nanohertz Source: Code and Compact Data Release"
+title: "Calibrated PTA Evidence Identifies Low-Frequency Curvature but Not a Unique Nanohertz Source: Code and Compact Data Release"
 type: software
 authors:
   - family-names: "DUAN"
     given-names: "Ran"
     affiliation: "National Astronomical Observatories, Chinese Academy of Sciences"
 repository-code: "https://github.com/duan0004/paperdata"
-version: "v1.0.1"
-date-released: "2026-04-23"
+version: "v1.0.2"
+date-released: "2026-04-25"
 keywords:
   - "pulsar timing arrays"
   - "NANOGrav 15-year"
@@ -19,4 +19,4 @@ keywords:
   - "SMBHB"
   - "scalar-induced gravitational waves"
   - "cosmic strings"
-abstract: "Code, compact data products, derived evidence tables, cross-PTA bridge outputs, figures, and manuscript sources for the PRL submission Calibrated PTA Evidence Favors Curved Spectra but Not a Unique Nanohertz Source."
+abstract: "Code, compact data products, derived evidence tables, cross-PTA bridge outputs, figures, manuscript sources, and non-evidence timing/LSS production-gate diagnostics for the PRL submission Calibrated PTA Evidence Identifies Low-Frequency Curvature but Not a Unique Nanohertz Source."

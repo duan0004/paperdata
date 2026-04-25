@@ -1,0 +1,369 @@
+{
+  "duplicates_ng15_epta_ppta": [
+    {
+      "arrays": [
+        "EPTA",
+        "NG15",
+        "PPTA"
+      ],
+      "base_name": "J0030+0451",
+      "occurrences": 3
+    },
+    {
+      "arrays": [
+        "NG15",
+        "PPTA"
+      ],
+      "base_name": "J0437-4715",
+      "occurrences": 2
+    },
+    {
+      "arrays": [
+        "EPTA",
+        "NG15",
+        "PPTA"
+      ],
+      "base_name": "J0613-0200",
+      "occurrences": 3
+    },
+    {
+      "arrays": [
+        "EPTA",
+        "PPTA"
+      ],
+      "base_name": "J0900-3144",
+      "occurrences": 2
+    },
+    {
+      "arrays": [
+        "EPTA",
+        "NG15"
+      ],
+      "base_name": "J1012+5307",
+      "occurrences": 2
+    },
+    {
+      "arrays": [
+        "EPTA",
+        "NG15",
+        "PPTA"
+      ],
+      "base_name": "J1022+1001",
+      "occurrences": 3
+    },
+    {
+      "arrays": [
+        "EPTA",
+        "NG15",
+        "PPTA"
+      ],
+      "base_name": "J1024-0719",
+      "occurrences": 3
+    },
+    {
+      "arrays": [
+        "EPTA",
+        "NG15"
+      ],
+      "base_name": "J1455-3330",
+      "occurrences": 2
+    },
+    {
+      "arrays": [
+        "EPTA",
+        "NG15",
+        "PPTA"
+      ],
+      "base_name": "J1600-3053",
+      "occurrences": 3
+    },
+    {
+      "arrays": [
+        "EPTA",
+        "NG15"
+      ],
+      "base_name": "J1640+2224",
+      "occurrences": 2
+    },
+    {
+      "arrays": [
+        "NG15",
+        "PPTA"
+      ],
+      "base_name": "J1643-1224",
+      "occurrences": 2
+    },
+    {
+      "arrays": [
+        "EPTA",
+        "NG15",
+        "PPTA"
+      ],
+      "base_name": "J1713+0747",
+      "occurrences": 3
+    },
+    {
+      "arrays": [
+        "EPTA",
+        "NG15",
+        "PPTA"
+      ],
+      "base_name": "J1730-2304",
+      "occurrences": 3
+    },
+    {
+      "arrays": [
+        "EPTA",
+        "NG15"
+      ],
+      "base_name": "J1738+0333",
+      "occurrences": 2
+    },
+    {
+      "arrays": [
+        "NG15",
+        "PPTA"
+      ],
+      "base_name": "J1741+1351",
+      "occurrences": 2
+    },
+    {
+      "arrays": [
+        "EPTA",
+        "NG15",
+        "PPTA"
+      ],
+      "base_name": "J1744-1134",
+      "occurrences": 3
+    },
+    {
+      "arrays": [
+        "EPTA",
+        "NG15"
+      ],
+      "base_name": "J1751-2857",
+      "occurrences": 2
+    },
+    {
+      "arrays": [
+        "NG15",
+        "PPTA"
+      ],
+      "base_name": "J1832-0836",
+      "occurrences": 2
+    },
+    {
+      "arrays": [
+        "EPTA",
+        "NG15"
+      ],
+      "base_name": "J1843-1113",
+      "occurrences": 2
+    },
+    {
+      "arrays": [
+        "EPTA",
+        "PPTA"
+      ],
+      "base_name": "J1857+0943",
+      "occurrences": 2
+    },
+    {
+      "arrays": [
+        "EPTA",
+        "NG15",
+        "PPTA"
+      ],
+      "base_name": "J1909-3744",
+      "occurrences": 3
+    },
+    {
+      "arrays": [
+        "EPTA",
+        "NG15"
+      ],
+      "base_name": "J1910+1256",
+      "occurrences": 2
+    },
+    {
+      "arrays": [
+        "EPTA",
+        "NG15"
+      ],
+      "base_name": "J1911+1347",
+      "occurrences": 2
+    },
+    {
+      "arrays": [
+        "EPTA",
+        "NG15"
+      ],
+      "base_name": "J1918-0642",
+      "occurrences": 2
+    },
+    {
+      "arrays": [
+        "EPTA",
+        "NG15",
+        "PPTA"
+      ],
+      "base_name": "J2124-3358",
+      "occurrences": 3
+    },
+    {
+      "arrays": [
+        "NG15",
+        "PPTA"
+      ],
+      "base_name": "J2145-0750",
+      "occurrences": 2
+    },
+    {
+      "arrays": [
+        "EPTA",
+        "NG15"
+      ],
+      "base_name": "J2322+2057",
+      "occurrences": 2
+    }
+  ],
+  "epta_variant": "DR2new+",
+  "gate_items": [
+    {
+      "detail": "NANOGrav 15-year reference par/tim target count 68; reference target count 68. The separate feather development loader has 67 pulsars and must not be mixed into exact timing-level evidence.",
+      "gate": "NG15 timing products",
+      "status": "PRESENT_LOCALLY"
+    },
+    {
+      "detail": "EPTA DR2 par/tim count 25; reference target count 25.",
+      "gate": "EPTA DR2 timing products",
+      "status": "PRESENT_LOCALLY"
+    },
+    {
+      "detail": "PPTA DR3 local par/tim pair count 32; reference target count 32.  Count now matches when using the GitHub reference source.",
+      "gate": "PPTA DR3 timing products",
+      "status": "PRESENT_LOCALLY"
+    },
+    {
+      "detail": "Local tree contains 14 NB and 14 WB InPTA DR1 par/tim pairs; reference target count is 14.  Read-only diagnostics show NB+tempo2 loads 13/14 and fails on J0751+1807_NB, WB+PINT loads 13/14 and fails on J0613-0200_WB, NB+PINT fails all 14 on TCB/TDB handling, and WB+tempo2 fails all 14 with empty-TOA loader errors.  Exact baseline reproduction therefore remains blocked until the published NB/WB, timing-package, and TCB-to-TDB preprocessing policy is identified.",
+      "gate": "InPTA DR1 exact target inputs",
+      "local_path": "data/InPTA_DR2",
+      "local_path_exists": false,
+      "status": "PRESENT_BUT_POLICY_BLOCKED"
+    },
+    {
+      "detail": "Local MPTA par/tim pair count is 83; reference target count is 83. Production baseline use also requires exact noise-policy and duplicate-combination harmonization.",
+      "gate": "MPTA exact target inputs",
+      "status": "PRESENT_BUT_POLICY_BLOCKED"
+    },
+    {
+      "detail": "Current reduced 3-array diagnostics use priority deduplication or unique-only dropping.  A production baseline must reproduce the published direct-combination policy for duplicated pulsars before family evidence.",
+      "gate": "duplicate pulsar handling",
+      "status": "BLOCKED_BY_POLICY_HARMONIZATION"
+    },
+    {
+      "detail": "No exact public five-PTA baseline likelihood reproduction has passed locally; family evidence remains on hold.",
+      "gate": "timing-level baseline reproduction",
+      "status": "NOT_STARTED_FOR_EXACT_TARGET"
+    }
+  ],
+  "generated": "2026-04-25T10:00:22",
+  "inventory_summary": [
+    {
+      "array": "NG15",
+      "count": 67,
+      "status": "PRESENT_LOCALLY"
+    },
+    {
+      "array": "NG15_TIMING",
+      "count": 68,
+      "status": "PRESENT_LOCALLY"
+    },
+    {
+      "array": "EPTA",
+      "count": 25,
+      "status": "PRESENT_LOCALLY"
+    },
+    {
+      "array": "PPTA",
+      "count": 32,
+      "status": "PRESENT_LOCALLY"
+    },
+    {
+      "array": "InPTA_DR1_NB",
+      "count": 14,
+      "status": "PRESENT_LOCALLY"
+    },
+    {
+      "array": "InPTA_DR1_WB",
+      "count": 14,
+      "status": "PRESENT_LOCALLY"
+    },
+    {
+      "array": "MPTA_4p5yr",
+      "count": 83,
+      "status": "PRESENT_LOCALLY"
+    }
+  ],
+  "local_count_audit": [
+    {
+      "detail": "Local feather directory contains 67 files; ENTERPRISE loader returns 67 pulsars.",
+      "missing_or_incomplete": "J0614-3329",
+      "product": "NG15_feathers",
+      "status": "LOCAL_COUNT_67_REFERENCE_68"
+    },
+    {
+      "detail": "Reference-project NANOGrav 15-year timing residual tree has 68 unique pulsars. The feather-missing target J0614-3329 has par=True and tim=True. NG15_TIMING loader smoke status=PASS, available=68, loaded=68, failures=0.",
+      "missing_or_incomplete": "official NG15 noise-policy wiring remains required before timing-level evidence",
+      "product": "NG15_full_timing_reference_tree",
+      "status": "REFERENCE_TREE_HAS_68_NAMES_LOADER_SMOKE_PASS"
+    },
+    {
+      "detail": "Metadata lists 32 standard .par files, 32 single-pulsar-noise .par files, and 31 .tim files.",
+      "missing_or_incomplete": "J1741+1351",
+      "product": "PPTA_DR3_toas_and_parameters_all",
+      "status": "METADATA_HAS_32_PAR_31_TIM"
+    },
+    {
+      "detail": "GitHub source has 32 standard .par files and 32 .tim files at commit fdbe6eb1c86d4c6cf2f1f518711e44ad1a9fd3fa.",
+      "missing_or_incomplete": "",
+      "product": "PPTA_DR3_github_analysis_codes_data_all",
+      "status": "GITHUB_SOURCE_HAS_32_PAR_32_TIM"
+    },
+    {
+      "detail": "legacy local archive previously used by this project: extracted tree has 74 .par names and 74 .tim names (74 matched pairs); archive has 74 .par and 74 .tim entries.",
+      "missing_or_incomplete": "",
+      "product": "MPTA_4p5yr_legacy_DOI_partim",
+      "status": "LOCAL_ARCHIVE_AND_EXTRACTED_TREE_HAVE_74_PAIRS"
+    },
+    {
+      "detail": "refreshed DataCentral partim download: extracted tree has 83 .par names and 83 .tim names (83 matched pairs); archive has 83 .par and 83 .tim entries.",
+      "missing_or_incomplete": "",
+      "product": "MPTA_4p5yr_DataCentral_partim_20260425",
+      "status": "LOCAL_ARCHIVE_AND_EXTRACTED_TREE_HAVE_83_PAIRS"
+    },
+    {
+      "detail": "Supplement zip contains 10 entries, including 9 MP4 files, and 0 timing-like or manifest-like entries.",
+      "missing_or_incomplete": "does not provide timing inputs or duplicate/noise-policy metadata",
+      "product": "MPTA_4p5yr_Anisotropy_supplement_zip",
+      "status": "NO_TIMING_INPUTS_FOUND"
+    },
+    {
+      "detail": "archives.tar.gz contains 10100 entries, 86 directories, 85 pulsar directories under data_august23_32ch, 10014 .dly files, and 0 .par / 0 .tim entries.",
+      "missing_or_incomplete": "raw .dly archive does not provide baseline-ready .par/.tim inputs",
+      "product": "MPTA_4p5yr_archives_tar",
+      "status": "RAW_DLY_ARCHIVE_NO_PAR_TIM"
+    }
+  ],
+  "ng15_priority_manifest": {
+    "csv": "results/5pta_timing/manifest_v2_ng15_priority_dedup_3array_development_2026-04-25-local-refresh.csv",
+    "retained": 87,
+    "skipped": 37
+  },
+  "status": "BLOCKED_BEFORE_TIMING_LEVEL_FAMILY_EVIDENCE",
+  "unique_only_manifest": {
+    "csv": "results/5pta_timing/manifest_v2_unique_only_3array_development_2026-04-25-local-refresh.csv",
+    "retained": 60,
+    "skipped": 64
+  }
+}

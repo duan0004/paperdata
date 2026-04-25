@@ -1,0 +1,2 @@
+catalog,status,bytes,path,query,download_url,error
+2MPZ,exists,12001478,data/LSS/2MPZ/twompz_ra_dec_zphoto.csv.gz,"SELECT ra,dec,zPhoto FROM TWOMPZ..twompzPhotoz",,

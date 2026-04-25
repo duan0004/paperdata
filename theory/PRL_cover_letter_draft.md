@@ -2,9 +2,9 @@
 
 Dear Editors,
 
-We submit the Letter "Calibrated PTA Evidence Favors Curved Spectra but
-Not a Unique Nanohertz Source" for consideration in Physical Review
-Letters.
+We submit the Letter "Calibrated PTA Evidence Identifies Low-Frequency
+Curvature but Not a Unique Nanohertz Source" for consideration in Physical
+Review Letters.
 
 The recent NANOGrav 15-year Hellings-Downs signal has opened a new problem in
 source identification: several cosmological spectra receive strong but not
@@ -42,8 +42,7 @@ nanohertz gravitational-wave cosmology.
 The manuscript uses public NANOGrav data products and official PTArcade model
 and density products.  The analysis code and compact data release are archived
 at https://doi.org/10.5281/zenodo.19688587 and mirrored at
-https://github.com/duan0004/paperdata, release v1.0.1, commit
-2bc1dfeee7d452f6c3b58a8fd8f339e6ff0091f6.  The cross-PTA bridge revision is
+https://github.com/duan0004/paperdata, release v1.0.2.  The cross-PTA bridge revision is
 mirrored at GitHub tag prl-calibration-bridge-2026-04-23.
 
 Sincerely,

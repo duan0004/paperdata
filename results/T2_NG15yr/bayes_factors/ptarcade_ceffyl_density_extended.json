@@ -1,12 +1,12 @@
 {
-  "generated": "2026-04-21 10:41:18",
+  "generated": "2026-04-25 09:32:55",
   "task": "PTArcade official-ceffyl-density evidence extension",
   "source": {
     "ptarcade_package_version": "1.1.5",
     "ptarcade_ceffyl_data_zenodo": "https://doi.org/10.5281/zenodo.10495907",
     "ng15_model_files_zenodo": "https://doi.org/10.5281/zenodo.8084351",
-    "ceffyl_datadir": "./data/NG15yr/PTArcade_ceffyl_0.2.0/ng15_30f_fs{hd}_ceffyl",
-    "model_root": "./data/NG15yr/PTArcade_models_1.0.0/models_1.0.0"
+    "ceffyl_datadir": "/Volumes/MacData_External/Physics-Novel-Paper/\u7814\u7a76\u8ba1\u52122026/\u8bfe\u98981-PTA\u5f15\u529b\u6ce2/data/NG15yr/PTArcade_ceffyl_0.2.0/ng15_30f_fs{hd}_ceffyl",
+    "model_root": "/Volumes/MacData_External/Physics-Novel-Paper/\u7814\u7a76\u8ba1\u52122026/\u8bfe\u98981-PTA\u5f15\u529b\u6ce2/data/NG15yr/PTArcade_models_1.0.0/models_1.0.0"
   },
   "method": {
     "mode": "dynesty evidence on PTArcade official ceffyl density grid",
@@ -30,19 +30,19 @@
       "lnZ": -113.01014102895687,
       "lnZerr": 0.10270745016414906,
       "niter": 3194,
-      "runtime_s": 3.2553861141204834,
+      "runtime_s": 3.1913459300994873,
       "bestfit": [
         -14.569264637007679
       ],
       "bestfit_loglike": -108.9052006827872,
       "posterior_mean": [
-        -14.603900924439117
+        -14.603918572678914
       ],
       "posterior_std": [
-        0.06343600166982459
+        0.06343235572773571
       ],
       "posterior_median": [
-        -14.596578058647289
+        -14.596630898855182
       ],
       "posterior_p16": [
         -14.667304098384896
@@ -72,31 +72,31 @@
       "lnZ": -113.37638961191138,
       "lnZerr": 0.12698245502978914,
       "niter": 5624,
-      "runtime_s": 2.8752918243408203,
+      "runtime_s": 2.882962942123413,
       "bestfit": [
         -14.189510639984421,
         3.257727655595537
       ],
       "bestfit_loglike": -104.43126750612969,
       "posterior_mean": [
-        -14.541861179114969,
-        4.132092222320064
+        -14.542284981848608,
+        4.131141584810149
       ],
       "posterior_std": [
-        0.133472601496788,
-        0.2839988685816131
+        0.13327055047720338,
+        0.2834134528296423
       ],
       "posterior_median": [
-        -14.529875367078864,
-        4.114916685382864
+        -14.530500355833917,
+        4.114980929190728
       ],
       "posterior_p16": [
-        -14.675283040778778,
-        3.8596422793331575
+        -14.672054712704236,
+        3.858774181270049
       ],
       "posterior_p84": [
-        -14.4225559099612,
-        4.419419537244721
+        -14.422368808346471,
+        4.41794666102251
       ],
       "lnB_vs_smbhb_fixed_gamma": -0.3662485829545119,
       "lnB_err_vs_smbhb_fixed_gamma": 0.16331982183621677,
@@ -116,35 +116,35 @@
         "log10_f_peak",
         "log10_A"
       ],
-      "model_path": "./data/NG15yr/PTArcade_models_1.0.0/models_1.0.0/sigw_delta.py",
+      "model_path": "/Volumes/MacData_External/Physics-Novel-Paper/\u7814\u7a76\u8ba1\u52122026/\u8bfe\u98981-PTA\u5f15\u529b\u6ce2/data/NG15yr/PTArcade_models_1.0.0/models_1.0.0/sigw_delta.py",
       "lnZ": -109.7294604220782,
       "lnZerr": 0.11179189881541994,
       "niter": 3438,
-      "runtime_s": 6.94926118850708,
+      "runtime_s": 6.7380211353302,
       "bestfit": [
         -5.062046967571501,
         0.009504699081733126
       ],
       "bestfit_loglike": -104.77212210719276,
       "posterior_mean": [
-        -5.837836292249148,
-        -0.6363352612147738
+        -5.834341624872125,
+        -0.6327110870306042
       ],
       "posterior_std": [
-        0.5714266300883618,
-        0.4561805239985514
+        0.5771163931094074,
+        0.45907440447469283
       ],
       "posterior_median": [
-        -5.7615295179251405,
-        -0.5875141784834348
+        -5.749733688258781,
+        -0.5836298948429532
       ],
       "posterior_p16": [
-        -6.477768112546011,
-        -1.1446725592391869
+        -6.476982041077117,
+        -1.1447525450852647
       ],
       "posterior_p84": [
-        -5.231094533479707,
-        -0.1390327894464708
+        -5.215809470978362,
+        -0.13579384966110095
       ],
       "lnB_vs_smbhb_fixed_gamma": 3.2806806068786614,
       "lnB_err_vs_smbhb_fixed_gamma": 0.1518099106118512,
@@ -164,35 +164,35 @@
         "log10_Gmu",
         "log10_P"
       ],
-      "model_path": "./data/NG15yr/PTArcade_models_1.0.0/models_1.0.0/super.py",
+      "model_path": "/Volumes/MacData_External/Physics-Novel-Paper/\u7814\u7a76\u8ba1\u52122026/\u8bfe\u98981-PTA\u5f15\u529b\u6ce2/data/NG15yr/PTArcade_models_1.0.0/models_1.0.0/super.py",
       "lnZ": -110.0386755489354,
       "lnZerr": 0.11030473194090144,
       "niter": 3643,
-      "runtime_s": 7.0836851596832275,
+      "runtime_s": 7.135871887207031,
       "bestfit": [
         -12.101363641816965,
         -2.9983298467218016
       ],
       "bestfit_loglike": -105.09057965473579,
       "posterior_mean": [
-        -11.702019542724564,
-        -2.283012884665756
+        -11.702617883207115,
+        -2.2825137459761504
       ],
       "posterior_std": [
-        0.30577286599275355,
-        0.5271193443488128
+        0.30161681873646906,
+        0.525128459042167
       ],
       "posterior_median": [
-        -11.760709863423312,
-        -2.379380839633748
+        -11.758882584874288,
+        -2.3749178583445034
       ],
       "posterior_p16": [
-        -11.999161153606419,
-        -2.817878446194265
+        -11.997269926030327,
+        -2.818002153778166
       ],
       "posterior_p84": [
-        -11.387486463835353,
-        -1.7104957340215718
+        -11.388501016939827,
+        -1.7097247636842323
       ],
       "lnB_vs_smbhb_fixed_gamma": 2.9714654800214646,
       "lnB_err_vs_smbhb_fixed_gamma": 0.1507181283315822,

@@ -1,6 +1,6 @@
 # PRL Submission Human Gate
 
-**Date**: 2026-04-23  
+**Date**: 2026-04-25  
 **Target**: Physical Review Letters  
 **Current package**: `theory/paper_prl_submission.tex` +
 `theory/prl_supplement.tex`
@@ -26,10 +26,9 @@
   - Zenodo DOI `10.5281/zenodo.19688587`
   - Zenodo URL `https://doi.org/10.5281/zenodo.19688587`
   - `https://github.com/duan0004/paperdata`
-  - commit `2bc1dfeee7d452f6c3b58a8fd8f339e6ff0091f6`
-  - release tag `v1.0.1`
+  - release tag `v1.0.2`
   - release URL:
-    `https://github.com/duan0004/paperdata/releases/tag/v1.0.1`
+    `https://github.com/duan0004/paperdata/releases/tag/v1.0.2`
 - Evidence cross-check added:
   - `results/T2_NG15yr/bayes_factors/prl_evidence_ti_qmc_crosscheck.json`
   - `results/T2_NG15yr/bayes_factors/prl_evidence_ti_qmc_crosscheck.md`

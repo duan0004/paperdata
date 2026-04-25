@@ -1,0 +1,3 @@
+catalog,path,rows_read,rows_valid,rows_valid_after_mask,selection_note,z_max,z_min
+2MPZ,data/LSS/2MPZ/twompz_ra_dec_zphoto.csv.gz,934175,933447,,No random catalog applied; this is a template-production gate only.,0.401001,7.57765e-06
+WISExSCOS,data/LSS/WISExSCOS/wiseScosPhotoz160708.csv.gz,20416142,,13376121,Uses the public binary WISExSCOS mask degraded to the production nside.,0.57614398,-0.0

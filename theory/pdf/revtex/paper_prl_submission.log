@@ -365,129 +365,156 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 29.
  (umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 1137) in paragraph at lines 69--81
-\TU/lmr/m/n/10 identification. Order-unity shifts in $[] \OMS/cmsy/m/n/10 B$ \T
-U/lmr/m/n/10 can arise
+Underfull \hbox (badness 1052) in paragraph at lines 67--76
+\TU/lmr/m/n/10 ent: we anchor source identification to the official
  []
 
 
-Underfull \hbox (badness 1215) in paragraph at lines 69--81
-\TU/lmr/m/n/10 quency, or the density estimate used for the free-
+Underfull \hbox (badness 1320) in paragraph at lines 67--76
+\TU/lmr/m/n/10 NANOGrav/PTArcade evidence scale, calibrate cos-
  []
 
 
-Underfull \hbox (badness 1789) in paragraph at lines 82--85
+Underfull \hbox (badness 1194) in paragraph at lines 67--76
+\TU/lmr/m/n/10 mological templates against curved-SMBHB controls
+ []
+
+
+Underfull \hbox (badness 1789) in paragraph at lines 83--86
 \TU/lmr/m/n/10 stochastic background through the one-sided strain
  []
 
 
-Underfull \hbox (badness 4391) in paragraph at lines 120--127
-\TU/lmr/m/n/10 density construction applied to each public free-
+Underfull \hbox (badness 3333) in paragraph at lines 88--100
+\TU/lmr/m/n/10 with $\OML/cmm/m/it/10 H[] \OT1/cmr/m/n/10 = 67\OML/cmm/m/it/10 
+:\OT1/cmr/m/n/10 4 []$\TU/lmr/m/n/10 . The calibrated
  []
 
 
-Underfull \hbox (badness 1377) in paragraph at lines 120--127
-\TU/lmr/m/n/10 spectrum summary, while “off” denotes the official
+Underfull \hbox (badness 5245) in paragraph at lines 88--100
+\TU/lmr/m/n/10 cross-PTA bridge additionally includes the PBH-
  []
 
-[1]
-Underfull \hbox (badness 7326) in paragraph at lines 128--135
+
+Underfull \hbox (badness 2573) in paragraph at lines 88--100
+\TU/lmr/m/n/10 SIGW analytic template and two non-official cos-
+ []
+
+
+Underfull \hbox (badness 7326) in paragraph at lines 116--124
 []\TU/lmr/m/it/10 Pipeline validation. \TU/lmr/m/n/10 Direct ingestion of the
  []
 
 
-Underfull \hbox (badness 1072) in paragraph at lines 128--135
+Underfull \hbox (badness 1072) in paragraph at lines 116--124
 \TU/lmr/m/n/10 pre-sampled NANOGrav Hellings–Downs chain gives
  []
 
+[1]
 File: ../results/T2_NG15yr/figures//prl_decisive_evidence_figure.pdf Graphic fi
 le (type pdf)
 <use ../results/T2_NG15yr/figures//prl_decisive_evidence_figure.pdf>
 
-Underfull \hbox (badness 10000) in paragraph at lines 187--190
+Underfull \hbox (badness 10000) in paragraph at lines 160--163
 []\TU/lmr/m/n/10 The decisive test uses the official
  []
 
 
-Underfull \hbox (badness 3323) in paragraph at lines 187--190
+Underfull \hbox (badness 3323) in paragraph at lines 160--163
 \TU/lmr/m/n/10 NANOGrav/PTArcade model files and the official
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 193--196
-\TU/lmr/m/n/10 This conversion was checked against
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 193--196
-\TU/lmtt/m/n/10 ptarcade.models_utils. omega2cross \TU/lmr/m/n/10 to relative
- []
-
-[2]
 File: ../results/T2_NG15yr/figures//prl_bridge_evidence_figure.pdf Graphic file
  (type pdf)
 <use ../results/T2_NG15yr/figures//prl_bridge_evidence_figure.pdf>
 
-Underfull \hbox (badness 1028) in paragraph at lines 279--292
+Underfull \hbox (badness 2435) in paragraph at lines 227--251
+\TU/lmr/m/n/10 the NANOGrav degeneracy. All 11 bridge tem-
+ []
+
+
+Underfull \hbox (badness 1694) in paragraph at lines 227--251
+\TU/lmr/m/n/10 plates passed the local posterior-summary adapters
+ []
+
+
+Underfull \hbox (badness 1112) in paragraph at lines 227--251
+\TU/lmr/m/n/10 law SMBHB curvature, and environmental SMBHB
+ []
+
+[2]
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 251.
+
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 251.
+
+
+Class revtex4-2 Warning: Deferred float stuck during \clearpage processing.
+
+
+Underfull \hbox (badness 1360) in paragraph at lines 252--259
+[]\TU/lmr/m/n/10 The sequential anchored ablation gives the same
+ []
+
+
+Underfull \hbox (badness 1484) in paragraph at lines 252--259
+\TU/lmr/m/n/10 warning against over-interpreting the bridge leader.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 252--259
+\TU/lmr/m/n/10 official+PPTA-local, and NG15-official+EPTA-local
+ []
+
+
+Underfull \hbox (badness 1028) in paragraph at lines 272--301
 []\TU/lmr/m/n/10 The Supplemental Material gives the full official-
  []
 
 
-Underfull \hbox (badness 2941) in paragraph at lines 293--307
+Underfull \hbox (badness 1371) in paragraph at lines 272--301
+\TU/lmr/m/n/10 model list, sequential ablation, tested-representative
+ []
+
+
+Underfull \hbox (badness 1472) in paragraph at lines 272--301
+\TU/lmr/m/n/10 deviation units, respectively. This is a posterior-
+ []
+
+
+Underfull \hbox (badness 2941) in paragraph at lines 302--320
 []\TU/lmr/m/it/10 Interpretation and conclusions. \TU/lmr/m/n/10 The calibrated
 
  []
 
 
-Underfull \hbox (badness 2111) in paragraph at lines 293--307
+Underfull \hbox (badness 2111) in paragraph at lines 302--320
 \TU/lmr/m/n/10 NANOGrav evidence and the cross-PTA posterior-
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 333--353
-\TU/lmr/m/n/10 files from Zenodo DOI []10.5281/zenodo.8084351[],
- []
-
-
-Underfull \hbox (badness 5189) in paragraph at lines 333--353
-\TU/lmr/m/n/10 and the official PTArcade \TU/lmtt/m/n/10 ceffyl \TU/lmr/m/n/10 
-density prod-
- []
-
-
-Underfull \hbox (badness 4752) in paragraph at lines 333--353
-\TU/lmr/m/n/10 and mirrored at []\TU/lmtt/m/n/10 github.com/duan0004/paperdata[
-]\TU/lmr/m/n/10 ,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 333--353
-\TU/lmr/m/n/10 release []\TU/lmtt/m/n/10 v1.0.1[]\TU/lmr/m/n/10 , at commit
- []
-
-
-Underfull \hbox (badness 3229) in paragraph at lines 333--353
-\TU/lmr/m/n/10 under \TU/lmtt/m/n/10 results/prl_reference_bridge/ \TU/lmr/m/n/
-10 and gener-
- []
-
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 357--358
+Underfull \hbox (badness 10000) in paragraph at lines 368--369
  []\TU/lmr/m/n/9 G. Agazie et al. (NANOGrav Collaboration),
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 360--361
+Underfull \hbox (badness 10000) in paragraph at lines 371--372
  []\TU/lmr/m/n/9 G. Agazie et al. (NANOGrav Collaboration),
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 363--364
+Underfull \hbox (badness 10000) in paragraph at lines 374--375
+ []\TU/lmr/m/n/9 G. Agazie et al. (NANOGrav Collaboration),
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 377--378
  []\TU/lmr/m/n/9 A. Afzal et al. (NANOGrav Collaboration),
  []
 
 (paper_prl_submission.bbl) [4] (paper_prl_submission.aux)
 Package rerunfilecheck Info: File `paper_prl_submission.out' has not changed.
-(rerunfilecheck)             Checksum: 9093B49969B808F3D94008965CC3CBEC;863.
+(rerunfilecheck)             Checksum: B8E99EFFAE9299FE829FF36837E4FD70;928.
  )
-Output written on paper_prl_submission.xdv (4 pages, 166880 bytes).
+Output written on paper_prl_submission.xdv (4 pages, 187608 bytes).

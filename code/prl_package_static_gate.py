@@ -20,7 +20,7 @@ ROOT = Path(__file__).resolve().parents[1]
 OUT_JSON = ROOT / "results/T2_NG15yr/prl_package_static_gate.json"
 OUT_MD = ROOT / "results/T2_NG15yr/prl_package_static_gate.md"
 
-TITLE = "Calibrated PTA Evidence Favors Curved Spectra but Not a Unique Nanohertz Source"
+TITLE = "Calibrated PTA Evidence Identifies Low-Frequency Curvature but Not a Unique Nanohertz Source"
 
 REQUIRED_FILES = {
     "revtex": "theory/paper_prl_submission.tex",
@@ -37,6 +37,7 @@ REQUIRED_FILES = {
     "bridge_summary": "results/prl_reference_bridge/P0_P6_run_summary.md",
     "bridge_sequential_ablation": "results/prl_reference_bridge/sequential_bridge_ablation.md",
     "plateau_diagnostic": "results/T2_NG15yr/bayes_factors/prl_ceffyl_plateau_diagnostic.md",
+    "final_stability_diagnostics": "results/T2_NG15yr/bayes_factors/prl_final_stability_diagnostics.md",
     "revtex_pdf": "theory/pdf/revtex/paper_prl_submission.pdf",
     "supplement_pdf": "theory/pdf/revtex/prl_supplement.pdf",
     "reproducibility": "REPRODUCIBILITY.md",

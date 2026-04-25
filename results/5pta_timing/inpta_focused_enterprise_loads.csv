@@ -1,0 +1,68 @@
+pulsar,band,parfile,timfile,FROM_PAR_status,FROM_PAR_n_toas,FROM_PAR_traceback_tail,DE440_status,DE440_n_toas,DE440_traceback_tail,DE436_status,DE436_n_toas,DE436_traceback_tail
+J0751+1807,NB,data/InPTA_DR1/InPTA.DR1/J0751+1807/J0751+1807.NB.par,data/InPTA_DR1/InPTA.DR1/J0751+1807/J0751+1807.NB.tim,FAIL,,"    obj = Pulsar(str(par), str(tim), ephem=ephem)
+  File ""/Users/ran/Library/Python/3.9/lib/python/site-packages/enterprise/pulsar.py"", line 837, in Pulsar
+    return Tempo2Pulsar(
+  File ""/Users/ran/Library/Python/3.9/lib/python/site-packages/enterprise/pulsar.py"", line 506, in __init__
+    self._designmatrix = np.double(t2pulsar.designmatrix())
+  File ""libstempo/libstempo.pyx"", line 1791, in libstempo.libstempo.tempopulsar.designmatrix
+  File ""libstempo/libstempo.pyx"", line 1788, in libstempo.libstempo.tempopulsar.designmatrix
+AssertionError",FAIL,,"    obj = Pulsar(str(par), str(tim), ephem=ephem)
+  File ""/Users/ran/Library/Python/3.9/lib/python/site-packages/enterprise/pulsar.py"", line 837, in Pulsar
+    return Tempo2Pulsar(
+  File ""/Users/ran/Library/Python/3.9/lib/python/site-packages/enterprise/pulsar.py"", line 506, in __init__
+    self._designmatrix = np.double(t2pulsar.designmatrix())
+  File ""libstempo/libstempo.pyx"", line 1791, in libstempo.libstempo.tempopulsar.designmatrix
+  File ""libstempo/libstempo.pyx"", line 1788, in libstempo.libstempo.tempopulsar.designmatrix
+AssertionError",FAIL,,"    obj = Pulsar(str(par), str(tim), ephem=ephem)
+  File ""/Users/ran/Library/Python/3.9/lib/python/site-packages/enterprise/pulsar.py"", line 837, in Pulsar
+    return Tempo2Pulsar(
+  File ""/Users/ran/Library/Python/3.9/lib/python/site-packages/enterprise/pulsar.py"", line 506, in __init__
+    self._designmatrix = np.double(t2pulsar.designmatrix())
+  File ""libstempo/libstempo.pyx"", line 1791, in libstempo.libstempo.tempopulsar.designmatrix
+  File ""libstempo/libstempo.pyx"", line 1788, in libstempo.libstempo.tempopulsar.designmatrix
+AssertionError"
+J0751+1807,WB,data/InPTA_DR1/InPTA.DR1/J0751+1807/J0751+1807.WB.par,data/InPTA_DR1/InPTA.DR1/J0751+1807/J0751+1807.WB.tim,FAIL,,"  File ""/Users/ran/Library/Python/3.9/lib/python/site-packages/enterprise/pulsar.py"", line 837, in Pulsar
+    return Tempo2Pulsar(
+  File ""/Users/ran/Library/Python/3.9/lib/python/site-packages/enterprise/pulsar.py"", line 501, in __init__
+    self._toas = np.double(t2pulsar.toas()) * 86400
+  File ""libstempo/libstempo.pyx"", line 1370, in libstempo.libstempo.tempopulsar.toas
+  File ""<stringsource>"", line 273, in View.MemoryView.array_cwrapper
+  File ""<stringsource>"", line 159, in View.MemoryView.array.__cinit__
+ValueError: Invalid shape in axis 0: 0.",FAIL,,"  File ""/Users/ran/Library/Python/3.9/lib/python/site-packages/enterprise/pulsar.py"", line 837, in Pulsar
+    return Tempo2Pulsar(
+  File ""/Users/ran/Library/Python/3.9/lib/python/site-packages/enterprise/pulsar.py"", line 501, in __init__
+    self._toas = np.double(t2pulsar.toas()) * 86400
+  File ""libstempo/libstempo.pyx"", line 1370, in libstempo.libstempo.tempopulsar.toas
+  File ""<stringsource>"", line 273, in View.MemoryView.array_cwrapper
+  File ""<stringsource>"", line 159, in View.MemoryView.array.__cinit__
+ValueError: Invalid shape in axis 0: 0.",FAIL,,"  File ""/Users/ran/Library/Python/3.9/lib/python/site-packages/enterprise/pulsar.py"", line 837, in Pulsar
+    return Tempo2Pulsar(
+  File ""/Users/ran/Library/Python/3.9/lib/python/site-packages/enterprise/pulsar.py"", line 501, in __init__
+    self._toas = np.double(t2pulsar.toas()) * 86400
+  File ""libstempo/libstempo.pyx"", line 1370, in libstempo.libstempo.tempopulsar.toas
+  File ""<stringsource>"", line 273, in View.MemoryView.array_cwrapper
+  File ""<stringsource>"", line 159, in View.MemoryView.array.__cinit__
+ValueError: Invalid shape in axis 0: 0."
+J0437-4715,NB,data/InPTA_DR1/InPTA.DR1/J0437-4715/J0437-4715.NB.par,data/InPTA_DR1/InPTA.DR1/J0437-4715/J0437-4715.NB.tim,PASS,451,,PASS,451,,PASS,451,
+J0437-4715,WB,data/InPTA_DR1/InPTA.DR1/J0437-4715/J0437-4715.WB.par,data/InPTA_DR1/InPTA.DR1/J0437-4715/J0437-4715.WB.tim,FAIL,,"  File ""/Users/ran/Library/Python/3.9/lib/python/site-packages/enterprise/pulsar.py"", line 837, in Pulsar
+    return Tempo2Pulsar(
+  File ""/Users/ran/Library/Python/3.9/lib/python/site-packages/enterprise/pulsar.py"", line 501, in __init__
+    self._toas = np.double(t2pulsar.toas()) * 86400
+  File ""libstempo/libstempo.pyx"", line 1370, in libstempo.libstempo.tempopulsar.toas
+  File ""<stringsource>"", line 273, in View.MemoryView.array_cwrapper
+  File ""<stringsource>"", line 159, in View.MemoryView.array.__cinit__
+ValueError: Invalid shape in axis 0: 0.",FAIL,,"  File ""/Users/ran/Library/Python/3.9/lib/python/site-packages/enterprise/pulsar.py"", line 837, in Pulsar
+    return Tempo2Pulsar(
+  File ""/Users/ran/Library/Python/3.9/lib/python/site-packages/enterprise/pulsar.py"", line 501, in __init__
+    self._toas = np.double(t2pulsar.toas()) * 86400
+  File ""libstempo/libstempo.pyx"", line 1370, in libstempo.libstempo.tempopulsar.toas
+  File ""<stringsource>"", line 273, in View.MemoryView.array_cwrapper
+  File ""<stringsource>"", line 159, in View.MemoryView.array.__cinit__
+ValueError: Invalid shape in axis 0: 0.",FAIL,,"  File ""/Users/ran/Library/Python/3.9/lib/python/site-packages/enterprise/pulsar.py"", line 837, in Pulsar
+    return Tempo2Pulsar(
+  File ""/Users/ran/Library/Python/3.9/lib/python/site-packages/enterprise/pulsar.py"", line 501, in __init__
+    self._toas = np.double(t2pulsar.toas()) * 86400
+  File ""libstempo/libstempo.pyx"", line 1370, in libstempo.libstempo.tempopulsar.toas
+  File ""<stringsource>"", line 273, in View.MemoryView.array_cwrapper
+  File ""<stringsource>"", line 159, in View.MemoryView.array.__cinit__
+ValueError: Invalid shape in axis 0: 0."

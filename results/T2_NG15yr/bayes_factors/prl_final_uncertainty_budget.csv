@@ -1,0 +1,8 @@
+effect,size_nat,scope
+official-density reproduction residual,0.6943404236165724,maximum absolute single-configuration residual among the three calibrated NANOGrav targets
+SIGW-delta peak-frequency prior boundary,0.4263190335579168,scan over tested upper peak-frequency bounds
+"dynesty/QMC-TI residual, main rows",0.11716695254411036,independent Sobol-QMC/TI cross-check
+"dynesty/QMC-TI residual, curved rows",0.06328224454733888,family cross-check for tested curved-SMBHB representatives
+hybrid3 leading-row seed/live range,0.173019013746881,maximum range over the bridge robustness sweep
+SIGW-Gaussian minus best curved-SMBHB model,0.6814043795889968,matched NG15 official-density scale
+SIGW-like minus Astro-curved family,0.5719016189660806,hybrid3 equal-weight tested-representative family mixture

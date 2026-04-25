@@ -1,0 +1,3 @@
+bin,max_abs_pair,n_pairs,n_pulsars,orf_vector,pair_index,pair_l2,pair_mean,pair_std,pearson_with_hd
+z_0_0p1,0.04605718033718659,2211,67,data/LSS/orf_templates/twompz_z_0_0p1_prod_nside64_lowell_update_20260425_ng15_orf_pairs.npy,data/LSS/orf_templates/ng15_pair_index_prod_nside64_lowell_update_20260425.csv,0.5014447582572448,0.0014658377073552228,0.010562987909052461,-0.10272406950889923
+z_0p1_0p2,0.06026908845096663,2211,67,data/LSS/orf_templates/twompz_z_0p1_0p2_prod_nside64_lowell_update_20260425_ng15_orf_pairs.npy,data/LSS/orf_templates/ng15_pair_index_prod_nside64_lowell_update_20260425.csv,0.6561920719395609,0.002125967159989614,0.013792329657545961,-0.21242493526076867
