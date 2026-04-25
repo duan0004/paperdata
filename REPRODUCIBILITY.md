@@ -57,7 +57,7 @@ Additional NANOGrav pre-sampled cores used by the analysis are under
 | Cold HD chain summary | `results/T2_NG15yr/T2_summary_prodHD_cold_final.json` |
 | Warm+cold Gelman-Rubin diagnostics | `results/T2_NG15yr/T2_multichain_Rhat.json` |
 | Main local ceffyl-style refit | `results/T2_NG15yr/bayes_factors/bayes_factors.json` |
-| KDE bandwidth / sampler sensitivity sweep | `results/T2_NG15yr/bayes_factors/sensitivity.json` |
+| Local-density / sampler sensitivity sweep | `results/T2_NG15yr/bayes_factors/sensitivity.json` |
 | SMBHB gamma-prior-volume check | `results/T2_NG15yr/bayes_factors/smbhb_gamma_prior_volume.json` |
 | `lnB(N_bins)` truncation-stability diagnostic | `results/T2_NG15yr/bayes_factors/Nbins_scan.json` |
 | PTArcade SIGW-Gauss official-density gate | `results/T2_NG15yr/bayes_factors/ptarcade_ceffyl_density_groundtruth.json` |
@@ -70,9 +70,9 @@ Additional NANOGrav pre-sampled cores used by the analysis are under
 | PRL H9 cumulative-bin driver | `results/T2_NG15yr/bayes_factors/prl_H9_bin_driver_analysis.json` |
 | PRL H10 systematic evidence envelope | `results/T2_NG15yr/bayes_factors/prl_H10_systematic_envelope.json` |
 | PRL Sobol-QMC thermodynamic-integration evidence cross-check | `results/T2_NG15yr/bayes_factors/prl_evidence_ti_qmc_crosscheck.json` |
-| CAR covariance pilot | `results/T2_NG15yr/covariance/pilot_report.json` |
-| CAR template projection diagnostic | `results/T2_NG15yr/covariance/template_projection.json` |
-| CAR null calibration | `results/T2_NG15yr/covariance/car_null_calibration.json` |
+| Free-spectrum bin-covariance pilot | `results/T2_NG15yr/covariance/pilot_report.json` |
+| Free-spectrum template projection diagnostic | `results/T2_NG15yr/covariance/template_projection.json` |
+| Free-spectrum bin-covariance null calibration | `results/T2_NG15yr/covariance/car_null_calibration.json` |
 | PRL package static gate | `results/T2_NG15yr/prl_package_static_gate.json` |
 | PRL ceffyl plateau diagnostic | `results/T2_NG15yr/bayes_factors/prl_ceffyl_plateau_diagnostic.json` |
 | PRL sequential anchored bridge ablation | `results/prl_reference_bridge/sequential_bridge_ablation.csv` |
@@ -169,5 +169,5 @@ As of 2026-04-25, Tectonic is available locally and the REVTeX main text and
 supplement compile to `theory/pdf/revtex/`.  The public code/data release is
 archived under Zenodo concept DOI `10.5281/zenodo.19688471` and mirrored at
 `https://github.com/duan0004/paperdata`, release `v1.0.2`.  The cross-PTA
-bridge revision used by the current draft is also mirrored at GitHub tag
+bridge revision used by the current draft is mirrored at GitHub tag
 `prl-calibration-bridge-2026-04-23`.

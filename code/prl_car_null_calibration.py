@@ -142,7 +142,7 @@ def main():
     }
     OUT_JSON.write_text(json.dumps(out, indent=2))
 
-    md = f"""# PRL CAR Covariance Null Calibration
+    md = f"""# PRL Free-Spectrum Bin-Covariance Null Calibration
 
 **Date**: {out['generated']}  
 **Input**: `results/T2_NG15yr/covariance/corr_bin.npy`  

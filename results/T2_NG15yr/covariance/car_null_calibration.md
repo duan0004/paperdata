@@ -1,4 +1,4 @@
-# PRL CAR Covariance Null Calibration
+# PRL Free-Spectrum Bin-Covariance Null Calibration
 
 **Date**: 2026-04-21 13:51:20  
 **Input**: `results/T2_NG15yr/covariance/corr_bin.npy`  

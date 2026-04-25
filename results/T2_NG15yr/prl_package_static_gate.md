@@ -1,6 +1,6 @@
 # PRL Package Static Gate
 
-**Generated**: 2026-04-25T12:09:40
+**Generated**: 2026-04-25T12:35:01
 **Structural pass**: `True`
 **Submission ready**: `True`
 
@@ -29,10 +29,10 @@
 
 | File | words |
 |---|---:|
-| REVTeX source | `2547` |
+| REVTeX source | `2550` |
 | compressed Markdown | `1857` |
-| supplement Markdown | `1165` |
-| supplement TeX source | `4130` |
+| supplement Markdown | `1216` |
+| supplement TeX source | `4174` |
 
 ## Blockers
 

@@ -1,7 +1,7 @@
 # Supplemental Material: Calibrated PTA Evidence Identifies Low-Frequency Curvature but Not a Unique Nanohertz Source
 
-**Date**: 2026-04-25  
-**Main draft**: `theory/paper_prl_submission.tex`  
+**Date**: 2026-04-23
+**Main draft**: `theory/paper_prl_submission.tex`
 **Status**: Markdown mirror of the compiled supplement source
 `theory/prl_supplement.tex`.
 
@@ -84,8 +84,14 @@ suppression controls, not population-synthesis source claims.
 | env. broad bend | env. | `+2.992` | `0.142` |  |
 | env. low bend | env. | `+2.666` | `0.103` |  |
 
-At least two distinct curvature parameterizations overlap the leading
-cosmological evidence tier within one nat.
+Three distinct curvature parameterizations fall in the same approximately
+one-nat evidence tier as the leading cosmological rows.  The physical
+environmental control is 1.067 nat below SIGW-Gaussian but only 0.476 nat below
+SIGW-delta and 0.104 nat below superstrings.  The environmental row is a
+physical SMBHB control; the broken-power-law and eccentricity-inspired rows are
+phenomenological low-frequency suppression controls.  This supports a
+family-level source-identification degeneracy, not a new source-detection
+claim.
 
 The final column reports the thermodynamic-integration residual from the
 family cross-check relative to the corresponding five-configuration dynesty

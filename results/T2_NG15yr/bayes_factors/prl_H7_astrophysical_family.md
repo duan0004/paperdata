@@ -25,4 +25,4 @@
 
 ## Interpretation
 
-At least two curved-SMBHB parameterizations overlap the leading cosmological evidence tier within one nat.  The environmental row is an astrophysical SMBHB control, while the broken-power-law and eccentricity-inspired rows are phenomenological low-frequency suppression controls.  This supports a family-level source-identification degeneracy, not a new source-detection claim.
+Three distinct curvature parameterizations fall in the same approximately one-nat evidence tier as the leading cosmological rows.  The physical environmental control is 1.067 nat below SIGW-Gaussian but only 0.476 nat below SIGW-delta and 0.104 nat below superstrings.  The environmental row is a physical SMBHB control; the broken-power-law and eccentricity-inspired rows are phenomenological low-frequency suppression controls.  This supports a family-level source-identification degeneracy, not a new source-detection claim.
