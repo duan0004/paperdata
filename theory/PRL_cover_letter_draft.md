@@ -47,7 +47,7 @@ calibrated curved-SMBHB controls.
 
 The manuscript uses public NANOGrav data products and official PTArcade model
 and density products.  The analysis code and compact data release are archived
-as Zenodo version DOI https://doi.org/10.5281/zenodo.19688471 under concept DOI
+as Zenodo version DOI https://doi.org/10.5281/zenodo.19757513 under concept DOI
 https://doi.org/10.5281/zenodo.19688471 and mirrored at
 https://github.com/duan0004/paperdata, release v1.0.4.  The cross-PTA bridge
 revision is mirrored at GitHub tag prl-calibration-bridge-2026-04-23.
