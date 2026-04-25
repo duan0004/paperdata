@@ -48,7 +48,9 @@ DISPLAY = {
 def _read_rank(path: Path) -> pd.DataFrame:
     df = pd.read_csv(path)
     df = df[df["status"].eq("pass")].copy()
+    best_err = float(df.loc[df["ln_Z"].idxmax(), "ln_Z_err"])
     df["delta_pos"] = df["delta_to_best"].astype(float)
+    df["delta_err"] = (df["ln_Z_err"].astype(float) ** 2 + best_err**2) ** 0.5
     df["label"] = df["model"].map(DISPLAY).fillna(df["model"])
     return df.sort_values("delta_to_best", ascending=False)
 
@@ -99,8 +101,36 @@ def build() -> None:
     y = list(range(len(top_models)))
     colors = [FAMILY_COLORS[f] for f in hybrid["family"]]
 
-    ax.scatter(local["delta_pos"], y, marker="o", s=30, facecolor="white", edgecolor=colors, linewidth=1.3, label="local3")
-    ax.scatter(hybrid["delta_pos"], y, marker="s", s=31, c=colors, edgecolor="black", linewidth=0.35, label="hybrid3")
+    for yi, row, color in zip(y, local.itertuples(), colors):
+        ax.errorbar(
+            row.delta_pos,
+            yi,
+            xerr=row.delta_err,
+            fmt="o",
+            ms=4.8,
+            mfc="white",
+            mec=color,
+            mew=1.2,
+            ecolor=color,
+            elinewidth=0.65,
+            capsize=1.8,
+            label="local3" if yi == y[0] else None,
+        )
+    for yi, row, color in zip(y, hybrid.itertuples(), colors):
+        ax.errorbar(
+            row.delta_pos,
+            yi,
+            xerr=row.delta_err,
+            fmt="s",
+            ms=4.8,
+            mfc=color,
+            mec="black",
+            mew=0.35,
+            ecolor=color,
+            elinewidth=0.65,
+            capsize=1.8,
+            label="hybrid3" if yi == y[0] else None,
+        )
     for yi, xl, xh in zip(y, local["delta_pos"], hybrid["delta_pos"]):
         ax.plot([xl, xh], [yi, yi], color="#b8b8b8", lw=0.8, zorder=0)
 
@@ -128,7 +158,7 @@ def build() -> None:
     ax2.set_title("B. Hybrid3 family evidence")
     ax2.grid(axis="x", color="#dedede", linewidth=0.5)
     for idx, val in enumerate(families["delta"]):
-        ax2.text(-0.08, idx, f"{val:.3f}", ha="right", va="center", color="black")
+        ax2.text(-0.08, idx, f"{val:.2f}", ha="right", va="center", color="black")
 
     fig.tight_layout(pad=1.05)
     fig.savefig(OUT_PDF, bbox_inches="tight")
